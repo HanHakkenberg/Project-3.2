@@ -7,6 +7,9 @@ public class Vector3Variable : ScriptableObject {
     [SerializeField] Vector3 baseValue;
     [SerializeField] Vector3 value;
 
+    [SerializeField] GameEvent[] myEvent;
+    [SerializeField] bool reset = true;
+
     public Vector3 Value {
         get {
             return value;
@@ -15,13 +18,12 @@ public class Vector3Variable : ScriptableObject {
             this.value = value;
 
             if (myEvent != null) {
-                myEvent.Raise();
+                for(int i = 0; i < myEvent.Length; i++) {
+                    myEvent[i].Raise();
+                }
             }
         }
     }
-
-    [SerializeField] GameEvent myEvent;
-    [SerializeField] bool reset = true;
 
     public void OnEnable() {
         if (reset == true) {

@@ -8,7 +8,13 @@ public class ImageEvent : MonoBehaviour {
 	public FloatReference currentFillValue;
 	public FloatReference baseFillFloat;
 
-	public void UpdateFillAmount() {
+    void Start() {
+        if(target == null) {
+            target = GetComponent<Image>();
+        }
+    }
+
+    public void UpdateFillAmount() {
 		target.fillAmount = currentFillValue.Value / baseFillFloat.Value;
 	}
 

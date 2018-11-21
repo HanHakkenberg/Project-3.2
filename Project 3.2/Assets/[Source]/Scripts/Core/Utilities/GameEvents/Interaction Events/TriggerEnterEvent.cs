@@ -2,14 +2,15 @@
 using UnityEngine.Events;
 
 public class TriggerEnterEvent : MonoBehaviour {
-    [SerializeField] GameEvent myGameEvent;
-    [SerializeField] UnityEvent myEvent;
+    [Multiline] [SerializeField] string info;
+    [SerializeField] GameEvent[] myEvent;
+    [SerializeField] UnityEvent myUnityEvent;
 
     void OnTriggerEnter() {
-        if(myGameEvent != null) {
-            myGameEvent.Raise();
+        for(int i = 0; i < myEvent.Length; i++) {
+            myEvent[i].Raise();
         }
 
-        myEvent.Invoke();
+        myUnityEvent.Invoke();
     }
 }

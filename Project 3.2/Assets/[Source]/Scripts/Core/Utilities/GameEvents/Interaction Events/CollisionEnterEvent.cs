@@ -2,14 +2,15 @@
 using UnityEngine.Events;
 
 public class CollisionEnterEvent : MonoBehaviour {
-    [SerializeField] GameEvent myGameEvent;
-    [SerializeField] UnityEvent myEvent;
+    [SerializeField] [Multiline] string comment;
+    [SerializeField] GameEvent[] myEvent;
+    [SerializeField] UnityEvent myUnityEvent;
 
-    void OnCollisionEnter(){
-        if(myGameEvent != null) {
-            myGameEvent.Raise();
+    void OnCollisionEnter() {
+        for(int i = 0; i < myEvent.Length; i++) {
+            myEvent[i].Raise();
         }
 
-        myEvent.Invoke();
+        myUnityEvent.Invoke();
     }
 }

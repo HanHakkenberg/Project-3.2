@@ -14,29 +14,32 @@ public class FloatReference {
 
     public float Value {
         get {
-            if (useConstant) {
+            if(useConstant) {
                 return value;
-            } else {
+            }
+            else {
                 return variable.Value;
             }
         }
         set {
-            if (useConstant) {
+            if(useConstant) {
                 this.value = value;
-            } else {
+            }
+            else {
                 this.variable.Value = value;
             }
 
-            if (myEvent != null) {
+            if(myEvent != null) {
                 myEvent.Raise();
             }
         }
     }
 
     public void ManualReset() {
-        if (variable != null) {
+        if(variable != null) {
             variable.ManualReset();
-        } else {
+        }
+        else {
             value = baseValue;
         }
     }

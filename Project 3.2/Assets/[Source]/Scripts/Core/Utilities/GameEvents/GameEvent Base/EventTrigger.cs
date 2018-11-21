@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
 public class EventTrigger : MonoBehaviour {
-	[SerializeField] GameEvent myEvent;
+	[SerializeField] GameEvent[] myEvent;
 
 	public void RaiseEvent() {
-		myEvent.Raise();
-	}
+        for(int i = 0; i < myEvent.Length; i++) {
+            myEvent[i].Raise();
+        }
+    }
 }

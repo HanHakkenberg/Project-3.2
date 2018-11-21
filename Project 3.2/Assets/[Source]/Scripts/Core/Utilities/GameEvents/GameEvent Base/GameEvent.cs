@@ -3,6 +3,8 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameEvent", menuName = "GameEvent")]
 public class GameEvent : ScriptableObject {
+    [Multiline] [SerializeField] string info;
+
     public List<GameEventListener> listeners = new List<GameEventListener>();
 
     public void Raise() {
@@ -14,6 +16,10 @@ public class GameEvent : ScriptableObject {
                 listeners.RemoveAt(i);
             }
         }
+    }
+
+    void OnEnable() {
+        listeners = new List<GameEventListener>();
     }
 
     public void AddListener(GameEventListener listener) {

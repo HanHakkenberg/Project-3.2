@@ -2,10 +2,13 @@
 
 [CreateAssetMenu(fileName = "Bool", menuName = "Variable/Bool")]
 public class BoolVariable : ScriptableObject {
-    [Multiline][SerializeField] string variableInfo;
+    [Multiline] [SerializeField] string variableInfo;
 
     [SerializeField] bool baseValue;
     [SerializeField] bool value;
+
+    [SerializeField] GameEvent[] myEvent;
+    [SerializeField] bool reset = true;
 
     public bool Value {
         get {
@@ -14,23 +17,22 @@ public class BoolVariable : ScriptableObject {
         set {
             this.value = value;
 
-            if (myEvent != null) {
-                myEvent.Raise();
+            if(myEvent != null) {
+                for(int i = 0; i < myEvent.Length; i++) {
+                    myEvent[i].Raise();
+                }
             }
         }
     }
 
-    [SerializeField] GameEvent myEvent;
-    [SerializeField] bool reset = true;
-
     public void OnEnable() {
-        if (reset == true) {
+        if(reset == true) {
             value = baseValue;
         }
     }
 
     public void ManualReset() {
-        if (reset == true) {
+        if(reset == true) {
             value = baseValue;
         }
     }

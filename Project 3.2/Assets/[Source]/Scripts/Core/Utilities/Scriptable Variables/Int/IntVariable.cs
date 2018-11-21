@@ -7,6 +7,9 @@ public class IntVariable : ScriptableObject {
     [SerializeField] int baseValue;
     [SerializeField] int value;
 
+    [SerializeField] GameEvent[] myEvent;
+    [SerializeField] bool reset = true;
+
     public int Value {
         get {
             return value;
@@ -15,13 +18,12 @@ public class IntVariable : ScriptableObject {
             this.value = value;
 
             if (myEvent != null) {
-                myEvent.Raise();
+                for(int i = 0; i < myEvent.Length; i++) {
+                    myEvent[i].Raise();
+                }
             }
         }
     }
-
-    [SerializeField] GameEvent myEvent;
-    [SerializeField] bool reset = true;
 
     public void OnEnable() {
         if (reset == true) {

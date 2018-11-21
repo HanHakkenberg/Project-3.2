@@ -2,17 +2,24 @@
 using UnityEngine.Events;
 
 public class GameEventListener : MonoBehaviour {
-    public GameEvent myGameEvent;
+    [Multiline] [SerializeField] string info;
+
     [SerializeField] bool listenOnEnable = true;
     [SerializeField] bool listenOnDisable = false;
+
+    public GameEvent[] myGameEvent;
     public UnityEvent response;
 
     public void StartListening() {
-        myGameEvent.AddListener(this);
+        for(int i = 0; i < myGameEvent.Length; i++) {
+            myGameEvent[i].AddListener(this);
+        }
     }
 
     public void StopListening() {
-        myGameEvent.RemoveListener(this);
+        for(int i = 0; i < myGameEvent.Length; i++) {
+            myGameEvent[i].RemoveListener(this);
+        }
     }
 
     public void OnEventRaise() {
@@ -20,17 +27,19 @@ public class GameEventListener : MonoBehaviour {
     }
 
     void OnEnable() {
-        if (listenOnEnable) {
+        if(listenOnEnable) {
             StartListening();
-        } else {
+        }
+        else {
             StopListening();
         }
     }
 
     void OnDisable() {
-        if (listenOnDisable) {
+        if(listenOnDisable) {
             StartListening();
-        } else {
+        }
+        else {
             StopListening();
         }
     }

@@ -1,52 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class InteractionEvent : MonoBehaviour {
     [Header("Interact")]
-    [SerializeField] GameEvent interactGameEvent;
+    [SerializeField] GameEvent[] interactGameEvent;
     [SerializeField] UnityEvent interactUnityEvent;
 
     [Header("Deinteract")]
-    [SerializeField] GameEvent deinteractGameEvent;
+    [SerializeField] GameEvent[] deinteractGameEvent;
     [SerializeField] UnityEvent deinteractUnityEvent;
 
     [Header("Select/Highlight")]
-    [SerializeField] GameEvent selectGameEvent;
+    [SerializeField] GameEvent[] selectGameEvent;
     [SerializeField] UnityEvent selectUnityEvent;
 
     [Header("Deselect/Unhighlight")]
-    [SerializeField] GameEvent deselectGameEvent;
+    [SerializeField] GameEvent[] deselectGameEvent;
     [SerializeField] UnityEvent deselectUnityEvent;
 
     public void InteractionHighlight() {
-        if(selectGameEvent != null) {
-            selectGameEvent.Raise();
+        for(int i = 0; i < selectGameEvent.Length; i++) {
+            selectGameEvent[i].Raise();
         }
 
         selectUnityEvent.Invoke();
     }
 
     public void InteractionUnhighlight() {
-        if(deselectGameEvent != null) {
-            deselectGameEvent.Raise();
+        for(int i = 0; i < deselectGameEvent.Length; i++) {
+            deselectGameEvent[i].Raise();
         }
 
         deselectUnityEvent.Invoke();
     }
 
     public void Interact() {
-        if(interactGameEvent != null) {
-            interactGameEvent.Raise();
+        for(int i = 0; i < interactGameEvent.Length; i++) {
+            interactGameEvent[i].Raise();
         }
 
         interactUnityEvent.Invoke();
     }
 
     public void Deinteract() {
-        if(deinteractGameEvent != null) {
-            deinteractGameEvent.Raise();
+        for(int i = 0; i < deinteractGameEvent.Length; i++) {
+            deinteractGameEvent[i].Raise();
         }
 
         deinteractUnityEvent.Invoke();
