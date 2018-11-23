@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
+    [SerializeField] TransformReference mainCamera;
     [SerializeField] Transform cameraPivot;
-    [SerializeField] Transform mainCamera;
+    [SerializeField] Transform cameraTarget;
     [SerializeField] int camAngle;
 
     [Header("Movement")]
@@ -29,10 +30,17 @@ public class CameraMovement : MonoBehaviour {
 
     void Start() {
         cameraPivot.eulerAngles = new Vector3(-camAngle, 0, 0);
-        mainCamera.localPosition = new Vector3(0, startZoom, 0);
+        cameraTarget.localPosition = new Vector3(0, startZoom, 0);
+        cameraTarget.localEulerAngles = new Vector3(90,180,180);
     }
 
     void Update() {
+        UpdatePlayerControler();
+
+        mainCamera.Value.SetPositionAndRotation(cameraTarget.position, cameraTarget.rotation);
+    }
+
+    public void UpdatePlayerControler() {
         transform.SetPositionAndRotation(UpdateCameraPosition(), Quaternion.Euler(UpdateCameraRotation()));
         UpdateCamZoom();
     }
@@ -65,7 +73,7 @@ public class CameraMovement : MonoBehaviour {
     }
 
     void UpdateCamZoom() {
-        mainCamera.localPosition = new Vector3(0, Mathf.Clamp(mainCamera.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom),0);
+        cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom),0);
     }
 
     Vector3 UpdateCameraRotation() {
