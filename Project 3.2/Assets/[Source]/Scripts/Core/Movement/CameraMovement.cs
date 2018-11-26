@@ -45,10 +45,10 @@ public class CameraMovement : MonoBehaviour {
     #region Camera Movement And Rotation
     float newMoveSpeed = 0;
     Vector3 newPosition = new Vector3();
-
+        
     Vector3 UpdateCameraPosition() {
         newPosition = new Vector3();
-        newMoveSpeed = Time.deltaTime * movementSpeed;
+        newMoveSpeed = (Mathf.Abs(Input.GetAxis("Horizontal")) + Mathf.Abs(Input.GetAxis("Vertical"))); //      ***WIP
 
         if(Input.mousePosition.y >= Screen.height - camBorderSize || Input.GetAxis("Vertical") >= 0.1f) {
             newPosition += transform.forward * newMoveSpeed;
