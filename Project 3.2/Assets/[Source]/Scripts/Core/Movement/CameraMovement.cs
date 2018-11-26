@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
     [SerializeField] TransformReference mainCamera;
@@ -13,8 +11,6 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] int camBorderSize;
 
     [Header("Rotation")]
-    [SerializeField] GameEvent startRotating;
-    [SerializeField] GameEvent StopRotating;
     [SerializeField] int rotationSpeed = 10;
 
     [Header("Zoom")]
@@ -31,7 +27,7 @@ public class CameraMovement : MonoBehaviour {
     void Start() {
         cameraPivot.eulerAngles = new Vector3(-camAngle, 0, 0);
         cameraTarget.localPosition = new Vector3(0, startZoom, 0);
-        cameraTarget.localEulerAngles = new Vector3(90,180,180);
+        cameraTarget.localEulerAngles = new Vector3(90, 180, 180);
     }
 
     void Update() {
@@ -72,34 +68,47 @@ public class CameraMovement : MonoBehaviour {
         return (new Vector3(Mathf.Clamp(newPosition.x, borderXMin, borderXMax), newPosition.y, Mathf.Clamp(newPosition.z, borderYMin, borderYMax)));
     }
 
-    void UpdateCamZoom() {
-        cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom),0);
-    }
+    Vector3 oldMousePos;
+    bool rotating;
 
     Vector3 UpdateCameraRotation() {
 
         if(Input.GetButton("Fire3")) {
-            startRotating.Raise();
 
-            if(Input.GetAxis("Mouse X") >= 0.1f) {
+            if(rotating == false) {
+                oldMousePos = Input.mousePosition;
+                rotating = true;
+            }
+
+            if(Input.mousePosition.x - oldMousePos.x >= 0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
             }
-            else if(Input.GetAxis("Mouse X") <= -0.1f) {
+            else if(Input.mousePosition.x - oldMousePos.x <= -0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
             }
         }
-        else if(Input.GetAxis("Camera Rotation") >= 0.1f) {
-            return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
-        }
-        else if(Input.GetAxis("Camera Rotation") <= -0.1f) {
-            return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
-
-        }
         else {
-            StopRotating.Raise();
+            rotating = false;
+
+            if(Input.GetAxis("Camera Rotation") >= 0.1f) {
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+            }
+            else if(Input.GetAxis("Camera Rotation") <= -0.1f) {
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+
+            }
         }
 
         return (transform.eulerAngles);
+    }
+
+    void UpdateCamZoom() {
+        if(Input.GetAxis("Mouse ScrollWheel") != 0) {
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
+        }
+        else {
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel Keys") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
+        }
     }
     #endregion
 }
