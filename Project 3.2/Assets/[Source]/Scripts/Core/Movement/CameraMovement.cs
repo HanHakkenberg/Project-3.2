@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
-    [SerializeField] TransformReference mainCamera;
+    [SerializeField] TransformReference mainCamera; //  ***Remove
     [SerializeField] Transform cameraPivot;
     [SerializeField] Transform cameraTarget;
     [SerializeField] int camAngle;
@@ -32,8 +32,7 @@ public class CameraMovement : MonoBehaviour {
 
     void Update() {
         UpdatePlayerControler();
-
-        mainCamera.Value.SetPositionAndRotation(cameraTarget.position, cameraTarget.rotation);
+        mainCamera.Value.SetPositionAndRotation(cameraTarget.position, cameraTarget.rotation);  //  ***Remove
     }
 
     public void UpdatePlayerControler() {
@@ -43,31 +42,65 @@ public class CameraMovement : MonoBehaviour {
 
 
     #region Camera Movement And Rotation
-    float newMoveSpeed = 0;
     Vector3 newPosition = new Vector3();
-        
+
     Vector3 UpdateCameraPosition() {
-        newPosition = new Vector3();
-        newMoveSpeed = (Mathf.Abs(Input.GetAxis("Horizontal")) + Mathf.Abs(Input.GetAxis("Vertical"))); //      ***WIP
 
-        if(Input.mousePosition.y >= Screen.height - camBorderSize || Input.GetAxis("Vertical") >= 0.1f) {
-            newPosition += transform.forward * newMoveSpeed;
-        }
-        else if(Input.mousePosition.y <= camBorderSize || Input.GetAxis("Vertical") <= -0.1f) {
-            newPosition += -transform.forward * newMoveSpeed;
-        }
+        newPosition = (VerMovement() + HorMovement());
 
-        if(Input.mousePosition.x >= Screen.width - camBorderSize || Input.GetAxis("Horizontal") >= 0.1f) {
-            newPosition += transform.right * newMoveSpeed;
+        if(newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
+            newPosition = newPosition * (movementSpeed * Time.deltaTime / 2) + transform.position;
         }
-        else if(Input.mousePosition.x <= camBorderSize || Input.GetAxis("Horizontal") <= -0.1f) {
-            newPosition += -transform.right * newMoveSpeed;
+        else {
+            newPosition = newPosition * movementSpeed * Time.deltaTime + transform.position;
         }
 
-        newPosition += transform.position;
         return (new Vector3(Mathf.Clamp(newPosition.x, borderXMin, borderXMax), newPosition.y, Mathf.Clamp(newPosition.z, borderYMin, borderYMax)));
     }
 
+    //Checks If The Player Wants To Move Horizontaly
+    Vector3 HorMovement() {
+
+        if(Input.GetButton("Horizontal")) {
+            if(Input.GetAxis("Horizontal") > 0) {
+                return (transform.right);
+            }
+            else {
+                return (-transform.right);
+            }
+        }
+        else if(Input.mousePosition.x >= Screen.width - camBorderSize) {
+            return (transform.right);
+        }
+        else if(Input.mousePosition.x <= camBorderSize) {
+            return (-transform.right);
+        }
+
+        return (new Vector3());
+    }
+
+    //Checks If The Player Wants To Move Verticaly
+    Vector3 VerMovement() {
+
+        if(Input.GetButton("Vertical")) {
+            if(Input.GetAxis("Vertical") > 0) {
+                return (transform.forward);
+            }
+            else {
+                return (-transform.forward);
+            }
+        }
+        else if(Input.mousePosition.y >= Screen.height - camBorderSize) {
+            return (transform.forward);
+        }
+        else if(Input.mousePosition.y <= camBorderSize) {
+            return (-transform.forward);
+        }
+
+        return (new Vector3());
+    }
+
+    //Claculates The New Rotation Of The Camera Parent
     Vector3 oldMousePos;
     bool rotating;
 
@@ -102,6 +135,7 @@ public class CameraMovement : MonoBehaviour {
         return (transform.eulerAngles);
     }
 
+    //Calculates The Zoom For The Camera
     void UpdateCamZoom() {
         if(Input.GetAxis("Mouse ScrollWheel") != 0) {
             cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
