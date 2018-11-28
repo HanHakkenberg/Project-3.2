@@ -15,13 +15,18 @@ public class CivManager : MonoBehaviour
       Poeple
    }
 
+   #region Resources
    int buildingMaterials;
    int money;
    int food;
    int poeple;
+   #endregion
+
+   public static float stability;
 
    private void Start() {
       AddIncome(-11,Type.Poeple);
+      RemoveIncome(11,Type.Poeple);
    }
 
    /// <summary>
@@ -59,7 +64,7 @@ public class CivManager : MonoBehaviour
    /// <param name="type">The type the value gets removed from</param>
    public void RemoveIncome(int toRemove, Type type)
    {
-      toRemove = Mathf.Abs(toRemove);
+      toRemove = -Mathf.Abs(toRemove);
 
       print(toRemove);
       
@@ -79,4 +84,6 @@ public class CivManager : MonoBehaviour
             break;
       }
    }
+
+
 }
