@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
-    [SerializeField] TransformReference mainCamera; //  ***Remove
     [SerializeField] Transform cameraPivot;
     [SerializeField] Transform cameraTarget;
     [SerializeField] int camAngle;
@@ -32,7 +31,6 @@ public class CameraMovement : MonoBehaviour {
 
     void Update() {
         UpdatePlayerControler();
-        mainCamera.Value.SetPositionAndRotation(cameraTarget.position, cameraTarget.rotation);  //  ***Remove
     }
 
     public void UpdatePlayerControler() {
