@@ -2,17 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipNavigation : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+public class ShipNavigation : MonoBehaviour {
+    [SerializeField] TransformReference mainCamera;
+    [SerializeField] Ship currentShip;
+    [SerializeField] Vector3Reference wayPointToRemove;
+
+    void Update() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public IEnumerator DragCheck() {
+
+        StopCoroutine(DragCheck());
+
+        while(currentShip != null && Input.GetButton("Fire1")) {
+
+            UpdateWayPointPosition();
+            yield return null;
+        }
+    }
+
+    void UpdateWayPointPosition() {
+
+    }
+
+    public void RemoveWaypoint() {
+        if(currentShip != null){
+            currentShip.myPath.Remove(wayPointToRemove.Value);
+        }
     }
 }
