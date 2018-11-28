@@ -5,15 +5,15 @@ using TMPro;
 
 public class BuildingDisplay : MonoBehaviour
 {
-    
+
     public static Building building;
 
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI descriptionText;
+    [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] TextMeshProUGUI descriptionText;
 
-    public TextMeshProUGUI statDisplayOne;
-    public TextMeshProUGUI statDisplayTwo;
-    public TextMeshProUGUI statDisplayThree;
+    [SerializeField] TextMeshProUGUI statDisplayOne;
+    [SerializeField] TextMeshProUGUI statDisplayTwo;
+    [SerializeField] TextMeshProUGUI statDisplayThree;
 
     void Update ()
     {
@@ -25,7 +25,7 @@ public class BuildingDisplay : MonoBehaviour
         nameText.text = building.name;
         descriptionText.text = building.description;
 
-        statDisplayOne.text = building.tempStatOne.ToString ();
+        statDisplayOne.text = building.tempStatOne.ToString();
         statDisplayTwo.text = building.tempStatTwo.ToString();
         statDisplayThree.text = building.tempStatThree.ToString();
     }

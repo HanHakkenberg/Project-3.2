@@ -7,17 +7,22 @@ using Cinemachine;
 public class IslandCamera : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera buildingCam;
-    public Camera mainCam;
+    public CinemachineVirtualCamera mainCam;
     [SerializeField] private GameObject infoCanvas;
     [SerializeField] private Building thisBuilding;
+    Animator myAnimator;
 
+    private void Start ()
+    {
+        myAnimator = infoCanvas.GetComponent<Animator> ();
+    }
     void Update ()
     {
         if (Input.GetButtonDown ("Cancel"))
         {
             mainCam.enabled = true;
             buildingCam.enabled = false;
-            infoCanvas.SetActive (false);
+            myAnimator.SetBool ("Fading", false);
         }
     }
 
@@ -25,7 +30,7 @@ public class IslandCamera : MonoBehaviour
     {
         mainCam.enabled = false;
         buildingCam.enabled = true;
-        infoCanvas.SetActive (true);
         BuildingDisplay.building = thisBuilding;
+        myAnimator.SetBool ("Fading", true);
     }
 }
