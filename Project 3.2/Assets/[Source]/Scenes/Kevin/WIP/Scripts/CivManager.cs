@@ -22,12 +22,28 @@ public class CivManager : MonoBehaviour
    int poeple;
    #endregion
 
-   public static float stability;
+   #region Ledger
+   int buildingMaterialsIncome;
+   int moneyIncome;
+   int foodIncome;
+   int poepleIncome;
+   #endregion
 
-   private void Start() {
-      AddIncome(-11,Type.Poeple);
-      RemoveIncome(11,Type.Poeple);
+   #region Stability
+   /// <summary>
+   /// stability variable. Used to show in UI and as a condition to decide the stability modifier
+   /// </summary>
+   public int stability{
+      get; private set;
    }
+   /// <summary>
+   /// Resource modifier. use this to modify the income from buildings on the main island.
+   /// </summary>
+   public float stabilityModifier{
+      get; private set;
+   }
+   #endregion
+
 
    /// <summary>
    /// Call this function when you want to add a value to a type of resource (poeple, money, etc)
@@ -37,27 +53,29 @@ public class CivManager : MonoBehaviour
    public void AddIncome(int toAdd, Type type)
    {
       toAdd = Mathf.Abs(toAdd);
-
-      print(toAdd);
       
       switch (type)
       {
          case Type.BuildingMaterials:
             buildingMaterials += toAdd;
+            buildingMaterialsIncome += toAdd;
             break;
          case Type.Money:
             money += toAdd;
+            moneyIncome += toAdd;
             break;
          case Type.Food:
             food += toAdd;
+            foodIncome += toAdd;
             break;
          case Type.Poeple:
             poeple += toAdd;
+            poepleIncome += toAdd;
             break;            
       }
    }
 
-    /// <summary>
+   /// <summary>
    /// Call this function when you want to remove a value from a type of resource (poeple, money, etc)
    /// </summary>
    /// <param name="toRemove">The value that needs to be removed from the type</param>
@@ -65,8 +83,6 @@ public class CivManager : MonoBehaviour
    public void RemoveIncome(int toRemove, Type type)
    {
       toRemove = -Mathf.Abs(toRemove);
-
-      print(toRemove);
       
       switch (type)
       {
@@ -85,5 +101,37 @@ public class CivManager : MonoBehaviour
       }
    }
 
+   /// <summary>
+   /// call this function if you need to add or remove stability
+   /// </summary>
+   /// <param name="toUpdate">The value that is used to update the stability</param>
+   public void UpdateStability(int toUpdate)
+   {
+      stability += toUpdate;
+      stability = Mathf.Clamp(stability, -2 , 2);
 
+      switch (stability)
+      {
+         case 2:
+            stabilityModifier = 1.2f;
+         break;
+         case 1:
+            stabilityModifier = 1.1f;
+         break;
+         case -1:
+            stabilityModifier = 0.8f;
+         break;
+         case -2:
+            stabilityModifier = 0.5f;
+         break;
+         default:
+            stabilityModifier = 1;
+         break;
+      }
+   }
+
+   public void ResourseUseOverTime()
+   {
+      
+   }
 }
