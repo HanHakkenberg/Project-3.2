@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Tooltip("The time in seconds it takes to go from sunrise to sunrise")]
-    public float lengthOfDay;
+    [Tooltip("The time in minutes it takes to go from sunrise to sunrise")]
+    public int lengthOfDay;
     public static GameManager instance;
 
     void Start() 

@@ -41,18 +41,35 @@ public class CivManager : MonoBehaviour
    /// <summary>
    /// Resource modifier. use this to modify the income from buildings on the main island.
    /// </summary>
+   /// 
+   /// 
+   /// 
+   private float _stabilityModifier = 1f;
    public float stabilityModifier{
-      get; private set;
+      get {
+         return _stabilityModifier;
+      } 
+      private set{
+         _stabilityModifier = value;
+      }
    }
    #endregion
 
    #region OverTime
    int foodToEat;
+   [Tooltip("Time in seconds till ResourseUseOverTime function ticks")]
+   [SerializeField]
+   private float repeatTime;
+   private int foodStep;
    #endregion
 
 
    void Start() 
    {
+      //Starting variabels for the resources
+      poeple = 10;
+      food = 1000;
+
       if(instance == null)
         {
             instance = this;
@@ -62,6 +79,9 @@ public class CivManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        UpdateStability(0);
+        ResourseUseOverTimeVariableUpdate();
+        StartCoroutine(ResourseUseOverTime());
    }
 
    /// <summary>
@@ -149,13 +169,25 @@ public class CivManager : MonoBehaviour
       }
    }
 
-   public void ResourseUseOverTime()
+   private void ResourseUseOverTimeVariableUpdate()
    {
-      float repeatTime = 60;
-      while( repeatTime != 0)
+      foodToEat = poeple * 3;
+      foodStep = foodToEat / GameManager.instance.lengthOfDay;
+      print(foodStep);
+   }
+
+   public IEnumerator ResourseUseOverTime()
+   {
+      yield return new WaitForSeconds(repeatTime);
+      if (food > 0)
       {
-         repeatTime -= Time.deltaTime;
+         foodToEat -= foodStep;
+         food -= foodStep;
       }
-      // foodToEat -= 
+      if (food < 0 && food != 0)
+      {
+         food = 0;
+      }
+      StartCoroutine(ResourseUseOverTime());
    }
 }
