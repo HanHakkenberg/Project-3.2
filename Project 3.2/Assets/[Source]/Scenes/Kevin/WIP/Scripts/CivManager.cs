@@ -30,6 +30,7 @@ public class CivManager : MonoBehaviour
    #endregion
 
    #region Stability
+
    /// <summary>
    /// stability variable. Used to show in UI and as a condition to decide the stability modifier
    /// </summary>
