@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ship : MonoBehaviour {
-    List<Transform> myPath = new List<Transform>();
+    public List<Transform> myPath = new List<Transform>();
     [SerializeField] TransformReference currentSelected;
     [SerializeField] CameraReference currentCamera;
 
@@ -34,8 +34,9 @@ public class Ship : MonoBehaviour {
 
             if(Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
                 RaycastHit rayhit;
-                if(Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit)) {
-                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point);
+                if(Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
+                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0,0.1f,0));
+                    myPath.Add(newWaypoint.transform);
                 }
             }
             yield return null;
