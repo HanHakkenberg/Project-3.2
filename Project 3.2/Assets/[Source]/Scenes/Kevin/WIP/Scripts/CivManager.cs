@@ -154,7 +154,7 @@ public class CivManager : MonoBehaviour
       float repeatTime = 60;
       while( repeatTime != 0)
       {
-         repeatTime -= Time.deltatime;
+         repeatTime -= Time.deltaTime;
       }
       // foodToEat -= 
    }
