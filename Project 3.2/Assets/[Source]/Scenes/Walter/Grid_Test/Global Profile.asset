@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 114141218097611320}
   - {fileID: 114291363351586048}
   - {fileID: 114227437927037754}
+  - {fileID: 114723596970747110}
 --- !u!114 &114141218097611320
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1465,6 +1466,34 @@ MonoBehaviour:
   sampleCount:
     overrideState: 1
     value: 20
+--- !u!114 &114723596970747110
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8c351b9ce52154fba0d0580007d570, type: 3}
+  m_Name: Kuwahara
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 0
+    value: 0
+  radius:
+    overrideState: 0
+    value: 5
+  invertFadeDistance:
+    overrideState: 1
+    value: 0
+  fadeDistance:
+    overrideState: 1
+    value: 1000
 --- !u!114 &114805040406117186
 MonoBehaviour:
   m_ObjectHideFlags: 3
