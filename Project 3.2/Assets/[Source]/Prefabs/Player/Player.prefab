@@ -33,8 +33,8 @@ Transform:
   m_LocalPosition: {x: -6.988503, y: 12.461246, z: 4.0732274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2179707698327721234}
   - {fileID: 2179707697471147489}
+  - {fileID: 2179707698327721234}
   - {fileID: 2179707697662150472}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2179707697212885004}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2179707697471147491
 Camera:
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTransform:
     value: {fileID: 0}
-    variable: {fileID: 11400000, guid: fec26bcbddc269041be8127b5400923a, type: 2}
+    variable: {fileID: 11400000, guid: 5d57219055971404e8b88972a06f60f5, type: 2}
     useConstant: 0
     myEvent: {fileID: 0}
 --- !u!114 &2179707697471147493
@@ -350,6 +350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4471850360571747454, guid: c93cca7bdc5c8254792fa3901b7a603c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4471850360571747453, guid: c93cca7bdc5c8254792fa3901b7a603c,
         type: 3}

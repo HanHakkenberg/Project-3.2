@@ -3,7 +3,7 @@ using UnityEngine;
 
 [System.Serializable]
 public class Pool {
-    public Queue<GameObject> myQueue;
+    [HideInInspector] public Queue<GameObject> myQueue;
     public string poolTag;
     public GameObject prefab;
     public bool autoExpand;
@@ -13,7 +13,7 @@ public class Pool {
 public class ObjectPooler : MonoBehaviour {
     public static ObjectPooler instance;
 
-    public List<Pool> Pools = new List<Pool>();
+    [SerializeField] List<Pool> Pools = new List<Pool>();
     Dictionary<string, int> poolDictionary;
 
     //This Creates The Pools And Creates The Objects That You Can Pool
@@ -44,6 +44,10 @@ public class ObjectPooler : MonoBehaviour {
     //call This Void To Get A Object From The Desired Pool
     public GameObject GetFromPool(string poolTag, Vector3 position, Quaternion rotation) {
         return (TakeFromPool(poolTag, position, rotation));
+    }
+
+    public GameObject GetFromPool(string poolTag, Vector3 position) {
+        return (TakeFromPool(poolTag, position, new Quaternion()));
     }
 
     //call This Void To Get A Object From The Desired Pool And To The Desired Parent

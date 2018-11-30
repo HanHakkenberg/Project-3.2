@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour {
     [Multiline] [SerializeField] string info;
 
+    bool isListening = false;
     [SerializeField] bool listenOnEnable = true;
     [SerializeField] bool listenOnDisable = false;
 
@@ -11,14 +12,22 @@ public class GameEventListener : MonoBehaviour {
     public UnityEvent response;
 
     public void StartListening() {
-        for(int i = 0; i < myGameEvent.Length; i++) {
-            myGameEvent[i].AddListener(this);
+        if(isListening == false) {
+            isListening = true;
+
+            for(int i = 0; i < myGameEvent.Length; i++) {
+                myGameEvent[i].AddListener(this);
+            }
         }
     }
 
     public void StopListening() {
-        for(int i = 0; i < myGameEvent.Length; i++) {
-            myGameEvent[i].RemoveListener(this);
+        if(isListening == true) {
+            isListening = false;
+
+            for(int i = 0; i < myGameEvent.Length; i++) {
+                myGameEvent[i].RemoveListener(this);
+            }
         }
     }
 

@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 
 public class SetTransform : MonoBehaviour {
-    [SerializeField] TransformReference myTransform;
+    [SerializeField] CameraReference myTransform;
 
     void Awake() {
-        myTransform.Value = transform;
+        myTransform.Value = GetComponent<Camera>();
+    }
+
+    void OnEnable() {
+        myTransform.Value = GetComponent<Camera>();
     }
 }
