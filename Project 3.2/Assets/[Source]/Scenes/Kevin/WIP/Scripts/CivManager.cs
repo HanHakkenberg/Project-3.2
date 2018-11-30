@@ -15,6 +15,7 @@ public class CivManager : MonoBehaviour
       Poeple
    }
 
+   public static CivManager instance;
    #region Resources
    int buildingMaterials;
    int money;
@@ -45,6 +46,23 @@ public class CivManager : MonoBehaviour
    }
    #endregion
 
+   #region OverTime
+   int foodToEat;
+   #endregion
+
+
+   void Start() 
+   {
+      if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else if(instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+   }
 
    /// <summary>
    /// Call this function when you want to add a value to a type of resource (poeple, money, etc)
@@ -133,6 +151,11 @@ public class CivManager : MonoBehaviour
 
    public void ResourseUseOverTime()
    {
-      
+      float repeatTime = 60;
+      while( repeatTime != 0)
+      {
+         repeatTime -= Time.deltatime;
+      }
+      // foodToEat -= 
    }
 }
