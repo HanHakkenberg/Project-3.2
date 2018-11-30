@@ -32,5 +32,6 @@ public class IslandCamera : MonoBehaviour
         buildingCam.enabled = true;
         BuildingDisplay.building = thisBuilding;
         myAnimator.SetBool ("Fading", true);
+        infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
     }
 }
