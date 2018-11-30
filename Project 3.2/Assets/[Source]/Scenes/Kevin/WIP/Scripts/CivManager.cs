@@ -17,17 +17,18 @@ public class CivManager : MonoBehaviour
 
    public static CivManager instance;
    #region Resources
-   int buildingMaterials;
-   int money;
-   int food;
-   int poeple;
+   public int buildingMaterials{ get; private set; }
+   public int money{ get; private set; }
+   public int food{ get; private set; }
+   public int poeple{ get; private set; }
    #endregion
 
    #region Ledger
-   int buildingMaterialsIncome;
-   int moneyIncome;
-   int foodIncome;
-   int poepleIncome;
+   public int buildingMaterialsIncome{ get; private set; }
+   public int moneyIncome{ get; private set; }
+   public int foodIncome{ get; private set; }
+   public int poepleIncome{ get; private set; }
+   
    #endregion
 
    #region Stability
@@ -66,10 +67,6 @@ public class CivManager : MonoBehaviour
 
    void Start() 
    {
-      //Starting variabels for the resources
-      poeple = 10;
-      food = 1000;
-
       if(instance == null)
         {
             instance = this;
