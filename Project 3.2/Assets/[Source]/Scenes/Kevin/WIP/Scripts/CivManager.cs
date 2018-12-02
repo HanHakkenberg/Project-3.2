@@ -64,8 +64,7 @@ public class CivManager : MonoBehaviour
    private int foodStep;
    #endregion
 
-
-   void Start() 
+   void Awake() 
    {
       if(instance == null)
         {
@@ -76,6 +75,9 @@ public class CivManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+   }
+   void Start() 
+   {
         UpdateStability(0);
         ResourseUseOverTimeVariableUpdate();
         StartCoroutine(ResourseUseOverTime());
@@ -88,6 +90,7 @@ public class CivManager : MonoBehaviour
    /// <param name="type">The type the value gets added to</param>
    public void AddIncome(int toAdd, Type type)
    {
+      //makes sure all input is positive
       toAdd = Mathf.Abs(toAdd);
       
       switch (type)
@@ -95,20 +98,25 @@ public class CivManager : MonoBehaviour
          case Type.BuildingMaterials:
             buildingMaterials += toAdd;
             buildingMaterialsIncome += toAdd;
+            UIManager.instance.RecourceUIPopup(toAdd,Type.BuildingMaterials);
             break;
          case Type.Money:
             money += toAdd;
             moneyIncome += toAdd;
+            UIManager.instance.RecourceUIPopup(toAdd,Type.Money);
             break;
          case Type.Food:
             food += toAdd;
             foodIncome += toAdd;
+            UIManager.instance.RecourceUIPopup(toAdd,Type.Food);            
             break;
          case Type.Poeple:
             poeple += toAdd;
             poepleIncome += toAdd;
+            UIManager.instance.RecourceUIPopup(toAdd,Type.Poeple);
             break;            
       }
+      UIManager.instance.UpdateResourceUI();
    }
 
    /// <summary>
@@ -118,23 +126,35 @@ public class CivManager : MonoBehaviour
    /// <param name="type">The type the value gets removed from</param>
    public void RemoveIncome(int toRemove, Type type)
    {
+      //makes sure all input is negative
       toRemove = -Mathf.Abs(toRemove);
       
       switch (type)
       {
          case Type.BuildingMaterials:
-            buildingMaterials -= toRemove;
+            buildingMaterials += toRemove;
+            buildingMaterialsIncome += toRemove;
+            UIManager.instance.RecourceUIPopup(toRemove,Type.BuildingMaterials);
             break;
          case Type.Money:
-            money -= toRemove;
+            money += toRemove;
+            moneyIncome += toRemove;
+            UIManager.instance.RecourceUIPopup(toRemove,Type.Money);
             break;
          case Type.Food:
-            food -= toRemove;
+            print(toRemove);
+            food += toRemove;
+            print(food);
+            foodIncome += toRemove;
+            UIManager.instance.RecourceUIPopup(toRemove,Type.Food);
             break;
          case Type.Poeple:
-            poeple -= toRemove;
+            poeple += toRemove;
+            poepleIncome += toRemove;
+            UIManager.instance.RecourceUIPopup(toRemove,Type.Poeple);
             break;
       }
+      UIManager.instance.UpdateResourceUI();
    }
 
    /// <summary>
@@ -164,13 +184,13 @@ public class CivManager : MonoBehaviour
             stabilityModifier = 1;
          break;
       }
+      UIManager.instance.UpdateResourceUI();
    }
 
    private void ResourseUseOverTimeVariableUpdate()
    {
       foodToEat = poeple * 3;
       foodStep = foodToEat / GameManager.instance.lengthOfDay;
-      print(foodStep);
    }
 
    public IEnumerator ResourseUseOverTime()
