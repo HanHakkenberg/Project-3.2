@@ -5,8 +5,12 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections;
+
 using Sirenix.OdinInspector;
+
+#if UNITY_EDITOR
 using Sirenix.OdinInspector.Editor;
+#endif
 
 using Vector3 = UnityEngine.Vector3;
 using Vector2 = UnityEngine.Vector2;
@@ -320,6 +324,7 @@ namespace Core.Building
         */
     }
 
+    #if UNITY_EDITOR
     [CustomEditor(typeof(GridBaker), editorForChildClasses: false)]
     public class GridBakerEditor : OdinEditor
     {        
@@ -408,4 +413,5 @@ namespace Core.Building
             else{ Debug.LogError("GridBaker does not have a grid assigned");}
         }
     }
+    #endif
 }
