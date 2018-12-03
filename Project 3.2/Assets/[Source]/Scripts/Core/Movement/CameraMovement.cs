@@ -4,6 +4,7 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] Transform cameraPivot;
     [SerializeField] Transform cameraTarget;
     [SerializeField] int camAngle;
+    [SerializeField] bool borderMovement = false;
 
     [Header("Movement")]
     [SerializeField] float movementSpeed = 10;
@@ -17,7 +18,6 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] int minZoom = 10;
     [SerializeField] int startZoom = 15;
     [SerializeField] int zoomSpeed = 10;
-
 
     [Header("Position Border")]
     [SerializeField] int borderYMin, borderYMax;
@@ -38,7 +38,6 @@ public class CameraMovement : MonoBehaviour {
         UpdateCamZoom();
     }
 
-
     #region Camera Movement And Rotation
     Vector3 newPosition = new Vector3();
 
@@ -46,7 +45,7 @@ public class CameraMovement : MonoBehaviour {
 
         newPosition = (VerMovement() + HorMovement());
 
-        if(newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
+        if (newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
             newPosition = newPosition * (movementSpeed * Time.deltaTime / 2) + transform.position;
         }
         else {
@@ -58,20 +57,21 @@ public class CameraMovement : MonoBehaviour {
 
     //Checks If The Player Wants To Move Horizontaly
     Vector3 HorMovement() {
-
-        if(Input.GetButton("Horizontal")) {
-            if(Input.GetAxis("Horizontal") > 0) {
+        if (Input.GetButton("Horizontal")) {
+            if (Input.GetAxis("Horizontal") > 0) {
                 return (transform.right);
             }
             else {
                 return (-transform.right);
             }
         }
-        else if(Input.mousePosition.x >= Screen.width - camBorderSize) {
-            return (transform.right);
-        }
-        else if(Input.mousePosition.x <= camBorderSize) {
-            return (-transform.right);
+        else if (borderMovement == true) {
+            if (Input.mousePosition.x >= Screen.width - camBorderSize) {
+                return (transform.right);
+            }
+            else if (Input.mousePosition.x <= camBorderSize) {
+                return (-transform.right);
+            }
         }
 
         return (new Vector3());
@@ -79,20 +79,21 @@ public class CameraMovement : MonoBehaviour {
 
     //Checks If The Player Wants To Move Verticaly
     Vector3 VerMovement() {
-
-        if(Input.GetButton("Vertical")) {
-            if(Input.GetAxis("Vertical") > 0) {
+        if (Input.GetButton("Vertical")) {
+            if (Input.GetAxis("Vertical") > 0) {
                 return (transform.forward);
             }
             else {
                 return (-transform.forward);
             }
         }
-        else if(Input.mousePosition.y >= Screen.height - camBorderSize) {
-            return (transform.forward);
-        }
-        else if(Input.mousePosition.y <= camBorderSize) {
-            return (-transform.forward);
+        else if (borderMovement == true) {
+            if (Input.mousePosition.y >= Screen.height - camBorderSize) {
+                return (transform.forward);
+            }
+            else if (Input.mousePosition.y <= camBorderSize) {
+                return (-transform.forward);
+            }
         }
 
         return (new Vector3());
@@ -103,31 +104,28 @@ public class CameraMovement : MonoBehaviour {
     bool rotating;
 
     Vector3 UpdateCameraRotation() {
-
-        if(Input.GetButton("Fire3")) {
-
-            if(rotating == false) {
+        if (Input.GetButton("Fire3")) {
+            if (rotating == false) {
                 oldMousePos = Input.mousePosition;
                 rotating = true;
             }
 
-            if(Input.mousePosition.x - oldMousePos.x >= 0.1f) {
+            if (Input.mousePosition.x - oldMousePos.x >= 0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
             }
-            else if(Input.mousePosition.x - oldMousePos.x <= -0.1f) {
+            else if (Input.mousePosition.x - oldMousePos.x <= -0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
             }
         }
         else {
-            rotating = false;
-
-            if(Input.GetAxis("Camera Rotation") >= 0.1f) {
+            if (Input.GetAxis("Camera Rotation") >= 0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
             }
-            else if(Input.GetAxis("Camera Rotation") <= -0.1f) {
+            else if (Input.GetAxis("Camera Rotation") <= -0.1f) {
                 return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
-
             }
+
+            rotating = false;
         }
 
         return (transform.eulerAngles);
@@ -135,7 +133,7 @@ public class CameraMovement : MonoBehaviour {
 
     //Calculates The Zoom For The Camera
     void UpdateCamZoom() {
-        if(Input.GetAxis("Mouse ScrollWheel") != 0) {
+        if (Input.GetAxis("Mouse ScrollWheel") != 0) {
             cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
         }
         else {

@@ -7,8 +7,17 @@ public class Ship : MonoBehaviour {
     [SerializeField] TransformReference currentSelected;
     [SerializeField] CameraReference currentCamera;
 
+    [Header("Spotting")]
+    [SerializeField] int SpottingRefreshTimer;
+    [SerializeField] int spottingSphereSize;
+    [SerializeField] LayerMask spottingMask;
+
+    void Start() {
+        StartCoroutine(IslandCheck());
+    }
+
     void OnMouseDown() {
-        if(!Input.GetButton("Waypoint Interact")) {
+        if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
             StartCoroutine(PathUpdate());
         }
@@ -22,7 +31,7 @@ public class Ship : MonoBehaviour {
     }
 
     public void DestroyShip() {
-        for(int i = 0; i < myPath.Count; i++) {
+        for (int i = 0; i < myPath.Count; i++) {
             ObjectPooler.instance.AddToPool("Waypoint", myPath[i].gameObject);
         }
     }
@@ -30,12 +39,12 @@ public class Ship : MonoBehaviour {
     IEnumerator PathUpdate() {
         StopCoroutine(PathUpdate());
 
-        while(currentSelected.Value == transform) {
+        while (currentSelected.Value == transform) {
 
-            if(Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
+            if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
                 RaycastHit rayhit;
-                if(Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
-                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0,0.1f,0));
+                if (Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
+                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.1f, 0));
                     myPath.Add(newWaypoint.transform);
                 }
             }
@@ -43,5 +52,17 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    IEnumerator IslandCheck() {
+        while (true) {
+            Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
 
+            if (spottedObjects.Length > 0) {
+                for (int i = 0; i < spottedObjects.Length; i++) {
+                    spottedObjects[i].transform.GetChild(0).gameObject.SetActive(true);
+                }
+            }
+
+            yield return new WaitForSeconds(SpottingRefreshTimer);
+        }
+    }
 }

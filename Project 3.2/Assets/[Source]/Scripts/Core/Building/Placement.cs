@@ -13,6 +13,10 @@ namespace Core.Building
         [SerializeField] private GameObject buildingPrab;
 
         [SerializeField] private LayerMask layerMask;
+        
+        [Tooltip("Transform which holds the spawned buildings")]
+        [SceneObjectsOnly]
+        [SerializeField] private Transform buildingHolder;
 
         private Vector3 mousePos = Vector3.zero;
         
@@ -23,6 +27,8 @@ namespace Core.Building
         private bool placingObject;
 
         private Transform objectWerePlacing;
+
+        private CellObject cellObj;
         
         void Start()
         {
@@ -44,7 +50,7 @@ namespace Core.Building
             {
                 if (!placingObject)
                 {
-                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, transform).transform;
+                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, buildingHolder).transform;
                     placingObject = true;
                 }
                 else
@@ -59,18 +65,23 @@ namespace Core.Building
                 RaycastHit hit;
                 if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out hit, Mathf.Infinity, layerMask))
                 {
-                    CellObject cellObj = hit.transform.GetComponent<CellObject>();
+                    CellObject cellObjHolder = hit.transform.GetComponent<CellObject>();
 
-                    if (cellObj != null)
+                    if (cellObjHolder != null)
                     {
+                        cellObj = cellObjHolder;
+                        
+                        Debug.Log("cellObj is not null");
                         if (cellObj.cell != null)
                         {
                             if (cellObj.cell.Availability == Cell.AvailabilityState.Available)
                             {
+                                Debug.Log("Cell Available");
                                 objectWerePlacing.position = cellObj.transform.position;
                             }
                             else
                             {
+                                Debug.Log("Cell Unavailable");
                                 objectWerePlacing.position = hit.point;
                             }
                         }
