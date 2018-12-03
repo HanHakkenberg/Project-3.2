@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4aa20d3-b254-4f12-b61c-6ac95fd1a1cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project 3.2/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project 3.2/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project 3.2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project 3.2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project 3.2/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Effects/Materials/SWS_WaterEffects_Mobile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Effects/Materials/SWS_WaterEffects_Mobile.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Effects/Materials/SWS_WaterSplashes_Mobile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Effects/Materials/SWS_WaterSplashes_Mobile.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Materials/StylizedWater_Desktop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Materials/StylizedWater_Desktop.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Materials/StylizedWater_Mobile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Materials/StylizedWater_Mobile.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Prefabs/StylizedWater_Mobile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Prefabs/StylizedWater_Mobile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Prefabs/StylizedWater_Mobile.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Art Assets/StylizedWater/Prefabs/StylizedWater_Mobile.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/ConsoleProDebug.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/ConsoleProDebug.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/Editor Console Pro Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/Editor Console Pro Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/Editor/ConsolePro.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ConsolePro/Editor/ConsolePro.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/RainbowAssets/RainbowFolders/Editor/Data/RainbowFoldersSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/RainbowAssets/RainbowFolders/Editor/Data/RainbowFoldersSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source/Source.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source/Source.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source/Source.zip.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Source/Source.zip.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Global Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Global Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Settings/RenderPipeline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Settings/RenderPipeline/LightweightRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Settings/RenderPipeline/LightweightRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2022419063">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="9632" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="9632" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="22" />
+          <entry key="html" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="22" />
+          <entry key="HTML" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="189" column="43" selection-start-line="189" selection-start-column="43" selection-end-line="189" selection-end-column="43" />
+              <folding>
+                <marker date="1543809420052" expanded="false" signature="6:331" ph="..." />
+                <marker date="1543809420052" expanded="true" signature="356:13508" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="461:8843" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="476:658" ph="/* TODO: Fix transform not affecting baking position. ... */" />
+                <marker date="1543809420052" expanded="true" signature="676:4323" ph="Variables" />
+                <marker date="1543809420052" expanded="true" signature="707:3221" ph="Serialized" />
+                <marker date="1543809420052" expanded="false" signature="1931:3197" ph="Editor Buttons" />
+                <marker date="1543809420052" expanded="true" signature="2329:2608" ph="/* [ContextMenu(&quot;Toggle Preview-Mode&quot;)] ... */" />
+                <marker date="1543809420052" expanded="true" signature="2710:2875" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="2971:3145" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="3235:4303" ph="Non-Serialized" />
+                <marker date="1543809420052" expanded="false" signature="3416:3625" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="3450:3611" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="3729:4279" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
+                <marker date="1543809420052" expanded="true" signature="4333:8836" ph="Methods" />
+                <marker date="1543809420052" expanded="false" signature="4420:6659" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="4893:6458" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="5071:6444" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="5513:6150" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="5773:5935" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="5964:6128" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="6175:6426" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="6685:6898" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="6735:6876" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="7003:7655" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="7239:7546" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="7563:7645" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="7717:8793" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="7758:8783" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="8062:8769" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="8127:8637" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="8870:10417" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="8885:8994" ph="/// Enum representing the state of the availability of this cell ... " />
+                <marker date="1543809420052" expanded="false" signature="9032:9439" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="9055:9135" ph="/// This Cell is available. ... " />
+                <marker date="1543809420052" expanded="true" signature="9172:9274" ph="/// This Cell is unavailable, for it is occupied. ... " />
+                <marker date="1543809420052" expanded="true" signature="9313:9405" ph="/// Nothing can be placed on this Cell, ... " />
+                <marker date="1543809420052" expanded="false" signature="9625:9979" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="9651:9969" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="9705:9799" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="9820:9955" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="10063:10161" ph="{...}" />
+                <marker date="1543809420052" expanded="false" signature="10171:10411" ph="/* public Vector3 Position { get; private set; } ... */" />
+                <marker date="1543809420052" expanded="false" signature="10532:13506" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="10592:10648" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="10675:10981" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="10726:10859" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="10876:10971" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11024:11672" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11050:11662" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11100:11529" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11181:11376" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11401:11511" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11694:11854" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="11875:13500" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="12048:12330" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
+                <marker date="1543809420052" expanded="true" signature="12429:13412" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="12487:13398" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="12546:12923" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
+                <marker date="1543809420052" expanded="true" signature="13217:13380" ph="{...}" />
+                <marker date="1543809420052" expanded="true" signature="13412:13490" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+              <folding>
+                <marker date="1543811659752" expanded="true" signature="6:107" ph="..." />
+                <marker date="1543811659752" expanded="true" signature="132:2996" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="227:2994" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="614:676" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="707:2836" ph="{...}" />
+                <marker date="1543811659752" expanded="false" signature="807:916" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1046:1453" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1096:1293" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1314:1439" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1496:2826" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1697:2812" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1840:2607" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="1912:2373" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="2033:2182" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="2215:2347" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="2402:2585" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="2632:2794" ph="{...}" />
+                <marker date="1543811659752" expanded="true" signature="2865:2988" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+              <folding>
+                <marker date="1543811196104" expanded="false" signature="6:78" ph="..." />
+                <marker date="1543811196104" expanded="true" signature="108:1339" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="148:232" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="166:226" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="238:319" ph="/// Gets worldspace position of the cursor. ... " />
+                <marker date="1543811196104" expanded="true" signature="366:426" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="432:513" ph="/// Gets worldspace position of the cursor. ... " />
+                <marker date="1543811196104" expanded="true" signature="573:631" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="637:718" ph="/// Gets worldspace position of the cursor. ... " />
+                <marker date="1543811196104" expanded="true" signature="785:857" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="863:944" ph="/// Gets worldspace position of the cursor. ... " />
+                <marker date="1543811196104" expanded="true" signature="1026:1336" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="1175:1227" ph="{...}" />
+                <marker date="1543811196104" expanded="true" signature="1240:1330" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/CellObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <marker date="1543809266634" expanded="true" signature="6:92" ph="..." />
+                <marker date="1543809266634" expanded="true" signature="117:752" ph="{...}" />
+                <marker date="1543809266634" expanded="true" signature="207:750" ph="{...}" />
+                <marker date="1543809266634" expanded="true" signature="222:470" ph="Variables" />
+                <marker date="1543809266634" expanded="true" signature="480:744" ph="Methods" />
+                <marker date="1543809266634" expanded="true" signature="536:611" ph="{...}" />
+                <marker date="1543809266634" expanded="true" signature="641:716" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/TableMatrixExamples.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="83" />
+              <folding>
+                <marker date="1543329684000" expanded="true" signature="54:2181" ph="{...}" />
+                <marker date="1543329684000" expanded="false" signature="67:141" ph="..." />
+                <marker date="1543329684000" expanded="true" signature="147:402" ph="/* Inheriting from SerializedMonoBehaviour is only needed if you want Odin to serialize the multi-dimensional arr ... */" />
+                <marker date="1543329684000" expanded="true" signature="564:2179" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1754:2165" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1869:2002" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <marker date="1543671308553" expanded="true" signature="6:390" ph="..." />
+                <marker date="1543671308553" expanded="true" signature="518:20682" ph="{...}" />
+                <marker date="1543671308553" expanded="false" signature="534:6588" ph="Variables" />
+                <marker date="1543671308553" expanded="true" signature="814:915" ph="/* public string horizontalAxis = &quot;Horizontal&quot;; ... */" />
+                <marker date="1543671308553" expanded="true" signature="1083:1175" ph="/* public KeyCode zoomInKey = KeyCode.R; ... */" />
+                <marker date="1543671308553" expanded="true" signature="1523:1623" ph="/* public KeyCode rotateRightKey = KeyCode.E; ... */" />
+                <marker date="1543671308553" expanded="true" signature="1789:1889" ph="/* public KeyCode mouseRotationKey = KeyCode.LeftAlt; ... */" />
+                <marker date="1543671308553" expanded="false" signature="1903:5010" ph="Serialized" />
+                <marker date="1543671308553" expanded="false" signature="1939:2135" ph="Input" />
+                <marker date="1543671308553" expanded="true" signature="1970:2056" ph="/// Controls used by this player. ... " />
+                <marker date="1543671308553" expanded="false" signature="2153:2632" ph="Movement" />
+                <marker date="1543671308553" expanded="false" signature="2650:3956" ph="Height" />
+                <marker date="1543671308553" expanded="false" signature="3974:4396" ph="MapLimits" />
+                <marker date="1543671308553" expanded="false" signature="4414:4982" ph="Targeting" />
+                <marker date="1543671308553" expanded="true" signature="4695:4780" ph="/// Are we following our target? ... " />
+                <marker date="1543671308553" expanded="true" signature="4821:4954" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="4855:4940" ph="{...}" />
+                <marker date="1543671308553" expanded="false" signature="5028:6568" ph="Non-Serialized" />
+                <marker date="1543671308553" expanded="false" signature="5068:5839" ph="Input" />
+                <marker date="1543671308553" expanded="true" signature="5181:5313" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="5215:5299" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="5362:5416" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="5468:5522" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="5565:5619" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="5670:5724" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="6151:6540" ph="/* public float DeltaTime ... */" />
+                <marker date="1543671308553" expanded="false" signature="6598:7945" ph="Unity_Methods" />
+                <marker date="1543671308553" expanded="true" signature="6649:6715" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="6747:6800" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="6832:6886" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="6920:6982" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7013:7170" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7056:7160" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7205:7366" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7247:7356" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7403:7925" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7440:7915" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="7621:7901" ph="/* Gizmos.DrawWireSphere(GlobalVariables.MouseWorldPosition(), 1); ... */" />
+                <marker date="1543671308553" expanded="false" signature="7955:20675" ph="TestCamera_Methods" />
+                <marker date="1543671308553" expanded="false" signature="7991:10697" ph="InputActions" />
+                <marker date="1543671308553" expanded="true" signature="8040:8098" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="8163:9550" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="8199:8493" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="8230:8285" ph="/* Leave menu. ... */" />
+                <marker date="1543671308553" expanded="true" signature="8510:9540" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="8541:8595" ph="/* Enter menu. ... */" />
+                <marker date="1543671308553" expanded="true" signature="8763:9431" ph="/* We do want the menu toggle to remain active. Rather than moving the action to its ... */" />
+                <marker date="1543671308553" expanded="true" signature="9615:9689" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="9754:10175" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="9862:9954" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10014:10109" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10245:10319" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10399:10481" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10557:10578" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10656:10677" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10707:10769" ph="/// Update camera ... " />
+                <marker date="1543671308553" expanded="true" signature="10805:11214" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="10828:11094" ph="/* if (FollowingTarget) ... */" />
+                <marker date="1543671308553" expanded="true" signature="11225:11319" ph="/// Move camera with keyboard or with screen edge ... " />
+                <marker date="1543671308553" expanded="true" signature="11351:14293" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="11395:11852" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="11889:13663" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="12474:12638" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="12692:12856" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="12927:13091" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="13145:13309" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="13416:13587" ph="/* targetMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f)) * targetMove; ... */" />
+                <marker date="1543671308553" expanded="true" signature="13692:14282" ph="/* if(usePanning &amp;&amp; Input.GetKey(panningKey) &amp;&amp; MouseAxis != Vector2.zero) //Uses ... */" />
+                <marker date="1543671308553" expanded="true" signature="14303:14378" ph="/// Calculate height &amp; zooming ... " />
+                <marker date="1543671308553" expanded="true" signature="14419:17487" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="14515:14581" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="14618:14740" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="14779:14908" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="15139:15295" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="15667:17164" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="15849:16795" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="16844:17133" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="17205:17476" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="17497:17564" ph="/// Rotates the camera ... " />
+                <marker date="1543671308553" expanded="true" signature="17596:18015" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="17643:17799" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="17858:18005" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="18025:18104" ph="/// follow targetif target != null ... " />
+                <marker date="1543671308553" expanded="true" signature="18140:18405" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="18415:18485" ph="/// Limit camera movement ... " />
+                <marker date="1543671308553" expanded="true" signature="18522:19020" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="18559:18611" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="19030:19135" ph="/// set the target ... " />
+                <marker date="1543671308553" expanded="true" signature="19183:19238" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="19248:19337" ph="/// reset the target (target is set to null) ... " />
+                <marker date="1543671308553" expanded="true" signature="19371:19424" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="19434:19512" ph="/// calculates distance to ground ... " />
+                <marker date="1543671308553" expanded="true" signature="19553:19955" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="19841:19921" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="20038:20126" ph="{...}" />
+                <marker date="1543671308553" expanded="true" signature="20140:20651" ph="/* gets position of mouse in worldspace. ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleLeftExamples.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <marker date="1543329684000" expanded="true" signature="54:456" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="132:454" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleExamples.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="57" />
+              <folding>
+                <marker date="1543329684000" expanded="true" signature="54:1802" ph="{...}" />
+                <marker date="1543329684000" expanded="false" signature="67:97" ph="..." />
+                <marker date="1543329684000" expanded="true" signature="146:1092" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1144:1286" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1350:1434" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1498:1538" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1585:1800" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/HorizontalGroupAttributeExamples.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="32" />
+              <folding>
+                <marker date="1543329684000" expanded="true" signature="54:1527" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="85:340" ph="/* The width can either be specified as percentage or pixels. ... */" />
+                <marker date="1543329684000" expanded="true" signature="407:1525" ph="{...}" />
+                <marker date="1543329684000" expanded="true" signature="1498:1519" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample2.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="73" />
+              <folding>
+                <marker date="1543329684000" expanded="true" signature="54:695" ph="{...}" />
+                <marker date="1543329684000" expanded="false" signature="67:112" ph="..." />
+                <marker date="1543329684000" expanded="true" signature="176:693" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>debugging</find>
+      <find>Grid</find>
+      <find>DebugBounds</find>
+      <find>layer</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/TableMatrixExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Utilities/DebugExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/BasicOdinEditorExampleWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ProgressBarExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/CellObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/GroundChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/HorizontalGroupAttributeExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputTreeViewLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleLeftExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyTooltipExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../TowerDefense/Assets/Scripts/TowerDefense/Towers/Placement/TowerPlacementGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleExamples.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/QuicklyInspectObjects.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputTreeViewLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Grid.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs" />
+        <option value="$USER_HOME$/Desktop/Grid Influence/TowerPlacementGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/GroundChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/CellObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs" />
+        <option value="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="12880">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="12880" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4aa20d3-b254-4f12-b61c-6ac95fd1a1cf" name="Default Changelist" comment="" />
+      <created>1543417991595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543417991595</updated>
+      <workItem from="1543417995400" duration="1285000" />
+      <workItem from="1543565748293" duration="25448000" />
+      <workItem from="1543667447169" duration="3603000" />
+      <workItem from="1543671278249" duration="69000" />
+      <workItem from="1543671667916" duration="2219000" />
+      <workItem from="1543751964237" duration="20647000" />
+      <workItem from="1543777252935" duration="7190000" />
+      <workItem from="1543790169922" duration="21195000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="81656000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08742005" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937758" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32987553" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32987553" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32987553" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputTreeViewLine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-896">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/CameraMovement.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/PropertyTooltipExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/QuicklyInspectObjects.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/BasicOdinEditorExampleWindow.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../[Nak]/AstarProject/Assets/Pathfinding ToolKit/AstarPathfindingProject/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ProgressBarExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Grid.cs" />
+    <entry file="file://$PROJECT_DIR$/../../TowerDefense/Assets/Scripts/TowerDefense/Towers/Placement/TowerPlacementGrid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Grid Influence/TowerPlacementGrid.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Utilities/ThreadManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/AsyncAwaitUtil/Documentation/ReadMe.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Utilities/DebugExtension.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="34" />
+          <folding>
+            <marker date="1379720926000" expanded="false" signature="6:69" ph="..." />
+            <marker date="1379720926000" expanded="false" signature="71:350" ph="/// Debug Extension ... " />
+            <marker date="1379720926000" expanded="true" signature="386:47043" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="390:27660" ph="DebugDrawFunctions" />
+            <marker date="1379720926000" expanded="false" signature="420:887" ph="/// &#9;- Debugs a point. ... " />
+            <marker date="1379720926000" expanded="false" signature="1012:1396" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="1400:1795" ph="/// &#9;- Debugs a point. ... " />
+            <marker date="1379720926000" expanded="false" signature="1907:1978" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="1982:2400" ph="/// &#9;- Debugs an axis-aligned bounding box. ... " />
+            <marker date="1379720926000" expanded="true" signature="2503:3679" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="3683:4028" ph="/// &#9;- Debugs an axis-aligned bounding box. ... " />
+            <marker date="1379720926000" expanded="false" signature="4118:4181" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="4185:4793" ph="/// &#9;- Debugs a local cube. ... " />
+            <marker date="1379720926000" expanded="false" signature="4954:6346" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="6350:6891" ph="/// &#9;- Debugs a local cube. ... " />
+            <marker date="1379720926000" expanded="false" signature="7039:7122" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="7126:7721" ph="/// &#9;- Debugs a local cube. ... " />
+            <marker date="1379720926000" expanded="false" signature="7878:9317" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="9321:9849" ph="/// &#9;- Debugs a local cube. ... " />
+            <marker date="1379720926000" expanded="false" signature="9993:10072" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="10076:10684" ph="/// &#9;- Debugs a circle. ... " />
+            <marker date="1379720926000" expanded="false" signature="10823:11788" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="11488:11785" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="11792:12297" ph="/// &#9;- Debugs a circle. ... " />
+            <marker date="1379720926000" expanded="false" signature="12424:12503" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="12507:13042" ph="/// &#9;- Debugs a circle. ... " />
+            <marker date="1379720926000" expanded="false" signature="13168:13245" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="13249:13681" ph="/// &#9;- Debugs a circle. ... " />
+            <marker date="1379720926000" expanded="false" signature="13795:13880" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="13884:14385" ph="/// &#9;- Debugs a wire sphere. ... " />
+            <marker date="1379720926000" expanded="false" signature="14516:15641" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="14965:15638" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="15645:16073" ph="/// &#9;- Debugs a wire sphere. ... " />
+            <marker date="1379720926000" expanded="false" signature="16191:16268" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="16272:16867" ph="/// &#9;- Debugs a cylinder. ... " />
+            <marker date="1379720926000" expanded="false" signature="17003:18068" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="18072:18592" ph="/// &#9;- Debugs a cylinder. ... " />
+            <marker date="1379720926000" expanded="false" signature="18715:18792" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="18796:19370" ph="/// &#9;- Debugs a cone. ... " />
+            <marker date="1379720926000" expanded="false" signature="19511:20720" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="20724:21227" ph="/// &#9;- Debugs a cone. ... " />
+            <marker date="1379720926000" expanded="false" signature="21355:21436" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="21440:21920" ph="/// &#9;- Debugs a cone. ... " />
+            <marker date="1379720926000" expanded="false" signature="22042:22118" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="22122:22531" ph="/// &#9;- Debugs a cone. ... " />
+            <marker date="1379720926000" expanded="false" signature="22640:22722" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="22726:23227" ph="/// &#9;- Debugs an arrow. ... " />
+            <marker date="1379720926000" expanded="false" signature="23351:23522" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="23526:23955" ph="/// &#9;- Debugs an arrow. ... " />
+            <marker date="1379720926000" expanded="false" signature="24066:24141" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="24145:24733" ph="/// &#9;- Debugs a capsule. ... " />
+            <marker date="1379720926000" expanded="false" signature="24868:26929" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="25799:26926" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="26933:27447" ph="/// &#9;- Debugs a capsule. ... " />
+            <marker date="1379720926000" expanded="false" signature="27569:27646" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="27664:45583" ph="GizmoDrawFunctions" />
+            <marker date="1379720926000" expanded="true" signature="27694:27972" ph="/// &#9;- Draws a point. ... " />
+            <marker date="1379720926000" expanded="true" signature="28053:28386" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="28390:28589" ph="/// &#9;- Draws a point. ... " />
+            <marker date="1379720926000" expanded="true" signature="28657:28706" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="28710:28925" ph="/// &#9;- Draws an axis-aligned bounding box. ... " />
+            <marker date="1379720926000" expanded="true" signature="28984:29926" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="29930:30072" ph="/// &#9;- Draws an axis-aligned bounding box. ... " />
+            <marker date="1379720926000" expanded="true" signature="30118:30159" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="30163:30540" ph="/// &#9;- Draws a local cube. ... " />
+            <marker date="1379720926000" expanded="true" signature="30657:31815" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="31819:32126" ph="/// &#9;- Draws a local cube. ... " />
+            <marker date="1379720926000" expanded="true" signature="32230:32291" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="32295:32664" ph="/// &#9;- Draws a local cube. ... " />
+            <marker date="1379720926000" expanded="true" signature="32777:33919" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="33923:34221" ph="/// &#9;- Draws a local cube. ... " />
+            <marker date="1379720926000" expanded="true" signature="34321:34378" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="34382:34788" ph="/// &#9;- Draws a circle. ... " />
+            <marker date="1379720926000" expanded="true" signature="34883:35914" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="35611:35881" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="35918:36221" ph="/// &#9;- Draws a circle. ... " />
+            <marker date="1379720926000" expanded="true" signature="36304:36361" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="36365:36698" ph="/// &#9;- Draws a circle. ... " />
+            <marker date="1379720926000" expanded="true" signature="36780:36841" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="36845:37075" ph="/// &#9;- Draws a circle. ... " />
+            <marker date="1379720926000" expanded="true" signature="37145:37208" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="37243:37632" ph="/// &#9;- Draws a cylinder. ... " />
+            <marker date="1379720926000" expanded="true" signature="37727:38598" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="38602:38916" ph="/// &#9;- Draws a cylinder. ... " />
+            <marker date="1379720926000" expanded="true" signature="38998:39053" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="39057:39435" ph="/// &#9;- Draws a cone. ... " />
+            <marker date="1379720926000" expanded="true" signature="39532:40700" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="40704:41011" ph="/// &#9;- Draws a cone. ... " />
+            <marker date="1379720926000" expanded="true" signature="41095:41154" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="41158:41440" ph="/// &#9;- Draws a cone. ... " />
+            <marker date="1379720926000" expanded="true" signature="41518:41572" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="41576:41787" ph="/// &#9;- Draws a cone. ... " />
+            <marker date="1379720926000" expanded="true" signature="41852:41912" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="41916:42216" ph="/// &#9;- Draws an arrow. ... " />
+            <marker date="1379720926000" expanded="true" signature="42296:42509" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="42513:42741" ph="/// &#9;- Draws an arrow. ... " />
+            <marker date="1379720926000" expanded="true" signature="42808:42861" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="42865:43249" ph="/// &#9;- Draws a capsule. ... " />
+            <marker date="1379720926000" expanded="true" signature="43340:45123" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="44179:45090" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="45127:45437" ph="/// &#9;- Draws a capsule. ... " />
+            <marker date="1379720926000" expanded="true" signature="45515:45569" ph="{...}" />
+            <marker date="1379720926000" expanded="false" signature="45587:47041" ph="DebugFunctions" />
+            <marker date="1379720926000" expanded="true" signature="45613:45966" ph="/// &#9;- Gets the methods of an object. ... " />
+            <marker date="1379720926000" expanded="true" signature="46049:46327" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46176:46301" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46196:46238" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46242:46297" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46331:46678" ph="/// &#9;- Gets the methods of a type. ... " />
+            <marker date="1379720926000" expanded="true" signature="46758:47027" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46876:47001" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46896:46938" ph="{...}" />
+            <marker date="1379720926000" expanded="true" signature="46942:46997" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/GroundChecker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1888">
+          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+          <folding>
+            <marker date="1543763242127" expanded="true" signature="6:32" ph="..." />
+            <marker date="1543763242127" expanded="true" signature="1086:1319" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="1343:1718" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="1358:1495" ph="/* Check ground, with an origin point defaulting to the bottom middle ... */" />
+            <marker date="1543763242127" expanded="true" signature="1545:1712" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="1724:1930" ph="/// Checks for ground underneath, to determine some info about it, including the slope angle. ... " />
+            <marker date="1543763242127" expanded="true" signature="1974:4793" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="2056:2159" ph="/* SPHERECAST ... */" />
+            <marker date="1543763242127" expanded="true" signature="2273:3030" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="2296:2562" ph="/* Angle of our slope (between these two vectors). ... */" />
+            <marker date="1543763242127" expanded="true" signature="2646:2773" ph="/* Find the vector that represents our slope as well. ... */" />
+            <marker date="1543763242127" expanded="true" signature="3040:3360" ph="/* Now that's all fine and dandy, but on edges, corners, etc, we get angle values that we don't want. ... */" />
+            <marker date="1543763242127" expanded="true" signature="3546:4787" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="3957:4553" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="4570:4777" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="4826:5553" ph="{...}" />
+            <marker date="1543763242127" expanded="true" signature="4855:5547" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/TableMatrixExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="83" />
+          <folding>
+            <marker date="1543329684000" expanded="true" signature="54:2181" ph="{...}" />
+            <marker date="1543329684000" expanded="false" signature="67:141" ph="..." />
+            <marker date="1543329684000" expanded="true" signature="147:402" ph="/* Inheriting from SerializedMonoBehaviour is only needed if you want Odin to serialize the multi-dimensional arr ... */" />
+            <marker date="1543329684000" expanded="true" signature="564:2179" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1754:2165" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1869:2002" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <marker date="1543671308553" expanded="true" signature="6:390" ph="..." />
+            <marker date="1543671308553" expanded="true" signature="518:20682" ph="{...}" />
+            <marker date="1543671308553" expanded="false" signature="534:6588" ph="Variables" />
+            <marker date="1543671308553" expanded="true" signature="814:915" ph="/* public string horizontalAxis = &quot;Horizontal&quot;; ... */" />
+            <marker date="1543671308553" expanded="true" signature="1083:1175" ph="/* public KeyCode zoomInKey = KeyCode.R; ... */" />
+            <marker date="1543671308553" expanded="true" signature="1523:1623" ph="/* public KeyCode rotateRightKey = KeyCode.E; ... */" />
+            <marker date="1543671308553" expanded="true" signature="1789:1889" ph="/* public KeyCode mouseRotationKey = KeyCode.LeftAlt; ... */" />
+            <marker date="1543671308553" expanded="false" signature="1903:5010" ph="Serialized" />
+            <marker date="1543671308553" expanded="false" signature="1939:2135" ph="Input" />
+            <marker date="1543671308553" expanded="true" signature="1970:2056" ph="/// Controls used by this player. ... " />
+            <marker date="1543671308553" expanded="false" signature="2153:2632" ph="Movement" />
+            <marker date="1543671308553" expanded="false" signature="2650:3956" ph="Height" />
+            <marker date="1543671308553" expanded="false" signature="3974:4396" ph="MapLimits" />
+            <marker date="1543671308553" expanded="false" signature="4414:4982" ph="Targeting" />
+            <marker date="1543671308553" expanded="true" signature="4695:4780" ph="/// Are we following our target? ... " />
+            <marker date="1543671308553" expanded="true" signature="4821:4954" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="4855:4940" ph="{...}" />
+            <marker date="1543671308553" expanded="false" signature="5028:6568" ph="Non-Serialized" />
+            <marker date="1543671308553" expanded="false" signature="5068:5839" ph="Input" />
+            <marker date="1543671308553" expanded="true" signature="5181:5313" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="5215:5299" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="5362:5416" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="5468:5522" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="5565:5619" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="5670:5724" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="6151:6540" ph="/* public float DeltaTime ... */" />
+            <marker date="1543671308553" expanded="false" signature="6598:7945" ph="Unity_Methods" />
+            <marker date="1543671308553" expanded="true" signature="6649:6715" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="6747:6800" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="6832:6886" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="6920:6982" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7013:7170" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7056:7160" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7205:7366" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7247:7356" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7403:7925" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7440:7915" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="7621:7901" ph="/* Gizmos.DrawWireSphere(GlobalVariables.MouseWorldPosition(), 1); ... */" />
+            <marker date="1543671308553" expanded="false" signature="7955:20675" ph="TestCamera_Methods" />
+            <marker date="1543671308553" expanded="false" signature="7991:10697" ph="InputActions" />
+            <marker date="1543671308553" expanded="true" signature="8040:8098" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="8163:9550" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="8199:8493" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="8230:8285" ph="/* Leave menu. ... */" />
+            <marker date="1543671308553" expanded="true" signature="8510:9540" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="8541:8595" ph="/* Enter menu. ... */" />
+            <marker date="1543671308553" expanded="true" signature="8763:9431" ph="/* We do want the menu toggle to remain active. Rather than moving the action to its ... */" />
+            <marker date="1543671308553" expanded="true" signature="9615:9689" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="9754:10175" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="9862:9954" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10014:10109" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10245:10319" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10399:10481" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10557:10578" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10656:10677" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10707:10769" ph="/// Update camera ... " />
+            <marker date="1543671308553" expanded="true" signature="10805:11214" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="10828:11094" ph="/* if (FollowingTarget) ... */" />
+            <marker date="1543671308553" expanded="true" signature="11225:11319" ph="/// Move camera with keyboard or with screen edge ... " />
+            <marker date="1543671308553" expanded="true" signature="11351:14293" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="11395:11852" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="11889:13663" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="12474:12638" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="12692:12856" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="12927:13091" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="13145:13309" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="13416:13587" ph="/* targetMove = Quaternion.Euler(new Vector3(0f, transform.eulerAngles.y, 0f)) * targetMove; ... */" />
+            <marker date="1543671308553" expanded="true" signature="13692:14282" ph="/* if(usePanning &amp;&amp; Input.GetKey(panningKey) &amp;&amp; MouseAxis != Vector2.zero) //Uses ... */" />
+            <marker date="1543671308553" expanded="true" signature="14303:14378" ph="/// Calculate height &amp; zooming ... " />
+            <marker date="1543671308553" expanded="true" signature="14419:17487" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="14515:14581" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="14618:14740" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="14779:14908" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="15139:15295" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="15667:17164" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="15849:16795" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="16844:17133" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="17205:17476" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="17497:17564" ph="/// Rotates the camera ... " />
+            <marker date="1543671308553" expanded="true" signature="17596:18015" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="17643:17799" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="17858:18005" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="18025:18104" ph="/// follow targetif target != null ... " />
+            <marker date="1543671308553" expanded="true" signature="18140:18405" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="18415:18485" ph="/// Limit camera movement ... " />
+            <marker date="1543671308553" expanded="true" signature="18522:19020" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="18559:18611" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="19030:19135" ph="/// set the target ... " />
+            <marker date="1543671308553" expanded="true" signature="19183:19238" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="19248:19337" ph="/// reset the target (target is set to null) ... " />
+            <marker date="1543671308553" expanded="true" signature="19371:19424" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="19434:19512" ph="/// calculates distance to ground ... " />
+            <marker date="1543671308553" expanded="true" signature="19553:19955" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="19841:19921" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="20038:20126" ph="{...}" />
+            <marker date="1543671308553" expanded="true" signature="20140:20651" ph="/* gets position of mouse in worldspace. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleLeftExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <marker date="1543329684000" expanded="true" signature="54:456" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="132:454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ToggleExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <marker date="1543329684000" expanded="true" signature="54:1802" ph="{...}" />
+            <marker date="1543329684000" expanded="false" signature="67:97" ph="..." />
+            <marker date="1543329684000" expanded="true" signature="146:1092" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1144:1286" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1350:1434" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1498:1538" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1585:1800" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/HorizontalGroupAttributeExamples.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <marker date="1543329684000" expanded="true" signature="54:1527" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="85:340" ph="/* The width can either be specified as percentage or pixels. ... */" />
+            <marker date="1543329684000" expanded="true" signature="407:1525" ph="{...}" />
+            <marker date="1543329684000" expanded="true" signature="1498:1519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/CombineGroupAttributeExample2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="73" />
+          <folding>
+            <marker date="1543329684000" expanded="true" signature="54:695" ph="{...}" />
+            <marker date="1543329684000" expanded="false" signature="67:112" ph="..." />
+            <marker date="1543329684000" expanded="true" signature="176:693" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/CellObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <marker date="1543809266634" expanded="true" signature="6:92" ph="..." />
+            <marker date="1543809266634" expanded="true" signature="117:752" ph="{...}" />
+            <marker date="1543809266634" expanded="true" signature="207:750" ph="{...}" />
+            <marker date="1543809266634" expanded="true" signature="222:470" ph="Variables" />
+            <marker date="1543809266634" expanded="true" signature="480:744" ph="Methods" />
+            <marker date="1543809266634" expanded="true" signature="536:611" ph="{...}" />
+            <marker date="1543809266634" expanded="true" signature="641:716" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="189" column="43" selection-start-line="189" selection-start-column="43" selection-end-line="189" selection-end-column="43" />
+          <folding>
+            <marker date="1543809420052" expanded="false" signature="6:331" ph="..." />
+            <marker date="1543809420052" expanded="true" signature="356:13508" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="461:8843" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="476:658" ph="/* TODO: Fix transform not affecting baking position. ... */" />
+            <marker date="1543809420052" expanded="true" signature="676:4323" ph="Variables" />
+            <marker date="1543809420052" expanded="true" signature="707:3221" ph="Serialized" />
+            <marker date="1543809420052" expanded="false" signature="1931:3197" ph="Editor Buttons" />
+            <marker date="1543809420052" expanded="true" signature="2329:2608" ph="/* [ContextMenu(&quot;Toggle Preview-Mode&quot;)] ... */" />
+            <marker date="1543809420052" expanded="true" signature="2710:2875" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="2971:3145" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="3235:4303" ph="Non-Serialized" />
+            <marker date="1543809420052" expanded="false" signature="3416:3625" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="3450:3611" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="3729:4279" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
+            <marker date="1543809420052" expanded="true" signature="4333:8836" ph="Methods" />
+            <marker date="1543809420052" expanded="false" signature="4420:6659" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="4893:6458" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="5071:6444" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="5513:6150" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="5773:5935" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="5964:6128" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="6175:6426" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="6685:6898" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="6735:6876" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="7003:7655" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="7239:7546" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="7563:7645" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="7717:8793" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="7758:8783" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="8062:8769" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="8127:8637" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="8870:10417" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="8885:8994" ph="/// Enum representing the state of the availability of this cell ... " />
+            <marker date="1543809420052" expanded="false" signature="9032:9439" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="9055:9135" ph="/// This Cell is available. ... " />
+            <marker date="1543809420052" expanded="true" signature="9172:9274" ph="/// This Cell is unavailable, for it is occupied. ... " />
+            <marker date="1543809420052" expanded="true" signature="9313:9405" ph="/// Nothing can be placed on this Cell, ... " />
+            <marker date="1543809420052" expanded="false" signature="9625:9979" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="9651:9969" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="9705:9799" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="9820:9955" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="10063:10161" ph="{...}" />
+            <marker date="1543809420052" expanded="false" signature="10171:10411" ph="/* public Vector3 Position { get; private set; } ... */" />
+            <marker date="1543809420052" expanded="false" signature="10532:13506" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="10592:10648" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="10675:10981" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="10726:10859" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="10876:10971" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11024:11672" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11050:11662" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11100:11529" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11181:11376" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11401:11511" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11694:11854" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="11875:13500" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="12048:12330" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
+            <marker date="1543809420052" expanded="true" signature="12429:13412" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="12487:13398" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="12546:12923" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
+            <marker date="1543809420052" expanded="true" signature="13217:13380" ph="{...}" />
+            <marker date="1543809420052" expanded="true" signature="13412:13490" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <marker date="1543811196104" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543811196104" expanded="true" signature="108:1339" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="148:232" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="166:226" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="238:319" ph="/// Gets worldspace position of the cursor. ... " />
+            <marker date="1543811196104" expanded="true" signature="366:426" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="432:513" ph="/// Gets worldspace position of the cursor. ... " />
+            <marker date="1543811196104" expanded="true" signature="573:631" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="637:718" ph="/// Gets worldspace position of the cursor. ... " />
+            <marker date="1543811196104" expanded="true" signature="785:857" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="863:944" ph="/// Gets worldspace position of the cursor. ... " />
+            <marker date="1543811196104" expanded="true" signature="1026:1336" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="1175:1227" ph="{...}" />
+            <marker date="1543811196104" expanded="true" signature="1240:1330" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <marker date="1543811659752" expanded="true" signature="6:107" ph="..." />
+            <marker date="1543811659752" expanded="true" signature="132:2996" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="227:2994" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="614:676" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="707:2836" ph="{...}" />
+            <marker date="1543811659752" expanded="false" signature="807:916" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1046:1453" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1096:1293" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1314:1439" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1496:2826" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1697:2812" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1840:2607" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="1912:2373" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="2033:2182" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="2215:2347" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="2402:2585" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="2632:2794" ph="{...}" />
+            <marker date="1543811659752" expanded="true" signature="2865:2988" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
