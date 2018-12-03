@@ -79,7 +79,7 @@ public class CivManager : MonoBehaviour
    }
    void Start() 
    {
-        UpdateStability(0);
+        UpdateStability();
         ResourseUseOverTimeVariableUpdate();
         StartCoroutine(ResourseUseOverTime());
    }
@@ -118,6 +118,8 @@ public class CivManager : MonoBehaviour
             break;       
          case Type.Stability:
             stability += toAdd;
+            stability = Mathf.Clamp(stability, -2 , 2);
+            UpdateStability();
             UIManager.instance.RecourceUIPopup(toAdd,Type.Stability);
             break;     
       }
@@ -157,6 +159,8 @@ public class CivManager : MonoBehaviour
             break;
          case Type.Stability:
             stability += toRemove;
+            stability = Mathf.Clamp(stability, -2 , 2);
+            UpdateStability();
             UIManager.instance.RecourceUIPopup(toRemove,Type.Stability);
             break;
       }
@@ -166,11 +170,8 @@ public class CivManager : MonoBehaviour
    /// call this function if you need to add or remove stability
    /// </summary>
    /// <param name="toUpdate">The value that is used to update the stability</param>
-   public void UpdateStability(int toUpdate)
+   public void UpdateStability()
    {
-      stability += toUpdate;
-      stability = Mathf.Clamp(stability, -2 , 2);
-
       switch (stability)
       {
          case 2:
@@ -189,7 +190,6 @@ public class CivManager : MonoBehaviour
             stabilityModifier = 1;
          break;
       }
-      // UIManager.instance.UpdateResourceUI();
    }
 
    private void ResourseUseOverTimeVariableUpdate()

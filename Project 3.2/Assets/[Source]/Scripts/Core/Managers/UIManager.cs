@@ -99,7 +99,7 @@ public class UIManager : MonoBehaviour
                 }
                 break;        
             case CivManager.Type.Stability:
-                stability.text = CivManager.instance.buildingMaterials.ToString();
+                stability.text = CivManager.instance.stability.ToString();
                 if (value > 0)
                 {
                     stabilityUpdate.text = "+" + value.ToString();
@@ -119,5 +119,6 @@ public class UIManager : MonoBehaviour
         moneyUpdate.text = "";
         foodUpdate.text = "";
         poepleUpdate.text = "";
+        stabilityUpdate.text = "";
     }
 }
