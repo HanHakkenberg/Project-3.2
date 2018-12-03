@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int lengthOfDay;
     public static GameManager instance;
 
-    void Start() 
+    void Awake() 
     {
         if(instance == null)
         {
