@@ -17,7 +17,7 @@ namespace Core.Building
     [AddComponentMenu("Core/Building/GridBaker")]
     public class GridBaker : SerializedMonoBehaviour
     {
-        //TODO: Fix transform not affecting baking position.
+        //TODO: FIx cellScale wrongly affecting cell position.
         //TODO: Remove 1,1 extra offset bug.
         //TODO: Change private classes/variables to actually have a 'private' prefix
         
@@ -55,30 +55,23 @@ namespace Core.Building
 
             #if UNITY_EDITOR
 
-            [BoxGroup("Serialized")]
+            [HorizontalGroup("Serialized/GridGeneration")]
             [Button("Generate Grid", ButtonSizes.Medium)]
             void GenerateGridButton() { GenerateGrid();}
             //async void GenerateGridButton() { await GenerateGrid();}
-        
-            [ContextMenu("Clear Grid")]
-            private void ClearGridButton() { ClearGrid();}
-            
-//            [ContextMenu("Toggle Preview-Mode")]
-//            private void TogglePreviewMode()
-//            {
-//                Debug.Log(string.Format("Preview-Mode set to: {0}", Convert.ToString(!previewMode)));
-//                previewMode = !previewMode;
-//            }
+            [HorizontalGroup("Serialized/GridGeneration")]
+            [Button("Clear Grid", ButtonSizes.Medium)]
+            void ClearGridButton() { ClearGrid();}
             
             [ContextMenu("Toggle Debugging")]
-            private void ToggleDebugging()
+            void ToggleDebugging()
             {
                 Debug.Log(string.Format("Debugging set to: {0}", Convert.ToString(!debugging)));
                 debugging = !debugging;
             }
             
             [ContextMenu("Toggle Gizmos")]
-            private void ToggleGizmos()
+            void ToggleGizmos()
             {
                 Debug.Log(string.Format("Gizmos set to: {0}", Convert.ToString(!displayGizmos)));
                 displayGizmos = !displayGizmos;
@@ -121,9 +114,11 @@ namespace Core.Building
             
             ClearGrid();
             
+            SpawnGrid();
+            
             grid = new Cell[gridSize.x, gridSize.y];
 
-            Vector3 startingPosition = new Vector3(-((float)gridSize.x / 2f), 0, -((float)gridSize.y / 2f));
+            Vector3 startingPosition = transform.position + new Vector3(-(((float)gridSize.x * cellSize) / 2f), 0, -(((float)gridSize.y * cellSize) / 2f));
             
             Vector3 cellPosition = new Vector3(0, skyLimit, 0);            
             
@@ -131,6 +126,7 @@ namespace Core.Building
             for(int x = 0; x < gridSize.x; x++)
             {
                 cellPosition.x = startingPosition.x + (((x + 1) * cellSize) + (cellSize/2f));
+                //cellPosition.x = (-gridSize.x /2f) + ()
                 
                 for (int z = 0; z < gridSize.y; z++)
                 {
@@ -170,16 +166,35 @@ namespace Core.Building
 
         void ClearGrid()
         {
-            foreach (Cell cell in grid)
+            grid = new Cell[0,0];
+            
+            if (transform.childCount > 0)
             {
-                DestroyImmediate(cell.CellObject.transform);
-                Destroy(cell.CellObject.transform);
-            }            
+                if (Application.isEditor)
+                {
+                    //DestroyImmediate(transform.GetChild(0));
+                    DestroyImmediate(transform.GetChild(0).gameObject);
+                }
+                else
+                {
+                    //Destroy(transform.GetChild(0));
+                    Destroy(transform.GetChild(0).gameObject);
+                }
+            }
         }
-        
+
+        void SpawnGrid()
+        {
+            GameObject childObject = Instantiate(new GameObject(), Vector3.zero, Quaternion.identity, transform) as GameObject;
+
+            //childObject.transform.parent = transform;
+
+            childObject.name = "Grid";   
+        }
+
         void SpawnCell(Vector2Int index, Cell.AvailabilityState availability, Vector3 position)
         {
-            GameObject spawnedCell = Instantiate(cellPrefab, position, Quaternion.identity, transform);
+            GameObject spawnedCell = Instantiate(cellPrefab, position, Quaternion.identity, transform.GetChild(0));
     
             CellObject cellObject = spawnedCell.GetComponent<CellObject>();
     

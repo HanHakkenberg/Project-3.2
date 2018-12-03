@@ -8,18 +8,15 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="[Source]" t="Include">
-          <e p="Art" t="Include">
-            <e p="Materials" t="Include">
-              <e p="Basic Colors" t="Include">
-                <e p="Island" t="Include">
-                  <e p="Water" t="Include">
-                    <e p="WaterSample.shader" t="Include" />
-                  </e>
+          <e p="Scenes" t="Include">
+            <e p="Kevin" t="Include">
+              <e p="WIP" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CivManager.cs" t="Include" />
+                  <e p="TestScript.cs" t="Include" />
                 </e>
               </e>
             </e>
-          </e>
-          <e p="Scenes" t="Include">
             <e p="Rief" t="Include">
               <e p="TestScripts" t="Include">
                 <e p="Building.cs" t="Include" />
@@ -35,6 +32,19 @@
                 <e p="GridBaker.cs" t="Include" />
                 <e p="Placement.cs" t="Include" />
               </e>
+              <e p="Managers" t="Include">
+                <e p="GameManager.cs" t="Include" />
+                <e p="UIManager.cs" t="Include" />
+              </e>
+              <e p="Map" t="Include">
+                <e p="Map" t="Include">
+                  <e p="MapInteractable.cs" t="Include" />
+                </e>
+                <e p="Ship" t="Include">
+                  <e p="Ship.cs" t="Include" />
+                  <e p="Waypoint.cs" t="Include" />
+                </e>
+              </e>
               <e p="Movement" t="Include">
                 <e p="CameraMovement.cs" t="Include" />
                 <e p="TestCamera" t="Include">
@@ -45,9 +55,6 @@
                   <e p="HeightTest.cs" t="Include" />
                   <e p="TestCamera.cs" t="Include" />
                 </e>
-              </e>
-              <e p="Ship" t="Include">
-                <e p="ShipNavigation.cs" t="Include" />
               </e>
               <e p="Utilities" t="Include">
                 <e p="CursorEvents" t="Include">
@@ -113,12 +120,14 @@
                   <e p="Editor" t="Include">
                     <e p="Variable" t="Include">
                       <e p="BoolReferencePD.cs" t="Include" />
+                      <e p="CameraReferencePD.cs" t="Include" />
                       <e p="FloatListReferencePD.cs" t="Include" />
                       <e p="FloatReferencePD.cs" t="Include" />
                       <e p="GameObjectListReferencePD.cs" t="Include" />
                       <e p="GameObjectReferencePD.cs" t="Include" />
                       <e p="IntListReferencePD.cs" t="Include" />
                       <e p="IntReferencePD.cs" t="Include" />
+                      <e p="LayerMaskReferencePD.cs" t="Include" />
                       <e p="SpriteReferencePD.cs" t="Include" />
                       <e p="StringReferencePD.cs" t="Include" />
                       <e p="TransformReferencePD.cs" t="Include" />
@@ -143,6 +152,14 @@
                   <e p="Int" t="Include">
                     <e p="IntReverence.cs" t="Include" />
                     <e p="IntVariable.cs" t="Include" />
+                  </e>
+                  <e p="LayerMask" t="Include">
+                    <e p="LayerMaskReference.cs" t="Include" />
+                    <e p="LayerMaskVariable.cs" t="Include" />
+                  </e>
+                  <e p="LayerMask 1" t="Include">
+                    <e p="CameraMaskReference.cs" t="Include" />
+                    <e p="CameraMaskVariable.cs" t="Include" />
                   </e>
                   <e p="List(Wip)" t="Include">
                     <e p="Gameobject List" t="Include">
