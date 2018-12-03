@@ -9,16 +9,11 @@ public class UIManager : MonoBehaviour
 
     #region RecourseUI
     // Used to show recourse values
-    public TMP_Text money;
-    public TMP_Text materials;
-    public TMP_Text stability;
-    public TMP_Text food;
-    public TMP_Text people;
+    [SerializeField]
+    private TMP_Text money,materials,stability,food,people;
     //Used for feedback when value changes
-    public TMP_Text moneyUpdate;
-    public TMP_Text materialsUpdate;
-    public TMP_Text foodUpdate;
-    public TMP_Text poepleUpdate;
+    [SerializeField]
+    private TMP_Text moneyUpdate,materialsUpdate,foodUpdate,poepleUpdate,stabilityUpdate;
     #endregion
 
     void Awake() 
@@ -36,78 +31,88 @@ public class UIManager : MonoBehaviour
     {
         UpdateResourceUI();
     }
+
+    /// <summary>
+    /// Only use this function if you need to refresh the ResourceUI
+    /// It should do this automaticly using the ResourceUIPopup.
+    /// </summary>
     public void UpdateResourceUI()
     {
-        money.text = CivManager.instance.money.ToString();
-        materials.text = CivManager.instance.buildingMaterials.ToString();
         stability.text = CivManager.instance.stability.ToString();
+        materials.text = CivManager.instance.buildingMaterials.ToString();
+        money.text = CivManager.instance.money.ToString();
         food.text = CivManager.instance.food.ToString();
         people.text = CivManager.instance.poeple.ToString();
-
-        // posible animation for UI scale
-        // switch (CivManager.instance.stability)
-        // {
-        //     case -2:
-        //     break;
-        //     case -1:
-        //     break;
-        //     case 1:
-        //     break;
-        //     case 2:
-        //     break;
-        //     default:
-        //     break;
-        // }
     }
 
+    /// <summary>
+    /// This function manages the feedback values for resources and updates the actual value itself
+    /// </summary>
+    /// <param name="value">The value used in the income feedback text</param>
+    /// <param name="type">The type of recourse it effects</param>
     public void RecourceUIPopup(int value , CivManager.Type type)
     {
         switch (type)
       {
-         case CivManager.Type.BuildingMaterials:
-            if (value > 0)
-            {
-                materialsUpdate.text = "+" + value.ToString();
-            }
-            else
-            {
-                materialsUpdate.text = value.ToString();                
-            }
-            break;
-         case CivManager.Type.Money:
-            if (value > 0)
-            {
-                moneyUpdate.text = "+" + value.ToString();
-            }
-            else
-            {
-                moneyUpdate.text = value.ToString();                
-            }
-            break;
-         case CivManager.Type.Food:
-            if (value > 0)
-            {
-                foodUpdate.text = "+" + value.ToString();
-            }
-            else
-            {
-                foodUpdate.text = value.ToString();                
-            }
-            break;
-         case CivManager.Type.Poeple:
-            if (value > 0)
-            {
-                poepleUpdate.text = "+" + value.ToString();
-            }
-            else
-            {
-                poepleUpdate.text = value.ToString();              
-            }
-            break;            
+            case CivManager.Type.BuildingMaterials:
+                materials.text = CivManager.instance.buildingMaterials.ToString();
+                if (value > 0)
+                {
+                    materialsUpdate.text = "+" + value.ToString();
+                }
+                else
+                {
+                    materialsUpdate.text = value.ToString();                
+                }
+                break;
+            case CivManager.Type.Money:
+                money.text = CivManager.instance.money.ToString();
+                if (value > 0)
+                {
+                    moneyUpdate.text = "+" + value.ToString();
+                }
+                else
+                {
+                    moneyUpdate.text = value.ToString();                
+                }
+                break;
+            case CivManager.Type.Food:
+                food.text = CivManager.instance.food.ToString();
+                if (value > 0)
+                {
+                    foodUpdate.text = "+" + value.ToString();
+                }
+                else
+                {
+                    foodUpdate.text = value.ToString();                
+                }
+                break;
+            case CivManager.Type.Poeple:
+                people.text = CivManager.instance.poeple.ToString();
+                if (value > 0)
+                {
+                    poepleUpdate.text = "+" + value.ToString();
+                }
+                else
+                {
+                    poepleUpdate.text = value.ToString();              
+                }
+                break;        
+            case CivManager.Type.Stability:
+                stability.text = CivManager.instance.buildingMaterials.ToString();
+                if (value > 0)
+                {
+                    stabilityUpdate.text = "+" + value.ToString();
+                }
+                else
+                {
+                    stabilityUpdate.text = value.ToString();       
+                }
+                break;    
       }
       Invoke("RecourseUIPopupReset", 2);
     }
-
+    
     public void RecourseUIPopupReset()
     {
         materialsUpdate.text = "";

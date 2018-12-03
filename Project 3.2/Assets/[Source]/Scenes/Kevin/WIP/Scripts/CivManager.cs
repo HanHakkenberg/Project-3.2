@@ -12,7 +12,8 @@ public class CivManager : MonoBehaviour
       BuildingMaterials,
       Money,
       Food,
-      Poeple
+      Poeple,
+      Stability
    }
 
    public static CivManager instance;
@@ -114,9 +115,12 @@ public class CivManager : MonoBehaviour
             poeple += toAdd;
             poepleIncome += toAdd;
             UIManager.instance.RecourceUIPopup(toAdd,Type.Poeple);
-            break;            
+            break;       
+         case Type.Stability:
+            stability += toAdd;
+            UIManager.instance.RecourceUIPopup(toAdd,Type.Stability);
+            break;     
       }
-      UIManager.instance.UpdateResourceUI();
    }
 
    /// <summary>
@@ -142,9 +146,7 @@ public class CivManager : MonoBehaviour
             UIManager.instance.RecourceUIPopup(toRemove,Type.Money);
             break;
          case Type.Food:
-            print(toRemove);
             food += toRemove;
-            print(food);
             foodIncome += toRemove;
             UIManager.instance.RecourceUIPopup(toRemove,Type.Food);
             break;
@@ -153,8 +155,11 @@ public class CivManager : MonoBehaviour
             poepleIncome += toRemove;
             UIManager.instance.RecourceUIPopup(toRemove,Type.Poeple);
             break;
+         case Type.Stability:
+            stability += toRemove;
+            UIManager.instance.RecourceUIPopup(toRemove,Type.Stability);
+            break;
       }
-      UIManager.instance.UpdateResourceUI();
    }
 
    /// <summary>
@@ -184,7 +189,7 @@ public class CivManager : MonoBehaviour
             stabilityModifier = 1;
          break;
       }
-      UIManager.instance.UpdateResourceUI();
+      // UIManager.instance.UpdateResourceUI();
    }
 
    private void ResourseUseOverTimeVariableUpdate()
@@ -199,11 +204,16 @@ public class CivManager : MonoBehaviour
       if (food > 0)
       {
          foodToEat -= foodStep;
-         food -= foodStep;
+         RemoveIncome(foodStep,Type.Food);
+      }
+      else
+      {
+         //There Will Be consequences
       }
       if (food < 0 && food != 0)
       {
          food = 0;
+         //Also consequences
       }
       StartCoroutine(ResourseUseOverTime());
    }
