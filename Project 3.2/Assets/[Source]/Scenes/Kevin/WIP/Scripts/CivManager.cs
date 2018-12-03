@@ -166,11 +166,7 @@ public class CivManager : MonoBehaviour
       }
    }
 
-   /// <summary>
-   /// call this function if you need to add or remove stability
-   /// </summary>
-   /// <param name="toUpdate">The value that is used to update the stability</param>
-   public void UpdateStability()
+   void UpdateStability()
    {
       switch (stability)
       {

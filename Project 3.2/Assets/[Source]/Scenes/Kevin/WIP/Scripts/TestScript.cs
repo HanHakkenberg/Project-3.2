@@ -19,6 +19,7 @@ public class TestScript : MonoBehaviour
     {
         print("Adding value");
         CivManager.instance.AddIncome(100,CivManager.Type.Food);
+        CivManager.instance.AddIncome(1,CivManager.Type.Stability);
     }
 
     void RemoveValue()

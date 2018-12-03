@@ -8,6 +8,17 @@ public class GameManager : MonoBehaviour
     public int lengthOfDay;
     public static GameManager instance;
 
+    #region TickVars
+    float shortTick;
+    float dayTick;
+    float shortTime;
+    float longTime;
+
+    public delegate void Tick();
+    public Tick shortGameplayTick;
+    public Tick longGameplayTick;
+    #region 
+
     void Awake() 
     {
         if(instance == null)
@@ -18,6 +29,28 @@ public class GameManager : MonoBehaviour
         else if(instance != this)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    void Update() 
+    {
+        GameTicks();
+    }
+
+    public void GameTicks()
+    {
+        shortTime += Time.deltaTime;
+        longTime += Time.deltaTime;
+
+        if (shortTime >= shortTick)
+        {
+            shortTime = 0;
+            shortGameplayTick();
+        }
+        if (longTime >= dayTick)
+        {
+            longTime = 0;
+            longGameplayTick();
         }
     }
 }

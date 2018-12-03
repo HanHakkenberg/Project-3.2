@@ -10,10 +10,10 @@ public class UIManager : MonoBehaviour
     #region RecourseUI
     // Used to show recourse values
     [SerializeField]
-    private TMP_Text money,materials,stability,food,people;
+    TMP_Text money,materials,stability,food,people;
     //Used for feedback when value changes
     [SerializeField]
-    private TMP_Text moneyUpdate,materialsUpdate,foodUpdate,poepleUpdate,stabilityUpdate;
+    TMP_Text moneyUpdate,materialsUpdate,foodUpdate,poepleUpdate,stabilityUpdate;
     #endregion
 
     void Awake() 
