@@ -90,7 +90,6 @@ namespace Core.Building
 
             #region Non-Serialized
 
-            //[TableMatrix(SquareCells = true)]
             [NonSerialized] public Cell[,] grid = new Cell[0,0];
 
             public Vector2Int GridWorldSize
@@ -135,13 +134,12 @@ namespace Core.Building
             for(int x = 0; x < gridSize.x; x++)
             {
                 cellPosition.x = startingPosition.x + (((x + 1) * cellSize) + (cellSize/2f));
-                //cellPosition.x = (-gridSize.x /2f) + ()
                 
                 for (int z = 0; z < gridSize.y; z++)
                 {
                     cellPosition.z = startingPosition.z + (((z + 1) * cellSize) + (cellSize/2f));
                     
-                    if(debugging){Debug.Log(cellPosition.ToString());}
+                    //if(debugging){Debug.Log(cellPosition.ToString());}
                     
                     RaycastHit hitData;
                     if (Physics.Raycast(cellPosition , -Vector3.up, out hitData, 
@@ -312,16 +310,6 @@ namespace Core.Building
             Availability = availability;
             CellObject = cellObject;
         }
-
-        /*
-        public Vector3 Position { get; private set; }
-        
-        public Cell(AvailabilityState availability, Vector3 position)
-        {
-            Availability = availability;
-            Position = position;
-        }
-        */
     }
 
     #if UNITY_EDITOR
