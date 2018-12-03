@@ -55,9 +55,10 @@ namespace Core.Building
                 }
                 else
                 {
-                    
+
                     RaycastHit hit;
-                    if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out hit, Mathf.Infinity, layerMask))
+                    if (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
+                        -Vector3.up, out hit, Mathf.Infinity, layerMask))
                     {
                         CellObject cellObjHolder = hit.transform.GetComponent<CellObject>();
 
@@ -71,13 +72,14 @@ namespace Core.Building
                                     objectWerePlacing.position = cellObj.transform.position;
 
                                     cellObj.cell.Availability = Cell.AvailabilityState.Unavailable;
-                                    
+
                                     objectWerePlacing = null;
                                     placingObject = false;
                                 }
                             }
                         }
                     }
+                }
             }
            
             if (placingObject)
