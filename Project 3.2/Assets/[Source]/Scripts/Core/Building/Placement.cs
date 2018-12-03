@@ -32,7 +32,12 @@ namespace Core.Building
         
         void Start()
         {
+            //cam = GetComponent<Camera>();
             cam = GetComponent<Camera>();
+            if (cam == null)
+            {
+                cam = Camera.main;
+            }
         }
         
         void Update()
@@ -44,7 +49,17 @@ namespace Core.Building
                 return;
             }
 
-            mousePos = GlobalVariables.MouseWorldPosition(layerMask);
+            //mousePos = GlobalVariables.MouseWorldPosition(layerMask);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, cam.farClipPlane, layerMask))
+            {
+                mousePos = hit.point;
+            }
+            else
+            {
+                return;
+            }
             
             if (Input.GetButtonDown("Fire1"))
             {
@@ -55,12 +70,12 @@ namespace Core.Building
                 }
                 else
                 {
-
-                    RaycastHit hit;
-                    if (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
-                        -Vector3.up, out hit, Mathf.Infinity, layerMask))
+                    //RaycastHit groundCheckHit;
+                    //if (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
+                        //-Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
+                    if(GroundCheck(out RaycastHit groundCheckHit))
                     {
-                        CellObject cellObjHolder = hit.transform.GetComponent<CellObject>();
+                        CellObject cellObjHolder = groundCheckHit.transform.GetComponent<CellObject>();
 
                         if (cellObjHolder != null)
                         {
@@ -84,10 +99,11 @@ namespace Core.Building
            
             if (placingObject)
             {
-                RaycastHit hit;
-                if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out hit, Mathf.Infinity, layerMask))
+                //RaycastHit groundCheckHit;
+                //if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
+                if(GroundCheck(out RaycastHit groundCheckHit))
                 {
-                    CellObject cellObjHolder = hit.transform.GetComponent<CellObject>();
+                    CellObject cellObjHolder = groundCheckHit.transform.GetComponent<CellObject>();
 
                     if (cellObjHolder != null)
                     {
@@ -104,22 +120,28 @@ namespace Core.Building
                             else
                             {
                                 //Debug.Log("Cell Unavailable");
-                                objectWerePlacing.position = hit.point;
+                                objectWerePlacing.position = groundCheckHit.point;
                             }
                         }
                         else
                         {
-                            objectWerePlacing.position = hit.point;
+                            objectWerePlacing.position = groundCheckHit.point;
                             Debug.Log("cellObj.cell is null");
                         }
                     }
                     else
                     {
-                        objectWerePlacing.position = hit.point;
+                        objectWerePlacing.position = groundCheckHit.point;
                         Debug.Log("cellObj is null");
                     }
                 }
             }
+        }
+
+        bool GroundCheck(out RaycastHit groundCheckHit)
+        {
+            return (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
+                -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask));
         }
 
         void OnDrawGizmos()

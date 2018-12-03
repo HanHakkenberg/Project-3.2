@@ -21,9 +21,8 @@ namespace Core.Building
     [AddComponentMenu("Core/Building/GridBaker")]
     public class GridBaker : SerializedMonoBehaviour
     {
-        //TODO: Grid Resetting on PlayMode. 
-        //TODO: Fix cellScale not affecting prefab scales.
-        //TODO: Remove 1,1 extra offset bug.
+        //TODO: Fix Grid Resetting on PlayMode. 
+        //TODO: Make Checking Resolution actually do something.
         //TODO: Change private classes/variables to actually have a 'private' prefix
         
         #region Variables
@@ -128,16 +127,16 @@ namespace Core.Building
            
             Vector3 startingPosition = transform.position + new Vector3(-(((float)gridSize.x * cellSize) / 2f), 0, -(((float)gridSize.y * cellSize) / 2f));
             
-            Vector3 cellPosition = new Vector3(0, skyLimit, 0);            
+            Vector3 cellPosition = new Vector3(0, skyLimit, 0);    
             
             //Parallel.For(0, gridSize.x, (x) =>
             for(int x = 0; x < gridSize.x; x++)
             {
-                cellPosition.x = startingPosition.x + (((x + 1) * cellSize) + (cellSize/2f));
+                cellPosition.x = startingPosition.x + ((x * cellSize) + (cellSize/2f));
                 
                 for (int z = 0; z < gridSize.y; z++)
                 {
-                    cellPosition.z = startingPosition.z + (((z + 1) * cellSize) + (cellSize/2f));
+                    cellPosition.z = startingPosition.z + ((z * cellSize) + (cellSize/2f));
                     
                     //if(debugging){Debug.Log(cellPosition.ToString());}
                     
@@ -196,11 +195,9 @@ namespace Core.Building
         {
             if(debugging){Debug.Log("Spawn Grid");}
             
-            GameObject childObject = Instantiate(new GameObject(), Vector3.zero, Quaternion.identity, transform) as GameObject;
+            GameObject gridObject = new GameObject("Grid");
 
-            //childObject.transform.parent = transform;
-
-            childObject.name = "Grid";   
+            gridObject.transform.parent = gameObject.transform;
             
             grid = new Cell[gridSize.x, gridSize.y];
         }
@@ -208,7 +205,9 @@ namespace Core.Building
         void SpawnCell(Vector2Int index, Cell.AvailabilityState availability, Vector3 position)
         {
             GameObject spawnedCell = Instantiate(cellPrefab, position, Quaternion.identity, transform.GetChild(0));
-    
+
+            spawnedCell.transform.localScale = new Vector3(cellSize, 0, cellSize);
+            
             CellObject cellObject = spawnedCell.GetComponent<CellObject>();
     
             if (cellObject != null)
