@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/[Source]/Art/Materials/Basic Colors/Island/Water.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scenes/Walter/Grid_Test/Grid_Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +33,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="10186" />
+          <entry key="cs" value="10472" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="10186" />
+          <entry key="C#" value="10472" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,94 +62,72 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="127" column="93" lean-forward="true" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="93" />
+            <state relative-caret-position="-176">
+              <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
               <folding>
-                <marker date="1543838561065" expanded="false" signature="6:331" ph="..." />
-                <marker date="1543838561065" expanded="true" signature="356:14012" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="461:9347" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="476:660" ph="/* TODO: FIx cellScale wrongly affecting cell position. ... */" />
-                <marker date="1543838561065" expanded="true" signature="678:4095" ph="Variables" />
-                <marker date="1543838561065" expanded="true" signature="709:2993" ph="Serialized" />
-                <marker date="1543838561065" expanded="true" signature="1933:2969" ph="Editor Buttons" />
-                <marker date="1543838561065" expanded="false" signature="2490:2655" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="2743:2917" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="3007:4075" ph="Non-Serialized" />
-                <marker date="1543838561065" expanded="false" signature="3188:3397" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="3222:3383" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="3501:4051" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
-                <marker date="1543838561065" expanded="true" signature="4105:9340" ph="Methods" />
-                <marker date="1543838561065" expanded="true" signature="4192:6574" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="4750:6373" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="4986:6359" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="5428:6065" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="5688:5850" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="5879:6043" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="6090:6341" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="6600:7124" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="6699:7114" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="6755:6926" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="6947:7100" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="7150:7398" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="7495:8159" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="7743:8050" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="8067:8149" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="8221:9297" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="8262:9287" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="8566:9273" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="8631:9141" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="9374:10921" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="9389:9498" ph="/// Enum representing the state of the availability of this cell ... " />
-                <marker date="1543838561065" expanded="false" signature="9536:9943" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="9559:9639" ph="/// This Cell is available. ... " />
-                <marker date="1543838561065" expanded="false" signature="9676:9778" ph="/// This Cell is unavailable, for it is occupied. ... " />
-                <marker date="1543838561065" expanded="false" signature="9817:9909" ph="/// Nothing can be placed on this Cell, ... " />
-                <marker date="1543838561065" expanded="false" signature="10129:10483" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="10155:10473" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="10209:10303" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="10324:10459" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="10567:10665" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="10675:10915" ph="/* public Vector3 Position { get; private set; } ... */" />
-                <marker date="1543838561065" expanded="true" signature="11036:14010" ph="{...}" />
-                <marker date="1543838561065" expanded="true" signature="11096:11152" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11179:11485" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11230:11363" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11380:11475" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11528:12176" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11554:12166" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11604:12033" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11685:11880" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="11905:12015" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="12198:12358" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="12379:14004" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="12552:12834" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
-                <marker date="1543838561065" expanded="false" signature="12933:13916" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="12991:13902" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="13050:13427" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
-                <marker date="1543838561065" expanded="false" signature="13721:13884" ph="{...}" />
-                <marker date="1543838561065" expanded="false" signature="13916:13994" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="59" />
-              <folding>
-                <marker date="1543329684000" expanded="true" signature="54:1695" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="128:1693" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="296:356" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="427:487" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="559:619" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="698:758" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="927:987" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="1145:1205" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="1366:1426" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="1504:1564" ph="{...}" />
-                <marker date="1543329684000" expanded="true" signature="1627:1687" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="6:331" ph="..." />
+                <marker date="1543841311596" expanded="true" signature="356:13994" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="461:9329" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="476:656" ph="/* TODO: Fix cellScale not affecting prefab scales. ... */" />
+                <marker date="1543841311596" expanded="true" signature="674:4077" ph="Variables" />
+                <marker date="1543841311596" expanded="true" signature="705:2975" ph="Serialized" />
+                <marker date="1543841311596" expanded="true" signature="1929:2951" ph="Editor Buttons" />
+                <marker date="1543841311596" expanded="false" signature="2472:2637" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="2725:2899" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="2989:4057" ph="Non-Serialized" />
+                <marker date="1543841311596" expanded="false" signature="3170:3379" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="3204:3365" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="3483:4033" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
+                <marker date="1543841311596" expanded="true" signature="4087:9322" ph="Methods" />
+                <marker date="1543841311596" expanded="false" signature="4174:6556" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="4732:6355" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="4968:6341" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="5410:6047" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="5670:5832" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="5861:6025" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="6072:6323" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="6582:7106" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="6681:7096" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="6737:6908" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="6929:7082" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="7132:7380" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="7477:8141" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="7725:8032" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="8049:8131" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="8203:9279" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="8244:9269" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="8548:9255" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="8613:9123" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="9356:10903" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="9371:9480" ph="/// Enum representing the state of the availability of this cell ... " />
+                <marker date="1543841311596" expanded="false" signature="9518:9925" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="9541:9621" ph="/// This Cell is available. ... " />
+                <marker date="1543841311596" expanded="false" signature="9658:9760" ph="/// This Cell is unavailable, for it is occupied. ... " />
+                <marker date="1543841311596" expanded="false" signature="9799:9891" ph="/// Nothing can be placed on this Cell, ... " />
+                <marker date="1543841311596" expanded="false" signature="10111:10465" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="10137:10455" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="10191:10285" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="10306:10441" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="10549:10647" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="10657:10897" ph="/* public Vector3 Position { get; private set; } ... */" />
+                <marker date="1543841311596" expanded="true" signature="11018:13992" ph="{...}" />
+                <marker date="1543841311596" expanded="true" signature="11078:11134" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11161:11467" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11212:11345" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11362:11457" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11510:12158" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11536:12148" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11586:12015" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11667:11862" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="11887:11997" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="12180:12340" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="12361:13986" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="12534:12816" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
+                <marker date="1543841311596" expanded="false" signature="12915:13898" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="12973:13884" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="13032:13409" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
+                <marker date="1543841311596" expanded="false" signature="13703:13866" ph="{...}" />
+                <marker date="1543841311596" expanded="false" signature="13898:13976" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -158,27 +136,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="528">
+              <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
               <folding>
-                <marker date="1543811659752" expanded="false" signature="6:107" ph="..." />
-                <marker date="1543811659752" expanded="true" signature="132:2996" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="227:2994" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="614:676" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="707:2836" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="807:916" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1046:1453" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1096:1293" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1314:1439" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1496:2826" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1697:2812" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1840:2607" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="1912:2373" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="2033:2182" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="2215:2347" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="2402:2585" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="2632:2794" ph="{...}" />
-                <marker date="1543811659752" expanded="true" signature="2865:2988" ph="{...}" />
+                <marker date="1543841204084" expanded="false" signature="6:107" ph="..." />
+                <marker date="1543841204084" expanded="true" signature="132:3466" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="227:3464" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="811:873" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="904:3306" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1004:1113" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1243:1655" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1293:1495" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1516:1641" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1698:3296" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="1899:3282" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="2054:3077" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="2258:2843" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="2379:2589" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="2622:2817" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="2872:3055" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="3102:3264" ph="{...}" />
+                <marker date="1543841204084" expanded="true" signature="3335:3458" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -443,7 +421,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="135" />
     <option name="width" value="1440" />
@@ -515,12 +493,12 @@
       <workItem from="1543751964237" duration="20647000" />
       <workItem from="1543777252935" duration="7190000" />
       <workItem from="1543790169922" duration="21195000" />
-      <workItem from="1543835008651" duration="3769000" />
+      <workItem from="1543835008651" duration="6505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85425000" />
+    <option name="totallyTimeSpent" value="88161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -848,37 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <marker date="1543811659752" expanded="false" signature="6:107" ph="..." />
-            <marker date="1543811659752" expanded="true" signature="132:2996" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="227:2994" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="614:676" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="707:2836" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="807:916" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1046:1453" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1096:1293" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1314:1439" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1496:2826" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1697:2812" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1840:2607" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="1912:2373" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="2033:2182" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="2215:2347" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="2402:2585" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="2632:2794" ph="{...}" />
-            <marker date="1543811659752" expanded="true" signature="2865:2988" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview/Scripts/ButtonExamples.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="59" />
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="60" />
           <folding>
             <marker date="1543329684000" expanded="true" signature="54:1695" ph="{...}" />
             <marker date="1543329684000" expanded="true" signature="128:1693" ph="{...}" />
@@ -895,74 +846,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/Placement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
+          <folding>
+            <marker date="1543841204084" expanded="false" signature="6:107" ph="..." />
+            <marker date="1543841204084" expanded="true" signature="132:3466" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="227:3464" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="811:873" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="904:3306" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1004:1113" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1243:1655" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1293:1495" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1516:1641" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1698:3296" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="1899:3282" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="2054:3077" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="2258:2843" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="2379:2589" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="2622:2817" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="2872:3055" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="3102:3264" ph="{...}" />
+            <marker date="1543841204084" expanded="true" signature="3335:3458" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/[Source]/Scripts/Core/Building/GridBaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="127" column="93" lean-forward="true" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="93" />
+        <state relative-caret-position="-176">
+          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
-            <marker date="1543838561065" expanded="false" signature="6:331" ph="..." />
-            <marker date="1543838561065" expanded="true" signature="356:14012" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="461:9347" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="476:660" ph="/* TODO: FIx cellScale wrongly affecting cell position. ... */" />
-            <marker date="1543838561065" expanded="true" signature="678:4095" ph="Variables" />
-            <marker date="1543838561065" expanded="true" signature="709:2993" ph="Serialized" />
-            <marker date="1543838561065" expanded="true" signature="1933:2969" ph="Editor Buttons" />
-            <marker date="1543838561065" expanded="false" signature="2490:2655" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="2743:2917" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="3007:4075" ph="Non-Serialized" />
-            <marker date="1543838561065" expanded="false" signature="3188:3397" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="3222:3383" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="3501:4051" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
-            <marker date="1543838561065" expanded="true" signature="4105:9340" ph="Methods" />
-            <marker date="1543838561065" expanded="true" signature="4192:6574" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="4750:6373" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="4986:6359" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="5428:6065" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="5688:5850" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="5879:6043" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="6090:6341" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="6600:7124" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="6699:7114" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="6755:6926" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="6947:7100" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="7150:7398" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="7495:8159" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="7743:8050" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="8067:8149" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="8221:9297" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="8262:9287" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="8566:9273" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="8631:9141" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="9374:10921" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="9389:9498" ph="/// Enum representing the state of the availability of this cell ... " />
-            <marker date="1543838561065" expanded="false" signature="9536:9943" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="9559:9639" ph="/// This Cell is available. ... " />
-            <marker date="1543838561065" expanded="false" signature="9676:9778" ph="/// This Cell is unavailable, for it is occupied. ... " />
-            <marker date="1543838561065" expanded="false" signature="9817:9909" ph="/// Nothing can be placed on this Cell, ... " />
-            <marker date="1543838561065" expanded="false" signature="10129:10483" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="10155:10473" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="10209:10303" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="10324:10459" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="10567:10665" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="10675:10915" ph="/* public Vector3 Position { get; private set; } ... */" />
-            <marker date="1543838561065" expanded="true" signature="11036:14010" ph="{...}" />
-            <marker date="1543838561065" expanded="true" signature="11096:11152" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11179:11485" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11230:11363" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11380:11475" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11528:12176" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11554:12166" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11604:12033" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11685:11880" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="11905:12015" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="12198:12358" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="12379:14004" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="12552:12834" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
-            <marker date="1543838561065" expanded="false" signature="12933:13916" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="12991:13902" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="13050:13427" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
-            <marker date="1543838561065" expanded="false" signature="13721:13884" ph="{...}" />
-            <marker date="1543838561065" expanded="false" signature="13916:13994" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="6:331" ph="..." />
+            <marker date="1543841311596" expanded="true" signature="356:13994" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="461:9329" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="476:656" ph="/* TODO: Fix cellScale not affecting prefab scales. ... */" />
+            <marker date="1543841311596" expanded="true" signature="674:4077" ph="Variables" />
+            <marker date="1543841311596" expanded="true" signature="705:2975" ph="Serialized" />
+            <marker date="1543841311596" expanded="true" signature="1929:2951" ph="Editor Buttons" />
+            <marker date="1543841311596" expanded="false" signature="2472:2637" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="2725:2899" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="2989:4057" ph="Non-Serialized" />
+            <marker date="1543841311596" expanded="false" signature="3170:3379" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="3204:3365" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="3483:4033" ph="/* private static readonly Matrix4x4 left = new Matrix4x4(new Vector4(0f, 1f, 0f, 0f), new Vector4(-1f, 0f, 0f, 0 ... */" />
+            <marker date="1543841311596" expanded="true" signature="4087:9322" ph="Methods" />
+            <marker date="1543841311596" expanded="false" signature="4174:6556" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="4732:6355" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="4968:6341" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="5410:6047" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="5670:5832" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="5861:6025" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="6072:6323" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="6582:7106" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="6681:7096" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="6737:6908" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="6929:7082" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="7132:7380" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="7477:8141" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="7725:8032" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="8049:8131" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="8203:9279" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="8244:9269" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="8548:9255" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="8613:9123" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="9356:10903" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="9371:9480" ph="/// Enum representing the state of the availability of this cell ... " />
+            <marker date="1543841311596" expanded="false" signature="9518:9925" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="9541:9621" ph="/// This Cell is available. ... " />
+            <marker date="1543841311596" expanded="false" signature="9658:9760" ph="/// This Cell is unavailable, for it is occupied. ... " />
+            <marker date="1543841311596" expanded="false" signature="9799:9891" ph="/// Nothing can be placed on this Cell, ... " />
+            <marker date="1543841311596" expanded="false" signature="10111:10465" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="10137:10455" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="10191:10285" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="10306:10441" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="10549:10647" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="10657:10897" ph="/* public Vector3 Position { get; private set; } ... */" />
+            <marker date="1543841311596" expanded="true" signature="11018:13992" ph="{...}" />
+            <marker date="1543841311596" expanded="true" signature="11078:11134" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11161:11467" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11212:11345" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11362:11457" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11510:12158" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11536:12148" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11586:12015" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11667:11862" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="11887:11997" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="12180:12340" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="12361:13986" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="12534:12816" ph="/* DebugExtension.DebugBounds(new Bounds ... */" />
+            <marker date="1543841311596" expanded="false" signature="12915:13898" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="12973:13884" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="13032:13409" ph="/* Gizmos.color = (cell.Occupied) ? Color.green : Color.red; ... */" />
+            <marker date="1543841311596" expanded="false" signature="13703:13866" ph="{...}" />
+            <marker date="1543841311596" expanded="false" signature="13898:13976" ph="{...}" />
           </folding>
         </state>
       </provider>

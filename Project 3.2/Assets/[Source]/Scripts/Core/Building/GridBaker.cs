@@ -17,7 +17,7 @@ namespace Core.Building
     [AddComponentMenu("Core/Building/GridBaker")]
     public class GridBaker : SerializedMonoBehaviour
     {
-        //TODO: FIx cellScale wrongly affecting cell position.
+        //TODO: Fix cellScale not affecting prefab scales.
         //TODO: Remove 1,1 extra offset bug.
         //TODO: Change private classes/variables to actually have a 'private' prefix
         
@@ -56,11 +56,11 @@ namespace Core.Building
             #if UNITY_EDITOR
 
             [HorizontalGroup("Serialized/GridGeneration")]
-            [Button("Generate Grid", ButtonSizes.Medium)]
+            [Button("Generate Grid", ButtonSizes.Medium), GUIColor(0.25f, 1f, 0.25f)]
             void GenerateGridButton() { GenerateGrid();}
-            //async void GenerateGridButton() { await GenerateGrid();}
+
             [HorizontalGroup("Serialized/GridGeneration")]
-            [Button("Clear Grid", ButtonSizes.Medium)]
+            [Button("Clear Grid", ButtonSizes.Medium), GUIColor(1f, 0.25f, 0.25f)]
             void ClearGridButton() { ClearGrid();}
             
             [ContextMenu("Toggle Debugging")]
