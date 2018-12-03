@@ -57,12 +57,18 @@ public class Ship : MonoBehaviour {
             Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
 
             if (spottedObjects.Length > 0) {
+                Debug.Log("s");
                 for (int i = 0; i < spottedObjects.Length; i++) {
-                    spottedObjects[i].transform.GetChild(0).gameObject.SetActive(true);
+                    spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
                 }
             }
 
             yield return new WaitForSeconds(SpottingRefreshTimer);
         }
+    }
+
+    void OnDrawGizmos() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, spottingSphereSize);
     }
 }
