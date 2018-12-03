@@ -283,7 +283,7 @@ namespace Core.Building
             OutOfBounds
         }
         
-        public AvailabilityState Availability { get; private set; }
+        public AvailabilityState Availability { get; set; }
         
         public CellObject CellObject { get; private set; }
         

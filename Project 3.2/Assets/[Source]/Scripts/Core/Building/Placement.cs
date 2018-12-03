@@ -55,9 +55,29 @@ namespace Core.Building
                 }
                 else
                 {
-                    objectWerePlacing = null;
-                    placingObject = false;
-                }
+                    
+                    RaycastHit hit;
+                    if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out hit, Mathf.Infinity, layerMask))
+                    {
+                        CellObject cellObjHolder = hit.transform.GetComponent<CellObject>();
+
+                        if (cellObjHolder != null)
+                        {
+                            if (cellObj.cell != null)
+                            {
+                                if (cellObj.cell.Availability == Cell.AvailabilityState.Available)
+                                {
+                                    //Debug.Log("Cell Available");
+                                    objectWerePlacing.position = cellObj.transform.position;
+
+                                    cellObj.cell.Availability = Cell.AvailabilityState.Unavailable;
+                                    
+                                    objectWerePlacing = null;
+                                    placingObject = false;
+                                }
+                            }
+                        }
+                    }
             }
            
             if (placingObject)
@@ -71,17 +91,17 @@ namespace Core.Building
                     {
                         cellObj = cellObjHolder;
                         
-                        Debug.Log("cellObj is not null");
+                        //Debug.Log("cellObj is not null");
                         if (cellObj.cell != null)
                         {
                             if (cellObj.cell.Availability == Cell.AvailabilityState.Available)
                             {
-                                Debug.Log("Cell Available");
+                                //Debug.Log("Cell Available");
                                 objectWerePlacing.position = cellObj.transform.position;
                             }
                             else
                             {
-                                Debug.Log("Cell Unavailable");
+                                //Debug.Log("Cell Unavailable");
                                 objectWerePlacing.position = hit.point;
                             }
                         }
