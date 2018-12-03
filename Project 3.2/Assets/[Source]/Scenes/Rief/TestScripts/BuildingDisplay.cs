@@ -27,8 +27,8 @@ public class BuildingDisplay : MonoBehaviour
 
             citizenDisplay.text = myCitizens.ToString ();
             statDisplayOne.text = "Stat one: " + (building.tempStatOne * CivManager.instance.stabilityModifier) * myCitizens;
-            statDisplayTwo.text = "Stat Two: " + (building.tempStatTwo * myCitizens * CivManager.instance.stabilityModifier);
-            statDisplayThree.text = "Stat Three " + (building.tempStatThree * myCitizens *CivManager.instance.stabilityModifier);
+            statDisplayTwo.text = "Stat Two: " + (building.tempStatTwo * CivManager.instance.stabilityModifier) * myCitizens;
+            statDisplayThree.text = "Stat Three " + (building.tempStatThree * CivManager.instance.stabilityModifier) * myCitizens;
 
         }
     }
@@ -54,13 +54,14 @@ public class BuildingDisplay : MonoBehaviour
     public void CitizenInfo() //when you change the value, this starts.
     {
         
-        int newCitizens;
+       int newCitizens;
         if (int.TryParse (citizenDisplay.text, out newCitizens) || citizenDisplay.text == string.Empty)
         {
             int extraCitizens = newCitizens - myCitizens;
             statDisplayOne.text = "Stat one: " + (building.tempStatOne * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatOne * CivManager.instance.stabilityModifier) *extraCitizens + ")";
             statDisplayTwo.text = "Stat Two: " + (building.tempStatTwo * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatTwo * extraCitizens * CivManager.instance.stabilityModifier) + ")";
             statDisplayThree.text = "Stat Three " + (building.tempStatThree * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatThree * extraCitizens * CivManager.instance.stabilityModifier) + ")";
-            }
+        }
+        
     }
 }

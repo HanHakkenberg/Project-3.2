@@ -14,6 +14,8 @@ public class IslandCamera : MonoBehaviour
 
     private void Start ()
     {
+        mainCam = MainCamAssign.instance.mainCamera;
+        infoCanvas = MainCamAssign.instance.infoCanvas;
         myAnimator = infoCanvas.GetComponent<Animator> ();
     }
     void Update ()
