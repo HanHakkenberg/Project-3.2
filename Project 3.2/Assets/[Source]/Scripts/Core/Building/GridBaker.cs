@@ -17,6 +17,7 @@ namespace Core.Building
     [AddComponentMenu("Core/Building/GridBaker")]
     public class GridBaker : SerializedMonoBehaviour
     {
+        //TODO: Grid Resetting on PlayMode. 
         //TODO: Fix cellScale not affecting prefab scales.
         //TODO: Remove 1,1 extra offset bug.
         //TODO: Change private classes/variables to actually have a 'private' prefix
@@ -107,6 +108,12 @@ namespace Core.Building
         #endregion
 
         #region Methods
+
+        private void Start()
+        {
+            GenerateGrid();
+        }
+
         //private async Task GenerateGrid()
         void GenerateGrid()
         {
@@ -115,9 +122,7 @@ namespace Core.Building
             ClearGrid();
             
             SpawnGrid();
-            
-            grid = new Cell[gridSize.x, gridSize.y];
-
+           
             Vector3 startingPosition = transform.position + new Vector3(-(((float)gridSize.x * cellSize) / 2f), 0, -(((float)gridSize.y * cellSize) / 2f));
             
             Vector3 cellPosition = new Vector3(0, skyLimit, 0);            
@@ -166,6 +171,8 @@ namespace Core.Building
 
         void ClearGrid()
         {
+            if(debugging){Debug.Log("Clear Grid");}
+            
             grid = new Cell[0,0];
             
             if (transform.childCount > 0)
@@ -185,11 +192,15 @@ namespace Core.Building
 
         void SpawnGrid()
         {
+            if(debugging){Debug.Log("Spawn Grid");}
+            
             GameObject childObject = Instantiate(new GameObject(), Vector3.zero, Quaternion.identity, transform) as GameObject;
 
             //childObject.transform.parent = transform;
 
             childObject.name = "Grid";   
+            
+            grid = new Cell[gridSize.x, gridSize.y];
         }
 
         void SpawnCell(Vector2Int index, Cell.AvailabilityState availability, Vector3 position)
