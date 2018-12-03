@@ -57,7 +57,6 @@ public class Ship : MonoBehaviour {
             Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
 
             if (spottedObjects.Length > 0) {
-                Debug.Log("s");
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
                 }
@@ -65,6 +64,10 @@ public class Ship : MonoBehaviour {
 
             yield return new WaitForSeconds(SpottingRefreshTimer);
         }
+    }
+
+    void SpottingUI(){
+
     }
 
     void OnDrawGizmos() {
