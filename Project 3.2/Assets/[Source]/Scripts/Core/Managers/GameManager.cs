@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Tooltip("The time in minutes it takes to go from sunrise to sunrise")]
-    public int lengthOfDay;
     public static GameManager instance;
 
+    [Header("Tick/Time System")]
     #region TickVars
-    float shortTick;
+    [Tooltip("The time in minutes it takes to pass a entire day")]
+    public int lengthOfDay;
+    [Tooltip("The amount of minutes it takes for a short tick to trigger")]
+    public float shortTick;
     float dayTick;
     float shortTime;
     float longTime;
 
     public delegate void Tick();
-    public Tick shortGameplayTick;
-    public Tick longGameplayTick;
+    public static Tick shortGameplayTick;
+    public static Tick longGameplayTick;
     #endregion 
 
     void Awake() 
@@ -32,6 +34,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Start() 
+    {
+        dayTick = lengthOfDay;
+    }
+    
     void Update() 
     {
         GameTicks();
@@ -42,13 +49,15 @@ public class GameManager : MonoBehaviour
         shortTime += Time.deltaTime;
         longTime += Time.deltaTime;
 
-        if (shortTime >= shortTick)
+        if (shortTime >= shortTick * 60)
         {
+            print("shortTick");
             shortTime = 0;
             shortGameplayTick();
         }
-        if (longTime >= dayTick)
+        if (longTime >= dayTick * 60)
         {
+            print("longTick");
             longTime = 0;
             longGameplayTick();
         }

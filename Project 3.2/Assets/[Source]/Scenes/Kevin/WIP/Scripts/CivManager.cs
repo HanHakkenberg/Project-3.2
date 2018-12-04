@@ -76,12 +76,13 @@ public class CivManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        GameManager.shortGameplayTick += ResourceUseOverTime;
+        GameManager.longGameplayTick += ResourceUseOverTimeVariableUpdate;
    }
    void Start() 
    {
         UpdateStability();
-        ResourseUseOverTimeVariableUpdate();
-        StartCoroutine(ResourseUseOverTime());
+        ResourceUseOverTimeVariableUpdate();
    }
 
    /// <summary>
@@ -188,15 +189,14 @@ public class CivManager : MonoBehaviour
       }
    }
 
-   private void ResourseUseOverTimeVariableUpdate()
+   private void ResourceUseOverTimeVariableUpdate()
    {
       foodToEat = poeple * 3;
       foodStep = foodToEat / GameManager.instance.lengthOfDay;
    }
 
-   public IEnumerator ResourseUseOverTime()
+   public void ResourceUseOverTime()
    {
-      yield return new WaitForSeconds(repeatTime);
       if (food > 0)
       {
          foodToEat -= foodStep;
@@ -211,6 +211,5 @@ public class CivManager : MonoBehaviour
          food = 0;
          //Also consequences
       }
-      StartCoroutine(ResourseUseOverTime());
    }
 }
