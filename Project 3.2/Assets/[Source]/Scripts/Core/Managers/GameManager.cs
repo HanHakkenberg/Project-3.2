@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public delegate void Tick();
     public Tick shortGameplayTick;
     public Tick longGameplayTick;
-    #region 
+    #endregion 
 
     void Awake() 
     {
