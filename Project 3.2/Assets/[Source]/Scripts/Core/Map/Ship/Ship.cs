@@ -4,15 +4,23 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Ship : MonoBehaviour {
-    public List<Transform> myPath = new List<Transform>();
+    List<Transform> myPath = new List<Transform>();
     [SerializeField] TransformReference currentSelected;
     [SerializeField] CameraReference currentCamera;
+    bool stopIt = false;
 
     [Header("Spotting")]
     [SerializeField] int SpottingRefreshTimer;
     [SerializeField] int spottingSphereSize;
     [SerializeField] LayerMask spottingMask;
-    [SerializeField] NavMeshAgent myAgent;
+
+    NavMeshAgent myAgent;
+    LineRenderer waypointLines;
+
+    void Awake() {
+        waypointLines = GetComponent<LineRenderer>();
+        myAgent = GetComponent<NavMeshAgent>();
+    }
 
     void Start() {
         StartCoroutine(IslandCheck());
@@ -22,6 +30,10 @@ public class Ship : MonoBehaviour {
         if (myPath.Count > 0) {
             if (Vector3.Distance(transform.position, myPath[0].position) < 2) {
                 RemoveWaypoint(myPath[0]);
+                UpdateWaypointPath(false);
+            }
+            else {
+                UpdateWaypointPath(true);
             }
         }
     }
@@ -33,33 +45,57 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Removes the given waypoint.
+    /// </summary>
+    /// <param name="toRemove">Waypoint to remove </param>
     public void RemoveWaypoint(Transform toRemove) {
         int toRemoveIndex = myPath.IndexOf(toRemove);
 
         ObjectPooler.instance.AddToPool("Waypoint", myPath[toRemoveIndex].gameObject);
         myPath.RemoveAt(toRemoveIndex);
+        waypointLines.positionCount = myPath.Count + 1;
+        UpdateWaypointPath(false);
+
         SetDestination();
     }
 
+    /// <summary>
+    /// Adding a waypoint to the path of the ship.
+    /// </summary>
+    /// <param name="toAdd">Transform to add</param>
+    public void AddWaypoint(Transform toAdd) {
+        myPath.Add(toAdd);
+        waypointLines.positionCount = myPath.Count + 1;
+        UpdateWaypointPath(false);
+    }
+
+    /// <summary>
+    /// Removes the waypoints.
+    /// </summary>
     public void DestroyShip() {
         for (int i = 0; i < myPath.Count; i++) {
             ObjectPooler.instance.AddToPool("Waypoint", myPath[i].gameObject);
         }
     }
 
+    /// <summary>
+    /// Updates the waypoints when removed or moved.
+    /// </summary>
+    /// <param name="toUpdate"> Waypoint to update</param>
+    public void UpdateWaypoint() {
+        UpdateWaypointPath(false);
+    }
+
     IEnumerator PathUpdate() {
-        StopCoroutine(PathUpdate());
-
         while (currentSelected.Value == transform) {
+            StopCoroutine(PathUpdate());
 
-            if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
-                RaycastHit rayhit;
-                if (Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
-                    Debug.Log("s");
-                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.1f, 0));
-                    myPath.Add(newWaypoint.transform);
-                    SetDestination();
-                }
+            RaycastHit rayhit;
+            if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
+                GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.4f, 0));
+                AddWaypoint(newWaypoint.transform);
+                SetDestination();
             }
             yield return null;
         }
@@ -70,6 +106,7 @@ public class Ship : MonoBehaviour {
             Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
 
             if (spottedObjects.Length > 0) {
+
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
                 }
@@ -79,18 +116,30 @@ public class Ship : MonoBehaviour {
         }
     }
 
-    void SpottingUI() {
-
-    }
-
     void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, spottingSphereSize);
     }
 
-    public void SetDestination() {
+    void SetDestination() {
         if (myPath.Count > 0) {
             myAgent.destination = myPath[0].position;
+        }
+        else {
+            myAgent.destination = transform.position + (transform.forward * 150 * Time.deltaTime);
+        }
+    }
+
+    void UpdateWaypointPath(bool boatUpdate) {
+
+        if (boatUpdate == true) {
+            waypointLines.SetPosition(0, transform.position);
+        }
+        else {
+            waypointLines.SetPosition(0, transform.position);
+            for (int i = 0; i < myPath.Count; i++) {
+                waypointLines.SetPosition(i + 1, myPath[i].position);
+            }
         }
     }
 }
