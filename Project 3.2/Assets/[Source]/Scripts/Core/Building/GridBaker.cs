@@ -29,32 +29,50 @@ namespace Core.Building
 
             #region Serialized
 
-            [BoxGroup("Serialized", showLabel: false)]       
+            #if UNITY_EDITOR
+            [BoxGroup("Serialized", showLabel: false)]  
+            #endif
             [SerializeField] Vector2Int gridSize = new Vector2Int(100, 100);
 
+            #if UNITY_EDITOR
             [BoxGroup("Serialized")]
+            #endif
             [SerializeField] public float cellSize = 1;
-            
+        
+            #if UNITY_EDITOR
             [BoxGroup("Serialized"), PropertySpace(SpaceBefore = 10)]
+            #endif
             [SerializeField] public LayerMask layerMask;
         
+            #if UNITY_EDITOR
             [BoxGroup("Serialized"), Range(0, 60)]
+            #endif
             [SerializeField] float maxSlope = 30;
 
+            #if UNITY_EDITOR
             [InlineButton("CheckResolutionUp", "+"), InlineButton("CheckResolutionDown", "-")]
             [BoxGroup("Serialized"), MinValue(1), MaxValue(5)]
+            #endif
             [SerializeField] int checkResolution = 1;
 
+            #if UNITY_EDITOR
             [BoxGroup("Serialized"), PropertySpace(SpaceBefore = 10)]
+            #endif
             [SerializeField] public float skyLimit = 100;
         
+            #if UNITY_EDITOR
             [ToggleLeft]
             [HorizontalGroup("Serialized/SeaLevel"), LabelText("Sea Level")]
+            #endif
             [SerializeField] public bool useSeaLevel = true;
+            #if UNITY_EDITOR
             [HorizontalGroup("Serialized/SeaLevel"), HideLabel, EnableIf("useSeaLevel")]
+            #endif
             [SerializeField] public float seaLevel = -5f;
 
+            #if UNITY_EDITOR
             [BoxGroup("Serialized"), AssetsOnly, PropertySpace(SpaceBefore = 10)]
+            #endif
             [SerializeField] private GameObject cellPrefab;
 
             #region Editor Buttons
@@ -288,7 +306,7 @@ namespace Core.Building
             Unavailable,
 
             /// <summary>
-            /// Nothing can be placed on this Cell,
+            /// Nothing can be placed on this Cell.
             /// </summary>
             OutOfBounds
         }

@@ -9,27 +9,26 @@ namespace Core.Building
     public class Placement : MonoBehaviour
     {
         
-//        [AssetsOnly]
-//        [SerializeField] private GameObject buildingPrab;
-//
-//        [SerializeField] private LayerMask layerMask;
-//        
-//        [Tooltip("Transform which holds the spawned buildings")]
-//        [SceneObjectsOnly]
-//        [SerializeField] private Transform buildingHolder;
-//
-//        private Vector3 mousePos = Vector3.zero;
-//        
-//        private Camera cam;
-//
-//        private GridBaker gridBaker;
-//
-//        private bool placingObject;
-//
-//        private Transform objectWerePlacing;
-//
-//        private CellObject cellObj;
-        
+        //[AssetsOnly]
+        //[SerializeField] private GameObject buildingPrab;
+        //
+        //[SerializeField] private LayerMask layerMask;
+        //        
+        //[Tooltip("Transform which holds the spawned buildings")]
+        //[SceneObjectsOnly]
+        //[SerializeField] private Transform buildingHolder;
+        //
+        //private Vector3 mousePos = Vector3.zero;
+        //        
+        //private Camera cam;
+        //
+        //private GridBaker gridBaker;
+        //
+        //private bool placingObject;
+        //
+        //private Transform objectWerePlacing;
+        //
+        //private CellObject cellObj;
         
         [AssetsOnly]
         public GameObject buildingPrab;
@@ -49,12 +48,9 @@ namespace Core.Building
         private bool placingObject;
 
         private Transform objectWerePlacing;
-
-        //private CellObject cellObj;
         
         void Start()
         {
-            //cam = GetComponent<Camera>();
             cam = GetComponent<Camera>();
             if (cam == null)
             {

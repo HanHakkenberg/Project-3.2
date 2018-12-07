@@ -205,14 +205,12 @@ namespace Core.Building
         //[HorizontalGroup("Main/Alignment")]
         #if UNITY_EDITOR
         [HorizontalGroup("Alignment")]
-        #endif
-        #region Alignment - LEFT
-        #if UNITY_EDITOR
+
         [VerticalGroup(LEFT)]
         
-        #region Settings
         [BoxGroup(SETTINGS)]
         [HorizontalGroup(SETTINGS + "/Alignment", 64, LabelWidth = 48)]
+        //[HorizontalGroup(SETTINGS + "/Alignment", 0.5f, LabelWidth = 48)]
         
         [VerticalGroup(SETTINGS_LEFT)]
         [HideLabel, PreviewField(64)]
@@ -229,11 +227,6 @@ namespace Core.Building
         #endif
         public GameObject Prefab;
         
-        #endregion
-        
-        #endregion
-
-        #region Aligntment - RIGHT
         #if UNITY_EDITOR
         [VerticalGroup(RIGHT)]
 
@@ -241,8 +234,6 @@ namespace Core.Building
         [HideLabel, MultiLineProperty(4)]
         #endif
         public string Description;
-
-        #endregion
         
         #endregion
 
@@ -276,7 +267,9 @@ namespace Core.Building
 
         private static bool DrawColoredCell(Rect rect, bool toggled)
         {
-            if (Event.current.type == EventType.MouseDown && rect.Contains(Event.current.mousePosition))
+            Event currentEvent = Event.current;
+            
+            if (currentEvent.type == EventType.MouseDown && (currentEvent.button == 0 && currentEvent.isMouse) && rect.Contains(Event.current.mousePosition))
             {
                 toggled = !toggled;
                 GUI.changed = true;
