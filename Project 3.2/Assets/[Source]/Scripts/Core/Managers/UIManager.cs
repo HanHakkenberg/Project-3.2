@@ -39,10 +39,10 @@ public class UIManager : MonoBehaviour
     public void UpdateResourceUI()
     {
         stability.text = CivManager.instance.stability.ToString();
-        materials.text = CivManager.instance.buildingMaterials.ToString();
+        materials.text = CivManager.instance.mats.ToString();
         money.text = CivManager.instance.money.ToString();
         food.text = CivManager.instance.food.ToString();
-        people.text = CivManager.instance.poeple.ToString();
+        people.text = CivManager.instance.people.ToString();
     }
 
     /// <summary>
@@ -54,8 +54,8 @@ public class UIManager : MonoBehaviour
     {
         switch (type)
       {
-            case CivManager.Type.BuildingMaterials:
-                materials.text = CivManager.instance.buildingMaterials.ToString();
+            case CivManager.Type.Mats:
+                materials.text = CivManager.instance.mats.ToString();
                 if (value > 0)
                 {
                     materialsUpdate.text = "+" + value.ToString();
@@ -87,8 +87,8 @@ public class UIManager : MonoBehaviour
                     foodUpdate.text = value.ToString();                
                 }
                 break;
-            case CivManager.Type.Poeple:
-                people.text = CivManager.instance.poeple.ToString();
+            case CivManager.Type.People:
+                people.text = CivManager.instance.people.ToString();
                 if (value > 0)
                 {
                     poepleUpdate.text = "+" + value.ToString();

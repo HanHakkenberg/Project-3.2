@@ -9,52 +9,46 @@ public class CivManager : MonoBehaviour
    /// </summary>
    public enum Type
    {
-      BuildingMaterials,
+      Mats,
       Money,
       Food,
-      Poeple,
+      People,
       Stability
    }
 
    public static CivManager instance;
    #region Resources
-   public int buildingMaterials{ get; private set; }
+   public int mats{ get; private set; }
    public int money{ get; private set; }
    public int food{ get; private set; }
-   public int poeple{ get; private set; }
+   public int people{ get; private set; }
+   #endregion
+
+   #region ResoursCaps
+   public int matsCap{ get; private set; }
+   public int moneyCap{ get; private set; }
+   public int foodCap{ get; private set; }
+   public int peopleCap{ get; private set; }
+
    #endregion
 
    #region Ledger
-   public int buildingMaterialsIncome{ get; private set; }
+   public int matsIncome{ get; private set; }
    public int moneyIncome{ get; private set; }
    public int foodIncome{ get; private set; }
-   public int poepleIncome{ get; private set; }
-   
+   public int peopleIncome{ get; private set; }
    #endregion
 
    #region Stability
-
    /// <summary>
    /// stability variable. Used to show in UI and as a condition to decide the stability modifier
    /// </summary>
-   public int stability{
-      get; private set;
-   }
+   public int stability{get; private set;}
    /// <summary>
    /// Resource modifier. use this to modify the income from buildings on the main island.
    /// </summary>
-   /// 
-   /// 
-   /// 
    private float _stabilityModifier = 1f;
-   public float stabilityModifier{
-      get {
-         return _stabilityModifier;
-      } 
-      private set{
-         _stabilityModifier = value;
-      }
-   }
+   public float stabilityModifier{get {return _stabilityModifier;} private set{_stabilityModifier = value;}}
    #endregion
 
    #region OverTime
@@ -97,25 +91,41 @@ public class CivManager : MonoBehaviour
       
       switch (type)
       {
-         case Type.BuildingMaterials:
-            buildingMaterials += toAdd;
-            buildingMaterialsIncome += toAdd;
-            UIManager.instance.RecourceUIPopup(toAdd,Type.BuildingMaterials);
+         case Type.Mats:
+            mats += toAdd;
+            matsIncome += toAdd;
+            if (mats > matsCap)
+            {
+               mats = matsCap; 
+            }
+            UIManager.instance.RecourceUIPopup(toAdd,Type.Mats);
             break;
          case Type.Money:
             money += toAdd;
             moneyIncome += toAdd;
+            if(money > moneyCap)
+            {
+               money = moneyCap;
+            }
             UIManager.instance.RecourceUIPopup(toAdd,Type.Money);
             break;
          case Type.Food:
             food += toAdd;
             foodIncome += toAdd;
+            if(food > foodCap)
+            {
+               food = foodCap;
+            }
             UIManager.instance.RecourceUIPopup(toAdd,Type.Food);            
             break;
-         case Type.Poeple:
-            poeple += toAdd;
-            poepleIncome += toAdd;
-            UIManager.instance.RecourceUIPopup(toAdd,Type.Poeple);
+         case Type.People:
+            people += toAdd;
+            peopleIncome += toAdd;
+            if(people > peopleCap)
+            {
+               people = peopleCap;
+            }
+            UIManager.instance.RecourceUIPopup(toAdd,Type.People);
             break;       
          case Type.Stability:
             stability += toAdd;
@@ -138,25 +148,41 @@ public class CivManager : MonoBehaviour
       
       switch (type)
       {
-         case Type.BuildingMaterials:
-            buildingMaterials += toRemove;
-            buildingMaterialsIncome += toRemove;
-            UIManager.instance.RecourceUIPopup(toRemove,Type.BuildingMaterials);
+         case Type.Mats:
+            mats += toRemove;
+            matsIncome += toRemove;
+            if(mats < 0)
+            {
+               mats = 0;
+            }
+            UIManager.instance.RecourceUIPopup(toRemove,Type.Mats);
             break;
          case Type.Money:
             money += toRemove;
             moneyIncome += toRemove;
+            if(money < 0)
+            {
+               money = 0;
+            }
             UIManager.instance.RecourceUIPopup(toRemove,Type.Money);
             break;
          case Type.Food:
             food += toRemove;
             foodIncome += toRemove;
+            if(food < 0)
+            {
+               food = 0;
+            }
             UIManager.instance.RecourceUIPopup(toRemove,Type.Food);
             break;
-         case Type.Poeple:
-            poeple += toRemove;
-            poepleIncome += toRemove;
-            UIManager.instance.RecourceUIPopup(toRemove,Type.Poeple);
+         case Type.People:
+            people += toRemove;
+            peopleIncome += toRemove;
+            if(people < 0)
+            {
+               people = 0;
+            }
+            UIManager.instance.RecourceUIPopup(toRemove,Type.People);
             break;
          case Type.Stability:
             stability += toRemove;
@@ -191,7 +217,7 @@ public class CivManager : MonoBehaviour
 
    private void ResourceUseOverTimeVariableUpdate()
    {
-      foodToEat = poeple * 3;
+      foodToEat = people * 3;
       foodStep = foodToEat / GameManager.instance.lengthOfDay;
    }
 
