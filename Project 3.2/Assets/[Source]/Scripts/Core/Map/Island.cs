@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Island : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class Island : MonoBehaviour {
+    [SerializeField] TransformReference currentSelected;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnMouseDown() {
+        if (!Input.GetButton("Waypoint Interact")) {
+            currentSelected.Value = transform;
+
+            // Select Island
+        }
     }
 }
