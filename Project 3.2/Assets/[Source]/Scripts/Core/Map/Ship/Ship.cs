@@ -13,6 +13,7 @@ public class Ship : MonoBehaviour {
     [SerializeField] int SpottingRefreshTimer;
     [SerializeField] int spottingSphereSize;
     [SerializeField] LayerMask spottingMask;
+    bool isUpdating;
 
     NavMeshAgent myAgent;
     LineRenderer waypointLines;
@@ -88,16 +89,21 @@ public class Ship : MonoBehaviour {
     }
 
     IEnumerator PathUpdate() {
-        while (currentSelected.Value == transform) {
-            StopCoroutine(PathUpdate());
+        if (isUpdating == false) {
+            isUpdating = true;
 
-            RaycastHit rayhit;
-            if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
-                GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.4f, 0));
-                AddWaypoint(newWaypoint.transform);
-                SetDestination();
+            while (currentSelected.Value == transform) {
+
+                RaycastHit rayhit;
+                if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
+                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.4f, 0));
+                    AddWaypoint(newWaypoint.transform);
+                    SetDestination();
+                }
+                yield return null;
             }
-            yield return null;
+
+            isUpdating = false;
         }
     }
 
@@ -138,6 +144,7 @@ public class Ship : MonoBehaviour {
         else {
             waypointLines.SetPosition(0, transform.position);
             for (int i = 0; i < myPath.Count; i++) {
+
                 waypointLines.SetPosition(i + 1, myPath[i].position);
             }
         }
