@@ -19,7 +19,7 @@ using Quaternion = UnityEngine.Quaternion;
 namespace Core.Building
 {
     [AddComponentMenu("Core/Building/GridBaker")]
-    public class GridBaker : SerializedMonoBehaviour
+    public class GridBaker : MonoBehaviour
     {
         //TODO: Fix Grid Resetting on PlayMode. 
         //TODO: Make Checking Resolution actually do something.
@@ -40,6 +40,8 @@ namespace Core.Building
         
             [BoxGroup("Serialized"), Range(0, 60)]
             [SerializeField] float maxSlope = 30;
+
+            [InlineButton("CheckResolutionUp", "+"), InlineButton("CheckResolutionDown", "-")]
             [BoxGroup("Serialized"), MinValue(1), MaxValue(5)]
             [SerializeField] int checkResolution = 1;
 
@@ -59,13 +61,22 @@ namespace Core.Building
 
             #if UNITY_EDITOR
 
-            [HorizontalGroup("Serialized/GridGeneration")]
-            [Button("Generate Grid", ButtonSizes.Medium), GUIColor(0.25f, 1f, 0.25f)]
+            [ButtonGroup("Serialized/GridGeneration")]
+            [Button("Generate Grid", ButtonSizes.Medium), GUIColor(0.4f, 1f, 0.1f)]
             void GenerateGridButton() { GenerateGrid();}
 
-            [HorizontalGroup("Serialized/GridGeneration")]
-            [Button("Clear Grid", ButtonSizes.Medium), GUIColor(1f, 0.25f, 0.25f)]
+            [ButtonGroup("Serialized/GridGeneration")]
+            [Button("Clear Grid", ButtonSizes.Medium), GUIColor(1f, 0.4f, 0.1f)]
             void ClearGridButton() { ClearGrid();}
+
+            void CheckResolutionUp()
+            {
+                checkResolution += 2;
+            }
+            void CheckResolutionDown() 
+            {
+                checkResolution -= 2;
+            }
             
             [ContextMenu("Toggle Debugging")]
             void ToggleDebugging()
@@ -180,12 +191,10 @@ namespace Core.Building
             {
                 if (Application.isEditor)
                 {
-                    //DestroyImmediate(transform.GetChild(0));
                     DestroyImmediate(transform.GetChild(0).gameObject);
                 }
                 else
                 {
-                    //Destroy(transform.GetChild(0));
                     Destroy(transform.GetChild(0).gameObject);
                 }
             }
@@ -234,7 +243,7 @@ namespace Core.Building
             {
                 Gizmos.color = Color.cyan;
                 Gizmos.DrawWireCube(new Vector3(transform.position.x, (useSeaLevel? seaLevel : 0) , transform.position.z), 
-                    new Vector3(gridSize.x, 0, gridSize.y)); 
+                    new Vector3(gridSize.x * cellSize, 0, gridSize.y * cellSize)); 
                 
                 foreach (Cell cell in grid)
                 {
@@ -310,95 +319,4 @@ namespace Core.Building
             CellObject = cellObject;
         }
     }
-
-    #if UNITY_EDITOR
-    [CustomEditor(typeof(GridBaker), editorForChildClasses: false)]
-    public class GridBakerEditor : OdinEditor
-    {        
-        public override void OnInspectorGUI()
-        {
-            DrawDefaultInspector();
-        }
-
-        void OnSceneGUI()
-        {
-            if (TargetGridBaker != null)
-            {
-                Input();
-                
-                if (TargetGridBaker.displayGizmos) { Draw(); }
-            }
-            else
-            {
-                Debug.LogError("GridBaker has not been assigned");
-            }
-        }
-
-        private GridBaker TargetGridBaker
-        {
-            get
-            {
-                if (target != null)
-                {
-                    if (target.GetType() != typeof(GridBaker))
-                    {
-                        Debug.LogError(string.Format("GridBakerEditor is not a custom editor of type GridBaker, it's of type {0}", target.GetType()));
-                    }
-                    else
-                    {
-                        return (GridBaker) (target as GridBaker);
-                    }
-                }
-                
-                Debug.LogError("Custom Editor does not have a target");
-
-                return null;
-            }
-        }
-
-        void Input()
-        {
-            Event guiEvent = Event.current;
-            Vector2 mousePos = HandleUtility.GUIPointToWorldRay(guiEvent.mousePosition).origin;
-        }
-
-        void Draw()
-        {
-            GridBaker gridBaker = TargetGridBaker;
-            
-            Vector3 gridPos = gridBaker.transform.position;
-            
-            
-            //DebugExtension.DebugBounds(new Bounds
-            //(
-            //    new Vector3(gridPos.x, (gridBaker.useSeaLevel? gridBaker.seaLevel : gridPos.y), gridPos.z),
-            //    new Vector3(gridBaker.GridWorldSize.x, 0, gridBaker.GridWorldSize.y
-            //)), Color.cyan);
-            
-            Cell[,] grid = gridBaker.grid;
-            
-            if (grid != null)
-            {
-                foreach (Cell cell in grid)
-                {                    
-                    //Gizmos.color = (cell.Occupied) ? Color.green : Color.red;
-                    //DebugExtension.DebugLocalCube(cell.Position, new Vector3(gridBaker.cellSize, 0, gridBaker.cellSize));
-                    
-                    //DebugExtension.DebugLocalCube(gridBaker.transform, new Vector3(gridBaker.cellSize, 0, gridBaker.cellSize), (cell.Occupied) ? Color.green : Color.red);
-
-                    EditorGUI.BeginChangeCheck();
-                    
-                    //Vector3 newPosition = Handles.FreeMoveHandle(cell.Position, Quaternion.identity, 1, Vector3.one * 0.1f, Handles.DotHandleCap);
-                    
-                    if (EditorGUI.EndChangeCheck())
-                    {
-                        Undo.RecordObject(target, "Move Cell");
-                        //cell.Position = newPosition;
-                    }
-                }
-            }
-            else{ Debug.LogError("GridBaker does not have a grid assigned");}
-        }
-    }
-    #endif
 }

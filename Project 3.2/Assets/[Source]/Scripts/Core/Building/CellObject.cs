@@ -14,9 +14,7 @@ namespace Core.Building
 
         [NonSerialized] public GridBaker origin;
         
-        public Cell cell;
-
-        //[NonSerialized] public Vector2Int index;
+        [NonSerialized] public Cell cell;
         
         #endregion
 

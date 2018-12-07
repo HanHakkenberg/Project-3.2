@@ -30,6 +30,9 @@
             <e p="Core" t="Include">
               <e p="Building" t="Include">
                 <e p="CellObject.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BuildingEditor.cs" t="Include" />
+                </e>
                 <e p="GridBaker.cs" t="Include" />
                 <e p="Placement.cs" t="Include" />
               </e>
@@ -204,7 +207,20 @@
                     <e p="Vector4Variable.cs" t="Include" />
                   </e>
                 </e>
+                <e p="SerializableInterfaces" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="SerializableInterfaceDrawer.cs" t="Include" />
+                  </e>
+                  <e p="SerializableInterface.cs" t="Include" />
+                </e>
+                <e p="Singletons" t="Include">
+                  <e p="PersistentSingleton.cs" t="Include" />
+                  <e p="Singleton.cs" t="Include" />
+                </e>
               </e>
+            </e>
+            <e p="Temporary" t="Include">
+              <e p="BuildDebugger.cs" t="Include" />
             </e>
           </e>
           <e p="Settings" t="Include">

@@ -9,14 +9,36 @@ namespace Core.Building
     public class Placement : MonoBehaviour
     {
         
+//        [AssetsOnly]
+//        [SerializeField] private GameObject buildingPrab;
+//
+//        [SerializeField] private LayerMask layerMask;
+//        
+//        [Tooltip("Transform which holds the spawned buildings")]
+//        [SceneObjectsOnly]
+//        [SerializeField] private Transform buildingHolder;
+//
+//        private Vector3 mousePos = Vector3.zero;
+//        
+//        private Camera cam;
+//
+//        private GridBaker gridBaker;
+//
+//        private bool placingObject;
+//
+//        private Transform objectWerePlacing;
+//
+//        private CellObject cellObj;
+        
+        
         [AssetsOnly]
-        [SerializeField] private GameObject buildingPrab;
+        public GameObject buildingPrab;
 
-        [SerializeField] private LayerMask layerMask;
+        public LayerMask layerMask;
         
         [Tooltip("Transform which holds the spawned buildings")]
         [SceneObjectsOnly]
-        [SerializeField] private Transform buildingHolder;
+        public Transform buildingHolder;
 
         private Vector3 mousePos = Vector3.zero;
         
@@ -28,7 +50,7 @@ namespace Core.Building
 
         private Transform objectWerePlacing;
 
-        private CellObject cellObj;
+        //private CellObject cellObj;
         
         void Start()
         {
@@ -38,8 +60,10 @@ namespace Core.Building
             {
                 cam = Camera.main;
             }
+            
+            Debug.Log("Placement - Start");
         }
-        
+
         void Update()
         {
             gridBaker = FindObjectOfType<GridBaker>();
@@ -60,90 +84,87 @@ namespace Core.Building
             {
                 return;
             }
-            
+
             if (Input.GetButtonDown("Fire1"))
             {
+                Debug.Log("Placement - Fire1");
+
                 if (!placingObject)
                 {
-                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, buildingHolder).transform;
+                    Debug.Log("Placement - Instantiate Building");
+
+                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, buildingHolder)
+                        .transform;
+                    
                     placingObject = true;
                 }
-                else
+                else if(GroundCheck(out RaycastHit groundCheckHit, out Cell cell))
                 {
-                    //RaycastHit groundCheckHit;
-                    //if (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
-                        //-Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
-                    if(GroundCheck(out RaycastHit groundCheckHit))
+                    if (cell != null)
                     {
-                        CellObject cellObjHolder = groundCheckHit.transform.GetComponent<CellObject>();
-
-                        if (cellObjHolder != null)
+                        Debug.Log("Placement - Trying to Anchor Building");
+    
+                        if (cell.Availability == Cell.AvailabilityState.Available)
                         {
-                            if (cellObj.cell != null)
-                            {
-                                if (cellObj.cell.Availability == Cell.AvailabilityState.Available)
-                                {
-                                    //Debug.Log("Cell Available");
-                                    objectWerePlacing.position = cellObj.transform.position;
-
-                                    cellObj.cell.Availability = Cell.AvailabilityState.Unavailable;
-
-                                    objectWerePlacing = null;
-                                    placingObject = false;
-                                }
-                            }
+                            Debug.Log("Placement - Anchored Building");
+                            
+                            objectWerePlacing.position = cell.Position;
+    
+                            cell.Availability = Cell.AvailabilityState.Unavailable;
+    
+                            objectWerePlacing = null;
+                            placingObject = false;
                         }
                     }
                 }
             }
-           
+
             if (placingObject)
             {
-                //RaycastHit groundCheckHit;
-                //if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z), -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
-                if(GroundCheck(out RaycastHit groundCheckHit))
+                if (GroundCheck(out RaycastHit groundCheckHit, out Cell cell))
                 {
-                    CellObject cellObjHolder = groundCheckHit.transform.GetComponent<CellObject>();
-
-                    if (cellObjHolder != null)
+                    if (cell != null)
                     {
-                        cellObj = cellObjHolder;
-                        
-                        //Debug.Log("cellObj is not null");
-                        if (cellObj.cell != null)
-                        {
-                            if (cellObj.cell.Availability == Cell.AvailabilityState.Available)
-                            {
-                                //Debug.Log("Cell Available");
-                                objectWerePlacing.position = cellObj.transform.position;
-                            }
-                            else
-                            {
-                                //Debug.Log("Cell Unavailable");
-                                objectWerePlacing.position = groundCheckHit.point;
-                            }
-                        }
-                        else
-                        {
-                            objectWerePlacing.position = groundCheckHit.point;
-                            Debug.Log("cellObj.cell is null");
-                        }
+                        objectWerePlacing.position = cell.Position;
+                        //Debug.Log("Placement: placingObject - Cell is NOT null");
                     }
                     else
                     {
                         objectWerePlacing.position = groundCheckHit.point;
-                        Debug.Log("cellObj is null");
+                        //Debug.Log("Placement: placingObject - Cell IS null");
                     }
                 }
             }
         }
-
-        bool GroundCheck(out RaycastHit groundCheckHit)
+        
+        bool GroundCheck(out RaycastHit groundCheckHit, out Cell cell)
         {
-            return (Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
-                -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask));
-        }
+            if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
+                -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
+            {
+                CellObject cellObject = groundCheckHit.transform.GetComponent<CellObject>();
 
+                if (cellObject != null)
+                {
+                    cell = cellObject.cell;
+
+                    return true;
+                }
+                else
+                {
+                    cell = null;
+                    
+                    return false;
+                }
+            }
+            else
+            {
+                cell = null;
+                
+                return false;
+            }
+        }
+        
         void OnDrawGizmos()
         {
             Gizmos.color = Color.yellow;
