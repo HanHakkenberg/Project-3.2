@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
     [SerializeField] Transform cameraPivot;
     [SerializeField] Transform cameraTarget;
     [SerializeField] int camAngle;
     [SerializeField] bool borderMovement = false;
+    [SerializeField] BoolReference canControl;
 
     [Header("Movement")]
     [SerializeField] float movementSpeed = 10;
@@ -23,14 +25,22 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] int borderYMin, borderYMax;
     [SerializeField] int borderXMin, borderXMax;
 
-    void Start() {
+    [Header("Switch")]
+    [SerializeField] int switchMax;
+    [SerializeField] int switchMin;
+    [SerializeField] float switchSpeed;
+    [SerializeField] GameEvent switchEvent;
+    [SerializeField] GameEvent stopSwitch;
+
+    void Awake() {
         cameraPivot.eulerAngles = new Vector3(-camAngle, 0, 0);
         cameraTarget.localPosition = new Vector3(0, startZoom, 0);
-        cameraTarget.localEulerAngles = new Vector3(90, 180, 180);
     }
 
     void Update() {
-        UpdatePlayerControler();
+        if (canControl.Value) {
+            UpdatePlayerControler();
+        }
     }
 
     public void UpdatePlayerControler() {
@@ -141,4 +151,35 @@ public class CameraMovement : MonoBehaviour {
         }
     }
     #endregion
+
+    /// <summary>
+    /// Zooms the camera to the correct possision to switch
+    /// </summary>
+    /// <param name="zoomIn"></param>
+    /// <returns>Desides if it zoom in or out</returns>
+    public void StartSwitch(bool zoomIn) {
+        StartCoroutine(SwitchZoom(zoomIn));
+    }
+
+    IEnumerator SwitchZoom(bool zoomIn) {
+        if (zoomIn == true) {
+            cameraTarget.localPosition = new Vector3(0, switchMax, 0);
+
+            while (cameraTarget.localPosition.y >= switchMin) {
+                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y - Time.deltaTime * switchSpeed, 0);
+                yield return null;
+            }
+            canControl.Value = true;
+            stopSwitch.Raise();
+        }
+        else {
+            canControl.Value = false;
+
+            while (cameraTarget.localPosition.y <= switchMax) {
+                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y + Time.deltaTime * switchSpeed, 0);
+                yield return null;
+            }
+            switchEvent.Raise();
+        }
+    }
 }
