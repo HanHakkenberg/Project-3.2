@@ -9,7 +9,7 @@ public class Island : MonoBehaviour {
         if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
 
-            // Select Island
+            IslandInteractionManager.instance.IslandInsert(this);
         }
     }
 }
