@@ -5,6 +5,18 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public enum Panels
+    {
+        Main,
+        IslandInteraction,
+        PauseMenu
+    }
+    #region Pannels
+    GameObject activePannel;
+    public GameObject mainPannel;
+    public GameObject islandInteractionPannel;
+    public GameObject pauseMenuPannel; 
+    #endregion
     public static UIManager instance;
 
     #region RecourseUI
@@ -30,7 +42,35 @@ public class UIManager : MonoBehaviour
     void Start() 
     {
         UpdateResourceUI();
+        SwitchPanel(Panels.Main);
     }
+
+    public void SwitchPanel (Panels panels)
+    {
+        if (activePannel != null)
+        {
+            activePannel.SetActive(false);            
+        }
+        switch (panels)
+        {
+            case Panels.Main:
+            mainPannel.SetActive(true);
+            activePannel = mainPannel;
+            break;
+
+            case Panels.IslandInteraction:
+            islandInteractionPannel.SetActive(true);
+            activePannel = islandInteractionPannel;
+            break;
+
+            case Panels.PauseMenu:
+            pauseMenuPannel.SetActive(true);
+            activePannel = pauseMenuPannel;
+            break;
+        }
+    }
+
+    #region ResourceUI
 
     /// <summary>
     /// Only use this function if you need to refresh the ResourceUI
@@ -121,4 +161,5 @@ public class UIManager : MonoBehaviour
         poepleUpdate.text = "";
         stabilityUpdate.text = "";
     }
+    #endregion
 }
