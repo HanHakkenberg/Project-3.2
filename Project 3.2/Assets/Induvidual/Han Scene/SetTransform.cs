@@ -7,6 +7,10 @@ public class SetTransform : MonoBehaviour {
         myTransform.Value = GetComponent<Camera>();
     }
 
+    void Start(){
+        myTransform.Value = GetComponent<Camera>();
+    }
+
     void OnEnable() {
         myTransform.Value = GetComponent<Camera>();
     }

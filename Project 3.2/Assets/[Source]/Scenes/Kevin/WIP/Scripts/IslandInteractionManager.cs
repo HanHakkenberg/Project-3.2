@@ -52,7 +52,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void IslandInsert(Island island)
     {
-
+        UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
     }
 
     #region UIButtons

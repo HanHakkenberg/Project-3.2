@@ -1029,6 +1029,7 @@ GameObject:
   - component: {fileID: 4925428538711884714}
   - component: {fileID: 4925428538711884715}
   - component: {fileID: 3515519560206142625}
+  - component: {fileID: 8580378376646451407}
   m_Layer: 0
   m_Name: Map Interactable
   m_TagString: Untagged
@@ -1087,11 +1088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spottedObject: {fileID: 4925428537926346893}
-  currentSelected:
-    value: {fileID: 0}
-    variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
-    useConstant: 0
-    myEvent: {fileID: 0}
 --- !u!114 &3515519560206142625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,6 +1103,7 @@ MonoBehaviour:
   info: Stops the Interaction
   listenOnEnable: 1
   listenOnDisable: 0
+  delay: 0
   myGameEvent:
   - {fileID: 11400000, guid: 835ab5fdebe42be40b99c9e6518c5305, type: 2}
   response:
@@ -1125,6 +1122,23 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &8580378376646451407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925428538711884713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSelected:
+    value: {fileID: 0}
+    variable: {fileID: 0}
+    useConstant: 0
+    myEvent: {fileID: 0}
 --- !u!1 &7675727918217242437
 GameObject:
   m_ObjectHideFlags: 0

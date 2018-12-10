@@ -8,6 +8,7 @@ public class Ship : MonoBehaviour {
     [SerializeField] TransformReference currentSelected;
     [SerializeField] CameraReference currentCamera;
     bool stopIt = false;
+    [SerializeField] int lineWith;
 
     [Header("Spotting")]
     [SerializeField] int SpottingRefreshTimer;
@@ -24,6 +25,8 @@ public class Ship : MonoBehaviour {
     }
 
     void Start() {
+        waypointLines.startWidth = lineWith;
+        waypointLines.endWidth = lineWith;
         StartCoroutine(IslandCheck());
     }
 
@@ -96,7 +99,7 @@ public class Ship : MonoBehaviour {
 
                 RaycastHit rayhit;
                 if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
-                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 0.4f, 0));
+                    GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 1.5f, 0));
                     AddWaypoint(newWaypoint.transform);
                     SetDestination();
                 }
@@ -139,10 +142,10 @@ public class Ship : MonoBehaviour {
     void UpdateWaypointPath(bool boatUpdate) {
 
         if (boatUpdate == true) {
-            waypointLines.SetPosition(0, transform.position);
+            waypointLines.SetPosition(0, transform.position + new Vector3(0,1.5f,0));
         }
         else {
-            waypointLines.SetPosition(0, transform.position);
+            waypointLines.SetPosition(0, transform.position + new Vector3(0,1.5f,0));
             for (int i = 0; i < myPath.Count; i++) {
 
                 waypointLines.SetPosition(i + 1, myPath[i].position);
