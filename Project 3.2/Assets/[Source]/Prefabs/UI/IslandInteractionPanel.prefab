@@ -531,14 +531,13 @@ GameObject:
   - component: {fileID: 7300535878207057823}
   - component: {fileID: 7300535878207057817}
   - component: {fileID: 7300535878207057816}
-  - component: {fileID: 7300535878207057818}
   m_Layer: 5
   m_Name: IslandInteractionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7300535878207057823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -599,27 +598,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &7300535878207057818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7300535878207057822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19520ecf8ed67b14e9af0cc57c5e707a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeIsland: {fileID: 0}
-  minInput: 0
-  maxInput: 0
-  tradePannel: {fileID: 7300535878355495916}
-  inputOffer: {fileID: 7300535878883336384}
-  inputDemand: {fileID: 7300535879581677196}
-  tradeTypeDropdown: {fileID: 7300535879352800158}
-  OfferTypeDropdown: {fileID: 7300535878184432149}
-  DemandTypeDropdown: {fileID: 7300535878863442306}
 --- !u!1 &7300535878220107083
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +750,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7300535878207057818}
+      - m_Target: {fileID: 0}
         m_MethodName: Pillage
         m_Mode: 1
         m_Arguments:
@@ -2139,7 +2117,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7300535878207057818}
+      - m_Target: {fileID: 0}
         m_MethodName: Confirm
         m_Mode: 1
         m_Arguments:
@@ -3024,7 +3002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7300535878207057818}
+      - m_Target: {fileID: 0}
         m_MethodName: Leave
         m_Mode: 1
         m_Arguments:
@@ -3873,7 +3851,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7300535878207057818}
+      - m_Target: {fileID: 0}
         m_MethodName: Trade
         m_Mode: 1
         m_Arguments:

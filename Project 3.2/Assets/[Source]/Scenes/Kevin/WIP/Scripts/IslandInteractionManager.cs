@@ -12,7 +12,7 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     public static IslandInteractionManager instance;
-    public Island activeIsland;
+    Island activeIsland;
     TradeTypes tradeTypes;
 
     
