@@ -14,7 +14,7 @@ public class CameraEvent : MonoBehaviour {
     [SerializeField] bool setCameraAtStart;
 
     void Start() {
-        if(setCameraAtStart) {
+        if (setCameraAtStart) {
             SetMainCamera();
         }
     }
