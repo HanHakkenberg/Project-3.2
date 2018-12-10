@@ -8,6 +8,8 @@ public class Building : ScriptableObject
     public new string name;
     public string description;
 
+    public int buildingNumb;
+
     public int tempStatOne; ///change once decided
     public int tempStatTwo;
     public int tempStatThree;

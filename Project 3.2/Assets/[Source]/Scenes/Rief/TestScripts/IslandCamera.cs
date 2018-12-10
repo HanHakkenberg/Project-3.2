@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Playables;
 
 public class IslandCamera : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class IslandCamera : MonoBehaviour
     [SerializeField] private GameObject infoCanvas;
     [SerializeField] private Building thisBuilding;
     Animator myAnimator;
+    bool firstTime = true;
+    public PlayableDirector buildingAnim;
+    public bool isPlaced;
 
     private void Start ()
     {
@@ -26,14 +30,31 @@ public class IslandCamera : MonoBehaviour
             buildingCam.enabled = false;
             myAnimator.SetBool ("Fading", false);
         }
+        if(Input.GetButtonDown("Jump"))
+        {
+            FirstPlaced();
+        }
     }
 
     void OnMouseDown ()
     {
+        if(isPlaced)
+        {
         mainCam.enabled = false;
         buildingCam.enabled = true;
         BuildingDisplay.building = thisBuilding;
         myAnimator.SetBool ("Fading", true);
         infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
+        }
+    }
+    public void FirstPlaced()
+    {
+        if(BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] == true)
+        {
+            buildingAnim.Play();
+
+            firstTime = false;
+            isPlaced = true;
+        }
     }
 }
