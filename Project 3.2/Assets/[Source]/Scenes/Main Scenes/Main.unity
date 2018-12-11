@@ -593,6 +593,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7133448127112040455, guid: cb85cdadd8c57a64da8dd0bd9b8f7929,
+        type: 3}
+      propertyPath: currentCamera.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: f1a0cd76f0f2afc4eb54427275b6dfd5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb85cdadd8c57a64da8dd0bd9b8f7929, type: 3}
 --- !u!1001 &575668873
@@ -2127,6 +2133,12 @@ PrefabInstance:
       propertyPath: m_DefaultBlend.m_Time
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1954960007997956684, guid: 3182854b55e02ec468b427f8388c3ca2,
+        type: 3}
+      propertyPath: myTransform.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: f1a0cd76f0f2afc4eb54427275b6dfd5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3182854b55e02ec468b427f8388c3ca2, type: 3}
 --- !u!1 &1387722939
@@ -2292,6 +2304,7 @@ GameObject:
   - component: {fileID: 1559198851}
   - component: {fileID: 1559198850}
   - component: {fileID: 1559198849}
+  - component: {fileID: 1559198853}
   m_Layer: 5
   m_Name: Switch Button
   m_TagString: Untagged
@@ -2434,6 +2447,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559198847}
   m_CullTransparentMesh: 0
+--- !u!114 &1559198853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559198847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c029a0a03c620a34bb37da60db242a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: []
+  myUnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1559198849}
+        m_MethodName: RaiseEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 270649062}
+        m_MethodName: PrototypeFunction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  myInput: Camera Switch
 --- !u!1 &1568134017
 GameObject:
   m_ObjectHideFlags: 0

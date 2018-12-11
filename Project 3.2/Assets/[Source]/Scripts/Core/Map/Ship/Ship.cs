@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Ship : MonoBehaviour {
     List<Transform> myPath = new List<Transform>();
     [SerializeField] TransformReference currentSelected;
-    [SerializeField] CameraReference currentCamera;
+    [SerializeField] TransformReference currentCamera;
     bool stopIt = false;
     [SerializeField] int lineWith;
 
@@ -98,7 +98,7 @@ public class Ship : MonoBehaviour {
             while (currentSelected.Value == transform) {
 
                 RaycastHit rayhit;
-                if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
+                if (Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1") && Physics.Raycast(currentCamera.Value.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition), out rayhit) && rayhit.collider.CompareTag("Map")) {
                     GameObject newWaypoint = ObjectPooler.instance.GetFromPool("Waypoint", rayhit.point + new Vector3(0, 1.5f, 0));
                     AddWaypoint(newWaypoint.transform);
                     SetDestination();

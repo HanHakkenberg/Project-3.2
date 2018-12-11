@@ -4,7 +4,7 @@ public class Waypoint : MonoBehaviour {
     Ship myShip;
     [SerializeField] TransformReference currentlySelected;
     [SerializeField] LayerMaskReference Waypointlayermask;
-    [SerializeField] CameraReference currentCamera;
+    [SerializeField] TransformReference currentCamera;
     [SerializeField] Collider myCollider;
 
     void Awake() {
@@ -22,7 +22,7 @@ public class Waypoint : MonoBehaviour {
     void OnMouseDrag() {
         myCollider.enabled = false;
 
-        if (myShip.transform == currentlySelected.Value && Input.GetButton("Waypoint Interact") && Input.GetButton("Fire1") && Physics.Raycast(currentCamera.Value.ScreenPointToRay(Input.mousePosition), out rayhit, Waypointlayermask.Value) && rayhit.collider.CompareTag("Map")) {
+        if (myShip.transform == currentlySelected.Value && Input.GetButton("Waypoint Interact") && Input.GetButton("Fire1") && Physics.Raycast(currentCamera.Value.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition), out rayhit, Waypointlayermask.Value) && rayhit.collider.CompareTag("Map")) {
             myShip.UpdateWaypoint();
             myCollider.enabled = false;
             transform.position = rayhit.point + new Vector3(0, 0.1f);
