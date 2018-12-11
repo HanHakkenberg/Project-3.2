@@ -1,111 +1,83 @@
-﻿using Sirenix.OdinInspector;
+﻿#if UNITY_EDITOR
+using Sirenix.OdinInspector;
+using Sirenix.OdinInspector.Editor;
+using Sirenix.Utilities;
+using Sirenix.Utilities.Editor;
+using System.Collections;
+
+using UnityEditor;
+#endif
+
+using UnityEngine;
+using System.Linq;
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+using ObjectFieldAlignment = Sirenix.OdinInspector.ObjectFieldAlignment;
 
 namespace Core.Building
-{
-    #if UNITY_EDITOR
-    using Sirenix.OdinInspector.Editor;
-    using Sirenix.Utilities;
-    using Sirenix.Utilities.Editor;
-    using System.Collections;
-    
-    using UnityEditor;
-    #endif
-    
-    using UnityEngine;
-    using System.Linq;
-    
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    
-    using ObjectFieldAlignment = Sirenix.OdinInspector.ObjectFieldAlignment;
-
-    #if UNITY_EDITOR
-    
+{   
     public class BuildingEditor : OdinMenuEditorWindow
     {
         
         #region Settings
         
-        //[ContextMenu("Editor Settings")]
-        [MenuItem("Building Editor/Settings", false, 0)]
-        void OpenEditorSettings()
-        {
-            var window = UnityEditor.EditorWindow.GetWindow<BuildingEditorSettings>();
-            window.WindowPadding = new Vector4(); 
-        }
+        [SerializeField] private BuildingEditorSettings settings = new BuildingEditorSettings();
         
         #endregion
         
         [MenuItem("Walter/Building Editor")]
         private static void Open()
         {
-            var window = GetWindow<BuildingEditor>();
+            BuildingEditor window = GetWindow<BuildingEditor>();
             window.position = GUIHelper.GetEditorWindowRect().AlignCenter(800, 500);
         }
 
         protected override OdinMenuTree BuildMenuTree()
         {
-            var tree = new OdinMenuTree(true);
-            tree.DefaultMenuStyle.IconSize = 28;
+            OdinMenuTree tree = new OdinMenuTree(supportsMultiSelect: false);
+            tree.DefaultMenuStyle.IconSize = 26;
             tree.Config.DrawSearchToolbar = true;
 
-            tree.AddAllAssetsAtPath("Constructions", BuildingEditorSettings.resourcePath, typeof(Construction), true);
-
-            tree.EnumerateTree().AddIcons<Building>(x => x.Icon);
+            OdinMenuItem settingsMenu = new OdinMenuItem(tree, "Settings", this.settings);
+            settingsMenu.Icon = EditorIcons.SettingsCog.Raw;
+            tree.MenuItems.Insert(0, settingsMenu);
+            
+            tree.AddAllAssetsAtPath("Constructions", settings.resourcePath, typeof(Construction), true);
+            tree.EnumerateTree().AddIcons<Construction>(x => x.Icon);
 
             return tree;
         }
 
-        private void AddDragHandles(OdinMenuItem menuItem)
-        {
-            menuItem.OnDrawItem += x => DragAndDropUtilities.DragZone(menuItem.Rect, menuItem.Value, false, false);
-        }
-        
-        
-        /*
         protected override void OnBeginDrawEditors()
         {
-            var selected = this.MenuTree.Selection.FirstOrDefault();
-            var toolbarHeight = this.MenuTree.Config.SearchToolbarHeight;
+            int toolbarHeight = this.MenuTree.Config.SearchToolbarHeight;
 
-            // Draws a toolbar with the name of the currently selected menu item.
             SirenixEditorGUI.BeginHorizontalToolbar(toolbarHeight);
             {
-                if (selected != null)
+                if (SirenixEditorGUI.ToolbarButton(EditorIcons.Plus))
                 {
-                    GUILayout.Label(selected.Name);
-                }
-
-                if (SirenixEditorGUI.ToolbarButton(new GUIContent("Create Item")))
-                {
-                    ScriptableObjectCreator.ShowDialog<Item>("Assets/Plugins/Sirenix/Demos/Sample - RPG Editor/Items", obj =>
+                    ScriptableObjectCreator.ShowDialog<Construction>(settings.resourcePath, obj =>
                     {
                         obj.Name = obj.name;
-                        base.TrySelectMenuItemWithObject(obj); // Selects the newly created item in the editor
-                    });
-                }
-
-                if (SirenixEditorGUI.ToolbarButton(new GUIContent("Create Character")))
-                {
-                    ScriptableObjectCreator.ShowDialog<Character>("Assets/Plugins/Sirenix/Demos/Sample - RPG Editor/Character", obj =>
-                    {
-                        obj.Name = obj.name;
-                        base.TrySelectMenuItemWithObject(obj); // Selects the newly created item in the editor
+                        base.TrySelectMenuItemWithObject(obj);
                     });
                 }
             }
             SirenixEditorGUI.EndHorizontalToolbar();
         }
-         */
     }
 
-    public class BuildingEditorSettings : OdinEditorWindow
+    [HideLabel]
+    [Serializable]
+    public class BuildingEditorSettings
     {
-        [FolderPath(ParentFolder = "Assets/Resources")]
-        public static string resourcePath = "Assets/[Source]/Resources";
+        [FolderPath] //Assets/[Source]/Prefabs/Resources
+        public string resourcePath = "Assets/[Source]/Prefabs/Constructions";
     }
-   
+    
     public static class ScriptableObjectCreator
     {
         public static void ShowDialog<T>(string defaultDestinationPath, Action<T> onScritpableObjectCreated = null)
@@ -115,8 +87,6 @@ namespace Core.Building
 
             if (selector.SelectionTree.EnumerateTree().Count() == 1)
             {
-                // If there is only one scriptable object to choose from in the selector, then 
-                // we'll automatically select it and confirm the selection. 
                 selector.SelectionTree.EnumerateTree().First().Select();
                 selector.SelectionTree.Selection.ConfirmSelection();
             }
@@ -129,12 +99,12 @@ namespace Core.Building
 
         private class ScriptableObjectSelector<T> : OdinSelector<Type> where T : ScriptableObject
         {
-            private Action<T> onScritpableObjectCreated;
+            private Action<T> onScriptableObjectCreated;
             private string defaultDestinationPath;
 
-            public ScriptableObjectSelector(string defaultDestinationPath, Action<T> onScritpableObjectCreated = null)
+            public ScriptableObjectSelector(string defaultDestinationPath, Action<T> onScriptableObjectCreated = null)
             {
-                this.onScritpableObjectCreated = onScritpableObjectCreated;
+                this.onScriptableObjectCreated = onScriptableObjectCreated;
                 this.defaultDestinationPath = defaultDestinationPath;
                 this.SelectionConfirmed += this.ShowSaveFileDialog;
             }
@@ -169,9 +139,9 @@ namespace Core.Building
                     AssetDatabase.CreateAsset(obj, dest);
                     AssetDatabase.Refresh();
 
-                    if (this.onScritpableObjectCreated != null)
+                    if (this.onScriptableObjectCreated != null)
                     {
-                        this.onScritpableObjectCreated(obj);
+                        this.onScriptableObjectCreated(obj);
                     }
                 }
                 else
@@ -181,224 +151,4 @@ namespace Core.Building
             }
         }
     }
-    
-    #endif
-    
-    public class Construction : SerializedScriptableObject
-    {
-        protected const string LEFT             = "Alignment/Left";
-        protected const string RIGHT            = "Alignment/Right";
-        
-        //protected const string SETTINGS         = "Main/" + LEFT + "/Settings";
-        //protected const string DESCRIPTION      = "Main/" + RIGHT + "/Description";
-        
-        protected const string SETTINGS         = LEFT + "/Settings";
-        protected const string DESCRIPTION      = RIGHT + "/Description";
-        
-        protected const string SETTINGS_LEFT    = SETTINGS + "/" + LEFT;
-        protected const string SETTINGS_RIGHT   = SETTINGS + "/" + RIGHT;
-       
-        
-        #region Main
-        
-        //[BoxGroup("Main", false)]
-        //[HorizontalGroup("Main/Alignment")]
-        #if UNITY_EDITOR
-        [HorizontalGroup("Alignment")]
-
-        [VerticalGroup(LEFT)]
-        
-        [BoxGroup(SETTINGS)]
-        [HorizontalGroup(SETTINGS + "/Alignment", 64, LabelWidth = 48)]
-        //[HorizontalGroup(SETTINGS + "/Alignment", 0.5f, LabelWidth = 48)]
-        
-        [VerticalGroup(SETTINGS_LEFT)]
-        [HideLabel, PreviewField(64)]
-        #endif
-        public Texture Icon;
-
-        #if UNITY_EDITOR
-        [VerticalGroup(SETTINGS_RIGHT)]
-        #endif
-        public string Name;
-        
-        #if UNITY_EDITOR
-        [VerticalGroup(SETTINGS_RIGHT), AssetsOnly]
-        #endif
-        public GameObject Prefab;
-        
-        #if UNITY_EDITOR
-        [VerticalGroup(RIGHT)]
-
-        [BoxGroup(DESCRIPTION)]
-        [HideLabel, MultiLineProperty(4)]
-        #endif
-        public string Description;
-        
-        #endregion
-
-        #region Additional
-
-        #if UNITY_EDITOR
-        [BoxGroup("Additional", false)]
-        [HorizontalGroup("Additional/Alignment", 0.5f)]
-        //[HorizontalGroup("Additional/Alignment", 64, LabelWidth = 48)]
-        
-        [VerticalGroup("Additional/" + LEFT)]
-        #endif
-        public ResourceList ResourceModifiers;
-        
-        #if UNITY_EDITOR
-        [VerticalGroup("Additional/" + RIGHT)]
-        #endif
-        public ResourceList LimitModifiers;
-
-        #endregion
-
-        #region FootPrint
-        
-        #if UNITY_EDITOR
-        [BoxGroup("Footprint")]
-        [TableMatrix(DrawElementMethod = "DrawColoredCell", SquareCells = true, HideRowIndices = true, HideColumnIndices = true)]
-        #endif    
-        public bool[,] FootPrint = new bool[25, 25];
-        
-        #if UNITY_EDITOR
-
-        private static bool DrawColoredCell(Rect rect, bool toggled)
-        {
-            Event currentEvent = Event.current;
-            
-            if (currentEvent.type == EventType.MouseDown && (currentEvent.button == 0 && currentEvent.isMouse) && rect.Contains(Event.current.mousePosition))
-            {
-                toggled = !toggled;
-                GUI.changed = true;
-                Event.current.Use();
-            }
-
-            UnityEditor.EditorGUI.DrawRect(rect.Padding(1), toggled ? new Color(0.1f, 0.8f, 0.2f) : new Color(0, 0, 0, 0.5f));
-
-            return toggled;
-        }
-
-        #endif
-        
-        //[TabGroup("Footprint")]
-        //public Sirenix.OdinInspector.Demos.RPGEditor.ItemSlot[,] Inventory = new Sirenix.OdinInspector.Demos.RPGEditor.ItemSlot[25, 25];
-
-        #endregion
-    }
-
-    public class Building : Construction
-    {
-        
-    }
-
-    [Serializable]
-    public class ResourceList
-    {
-        #if UNITY_EDITOR
-        [ValueDropdown("CustomAddResourceButton", IsUniqueList = true, DrawDropdownForListElements = false, DropdownTitle = "Modify Stats")]
-        [ListDrawerSettings(DraggableItems = false, Expanded = true)]
-        #endif
-        [SerializeField] private List<ResourceValue> stats = new List<ResourceValue>();
-
-        public ResourceValue this[int index]
-        {
-            get { return this.stats[index]; }
-            set { this.stats[index] = value; }
-        }
-
-        public int Count
-        {
-            get { return this.stats.Count; }
-        }
-
-        public float this[CivManager.Type type]
-        {
-            get
-            {
-                for (int i = 0; i < this.stats.Count; i++)
-                {
-                    if (this.stats[i].ResourceType == type)
-                    {
-                        return this.stats[i].Value;
-                    }
-                }
-
-                return 0;
-            }
-            set
-            {
-                for (int i = 0; i < this.stats.Count; i++)
-                {
-                    if (this.stats[i].ResourceType == type)
-                    {
-                        var val = this.stats[i];
-                        val.Value = value;
-                        this.stats[i] = val;
-                        return;
-                    }
-                }
-
-                this.stats.Add(new ResourceValue(type, value));
-            }
-        }
-
-        #if UNITY_EDITOR
-        
-        // Finds all available ResourceTypes and excludes the types that the list already contains, so we don't get multiple entries of the same type.
-        private IEnumerable CustomAddResourceButton()
-        {
-            return Enum.GetValues(typeof(CivManager.Type)).Cast<CivManager.Type>()
-                .Except(this.stats.Select(t => t.ResourceType))
-                .Select(v => new ResourceValue(v))
-                .AppendWith(this.stats)
-                .Select(x => new ValueDropdownItem(x.ResourceType.ToString(), x));
-        }
-        
-        #endif
-    }
-
-    #if UNITY_EDITOR
-
-    internal class StatListValueDrawer : OdinValueDrawer<ResourceList>
-    {
-        protected override void DrawPropertyLayout(GUIContent label)
-        {
-            // This would be the "private List<StatValue> stats" field.
-            this.Property.Children[0].Draw(label);
-        }
-    }
-
-    [Serializable]
-    public struct ResourceValue : IEquatable<ResourceValue>
-    {
-        [HideInInspector]
-        public CivManager.Type ResourceType;
-
-        [Range(-100, 100)]
-        [LabelWidth(103)]
-        [LabelText("$ResourceType")]
-        public float Value;
-
-        public ResourceValue(CivManager.Type type, float value)
-        {
-            this.ResourceType = type;
-            this.Value = value;
-        }
-
-        public ResourceValue(CivManager.Type type)
-        {
-            this.ResourceType = type;
-            this.Value = 0;
-        }
-
-        public bool Equals(ResourceValue other)
-        {
-            return this.ResourceType == other.ResourceType && this.Value == other.Value;
-        }
-    }
-    
-    #endif
 }

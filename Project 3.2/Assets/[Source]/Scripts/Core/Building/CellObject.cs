@@ -10,11 +10,18 @@ namespace Core.Building
     {
         #region Variables
         
-        [SerializeField] public BoxCollider boxCollider;
-
-        [NonSerialized] public GridBaker origin;
+//        [SerializeField] public BoxCollider boxCollider;
+//
+//        [NonSerialized] public GridBaker origin;
+//        
+//        [NonSerialized] public Cell cell;
         
-        [NonSerialized] public Cell cell;
+        
+            public BoxCollider boxCollider;
+
+            public GridBaker origin;
+        
+            public Cell cell;
         
         #endregion
 

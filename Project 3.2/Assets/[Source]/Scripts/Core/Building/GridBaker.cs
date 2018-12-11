@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections;
 
-using Sirenix.OdinInspector;
+//using Sirenix.OdinInspector;
 
 #if UNITY_EDITOR
+using UnityEditor;
+
+using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 #endif
 
@@ -52,6 +54,7 @@ namespace Core.Building
             #if UNITY_EDITOR
             [InlineButton("CheckResolutionUp", "+"), InlineButton("CheckResolutionDown", "-")]
             [BoxGroup("Serialized"), MinValue(1), MaxValue(5)]
+            [ReadOnly]
             #endif
             [SerializeField] int checkResolution = 1;
 
@@ -142,13 +145,15 @@ namespace Core.Building
 
         private void Start()
         {
+            Debug.Log("Ein");
             GenerateGrid();
         }
 
-        //private async Task GenerateGrid()
         void GenerateGrid()
         {
             DateTime startingTime = DateTime.Now;
+            
+            Debug.Log("Zwei");
             
             ClearGrid();
             
@@ -156,9 +161,10 @@ namespace Core.Building
            
             Vector3 startingPosition = transform.position + new Vector3(-(((float)gridSize.x * cellSize) / 2f), 0, -(((float)gridSize.y * cellSize) / 2f));
             
-            Vector3 cellPosition = new Vector3(0, skyLimit, 0);    
+            Vector3 cellPosition = new Vector3(0, skyLimit, 0);   
             
-            //Parallel.For(0, gridSize.x, (x) =>
+            Debug.Log("Funf");
+            
             for(int x = 0; x < gridSize.x; x++)
             {
                 cellPosition.x = startingPosition.x + ((x * cellSize) + (cellSize/2f));
@@ -166,8 +172,6 @@ namespace Core.Building
                 for (int z = 0; z < gridSize.y; z++)
                 {
                     cellPosition.z = startingPosition.z + ((z * cellSize) + (cellSize/2f));
-                    
-                    //if(debugging){Debug.Log(cellPosition.ToString());}
                     
                     RaycastHit hitData;
                     if (Physics.Raycast(cellPosition , -Vector3.up, out hitData, 
@@ -179,16 +183,16 @@ namespace Core.Building
 
                         if (hitSlope <= maxSlope)
                         {
-                            SpawnCell(new Vector2Int(x, z), Cell.AvailabilityState.Available, hitData.point);
+                            SpawnCell(new Vector2Int(x, z), AvailabilityState.Available, hitData.point);
                         }
                         else
                         {
-                            SpawnCell(new Vector2Int(x, z), Cell.AvailabilityState.OutOfBounds, hitData.point);
+                            SpawnCell(new Vector2Int(x, z), AvailabilityState.OutOfBounds, hitData.point);
                         }
                     }
                     else
                     {
-                        SpawnCell(new Vector2Int(x, z), Cell.AvailabilityState.OutOfBounds, 
+                        SpawnCell(new Vector2Int(x, z), AvailabilityState.OutOfBounds, 
                             new Vector3(cellPosition.x, useSeaLevel? seaLevel : 0f, cellPosition.z));            
                     }
                 }
@@ -196,11 +200,15 @@ namespace Core.Building
             
             TimeSpan totalTime = startingTime - DateTime.Now;
             
+            Debug.Log("FINISSIMO");
+            
             if(debugging){Debug.Log(string.Format("Generating Grid took {0}", totalTime.ToString()));}
         }
 
         void ClearGrid()
         {
+            Debug.Log("Drei");
+            
             if(debugging){Debug.Log("Clear Grid");}
             
             grid = new Cell[0,0];
@@ -220,6 +228,8 @@ namespace Core.Building
 
         void SpawnGrid()
         {
+            Debug.Log("Fier");
+            
             if(debugging){Debug.Log("Spawn Grid");}
             
             GameObject gridObject = new GameObject("Grid");
@@ -229,11 +239,19 @@ namespace Core.Building
             grid = new Cell[gridSize.x, gridSize.y];
         }
 
-        void SpawnCell(Vector2Int index, Cell.AvailabilityState availability, Vector3 position)
+        void SpawnCell(Vector2Int index, AvailabilityState availability, Vector3 position)
         {
-            GameObject spawnedCell = Instantiate(cellPrefab, position, Quaternion.identity, transform.GetChild(0));
+            Vector3 adjustedPosition = new Vector3(position.x, position.y + 0.01f, position.z); 
+            
+            GameObject spawnedCell = Instantiate(cellPrefab, adjustedPosition, Quaternion.identity, transform.GetChild(0));
 
-            spawnedCell.transform.localScale = new Vector3(cellSize, 0, cellSize);
+            spawnedCell.layer = 10;
+            
+            //Debug.Log("GridBaker Cell Layer = " + LayerMask.LayerToName(spawnedCell.layer));
+
+            spawnedCell.transform.localScale = new Vector3(1f, 0.01f, 1f);
+            
+            //spawnedCell.transform.localScale = new Vector3(cellSize, 0, cellSize);
             
             CellObject cellObject = spawnedCell.GetComponent<CellObject>();
     
@@ -267,13 +285,13 @@ namespace Core.Building
                 {
                     switch (cell.Availability)
                     {
-                        case Cell.AvailabilityState.Available:
+                        case AvailabilityState.Available:
                             Gizmos.color = Color.green;
                             break;
-                        case Cell.AvailabilityState.Unavailable:
+                        case AvailabilityState.Unavailable:
                             Gizmos.color = Color.red;
                             break;
-                        case Cell.AvailabilityState.OutOfBounds:
+                        case AvailabilityState.OutOfBounds:
                             Gizmos.color = Color.magenta;
                             break;
                     }
@@ -288,29 +306,29 @@ namespace Core.Building
 
     }
     
-    public class Cell
+    /// <summary>
+    /// Enum representing the availability of a Cell
+    /// </summary>
+    public enum AvailabilityState
     {
         /// <summary>
-        /// Enum representing the state of the availability of this cell
+        /// This Cell is available.
         /// </summary>
-        public enum AvailabilityState
-        {
-            /// <summary>
-            /// This Cell is available.
-            /// </summary>
-            Available,
+        Available,
 
-            /// <summary>
-            /// This Cell is unavailable, for it is occupied.
-            /// </summary>
-            Unavailable,
+        /// <summary>
+        /// This Cell is unavailable, for it is occupied.
+        /// </summary>
+        Unavailable,
 
-            /// <summary>
-            /// Nothing can be placed on this Cell.
-            /// </summary>
-            OutOfBounds
-        }
-        
+        /// <summary>
+        /// Nothing can be placed on this Cell.
+        /// </summary>
+        OutOfBounds
+    }
+    
+    public class Cell
+    {   
         public AvailabilityState Availability { get; set; }
         
         public CellObject CellObject { get; private set; }

@@ -1,0 +1,586 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:7
+-out:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Temp/Unity.InputSystem.dll"
+-nostdlib
+-unsafe
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/UnityEditor.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\Managed/Unity.Locator.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/Managed/UnityEditor.Graphs.dll
+-r:D:/Programs/UnityHub/Editors/2018.3.0f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll
+-r:D:\Programs\UnityHub\Editors\2018.3.0f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll
+-d:UNITY_5_3_OR_NEWER
+-d:UNITY_5_4_OR_NEWER
+-d:UNITY_5_5_OR_NEWER
+-d:UNITY_5_6_OR_NEWER
+-d:UNITY_2017_1_OR_NEWER
+-d:UNITY_2017_2_OR_NEWER
+-d:UNITY_2017_3_OR_NEWER
+-d:UNITY_2017_4_OR_NEWER
+-d:UNITY_2018_1_OR_NEWER
+-d:UNITY_2018_2_OR_NEWER
+-d:UNITY_2018_3_OR_NEWER
+-d:UNITY_2018_3_0
+-d:UNITY_2018_3
+-d:UNITY_2018
+-d:PLATFORM_ARCH_64
+-d:UNITY_64
+-d:UNITY_INCLUDE_TESTS
+-d:ENABLE_AUDIO
+-d:ENABLE_CACHING
+-d:ENABLE_CLOTH
+-d:ENABLE_DUCK_TYPING
+-d:ENABLE_MICROPHONE
+-d:ENABLE_MULTIPLE_DISPLAYS
+-d:ENABLE_PHYSICS
+-d:ENABLE_SPRITES
+-d:ENABLE_GRID
+-d:ENABLE_TILEMAP
+-d:ENABLE_TERRAIN
+-d:ENABLE_TEXTURE_STREAMING
+-d:ENABLE_DIRECTOR
+-d:ENABLE_UNET
+-d:ENABLE_LZMA
+-d:ENABLE_UNITYEVENTS
+-d:ENABLE_WEBCAM
+-d:ENABLE_WWW
+-d:ENABLE_CLOUD_SERVICES_COLLAB
+-d:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-d:ENABLE_CLOUD_SERVICES_ADS
+-d:ENABLE_CLOUD_HUB
+-d:ENABLE_CLOUD_PROJECT_ID
+-d:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-d:ENABLE_CLOUD_SERVICES_UNET
+-d:ENABLE_CLOUD_SERVICES_BUILD
+-d:ENABLE_CLOUD_LICENSE
+-d:ENABLE_EDITOR_HUB
+-d:ENABLE_EDITOR_HUB_LICENSE
+-d:ENABLE_WEBSOCKET_CLIENT
+-d:ENABLE_DIRECTOR_AUDIO
+-d:ENABLE_DIRECTOR_TEXTURE
+-d:ENABLE_TIMELINE
+-d:ENABLE_EDITOR_METRICS
+-d:ENABLE_EDITOR_METRICS_CACHING
+-d:ENABLE_MANAGED_JOBS
+-d:ENABLE_MANAGED_TRANSFORM_JOBS
+-d:ENABLE_MANAGED_ANIMATION_JOBS
+-d:INCLUDE_DYNAMIC_GI
+-d:INCLUDE_GI
+-d:ENABLE_MONO_BDWGC
+-d:PLATFORM_SUPPORTS_MONO
+-d:RENDER_SOFTWARE_CURSOR
+-d:INCLUDE_PUBNUB
+-d:ENABLE_VIDEO
+-d:ENABLE_CUSTOM_RENDER_TEXTURE
+-d:ENABLE_LOCALIZATION
+-d:PLATFORM_STANDALONE_WIN
+-d:PLATFORM_STANDALONE
+-d:UNITY_STANDALONE_WIN
+-d:UNITY_STANDALONE
+-d:ENABLE_SUBSTANCE
+-d:ENABLE_RUNTIME_GI
+-d:ENABLE_MOVIES
+-d:ENABLE_NETWORK
+-d:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-d:ENABLE_UNITYWEBREQUEST
+-d:ENABLE_CLOUD_SERVICES
+-d:ENABLE_CLOUD_SERVICES_ANALYTICS
+-d:ENABLE_CLOUD_SERVICES_PURCHASING
+-d:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-d:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-d:ENABLE_EVENT_QUEUE
+-d:ENABLE_CLUSTER_SYNC
+-d:ENABLE_CLUSTERINPUT
+-d:ENABLE_VR
+-d:ENABLE_AR
+-d:ENABLE_WEBSOCKET_HOST
+-d:ENABLE_MONO
+-d:NET_STANDARD_2_0
+-d:ENABLE_PROFILER
+-d:DEBUG
+-d:TRACE
+-d:UNITY_ASSERTIONS
+-d:UNITY_EDITOR
+-d:UNITY_EDITOR_64
+-d:UNITY_EDITOR_WIN
+-d:ENABLE_UNITY_COLLECTIONS_CHECKS
+-d:ENABLE_BURST_AOT
+-d:UNITY_TEAM_LICENSE
+-d:ODIN_INSPECTOR
+-d:UNITY_POST_PROCESSING_STACK_V2
+-d:SCPE
+-d:CSHARP_7_OR_LATER
+-d:CSHARP_7_3_OR_NEWER
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Composites/AxisComposite.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Composites/DpadComposite.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/IInputActionCollection.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/IInputBindingComposite.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/IInputInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputAction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionAsset.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionAssetReference.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionChange.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionMap.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionMapState.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionPhase.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionProperty.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionQueue.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionRebindingExtensions.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionReference.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputActionSetupExtensions.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputBinding.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputBindingCompositeContext.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputBindingResolver.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputControlScheme.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/InputInteractionContext.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/DoubleTapInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/DragAndDropInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/DragInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/HoldInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/PressAndReleaseInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/PressInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/SlowTapInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/StickInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/SwipeInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Actions/Interactions/TapInteraction.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/AssemblyInfo.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/AnyKeyControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/AxisControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/ButtonControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/ColorControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/CommonUsages.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/DiscreteButtonControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/DpadControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/IInputControlProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlAttribute.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlLayout.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlLayoutAttribute.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlLayoutChange.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlList.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/InputControlPath.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/IntegerControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/KeyControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Magnitude2Control.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Magnitude3Control.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/PointerPhaseControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/AxisDeadzoneProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/ClampProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/CurveProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/EditorWindowSpaceProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/InvertProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/NormalizeProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/SensitivityProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Processors/StickDeadzoneProcessor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/QuaternionControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/StickControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/TouchControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Vector2Control.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Controls/Vector3Control.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/DisableDeviceCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/EnableDeviceCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/EnableIMECompositionCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/IInputDeviceCommandInfo.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/InputDeviceCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryDimensionsCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryEditorWindowCoordinatesCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryEnabledStateCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryKeyboardLayoutCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryKeyNameCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QuerySamplingFrequencyCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/QueryUserIdCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/SetIMECursorPositionCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/SetSamplingFrequencyCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Commands/WarpMousePositionCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Gamepad.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Haptics/DualMotorRumble.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Haptics/DualMotorRumbleCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Haptics/IDualMotorRumble.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Haptics/IHaptics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/IInputUpdateCallbackReceiver.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDevice.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDeviceBuilder.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDeviceChange.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDeviceDescription.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDeviceMatcher.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputDeviceReference.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/InputNoiseFilter.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/ITextInputReceiver.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Joystick.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Keyboard.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Mouse.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Pen.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Pointer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Remote/InputRemoting.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Remote/RemoteInputPlayerConnection.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Sensor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Devices/Touchscreen.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/EditorInputControlLayoutCache.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/EditorPlayerSettings.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/ActionInspectorContextMenu.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/ActionMapsTree.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/ActionsTree.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/AddControlSchemePopup.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/AssetInspectorWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/CopyPasteUtility.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputActionAssetManager.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputActionTreeBase.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputActionWindowToolbar.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputBindingPropertiesView.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputTreeViewLine.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/PropertyLists.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAssetEditor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAssetReferenceDrawer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionCodeGenerator.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionDebuggerWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionImporter.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionImporterEditor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionInspector/BindingPropertiesPopup.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionInspector/InputActionDrawer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionInspector/InputActionMapDrawer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionInspector/InputDrawersBase.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionInspector/InspectorTree.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputActionPropertyDrawer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputBindingDrawer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputControlPicker/InputControlPickerPopup.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputControlPicker/InputControlTree.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputControlPicker/InputControlTreeViewItem.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputDebuggerWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputDeviceDatabaseCodeGenerator.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputDeviceDebuggerWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/InputDiagnostics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputActionSerializationHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputActionTreeView.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputBindingListView.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputControlTreeView.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputEventTreeView.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputStateWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Editor/SerializedPropertyHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/ActionEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/DeltaStateEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/DeviceConfigurationEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/DeviceRemoveEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/IInputEventTypeInfo.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/IMECompositionEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/InputEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/InputEventBuffer.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/InputEventPtr.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/InputEventTrace.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/StateEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Events/TextEvent.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/IInputDiagnostics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/IInputRuntime.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputAnalytics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputConfiguration.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputManager.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputMetrics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputSystem.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputSystemObject.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/InputUpdateType.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/NativeInputRuntime.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Android/AndroidAxis.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Android/AndroidGameController.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Android/AndroidKeyCode.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Android/AndroidSensors.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Android/AndroidSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/DualShock/DualShockGamepad.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/DualShock/DualShockGamepadHID.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/DualShock/DualShockSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/DualShock/IDualShockHaptics.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Flightsticks/Flightstick.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Flightsticks/Rudder.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Flightsticks/Throttle.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/HID/HID.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/HID/HIDDescriptorWindow.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/HID/HIDParser.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/HID/HIDSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/iOS/IOSGameController.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/iOS/iOSSensors.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/iOS/iOSSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/Editor/OnScreenButtonEditor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/Editor/OnScreenControlEditor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/Editor/OnScreenStickEditor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/OnScreenButton.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/OnScreenControl.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/OnScreenKeyboard.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/OnScreenStick.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/OnScreen/OnScreenSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/PS4/DualShockGamepadPS4.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/PS4/MoveControllerPS4.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/PS4/PS4Support.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/IStreamControllerAPI.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/SteamController.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/SteamControllerType.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/SteamHandle.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/SteamIGAConverter.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Steam/SteamSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/SteeringWheels/SteeringWheel.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Switch/NPad.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Switch/SwitchSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/JoystickModel.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/MouseModel.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/TouchModel.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/TrackedDeviceModel.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/TrackedDeviceRaycaster.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIActionInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIActionInputModuleEnabler.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIGamepadInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIKeyboardMouseInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UITouchInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/UI/UIXRInputModule.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Users/IInputUser.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUserChange.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUserHandle.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XInput/IXboxOneRumble.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XInput/XboxOneGamepad.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XInput/XInputController.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XInput/XInputSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Daydream.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/GearVR.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/GenericXRDevice.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/BufferedRumble.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/GetCurrentHapticStateCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/GetHapticCapabilitiesCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/SendBufferedHapticsCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/SendSimpleRumbleCommand.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Haptics/SimpleRumble.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Knuckles.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Oculus.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/TrackedPoseDriver.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/Vive.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/WindowsMR.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/XRSupport.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Plugins/XR/XRTemplateBuilder.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/IInputStateCallbackReceiver.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/IInputStateChangeMonitor.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/IInputStateTypeInfo.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/InputStateBlock.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/InputStateBuffers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/State/InputStateHistory.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/ArrayHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/CSharpCodeHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/DynamicBitfield.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/FourCC.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/InlinedArray.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/InternedString.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/JsonGraph.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/MemoryHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/Net35Compatibility.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/NumberHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/PrimitiveValue.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/ReadOnlyArray.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/ReadWriteArray.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/StringHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/Substring.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/TypeHelpers.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/TypeTable.cs"
+-i:"C:/UNITY/Unity Projects/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/InputSystem/Utilities/Unity2018_2_Compatibility.cs"
+-v:0

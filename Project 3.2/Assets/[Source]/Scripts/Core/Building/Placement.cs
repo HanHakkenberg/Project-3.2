@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 namespace Core.Building
 {
     [AddComponentMenu("Core/Building/Placement")]
-    public class Placement : MonoBehaviour
+    public class Placement : SerializedMonoBehaviour
     {
         
         //[AssetsOnly]
@@ -29,11 +29,11 @@ namespace Core.Building
         //private Transform objectWerePlacing;
         //
         //private CellObject cellObj;
-        
-        [AssetsOnly]
+
+        //public Construction construction;
         public GameObject buildingPrab;
 
-        public LayerMask layerMask;
+        //public LayerMask layerMask;
         
         [Tooltip("Transform which holds the spawned buildings")]
         [SceneObjectsOnly]
@@ -69,15 +69,18 @@ namespace Core.Building
                 return;
             }
 
-            //mousePos = GlobalVariables.MouseWorldPosition(layerMask);
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out RaycastHit hit, cam.farClipPlane, layerMask))
+            
+            Debug.DrawRay(ray.origin, ray.direction * Mathf.Infinity, Color.red, 10f);
+            
+            //if (Physics.Raycast(ray, out RaycastHit hit, maxDistance: Mathf.Infinity, layerMask: 1 << 10)) //maxDistance: cam.farClipPlane, layerMask: layerMask
+            if (Physics.Raycast(ray, out RaycastHit hit, maxDistance: Mathf.Infinity))
             {
                 mousePos = hit.point;
             }
             else
             {
+                Debug.Log("Raycast didn't hit anything.");
                 return;
             }
 
@@ -89,29 +92,38 @@ namespace Core.Building
                 {
                     Debug.Log("Placement - Instantiate Building");
 
-                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, buildingHolder)
-                        .transform;
+                    objectWerePlacing = Instantiate(buildingPrab, mousePos, Quaternion.identity, buildingHolder).transform;
                     
                     placingObject = true;
                 }
                 else if(GroundCheck(out RaycastHit groundCheckHit, out Cell cell))
                 {
+                    Debug.Log("GroundCheck hit something");
+                    
                     if (cell != null)
                     {
                         Debug.Log("Placement - Trying to Anchor Building");
     
-                        if (cell.Availability == Cell.AvailabilityState.Available)
+                        if (cell.Availability == AvailabilityState.Available)
                         {
                             Debug.Log("Placement - Anchored Building");
                             
                             objectWerePlacing.position = cell.Position;
     
-                            cell.Availability = Cell.AvailabilityState.Unavailable;
+                            cell.Availability = AvailabilityState.Unavailable;
     
                             objectWerePlacing = null;
                             placingObject = false;
                         }
                     }
+                    else
+                    {
+                        Debug.Log("Placement - Cell is NULL");
+                    }
+                }
+                else
+                {                    
+                    Debug.Log("GroundCheck hit NOTHING");
                 }
             }
 
@@ -135,19 +147,32 @@ namespace Core.Building
         
         bool GroundCheck(out RaycastHit groundCheckHit, out Cell cell)
         {
-            if(Physics.Raycast(new Vector3(mousePos.x, mousePos.y + gridBaker.skyLimit, mousePos.z),
-                -Vector3.up, out groundCheckHit, Mathf.Infinity, layerMask))
+            Vector3 checkPos = new Vector3(mousePos.x, mousePos.y + 10000f, mousePos.z); //Mathf.Infinity
+            
+            Ray ray = new Ray(origin: checkPos, direction: -Vector3.up);
+            
+            //Debug.DrawRay(ray.origin, ray.direction * 50f, Color.green, 10f);
+            Debug.Log(checkPos.ToString());
+            Debug.Log(LayerMask.LayerToName(10));
+            
+            //if(Physics.Raycast(ray, out groundCheckHit, maxDistance: Mathf.Infinity))
+            if(Physics.Raycast(ray, out groundCheckHit, maxDistance: Mathf.Infinity, layerMask: 1 << 10))
+            //if(Physics.Raycast(ray, out groundCheckHit, Mathf.Infinity, ~(1 << 11)))
             {
                 CellObject cellObject = groundCheckHit.transform.GetComponent<CellObject>();
 
                 if (cellObject != null)
                 {
+                    Debug.Log("GroundCheck - Hit Contained a CellObject");
+                    
                     cell = cellObject.cell;
 
                     return true;
                 }
                 else
                 {
+                    Debug.Log("GroundCheck - Hit DID NOT Contain a CellObject");
+                    
                     cell = null;
                     
                     return false;
@@ -155,6 +180,8 @@ namespace Core.Building
             }
             else
             {
+                Debug.Log("GroundCheck - Raycast hit Nothing");
+                
                 cell = null;
                 
                 return false;
