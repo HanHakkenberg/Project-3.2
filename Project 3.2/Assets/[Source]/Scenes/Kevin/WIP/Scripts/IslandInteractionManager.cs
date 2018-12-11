@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class IslandInteractionManager : MonoBehaviour
 {
@@ -23,12 +24,20 @@ public class IslandInteractionManager : MonoBehaviour
     bool trading;
     public int minInput;
     public int maxInput;
-    public GameObject tradePannel;
+    [SerializeField]
+    GameObject tradePannel;
     public InputField inputOffer;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
     public Dropdown OfferTypeDropdown;
     public Dropdown DemandTypeDropdown;
+    #endregion
+    //Change
+    #region PillageRelated
+    [SerializeField]
+    TMP_Text foodText,materialsText,moneyText,messageText;
+    [SerializeField]
+    GameObject pillagePannel;
     #endregion
     void Awake()
     {
@@ -68,6 +77,7 @@ public class IslandInteractionManager : MonoBehaviour
     {
         if(prototypeBool == true)
         {
+            activeIsland = island;
             UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         }
     }
@@ -85,7 +95,8 @@ public class IslandInteractionManager : MonoBehaviour
         {
             trading = true;
             tradePannel.SetActive(true);
-
+            //Change
+            pillagePannel.SetActive(false);            
         }
         else
         {
@@ -96,7 +107,25 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
-        //Something that we want whit pillaging
+        //Change
+        if(activeIsland.pillaged != true)
+        {
+            activeIsland.pillaged = true;
+            CivManager.instance.AddIncome(activeIsland.foodLoot,CivManager.Type.Food);
+            CivManager.instance.AddIncome(activeIsland.matLoot,CivManager.Type.Mats);
+            CivManager.instance.AddIncome(activeIsland.goldLoot,CivManager.Type.Money);
+
+            foodText.text = activeIsland.foodLoot.ToString();
+            materialsText.text = activeIsland.matLoot.ToString();
+            moneyText.text = activeIsland.goldLoot.ToString();
+
+            pillagePannel.SetActive(true);
+            tradePannel.SetActive(false);
+        }
+        else
+        {
+            messageText.text = "You already Looted this island for";
+        }
     }
 
         #region Trade

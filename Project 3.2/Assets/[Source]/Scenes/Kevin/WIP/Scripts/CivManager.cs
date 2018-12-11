@@ -77,6 +77,14 @@ public class CivManager : MonoBehaviour
    {
         UpdateStability();
         ResourceUseOverTimeVariableUpdate();
+        foodCap = 1000;
+        matsCap = 1000;
+        moneyCap = 1000;
+        peopleCap = 1000;
+        people = 10;
+        food = 100;
+        mats = 100;
+        money = 100;
    }
 
    /// <summary>
