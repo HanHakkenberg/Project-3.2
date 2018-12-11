@@ -15,7 +15,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4925428537270923402}
-  - component: {fileID: 858231081}
   - component: {fileID: 858231084}
   m_Layer: 11
   m_Name: Map Interactable Base
@@ -40,19 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &858231081
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4925428537270923400}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!208 &858231084
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -62,12 +48,12 @@ NavMeshObstacle:
   m_GameObject: {fileID: 4925428537270923400}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 1, y: 0.05, z: 1}
+  m_Shape: 1
+  m_Extents: {x: 32.065, y: 2.5, z: 21.45}
   m_MoveThreshold: 1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -15.8, y: 0, z: 0}
   m_TimeToStationary: 0
 --- !u!1 &4925428537926346893
 GameObject:
@@ -112,7 +98,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 64.13, y: 5, z: 42.9}
-  m_Center: {x: -15.8, y: 0, z: 0}
+  m_Center: {x: -15.8, y: -9, z: 0}
 --- !u!1 &4925428538711884713
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +112,7 @@ GameObject:
   - component: {fileID: 4925428538711884715}
   - component: {fileID: 3515519560206142625}
   - component: {fileID: 8580378376646451407}
+  - component: {fileID: 7695926445871547881}
   m_Layer: 11
   m_Name: Map Interactable
   m_TagString: Untagged
@@ -229,6 +216,22 @@ MonoBehaviour:
     variable: {fileID: 0}
     useConstant: 0
     myEvent: {fileID: 0}
+--- !u!208 &7695926445871547881
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925428538711884713}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1, y: 0.05, z: 1}
+  m_MoveThreshold: 1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0
 --- !u!1001 &5669463509304607574
 PrefabInstance:
   m_ObjectHideFlags: 0
