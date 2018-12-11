@@ -26,11 +26,17 @@ public class IslandInteractionManager : MonoBehaviour
     public int maxInput;
     [SerializeField]
     GameObject tradePannel;
-    public InputField inputOffer;
+    public TMP_Text tradeMessageText;
+    public InputField inputRequest;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
-    public Dropdown OfferTypeDropdown;
+    public Dropdown RequestTypeDropdown;
     public Dropdown DemandTypeDropdown;
+
+    int demandedValue;
+    int requestedValue;
+    CivManager.Type demandedType;
+    CivManager.Type requestedType;
     #endregion
     //Change
     #region PillageRelated
@@ -53,11 +59,13 @@ public class IslandInteractionManager : MonoBehaviour
 
     void Start() 
     {
-        inputOffer.onValueChanged.AddListener(delegate{InputCheckOffer();});
+        inputRequest.onValueChanged.AddListener(delegate{InputCheckOffer();});
         inputDemand.onValueChanged.AddListener(delegate{InputCheckDemand();});
         tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
-        OfferTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckOffer();});
+        RequestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
         DemandTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
+
+        DropdownCheckRequest();
     }
 
     public void PrototypeFunction()
@@ -70,6 +78,11 @@ public class IslandInteractionManager : MonoBehaviour
         {
             prototypeBool = false;
         }
+        if (trading)
+        {
+            Trade();
+        }
+        pillagePannel.SetActive(false);
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
     }
 
@@ -86,6 +99,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Leave()
     {
+        Trade();
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
     }
 
@@ -95,6 +109,7 @@ public class IslandInteractionManager : MonoBehaviour
         {
             trading = true;
             tradePannel.SetActive(true);
+
             //Change
             pillagePannel.SetActive(false);            
         }
@@ -102,6 +117,11 @@ public class IslandInteractionManager : MonoBehaviour
         {
             trading = false;
             tradePannel.SetActive(false);
+            
+            //change
+            inputDemand.text = "0";
+            inputRequest.text = "0";
+            tradeMessageText.text = "";
         }
     }
 
@@ -133,10 +153,44 @@ public class IslandInteractionManager : MonoBehaviour
         public void Confirm()
         {
             //Confirm deal
+            bool canTrade = true;
+            switch (demandedType)
+            {
+                case CivManager.Type.Food:
+                if(CivManager.instance.food < demandedValue)
+                {
+                    canTrade = false;
+                    tradeMessageText.text = "You don't have the required resources";
+                }
+                break;
+
+                case CivManager.Type.Mats:
+                if(CivManager.instance.mats < demandedValue)
+                {
+                    canTrade = false;
+                    tradeMessageText.text = "You don't have the required resources";
+                }
+                break;
+
+                case CivManager.Type.Money:
+                if(CivManager.instance.money < demandedValue)
+                {
+                    canTrade = false;
+                    tradeMessageText.text = "You don't have the required resources";
+                }
+                break;
+            }
+
+            if(canTrade == true)
+            {
+                CivManager.instance.AddIncome(requestedValue,requestedType);
+                CivManager.instance.RemoveIncome(demandedValue,demandedType);
+                tradeMessageText.text = "Transaction successful";
+            }
         }
         void InputCheckOffer()
         {
-            int input = int.Parse(inputOffer.text);
+            int input = int.Parse(inputRequest.text);
             if(input > maxInput)
             {
                 input = maxInput;
@@ -144,21 +198,28 @@ public class IslandInteractionManager : MonoBehaviour
             else if(input < minInput)
             {
                 input = minInput;
+                inputDemand.text = input.ToString();
             }
-            inputOffer.text = input.ToString();
+            inputRequest.text = input.ToString();
+            requestedValue = input;
+
+            //Update dit later
+            input *= 2;
+            inputDemand.text = input.ToString();
+            demandedValue = input;
         }
         void InputCheckDemand()
         {
-            int input = int.Parse(inputDemand.text);
-            if(input > maxInput)
-            {
-                input = maxInput;
-            }
-            else if(input < minInput)
-            {
-                input = minInput;
-            }
-            inputDemand.text = input.ToString();
+            // int input = int.Parse(inputDemand.text);
+            // if(input > maxInput)
+            // {
+            //     input = maxInput;
+            // }
+            // else if(input < minInput)
+            // {
+            //     input = minInput;
+            // }
+            // inputDemand.text = input.ToString();
         }
         void DropdownCheckTradeType()
         {
@@ -173,20 +234,45 @@ public class IslandInteractionManager : MonoBehaviour
                 break;
             }
         }
-        void DropdownCheckOffer()
+        void DropdownCheckRequest()
         {
-            switch (OfferTypeDropdown.value)
+            switch (RequestTypeDropdown.value)
             {
+                
                 case 0:
                 //mats
+                if(DemandTypeDropdown.value == 0)
+                {
+                    RequestTypeDropdown.value += 1;
+                }
+                else
+                {
+                    requestedType = CivManager.Type.Mats;                    
+                }
                 break;
 
                 case 1:
                 //food
+                if(DemandTypeDropdown.value == 1)
+                {
+                    RequestTypeDropdown.value += 1;
+                }
+                else
+                {
+                    requestedType = CivManager.Type.Food;   
+                }
                 break;
 
                 case 2:
                 //money
+                if(DemandTypeDropdown.value == 2)
+                {
+                    RequestTypeDropdown.value = 0;
+                }
+                else
+                {
+                    requestedType = CivManager.Type.Money;  
+                }
                 break;
             }
         }
@@ -196,14 +282,38 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 case 0:
                 //mats
+                if(RequestTypeDropdown.value == 0)
+                {
+                    DemandTypeDropdown.value += 1;
+                }
+                else
+                {
+                    demandedType = CivManager.Type.Mats;                    
+                }
                 break;
 
                 case 1:
                 //food
+                if(RequestTypeDropdown.value == 1)
+                {
+                    DemandTypeDropdown.value += 1;
+                }
+                else
+                {
+                    demandedType = CivManager.Type.Food;
+                }
                 break;
 
                 case 2:
                 //money
+                if(RequestTypeDropdown.value == 2)
+                {
+                    DemandTypeDropdown.value = 0;
+                }
+                else
+                {
+                    demandedType = CivManager.Type.Money;                    
+                }
                 break;
             }
         }
