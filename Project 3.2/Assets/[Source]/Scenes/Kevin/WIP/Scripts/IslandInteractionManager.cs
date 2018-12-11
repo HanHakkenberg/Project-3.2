@@ -15,6 +15,9 @@ public class IslandInteractionManager : MonoBehaviour
     Island activeIsland;
     TradeTypes tradeTypes;
 
+    //destroy this all refrence to this and the button click event
+    bool prototypeBool;
+
     
     #region TradeRelated
     bool trading;
@@ -26,8 +29,6 @@ public class IslandInteractionManager : MonoBehaviour
     public Dropdown tradeTypeDropdown;
     public Dropdown OfferTypeDropdown;
     public Dropdown DemandTypeDropdown;
-
-
     #endregion
     void Awake()
     {
@@ -50,16 +51,32 @@ public class IslandInteractionManager : MonoBehaviour
         DemandTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
+    public void PrototypeFunction()
+    {
+        if(prototypeBool == false)
+        {
+            prototypeBool = true;
+        }
+        else
+        {
+            prototypeBool = false;
+        }
+        UIManager.instance.SwitchPanel(UIManager.Panels.Main);
+    }
+
     public void IslandInsert(Island island)
     {
-        UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+        if(prototypeBool == true)
+        {
+            UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+        }
     }
 
     #region UIButtons
 
     public void Leave()
     {
-        //Trigger UI  pannel toggle
+        UIManager.instance.SwitchPanel(UIManager.Panels.Main);
     }
 
     public void Trade()
