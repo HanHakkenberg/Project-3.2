@@ -12,7 +12,6 @@ public class IslandCamera : MonoBehaviour
     [SerializeField] private GameObject infoCanvas;
     [SerializeField] private Building thisBuilding;
     Animator myAnimator;
-    bool firstTime = true;
     public PlayableDirector buildingAnim;
     public bool isPlaced;
 
@@ -54,7 +53,7 @@ public class IslandCamera : MonoBehaviour
         {
             buildingAnim.Play();
 
-            firstTime = false;
+            BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] = false;
             isPlaced = true;
         }
     }

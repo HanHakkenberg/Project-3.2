@@ -92,6 +92,9 @@ public class IslandInteractionManager : MonoBehaviour
         {
             activeIsland = island;
             UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+
+            //removethishehexd
+            UIManager.instance.mainPannel.SetActive(true);
         }
     }
 

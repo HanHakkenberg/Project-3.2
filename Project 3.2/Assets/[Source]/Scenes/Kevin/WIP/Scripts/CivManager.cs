@@ -83,6 +83,7 @@ public class CivManager : MonoBehaviour
       food = 100;
       mats = 100;
       money = 100;
+      UIManager.instance.UpdateResourceUI(); //misschien removen idk?
       UpdateStability();
       ResourceUseOverTimeVariableUpdate();
    }

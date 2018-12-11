@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c197af10a3e569438f840d5b70b39d2, type: 3}
   m_Name: TestBuilding
   m_EditorClassIdentifier: 
-  name: Hallo
-  description: Dit is de eerste building
+  name: House
+  description: People live here.
+  buildingNumb: 0
   tempStatOne: 5
   tempStatTwo: 70
   tempStatThree: 180
