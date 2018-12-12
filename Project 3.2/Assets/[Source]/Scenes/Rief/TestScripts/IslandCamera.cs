@@ -37,7 +37,6 @@ public class IslandCamera : MonoBehaviour
 
     void OnMouseDown ()
     {
-        Debug.Log("clicked");
         if(isPlaced)
         {
         mainCam.enabled = false;
