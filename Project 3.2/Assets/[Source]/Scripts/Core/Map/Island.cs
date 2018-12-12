@@ -5,18 +5,26 @@ using UnityEngine;
 public class Island : MonoBehaviour {
 
     public bool looted;
-    CivManager.Type rDemand;
-    CivManager.Type rExcess;
+    public CivManager.Type rDemand;
+    public CivManager.Type rExcess;
     [SerializeField] TransformReference currentSelected;
 
     void Start() 
     {
-        
+        RandomizeIsland();
     }
 
     public void RandomizeIsland()
     {
-        // rDemand =CivManager.Type
+        int demand = Random.Range(0,3);
+        int excess = Random.Range(0,3);
+        if (demand == excess)
+        {
+            excess = Random.Range(0,3);
+        }
+        
+        rDemand = (CivManager.Type)demand;
+        rExcess = (CivManager.Type)excess;
     }
 
     void OnMouseDown() {

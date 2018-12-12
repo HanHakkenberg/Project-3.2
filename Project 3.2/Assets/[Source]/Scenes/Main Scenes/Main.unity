@@ -384,12 +384,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 898960558}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &154803741 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6406969577384741370, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
-    type: 3}
-  m_PrefabInstance: {fileID: 1985761887}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &166330364 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9052068172217899414, guid: 635cbaeeaf6af8b4780465209e23dece,
@@ -3232,7 +3226,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1635966527}
-  - component: {fileID: 1635966529}
   m_Layer: 0
   m_Name: Models
   m_TagString: Untagged
@@ -3255,24 +3248,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635966529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635966526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  looted: 0
-  currentSelected:
-    value: {fileID: 0}
-    variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
-    useConstant: 0
-    myEvent: {fileID: 0}
 --- !u!1001 &1672980949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3676,12 +3651,12 @@ PrefabInstance:
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06377856
+      value: 0.06377859
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.23894998
+      value: 0.23895003
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
@@ -3692,16 +3667,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 154803741}
+      objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537107, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 154803741}
+      objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015730564
+      value: -0.015730573
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
@@ -4107,7 +4082,7 @@ PrefabInstance:
     - target: {fileID: 7300535878207057822, guid: c6afaa2f632e3d34da254c490d80916b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7300535879434705143, guid: c6afaa2f632e3d34da254c490d80916b,
         type: 3}

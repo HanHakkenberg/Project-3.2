@@ -194,9 +194,11 @@ public class IslandInteractionManager : MonoBehaviour
                 tradeMessageText.text = "Transaction successful";
             }
         }
+
+        //Verder hier mee ==================================================================================================
         void InputCheckOffer()
         {
-            int input = int.Parse(inputRequest.text);
+            float input = int.Parse(inputRequest.text);
             if(input > maxInput)
             {
                 input = maxInput;
@@ -207,12 +209,29 @@ public class IslandInteractionManager : MonoBehaviour
                 inputDemand.text = input.ToString();
             }
             inputRequest.text = input.ToString();
-            requestedValue = input;
+            requestedValue = Mathf.RoundToInt(input);
 
-            //Update dit later
-            input *= 2;
+            if(activeIsland.rExcess == requestedType)
+            {
+                input *= 0.8f;
+                if(activeIsland.rDemand == demandedType)
+                {
+                    input *= 0.5f;
+                    //Even less
+                }
+            }
+            else if(activeIsland.rExcess == demandedType)
+            {
+                input *= 2;
+                //Costs more
+                if(activeIsland.rDemand == requestedType)
+                {
+                    input *= 3;
+                    //Even more
+                }
+            }
             inputDemand.text = input.ToString();
-            demandedValue = input;
+            demandedValue = Mathf.RoundToInt(input);
         }
         void InputCheckDemand()
         {
