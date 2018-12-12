@@ -2,7 +2,7 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Temp/Unity.ProBuilder.AddOns.Editor.dll"
+-out:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Temp/Unity.ProBuilder.AddOns.Editor.dll"
 -nostdlib
 -unsafe
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
@@ -81,26 +81,26 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
--r:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -321,5 +321,5 @@
 -d:SCPE
 -d:CSHARP_7_OR_LATER
 -d:CSHARP_7_3_OR_NEWER
--i:"D:/Desktop/Jaar 3 Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/Addons/pb_Fbx.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/Addons/pb_Fbx.cs"
 -v:0
