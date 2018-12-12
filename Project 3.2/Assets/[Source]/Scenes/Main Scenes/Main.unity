@@ -457,7 +457,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 48279027}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 962203925}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19520ecf8ed67b14e9af0cc57c5e707a, type: 3}
@@ -1707,6 +1707,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c351a01cb7a4f1f4a9c685e1844ff448, type: 3}
+--- !u!1 &962203925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8579285812752928038, guid: 1740b60f51c6b8141adec07a8d1afb58,
+    type: 3}
+  m_PrefabInstance: {fileID: 48279027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &962203927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962203925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb37139d0f22f34db0f4557ac708bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Closes IslandInteractionPanel
+  listenOnEnable: 1
+  listenOnDisable: 1
+  delay: 0
+  myGameEvent:
+  - {fileID: 11400000, guid: dc57886ed8a31734bbef3ad97b21b12b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 270649062}
+        m_MethodName: Leave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &962722120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3227,10 +3267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pillaged: 0
-  foodLoot: 0
-  matLoot: 0
-  goldLoot: 0
+  looted: 0
   currentSelected:
     value: {fileID: 0}
     variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
@@ -3639,12 +3676,12 @@ PrefabInstance:
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06377859
+      value: 0.06377856
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.23895003
+      value: 0.23894998
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
@@ -3664,7 +3701,7 @@ PrefabInstance:
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015730573
+      value: -0.015730564
       objectReference: {fileID: 0}
     - target: {fileID: 4875127261043537068, guid: 1a94f7a84fde41d4dbaea0e9fdd7defa,
         type: 3}

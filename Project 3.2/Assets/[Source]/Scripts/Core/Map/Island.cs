@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Island : MonoBehaviour {
 
-    public bool pillaged;
-    public int foodLoot;
-    public int matLoot;
-    public int goldLoot;
+    public bool looted;
+    CivManager.Type rDemand;
+    CivManager.Type rExcess;
     [SerializeField] TransformReference currentSelected;
+
+    void Start() 
+    {
+        
+    }
+
+    public void RandomizeIsland()
+    {
+        // rDemand =CivManager.Type
+    }
 
     void OnMouseDown() {
         if (!Input.GetButton("Waypoint Interact")) {
@@ -16,17 +25,5 @@ public class Island : MonoBehaviour {
 
             IslandInteractionManager.instance.IslandInsert(this);
         }
-    }
-
-    private void Start() 
-    {
-        PrototypeRandomizePillage();
-    }
-
-    void PrototypeRandomizePillage()
-    {
-        foodLoot = Random.Range(0,100);
-        matLoot = Random.Range(0,100);
-        goldLoot = Random.Range(0,100);
     }
 }

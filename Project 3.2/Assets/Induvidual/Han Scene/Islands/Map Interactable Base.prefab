@@ -67,13 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pillaged: 0
-  foodLoot: 0
-  matLoot: 0
-  goldLoot: 0
+  looted: 0
   currentSelected:
     value: {fileID: 0}
-    variable: {fileID: 0}
+    variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
     useConstant: 0
     myEvent: {fileID: 0}
 --- !u!114 &1582459336201658806
