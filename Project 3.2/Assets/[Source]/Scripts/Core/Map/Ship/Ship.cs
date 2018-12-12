@@ -33,7 +33,7 @@ public class Ship : MonoBehaviour {
     void Update() {
         if (myPath.Count > 0) {
             if (Vector3.Distance(transform.position, myPath[0].position) < 2) {
-                RemoveWaypoint(myPath[0]);
+                myPath[0].gameObject.SetActive(false);
                 UpdateWaypointPath(false);
             }
             else {
@@ -56,7 +56,6 @@ public class Ship : MonoBehaviour {
     public void RemoveWaypoint(Transform toRemove) {
         int toRemoveIndex = myPath.IndexOf(toRemove);
 
-        ObjectPooler.instance.AddToPool("Waypoint", myPath[toRemoveIndex].gameObject);
         myPath.RemoveAt(toRemoveIndex);
         waypointLines.positionCount = myPath.Count + 1;
         UpdateWaypointPath(false);
@@ -142,10 +141,10 @@ public class Ship : MonoBehaviour {
     void UpdateWaypointPath(bool boatUpdate) {
 
         if (boatUpdate == true) {
-            waypointLines.SetPosition(0, transform.position + new Vector3(0,1.5f,0));
+            waypointLines.SetPosition(0, transform.position + new Vector3(0, 1.5f, 0));
         }
         else {
-            waypointLines.SetPosition(0, transform.position + new Vector3(0,1.5f,0));
+            waypointLines.SetPosition(0, transform.position + new Vector3(0, 1.5f, 0));
             for (int i = 0; i < myPath.Count; i++) {
 
                 waypointLines.SetPosition(i + 1, myPath[i].position);

@@ -13,7 +13,7 @@ public class Waypoint : MonoBehaviour {
 
     void OnMouseOver() {
         if (myShip.transform == currentlySelected.Value && Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire2")) {
-            myShip.RemoveWaypoint(transform);
+            gameObject.SetActive(false);
         }
     }
 
@@ -29,5 +29,12 @@ public class Waypoint : MonoBehaviour {
         }
 
         myCollider.enabled = true;
+    }
+
+    void OnDisable() {
+        if (myShip != null) {
+            myShip.RemoveWaypoint(transform);
+            ObjectPooler.instance.AddToPool("Waypoint", gameObject);
+        }
     }
 }
