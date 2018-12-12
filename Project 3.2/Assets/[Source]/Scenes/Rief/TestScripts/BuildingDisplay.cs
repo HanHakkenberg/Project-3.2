@@ -19,7 +19,6 @@ public class BuildingDisplay : MonoBehaviour
 
     public void DisplayInfo()
     {
-        CivManager.instance.RemoveIncome(1,CivManager.Type.Stability);
         if (building != null)
         {
             nameText.text = building.name;
