@@ -23,10 +23,13 @@ public class IslandInteractionManager : MonoBehaviour
     TradeTypes tradeTypes;
     
     #region TradeRelated
-    public int minInput;
-    public int maxInput;
     [SerializeField]
     GameObject tradePannel;
+    [SerializeField]
+    Image excessImg,demandImg;
+    public List<Sprite> resourceImages = new List<Sprite>();
+    public int minInput;
+    public int maxInput;
     public TMP_Text tradeMessageText;
     public InputField inputRequest;
     public InputField inputDemand;
@@ -36,7 +39,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     int demandedValue;
     int requestedValue;
-    CivManager.Type demandedType;
+    CivManager.Type paymentType;
     CivManager.Type requestedType;
     #endregion
     //Change
@@ -73,6 +76,7 @@ public class IslandInteractionManager : MonoBehaviour
     {
         activeIsland = island;
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+
     }
 
     public void SwitchInteractionPanels(InteractionPannels panels)
@@ -144,6 +148,10 @@ public class IslandInteractionManager : MonoBehaviour
         {
             activeIsland.looted = true;
             SwitchInteractionPanels(InteractionPannels.Pillage);
+            if(activeIsland.settled == true)
+            {
+                activeIsland.UpdateAttitude(-4);
+            }
         }
         else
         {
@@ -160,7 +168,7 @@ public class IslandInteractionManager : MonoBehaviour
         {
             //Confirm deal
             bool canTrade = true;
-            switch (demandedType)
+            switch (paymentType)
             {
                 case CivManager.Type.Food:
                 if(CivManager.instance.food < demandedValue)
@@ -190,14 +198,14 @@ public class IslandInteractionManager : MonoBehaviour
             if(canTrade == true)
             {
                 CivManager.instance.AddIncome(requestedValue,requestedType);
-                CivManager.instance.RemoveIncome(demandedValue,demandedType);
+                CivManager.instance.RemoveIncome(demandedValue,paymentType);
                 tradeMessageText.text = "Transaction successful";
             }
         }
 
-        //Verder hier mee ==================================================================================================
         void InputCheckOffer()
         {
+            //Input min max
             float input = int.Parse(inputRequest.text);
             if(input > maxInput)
             {
@@ -211,25 +219,26 @@ public class IslandInteractionManager : MonoBehaviour
             inputRequest.text = input.ToString();
             requestedValue = Mathf.RoundToInt(input);
 
-            if(activeIsland.rExcess == requestedType)
+            //modifier that goes over the price you pay
+            float priceModifier = 1;
+            if(requestedType == activeIsland.rExcess)
             {
-                input *= 0.8f;
-                if(activeIsland.rDemand == demandedType)
-                {
-                    input *= 0.5f;
-                    //Even less
-                }
+                priceModifier -= 0.25f;
             }
-            else if(activeIsland.rExcess == demandedType)
+            else if (requestedType == activeIsland.rDemand)
             {
-                input *= 2;
-                //Costs more
-                if(activeIsland.rDemand == requestedType)
-                {
-                    input *= 3;
-                    //Even more
-                }
+                priceModifier += 0.5f;
             }
+            if(paymentType == activeIsland.rDemand)
+            {
+                priceModifier -= 0.25f;
+            }
+            else if (paymentType == activeIsland.rExcess)
+            {
+                priceModifier += 0.5f;
+            }
+
+            input *= priceModifier;
             inputDemand.text = input.ToString();
             demandedValue = Mathf.RoundToInt(input);
         }
@@ -313,7 +322,7 @@ public class IslandInteractionManager : MonoBehaviour
                 }
                 else
                 {
-                    demandedType = CivManager.Type.Mats;                    
+                    paymentType = CivManager.Type.Mats;                    
                 }
                 break;
 
@@ -325,7 +334,7 @@ public class IslandInteractionManager : MonoBehaviour
                 }
                 else
                 {
-                    demandedType = CivManager.Type.Food;
+                    paymentType = CivManager.Type.Food;
                 }
                 break;
 
@@ -337,7 +346,7 @@ public class IslandInteractionManager : MonoBehaviour
                 }
                 else
                 {
-                    demandedType = CivManager.Type.Money;                    
+                    paymentType = CivManager.Type.Money;                    
                 }
                 break;
             }
