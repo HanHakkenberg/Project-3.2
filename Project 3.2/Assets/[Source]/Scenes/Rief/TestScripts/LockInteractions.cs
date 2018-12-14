@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Playables;
 
 public class LockInteractions : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class LockInteractions : MonoBehaviour
     public TextMeshProUGUI materialText;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI citizenText;
+    public TextMeshProUGUI unlockText;
+    bool unlockable = false;
+    public PlayableDirector buildingAnim;
+    
 
     void Start()
     {
@@ -26,12 +31,22 @@ public class LockInteractions : MonoBehaviour
 
     void Update()
     {
-        
+        print(unlockable);
     }
     void OnMouseEnter()
     {
         myAnim.SetBool("Hovering", true);
         costPanel.SetActive(true);
+        if(myLock.materialCost <= CivManager.instance.mats && myLock.moneyCost <= CivManager.instance.money && myLock.citizenCost <= CivManager.instance.people)
+        {
+            unlockable = true;
+            unlockText.text = "Unlockable!";
+        }
+        else
+        {
+            unlockable = false;
+            unlockText.text = "Not enough resources!";
+        }
     }
 
     void OnMouseExit()
@@ -42,9 +57,10 @@ public class LockInteractions : MonoBehaviour
 
     void OnMouseDown()
     {
-        if(myLock.materialCost <= CivManager.instance.mats && myLock.moneyCost <= CivManager.instance.money && myLock.citizenCost <= CivManager.instance.people)
+        if(unlockable)
         {
-            //unlock
+            buildingAnim.Play();
+            //this.gameObject.SetActive(false);
         }
     }
 }
