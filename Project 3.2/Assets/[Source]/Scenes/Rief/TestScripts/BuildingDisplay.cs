@@ -47,7 +47,6 @@ public class BuildingDisplay : MonoBehaviour
             }
         }
         DisplayInfo ();
-
     }
 
     public void CitizenInfo() //when you change the value, this starts.
