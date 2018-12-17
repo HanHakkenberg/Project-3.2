@@ -83,9 +83,7 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     void SetIslandVariables()
-    {
-        print(activeIsland);
-        print(activeIsland.rDemand);
+    {       
         switch (activeIsland.rDemand)
         {
             case CivManager.Type.Food:
@@ -296,9 +294,10 @@ public class IslandInteractionManager : MonoBehaviour
         }
         void InputCheckDemand()
         {
+            print(inputDemand.text);
             float input = int.Parse(inputDemand.text);
 
-            float tradeLeft = activeIsland.maxTrading -= activeIsland.amountTraded;
+            float tradeLeft = activeIsland.maxTrading - activeIsland.amountTraded;
 
             if(input > tradeLeft)
             {

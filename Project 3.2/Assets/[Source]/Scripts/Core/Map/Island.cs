@@ -7,7 +7,7 @@ public class Island : MonoBehaviour {
     public bool looted;
     public bool settled;
 
-    public int maxTrading;
+    public int maxTrading { get; private set; }
     public int amountTraded;
     public CivManager.Type rDemand;
     public CivManager.Type rExcess;
@@ -17,6 +17,7 @@ public class Island : MonoBehaviour {
     void Start() 
     {
         RandomizeIsland();
+        maxTrading = 100;
     }
 
     public void RandomizeIsland()
@@ -43,7 +44,6 @@ public class Island : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        print("YEET!");
         if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
 
