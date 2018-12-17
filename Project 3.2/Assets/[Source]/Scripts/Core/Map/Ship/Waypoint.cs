@@ -8,7 +8,7 @@ public class Waypoint : MonoBehaviour {
     [SerializeField] TransformReference currentCamera;
     [SerializeField] Collider myCollider;
 
-    void Awake() {
+    void OnEnable() {
         myShip = currentlySelected.Value.GetComponentInParent<Ship>();
     }
 
