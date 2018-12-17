@@ -23,7 +23,7 @@ public class Island : MonoBehaviour {
     {
         int demand = Random.Range(0,3);
         int excess = Random.Range(0,3);
-        if (demand == excess)
+        while (demand == excess)
         {
             excess = Random.Range(0,3);
         }

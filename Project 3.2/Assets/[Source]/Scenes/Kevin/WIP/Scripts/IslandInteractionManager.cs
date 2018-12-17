@@ -23,11 +23,16 @@ public class IslandInteractionManager : MonoBehaviour
     TradeTypes tradeTypes;
     
     #region TradeRelated
+    [Header("Excess & Demand")]
+    public List<Sprite> resourceImages = new List<Sprite>();
+    public TMP_Text excessType;
+    public TMP_Text demandType;
+    public Image demandPic;
+    public Image excessPic;
+
+    [Header("TradePannels Variables")]    
     [SerializeField]
     GameObject tradePannel;
-    [SerializeField]
-    Image excessImg,demandImg;
-    public List<Sprite> resourceImages = new List<Sprite>();
     public int minInput;
     public int maxInput;
     public TMP_Text tradeMessageText;
@@ -36,7 +41,6 @@ public class IslandInteractionManager : MonoBehaviour
     public Dropdown tradeTypeDropdown;
     public Dropdown RequestTypeDropdown;
     public Dropdown DemandTypeDropdown;
-
     int demandedValue;
     int requestedValue;
     CivManager.Type paymentType;
@@ -76,7 +80,46 @@ public class IslandInteractionManager : MonoBehaviour
     {
         activeIsland = island;
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+        SetIslandVariables();
+    }
 
+    void SetIslandVariables()
+    {
+        switch (activeIsland.rDemand)
+        {
+            case CivManager.Type.Food:
+            demandPic.sprite = resourceImages[0];
+            demandType.text = "Food";
+            break;
+
+            case CivManager.Type.Mats:
+            demandPic.sprite = resourceImages[1];
+            demandType.text = "Materials";
+            break;
+
+            case CivManager.Type.Money:
+            demandPic.sprite = resourceImages[2];
+            demandType.text = "Money";
+            break;
+        }
+
+        switch (activeIsland.rExcess)
+        {
+            case CivManager.Type.Food:
+            excessPic.sprite = resourceImages[0];
+            excessType.text = "Food";
+            break;
+
+            case CivManager.Type.Mats:
+            excessPic.sprite = resourceImages[1];
+            excessType.text = "Materials";
+            break;
+
+            case CivManager.Type.Money:
+            excessPic.sprite = resourceImages[2];
+            excessType.text = "Money";
+            break;
+        }
     }
 
     public void SwitchInteractionPanels(InteractionPannels panels)
@@ -168,31 +211,39 @@ public class IslandInteractionManager : MonoBehaviour
         {
             //Confirm deal
             bool canTrade = true;
-            switch (paymentType)
+            if(paymentType != requestedType)
             {
-                case CivManager.Type.Food:
-                if(CivManager.instance.food < demandedValue)
+                switch (paymentType)
                 {
-                    canTrade = false;
-                    tradeMessageText.text = "You don't have the required resources";
-                }
-                break;
+                    case CivManager.Type.Food:
+                    if(CivManager.instance.food < demandedValue)
+                    {
+                        canTrade = false;
+                        tradeMessageText.text = "You don't have the required resources";
+                    }
+                    break;
 
-                case CivManager.Type.Mats:
-                if(CivManager.instance.mats < demandedValue)
-                {
-                    canTrade = false;
-                    tradeMessageText.text = "You don't have the required resources";
-                }
-                break;
+                    case CivManager.Type.Mats:
+                    if(CivManager.instance.mats < demandedValue)
+                    {
+                        canTrade = false;
+                        tradeMessageText.text = "You don't have the required resources";
+                    }
+                    break;
 
-                case CivManager.Type.Money:
-                if(CivManager.instance.money < demandedValue)
-                {
-                    canTrade = false;
-                    tradeMessageText.text = "You don't have the required resources";
+                    case CivManager.Type.Money:
+                    if(CivManager.instance.money < demandedValue)
+                    {
+                        canTrade = false;
+                        tradeMessageText.text = "You don't have the required resources";
+                    }
+                    break;
                 }
-                break;
+            }
+            else
+            {
+                canTrade = false;
+                tradeMessageText.text = "Trading the same resources Wont work";
             }
 
             if(canTrade == true)
@@ -244,16 +295,20 @@ public class IslandInteractionManager : MonoBehaviour
         }
         void InputCheckDemand()
         {
-            // int input = int.Parse(inputDemand.text);
-            // if(input > maxInput)
-            // {
-            //     input = maxInput;
-            // }
-            // else if(input < minInput)
-            // {
-            //     input = minInput;
-            // }
-            // inputDemand.text = input.ToString();
+            float input = int.Parse(inputDemand.text);
+
+            float tradeLeft = activeIsland.maxTrading -= activeIsland.amountTraded;
+
+            if(input > tradeLeft)
+            {
+                input = maxInput;
+            }
+            else if(input < minInput)
+            {
+                input = minInput;
+            }
+
+            inputDemand.text = input.ToString();
         }
         void DropdownCheckTradeType()
         {
@@ -275,38 +330,17 @@ public class IslandInteractionManager : MonoBehaviour
                 
                 case 0:
                 //mats
-                if(DemandTypeDropdown.value == 0)
-                {
-                    RequestTypeDropdown.value += 1;
-                }
-                else
-                {
-                    requestedType = CivManager.Type.Mats;                    
-                }
+                requestedType = CivManager.Type.Mats;
                 break;
 
                 case 1:
                 //food
-                if(DemandTypeDropdown.value == 1)
-                {
-                    RequestTypeDropdown.value += 1;
-                }
-                else
-                {
-                    requestedType = CivManager.Type.Food;   
-                }
+                requestedType = CivManager.Type.Food;
                 break;
 
                 case 2:
                 //money
-                if(DemandTypeDropdown.value == 2)
-                {
-                    RequestTypeDropdown.value = 0;
-                }
-                else
-                {
-                    requestedType = CivManager.Type.Money;  
-                }
+                requestedType = CivManager.Type.Money;
                 break;
             }
         }
@@ -316,38 +350,17 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 case 0:
                 //mats
-                if(RequestTypeDropdown.value == 0)
-                {
-                    DemandTypeDropdown.value += 1;
-                }
-                else
-                {
-                    paymentType = CivManager.Type.Mats;                    
-                }
+                paymentType = CivManager.Type.Mats;                    
                 break;
 
                 case 1:
                 //food
-                if(RequestTypeDropdown.value == 1)
-                {
-                    DemandTypeDropdown.value += 1;
-                }
-                else
-                {
-                    paymentType = CivManager.Type.Food;
-                }
+                paymentType = CivManager.Type.Food;
                 break;
 
                 case 2:
                 //money
-                if(RequestTypeDropdown.value == 2)
-                {
-                    DemandTypeDropdown.value = 0;
-                }
-                else
-                {
-                    paymentType = CivManager.Type.Money;                    
-                }
+                paymentType = CivManager.Type.Money;                    
                 break;
             }
         }
