@@ -84,6 +84,8 @@ public class IslandInteractionManager : MonoBehaviour
 
     void SetIslandVariables()
     {
+        print(activeIsland);
+        print(activeIsland.rDemand);
         switch (activeIsland.rDemand)
         {
             case CivManager.Type.Food:
@@ -200,7 +202,7 @@ public class IslandInteractionManager : MonoBehaviour
             messageText.text = "You already Looted this island";
             if(activePannel != pillagePannel)
             {
-            SwitchInteractionPanels(InteractionPannels.Pillage);
+                SwitchInteractionPanels(InteractionPannels.Pillage);
             }
         }
     }

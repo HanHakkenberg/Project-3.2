@@ -43,6 +43,7 @@ public class Island : MonoBehaviour {
     }
 
     void OnMouseDown() {
+        print("YEET!");
         if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
 
