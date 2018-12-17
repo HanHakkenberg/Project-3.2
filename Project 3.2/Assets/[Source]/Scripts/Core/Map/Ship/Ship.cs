@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Ship : MonoBehaviour {
-    List<Transform> myPath = new List<Transform>();
     [SerializeField] TransformReference currentSelected;
     [SerializeField] TransformReference currentCamera;
+
+    [Header("Path")]
     bool stopIt = false;
     [SerializeField] int lineWith;
+    List<Transform> myPath = new List<Transform>();
 
     [Header("Spotting")]
     [SerializeField] int SpottingRefreshTimer;
@@ -90,6 +92,7 @@ public class Ship : MonoBehaviour {
         UpdateWaypointPath(false);
     }
 
+    //Updates the path by adding, moving or removing a waypoint
     IEnumerator PathUpdate() {
         if (isUpdating == false) {
             isUpdating = true;
@@ -109,6 +112,7 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    //Checks if there is a undiscovert object and discovers it
     IEnumerator IslandCheck() {
         while (true) {
             Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
@@ -124,11 +128,13 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    //gizmo for the range of the spotting Update
     void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, spottingSphereSize);
     }
 
+    //sets the destination for the pathfinding
     void SetDestination() {
         if (myPath.Count > 0) {
             myAgent.destination = myPath[0].position;
@@ -138,6 +144,7 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    //updates the waypoint path
     void UpdateWaypointPath(bool boatUpdate) {
 
         if (boatUpdate == true) {

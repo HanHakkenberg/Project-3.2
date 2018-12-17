@@ -2,6 +2,7 @@
 
 public class Waypoint : MonoBehaviour {
     Ship myShip;
+
     [SerializeField] TransformReference currentlySelected;
     [SerializeField] LayerMaskReference Waypointlayermask;
     [SerializeField] TransformReference currentCamera;
