@@ -33,7 +33,6 @@ public class IslandInteractionManager : MonoBehaviour
     [Header("TradePannels Variables")]    
     [SerializeField]
     GameObject tradePannel;
-    public int minInput;
     public int maxInput;
     public TMP_Text tradeMessageText;
     public InputField inputRequest;
@@ -262,13 +261,13 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 input = maxInput;
             }
-            else if(input < minInput)
+            else if(input < 0)
             {
-                input = minInput;
+                input = 0;
                 inputDemand.text = input.ToString();
             }
-            inputRequest.text = input.ToString();
             requestedValue = Mathf.RoundToInt(input);
+            inputRequest.text = input.ToString();
 
             //modifier that goes over the price you pay
             float priceModifier = 1;
@@ -290,8 +289,8 @@ public class IslandInteractionManager : MonoBehaviour
             }
 
             input *= priceModifier;
-            inputDemand.text = input.ToString();
             demandedValue = Mathf.RoundToInt(input);
+            inputDemand.text = input.ToString();
         }
         void InputCheckDemand()
         {
@@ -303,12 +302,34 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 input = maxInput;
             }
-            else if(input < minInput)
+            else if(input < 0)
             {
-                input = minInput;
+                input = 0;
             }
-
+            demandedValue = Mathf.RoundToInt(input);
             inputDemand.text = input.ToString();
+            
+            float requestModifier = 1;
+            if(requestedType == activeIsland.rExcess)
+            {
+                requestModifier += 0.25f;
+            }
+            else if (requestedType == activeIsland.rDemand)
+            {
+                requestModifier -= 0.5f;
+            }
+            if(paymentType == activeIsland.rDemand)
+            {
+                requestModifier += 0.25f;
+            }
+            else if (paymentType == activeIsland.rExcess)
+            {
+                requestModifier -= 0.5f;
+            }
+            
+            input *= requestModifier;
+            requestModifier = Mathf.RoundToInt(input);
+            inputRequest.text = input.ToString();
         }
         void DropdownCheckTradeType()
         {
