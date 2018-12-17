@@ -25,9 +25,9 @@ public class BuildingDisplay : MonoBehaviour
             descriptionText.text = building.description;
 
             citizenDisplay.text = myCitizens.ToString ();
-            statDisplayOne.text = "Stat one: " + (building.tempStatOne * CivManager.instance.stabilityModifier) * myCitizens;
-            statDisplayTwo.text = "Stat Two: " + (building.tempStatTwo * CivManager.instance.stabilityModifier) * myCitizens;
-            statDisplayThree.text = "Stat Three " + (building.tempStatThree * CivManager.instance.stabilityModifier) * myCitizens;
+            statDisplayOne.text = "Food: " + (building.foodStat * CivManager.instance.stabilityModifier) * myCitizens;
+            statDisplayTwo.text = "Materials: " + (building.materialStat * CivManager.instance.stabilityModifier) * myCitizens;
+            statDisplayThree.text = "Money: " + (building.moneyStat * CivManager.instance.stabilityModifier) * myCitizens;
 
         }
     }
@@ -56,9 +56,9 @@ public class BuildingDisplay : MonoBehaviour
         if (int.TryParse (citizenDisplay.text, out newCitizens) || citizenDisplay.text == string.Empty)
         {
             int extraCitizens = newCitizens - myCitizens;
-            statDisplayOne.text = "Stat one: " + (building.tempStatOne * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatOne * CivManager.instance.stabilityModifier) *extraCitizens + ")";
-            statDisplayTwo.text = "Stat Two: " + (building.tempStatTwo * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatTwo * extraCitizens * CivManager.instance.stabilityModifier) + ")";
-            statDisplayThree.text = "Stat Three " + (building.tempStatThree * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.tempStatThree * extraCitizens * CivManager.instance.stabilityModifier) + ")";
+            statDisplayOne.text = "Food: " + (building.foodStat * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.foodStat * CivManager.instance.stabilityModifier) *extraCitizens + ")";
+            statDisplayTwo.text = "Materials: " + (building.materialStat * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.materialStat * extraCitizens * CivManager.instance.stabilityModifier) + ")";
+            statDisplayThree.text = "Money: " + (building.moneyStat * CivManager.instance.stabilityModifier) * myCitizens + " (" + (building.moneyStat * extraCitizens * CivManager.instance.stabilityModifier) + ")";
         }
         
     }

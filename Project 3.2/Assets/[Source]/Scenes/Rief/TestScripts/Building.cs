@@ -10,7 +10,9 @@ public class Building : ScriptableObject
 
     public int buildingNumb;
 
-    public int tempStatOne; ///change once decided
-    public int tempStatTwo;
-    public int tempStatThree;
+    public GameObject buildingModel;
+    public int foodStat; 
+    public int materialStat;
+    public int moneyStat;
+    public int citizenStat;
 }

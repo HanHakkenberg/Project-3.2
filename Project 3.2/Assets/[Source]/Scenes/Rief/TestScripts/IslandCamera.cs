@@ -48,12 +48,12 @@ public class IslandCamera : MonoBehaviour
     }
     public void FirstPlaced()
     {
-        if(BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] == true)
+       /*if(BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] == true)
         {
             buildingAnim.Play();
 
             BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] = false;
             isPlaced = true;
-        }
+        }*/
     }
 }
