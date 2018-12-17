@@ -7,6 +7,10 @@ public class Ship : MonoBehaviour {
     [SerializeField] TransformReference currentSelected;
     [SerializeField] TransformReference currentCamera;
 
+    [SerializeField] int shipIndex;
+    [SerializeField] IntReference shipInteractIndex;
+    [SerializeField] IntReference shipSpotIndex;
+
     [Header("Path")]
     bool stopIt = false;
     [SerializeField] int lineWith;
@@ -16,6 +20,7 @@ public class Ship : MonoBehaviour {
     [SerializeField] int SpottingRefreshTimer;
     [SerializeField] int spottingSphereSize;
     [SerializeField] LayerMask spottingMask;
+    [SerializeField] LayerMask interactionMask;
     bool isUpdating;
 
     NavMeshAgent myAgent;
@@ -122,6 +127,19 @@ public class Ship : MonoBehaviour {
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
                 }
+
+                shipSpotIndex.Value = shipIndex;
+            }
+
+            Collider[] canInteract = Physics.OverlapSphere(transform.position, spottingSphereSize, interactionMask);
+
+            if (canInteract.Length > 0) {
+
+                for (int i = 0; i < canInteract.Length; i++) {
+                    canInteract[i].transform.parent.GetChild(0).gameObject.SetActive(true);
+                }
+
+                shipInteractIndex.Value = shipIndex;
             }
 
             yield return new WaitForSeconds(SpottingRefreshTimer);
