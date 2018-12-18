@@ -33,7 +33,7 @@ public class IslandInteractionManager : MonoBehaviour
     [Header("TradePannels Variables")]    
     [SerializeField]
     GameObject tradePannel;
-    public TMP_Text tradeMessageText;
+    public TMP_Text tradeMessageText,tradeFoodText,tradeMoneyText,tradeMaterialText;
     public InputField inputRequest;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
@@ -206,43 +206,52 @@ public class IslandInteractionManager : MonoBehaviour
         {
             //Confirm deal
             bool canTrade = true;
-            if(paymentType != requestedType)
+            if(activeIsland.amountTraded != activeIsland.maxTrading)
             {
-                switch (paymentType)
+                if(paymentType != requestedType)
                 {
-                    case CivManager.Type.Food:
-                    if(CivManager.instance.food < demandedValue)
+                    switch (paymentType)
                     {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
-                    }
-                    break;
+                        case CivManager.Type.Food:
+                        if(CivManager.instance.food < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
 
-                    case CivManager.Type.Mats:
-                    if(CivManager.instance.mats < demandedValue)
-                    {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
-                    }
-                    break;
+                        case CivManager.Type.Mats:
+                        if(CivManager.instance.mats < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
 
-                    case CivManager.Type.Money:
-                    if(CivManager.instance.money < demandedValue)
-                    {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
+                        case CivManager.Type.Money:
+                        if(CivManager.instance.money < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
                     }
-                    break;
+                }
+                else
+                {
+                    canTrade = false;
+                    tradeMessageText.text = "Cant trade the same resource";
                 }
             }
             else
             {
                 canTrade = false;
-                tradeMessageText.text = "Trading the same resources Wont work";
+                tradeMessageText.text = "This island wont trade anymore";
             }
 
             if(canTrade == true)
             {
+                activeIsland.amountTraded += requestedValue;
                 CivManager.instance.AddIncome(requestedValue,requestedType);
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
                 tradeMessageText.text = "Transaction successful";
