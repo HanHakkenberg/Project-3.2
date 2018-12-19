@@ -77,6 +77,7 @@ public class IslandInteractionManager : MonoBehaviour
     public void IslandInsert(Island island)
     {
         activeIsland = island;
+        IslandUICheck();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
     }
