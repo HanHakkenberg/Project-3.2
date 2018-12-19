@@ -43,8 +43,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4838335501701703342}
   - {fileID: 7824834739292207229}
+  - {fileID: 4838335501701703342}
   - {fileID: 2081601720746105613}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,15 +81,35 @@ MonoBehaviour:
     myEvent: {fileID: 0}
   currentCamera:
     value: {fileID: 0}
-    variable: {fileID: 11400000, guid: 5d57219055971404e8b88972a06f60f5, type: 2}
+    variable: {fileID: 11400000, guid: f1a0cd76f0f2afc4eb54427275b6dfd5, type: 2}
+    useConstant: 0
+    myEvent: {fileID: 0}
+  shipIndex: 0
+  shipInteractIndex:
+    value: 0
+    variable: {fileID: 11400000, guid: a90cbbc8532a22943b3eca8222edffa9, type: 2}
+    useConstant: 0
+    myEvent: {fileID: 0}
+  removeShipInteractIndex:
+    value: 0
+    variable: {fileID: 11400000, guid: 53101ff3c9483c9439536631ad3b4228, type: 2}
+    useConstant: 0
+    myEvent: {fileID: 0}
+  shipSpotIndex:
+    value: 0
+    variable: {fileID: 11400000, guid: 55e23985a85ec1d4fbed0ceab1d6a26a, type: 2}
     useConstant: 0
     myEvent: {fileID: 0}
   lineWith: 10
-  SpottingRefreshTimer: 0
-  spottingSphereSize: 25
+  SpottingRefreshTimer: 2
+  spottingSphereSize: 35
+  interactSphereSize: 35
   spottingMask:
     serializedVersion: 2
     m_Bits: 1024
+  interactionMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!195 &1346020148
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -100,8 +120,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 4.32
-  m_Speed: 0.2
-  m_Acceleration: 0.1
+  m_Speed: 2.5
+  m_Acceleration: 0.75
   avoidancePriority: 50
   m_AngularSpeed: 30
   m_StoppingDistance: 0.5
@@ -236,7 +256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7133448127112040456}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &1037703351117510216
 Light:
@@ -283,6 +303,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7133448127112040456}
     m_Modifications:
+    - target: {fileID: 3562207223427507559, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562207223427507559, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
+      propertyPath: m_Name
+      value: Small Ship Model (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -291,12 +321,12 @@ PrefabInstance:
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000003427267
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
@@ -305,39 +335,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3562207223427507559, guid: 59902a9c6504492498f9f2b7a4077bf8,
+    - target: {fileID: 3562207223425317799, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
-      propertyPath: m_Name
-      value: Small Ship Model (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562207223427507559, guid: 59902a9c6504492498f9f2b7a4077bf8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a1ab8ad710f4a5b40af01625a429bcbc, type: 2}
     - target: {fileID: 1329719468412446015, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
+    - target: {fileID: 1329719468410518527, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ffb0a397bb3a24f9fdb491c0a32568, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59902a9c6504492498f9f2b7a4077bf8, type: 3}
 --- !u!1001 &8235597289262604265
@@ -367,10 +397,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.78
       objectReference: {fileID: 0}
+    - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562207223425317799, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a1ab8ad710f4a5b40af01625a429bcbc, type: 2}
     - target: {fileID: 1329719468412446015, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1329719468410518527, guid: 59902a9c6504492498f9f2b7a4077bf8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ffb0a397bb3a24f9fdb491c0a32568, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59902a9c6504492498f9f2b7a4077bf8, type: 3}

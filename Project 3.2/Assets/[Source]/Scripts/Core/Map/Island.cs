@@ -42,7 +42,7 @@ public class Island : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        if (!Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
+        if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
             print("test");
             IslandInteractionManager.instance.IslandInsert(this);

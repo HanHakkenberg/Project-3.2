@@ -7,8 +7,11 @@ public class Ship : MonoBehaviour {
     [SerializeField] TransformReference currentSelected;
     [SerializeField] TransformReference currentCamera;
 
+    static int currentIndex;
     [SerializeField] int shipIndex;
     [SerializeField] IntReference shipInteractIndex;
+    [SerializeField] IntReference removeShipInteractIndex;
+    [SerializeField] IntReference shipSpotIndex;
 
     [Header("Path")]
     bool stopIt = false;
@@ -125,6 +128,7 @@ public class Ship : MonoBehaviour {
             Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
 
             if (spottedObjects.Length > 0) {
+                shipSpotIndex.Value = shipIndex;
 
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
@@ -160,6 +164,7 @@ public class Ship : MonoBehaviour {
             interactObjects.Clear();
 
             if (spottedObjects.Length > 0) {
+                shipInteractIndex.Value = shipIndex;
 
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     Island l = spottedObjects[i].GetComponent<Island>();
@@ -167,6 +172,9 @@ public class Ship : MonoBehaviour {
                     interactObjects.Add(l);
                     Island.ship = this;
                 }
+            }
+            else {
+                removeShipInteractIndex.Value = shipIndex;
             }
 
             yield return null;

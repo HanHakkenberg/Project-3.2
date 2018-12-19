@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e943d5c7d7ca24ab7e360b41aa27ee, type: 3}
-  m_Name: INT_Ship Index
+  m_Script: {fileID: 11500000, guid: d6bdbb6988d7f55458dbfe88280bee38, type: 3}
+  m_Name: GE_Ship Interact
   m_EditorClassIdentifier: 
-  variableInfo: 
-  baseValue: 0
-  value: 0
-  myEvent: []
-  reset: 1
+  info: 
+  listeners: []
