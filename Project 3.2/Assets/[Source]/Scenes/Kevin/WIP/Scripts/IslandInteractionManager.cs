@@ -179,17 +179,14 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
-<<<<<<< HEAD
         //Change
         if(activeIsland.looted != true)
         {
             activeIsland.looted = true;
             SwitchInteractionPanels(InteractionPannels.Pillage);
             if(activeIsland.settled == true)
-=======
             //Change
             if(activeIsland.looted != true)
->>>>>>> 1af7e660d659b4e1a3765dbb297e9d966326231b
             {
                 activeIsland.UpdateAttitude(-4);
             }
@@ -201,10 +198,7 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 SwitchInteractionPanels(InteractionPannels.Pillage);
             }
-<<<<<<< HEAD
         }
-=======
->>>>>>> 1af7e660d659b4e1a3765dbb297e9d966326231b
     }
     #region Trade
 
