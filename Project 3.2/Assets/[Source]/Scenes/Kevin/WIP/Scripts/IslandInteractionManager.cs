@@ -21,6 +21,9 @@ public class IslandInteractionManager : MonoBehaviour
     Island activeIsland;
     GameObject activePannel;
     TradeTypes tradeTypes;
+    Button tradeButton;
+    Button pillageButton;
+
     
     #region TradeRelated
     [Header("Excess & Demand")]
@@ -153,12 +156,6 @@ public class IslandInteractionManager : MonoBehaviour
         }
     }
 
-    void WipeTrade()
-    {
-        inputDemand.text = "0";
-        inputRequest.text = "0";
-        tradeMessageText.text = "";
-    }
     #region UIButtons
 
     public void Leave()
@@ -176,31 +173,52 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Trade()
     {
+        UpdateTradeResourceUI();
         SwitchInteractionPanels(InteractionPannels.Trade);
     }
 
     public void Pillage()
     {
-        //Change
-        if(activeIsland.looted != true)
-        {
-            activeIsland.looted = true;
-            SwitchInteractionPanels(InteractionPannels.Pillage);
-            if(activeIsland.settled == true)
+        
+            //Change
+            if(activeIsland.looted != true)
             {
-                activeIsland.UpdateAttitude(-4);
-            }
-        }
-        else
-        {
-            messageText.text = "You already Looted this island";
-            if(activePannel != pillagePannel)
-            {
+                activeIsland.looted = true;
                 SwitchInteractionPanels(InteractionPannels.Pillage);
+                if(activeIsland.settled == true)
+                {
+                    activeIsland.UpdateAttitude(-4);
+                }
+            }
+            else
+            {
+                messageText.text = "You already Looted this island";
+                if(activePannel != pillagePannel)
+                {
+                    SwitchInteractionPanels(InteractionPannels.Pillage);
+                }
             }
         }
+        
     }
         #region Trade
+
+    void WipeTrade()
+    {
+        inputDemand.text = "0";
+        inputRequest.text = "0";
+        tradeMessageText.text = "";
+    }
+
+    /// <summary>
+    /// Call to update trademenu Resource UI
+    /// </summary>
+    public void UpdateTradeResourceUI()
+    {
+        tradeFoodText.text = CivManager.instance.food.ToString();
+        tradeMaterialText.text = CivManager.instance.mats.ToString();
+        tradeMoneyText.text = CivManager.instance.money.ToString();
+    }
 
         public void Confirm()
         {
@@ -256,6 +274,8 @@ public class IslandInteractionManager : MonoBehaviour
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
                 tradeMessageText.text = "Transaction successful";
             }
+            UpdateTradeResourceUI();
+            InputCheckOffer();
         }
 
         void InputCheckOffer()
