@@ -53,6 +53,11 @@ public class Ship : MonoBehaviour {
         if (!Input.GetButton("Waypoint Interact")) {
             currentSelected.Value = transform;
             StartCoroutine(PathUpdate());
+            Island.ship = this;
+            StartCoroutine("IslandInteractionCheck");
+        }
+        else {
+            StopCoroutine("IslandInteractionCheck");
         }
     }
 
@@ -143,6 +148,25 @@ public class Ship : MonoBehaviour {
             }
 
             yield return new WaitForSeconds(SpottingRefreshTimer);
+        }
+    }
+
+    IEnumerable IslandInteractionCheck() {
+        while (true) {
+
+            Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
+
+            if (spottedObjects.Length > 0) {
+
+                for (int i = 0; i < spottedObjects.Length; i++) {
+                    spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
+                }
+
+                shipSpotIndex.Value = shipIndex;
+            }
+
+            yield return null;
+
         }
     }
 

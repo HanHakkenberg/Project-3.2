@@ -33,8 +33,7 @@ public class IslandInteractionManager : MonoBehaviour
     [Header("TradePannels Variables")]    
     [SerializeField]
     GameObject tradePannel;
-    public int maxInput;
-    public TMP_Text tradeMessageText;
+    public TMP_Text tradeMessageText,tradeFoodText,tradeMoneyText,tradeMaterialText;
     public InputField inputRequest;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
@@ -67,12 +66,9 @@ public class IslandInteractionManager : MonoBehaviour
     void Start() 
     {
         inputRequest.onValueChanged.AddListener(delegate{InputCheckOffer();});
-        inputDemand.onValueChanged.AddListener(delegate{InputCheckDemand();});
         tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
         RequestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
         DemandTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
-
-        DropdownCheckRequest();
     }
 
     public void IslandInsert(Island island)
@@ -83,9 +79,7 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     void SetIslandVariables()
-    {
-        print(activeIsland);
-        print(activeIsland.rDemand);
+    {       
         switch (activeIsland.rDemand)
         {
             case CivManager.Type.Food:
@@ -212,43 +206,52 @@ public class IslandInteractionManager : MonoBehaviour
         {
             //Confirm deal
             bool canTrade = true;
-            if(paymentType != requestedType)
+            if(activeIsland.amountTraded != activeIsland.maxTrading)
             {
-                switch (paymentType)
+                if(paymentType != requestedType)
                 {
-                    case CivManager.Type.Food:
-                    if(CivManager.instance.food < demandedValue)
+                    switch (paymentType)
                     {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
-                    }
-                    break;
+                        case CivManager.Type.Food:
+                        if(CivManager.instance.food < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
 
-                    case CivManager.Type.Mats:
-                    if(CivManager.instance.mats < demandedValue)
-                    {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
-                    }
-                    break;
+                        case CivManager.Type.Mats:
+                        if(CivManager.instance.mats < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
 
-                    case CivManager.Type.Money:
-                    if(CivManager.instance.money < demandedValue)
-                    {
-                        canTrade = false;
-                        tradeMessageText.text = "You don't have the required resources";
+                        case CivManager.Type.Money:
+                        if(CivManager.instance.money < demandedValue)
+                        {
+                            canTrade = false;
+                            tradeMessageText.text = "You don't have the required resources";
+                        }
+                        break;
                     }
-                    break;
+                }
+                else
+                {
+                    canTrade = false;
+                    tradeMessageText.text = "Cant trade the same resource";
                 }
             }
             else
             {
                 canTrade = false;
-                tradeMessageText.text = "Trading the same resources Wont work";
+                tradeMessageText.text = "This island wont trade anymore";
             }
 
             if(canTrade == true)
             {
+                activeIsland.amountTraded += requestedValue;
                 CivManager.instance.AddIncome(requestedValue,requestedType);
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
                 tradeMessageText.text = "Transaction successful";
@@ -257,11 +260,21 @@ public class IslandInteractionManager : MonoBehaviour
 
         void InputCheckOffer()
         {
-            //Input min max
-            float input = int.Parse(inputRequest.text);
-            if(input > maxInput)
+            float tradeLeft = activeIsland.maxTrading - activeIsland.amountTraded;
+            float input;
+            //Ifstatement to make sure Parse doesent give a error on a empty input
+            if(inputRequest.text != "")
             {
-                input = maxInput;
+                input = float.Parse(inputRequest.text);
+            }
+            else
+            {
+                input = 0;
+            }
+            //Imput min max check
+            if(input > tradeLeft)
+            {
+                input = tradeLeft;
             }
             else if(input < 0)
             {
@@ -269,69 +282,33 @@ public class IslandInteractionManager : MonoBehaviour
                 inputDemand.text = input.ToString();
             }
             requestedValue = Mathf.RoundToInt(input);
-            inputRequest.text = input.ToString();
+            inputRequest.text = requestedValue.ToString();
 
             //modifier that goes over the price you pay
             float priceModifier = 1;
-            if(requestedType == activeIsland.rExcess)
+            if(input != 0)
             {
-                priceModifier -= 0.25f;
-            }
-            else if (requestedType == activeIsland.rDemand)
-            {
-                priceModifier += 0.5f;
-            }
-            if(paymentType == activeIsland.rDemand)
-            {
-                priceModifier -= 0.25f;
-            }
-            else if (paymentType == activeIsland.rExcess)
-            {
-                priceModifier += 0.5f;
+                if(requestedType == activeIsland.rExcess)
+                {
+                    priceModifier -= 0.25f;
+                }
+                else if (requestedType == activeIsland.rDemand)
+                {
+                    priceModifier += 0.5f;
+                }
+                if(paymentType == activeIsland.rDemand)
+                {
+                    priceModifier -= 0.25f;
+                }
+                else if (paymentType == activeIsland.rExcess)
+                {
+                    priceModifier += 0.5f;
+                }
             }
 
             input *= priceModifier;
             demandedValue = Mathf.RoundToInt(input);
-            inputDemand.text = input.ToString();
-        }
-        void InputCheckDemand()
-        {
-            float input = int.Parse(inputDemand.text);
-
-            float tradeLeft = activeIsland.maxTrading -= activeIsland.amountTraded;
-
-            if(input > tradeLeft)
-            {
-                input = maxInput;
-            }
-            else if(input < 0)
-            {
-                input = 0;
-            }
-            demandedValue = Mathf.RoundToInt(input);
-            inputDemand.text = input.ToString();
-            
-            float requestModifier = 1;
-            if(requestedType == activeIsland.rExcess)
-            {
-                requestModifier += 0.25f;
-            }
-            else if (requestedType == activeIsland.rDemand)
-            {
-                requestModifier -= 0.5f;
-            }
-            if(paymentType == activeIsland.rDemand)
-            {
-                requestModifier += 0.25f;
-            }
-            else if (paymentType == activeIsland.rExcess)
-            {
-                requestModifier -= 0.5f;
-            }
-            
-            input *= requestModifier;
-            requestModifier = Mathf.RoundToInt(input);
-            inputRequest.text = input.ToString();
+            inputDemand.text = demandedValue.ToString();
         }
         void DropdownCheckTradeType()
         {
@@ -350,7 +327,6 @@ public class IslandInteractionManager : MonoBehaviour
         {
             switch (RequestTypeDropdown.value)
             {
-                
                 case 0:
                 //mats
                 requestedType = CivManager.Type.Mats;
@@ -366,6 +342,7 @@ public class IslandInteractionManager : MonoBehaviour
                 requestedType = CivManager.Type.Money;
                 break;
             }
+            InputCheckOffer();
         }
         void DropdownCheckDemand()
         {
@@ -386,6 +363,7 @@ public class IslandInteractionManager : MonoBehaviour
                 paymentType = CivManager.Type.Money;                    
                 break;
             }
+            InputCheckOffer();
         }
         #endregion
     #endregion
