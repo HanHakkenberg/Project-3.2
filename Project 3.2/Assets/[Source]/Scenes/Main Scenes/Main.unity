@@ -2635,7 +2635,7 @@ PrefabInstance:
     - target: {fileID: 4925428537270923402, guid: 70183421a2e7b3d45bf5d4a69ebde2d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.71
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 4925428537270923402, guid: 70183421a2e7b3d45bf5d4a69ebde2d8,
         type: 3}
@@ -2686,6 +2686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Map Interactable Base (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254225066656381339, guid: 70183421a2e7b3d45bf5d4a69ebde2d8,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70183421a2e7b3d45bf5d4a69ebde2d8, type: 3}

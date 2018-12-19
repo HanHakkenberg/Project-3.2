@@ -232,7 +232,11 @@ public class IslandInteractionManager : MonoBehaviour
         tradeFoodText.text = CivManager.instance.food.ToString();
         tradeMaterialText.text = CivManager.instance.mats.ToString();
         tradeMoneyText.text = CivManager.instance.money.ToString();
-        int tradeLeftVar = activeIsland.maxTrading - activeIsland.amountTraded;
+        int tradeLeftVar = 0;
+        if(activeIsland != null)
+        {
+            tradeLeftVar = activeIsland.maxTrading - activeIsland.amountTraded;
+        }
         tradeLeftText.text = tradeLeftVar.ToString();
     }
 
