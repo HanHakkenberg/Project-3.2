@@ -28,6 +28,7 @@
  (0,0): [12/19/2018 11:54:44.929 AM] Assembly-CSharp-Editor.dll compilation finished in 111ms  source files re-parsed: 0 metadata reloaded: 1
  (0,0): [12/19/2018 11:54:44.940 AM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 11964
  (0,0): [12/19/2018 11:54:44.951 AM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 11964
+<<<<<<< HEAD
  (0,0): [12/19/2018 01:08:51.229 PM] Assembly-CSharp.dll compiling...
  (0,0): [12/19/2018 01:08:51.367 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
  (0,0): [12/19/2018 01:08:51.393 PM] Assembly-CSharp.dll compilation finished in 164ms  source files re-parsed: 1 metadata reloaded: 0
@@ -110,3 +111,26 @@
  (0,0): [12/19/2018 01:37:18.971 PM] Assembly-CSharp-Editor.dll compilation finished in 72ms  source files re-parsed: 0 metadata reloaded: 1
  (0,0): [12/19/2018 01:37:18.983 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 11964
  (0,0): [12/19/2018 01:37:18.994 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 11964
+=======
+ (0,0): [12-19-2018 12:29:44.970 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 1136
+ (0,0): [12-19-2018 12:29:44.984 ] Assembly-CSharp.dll compiling...
+ (0,0): [12-19-2018 12:29:47.296 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [12-19-2018 12:29:47.363 ] Assembly-CSharp.dll compilation finished in 2379ms  source files re-parsed: 110 metadata reloaded: 208
+ (0,0): [12-19-2018 12:29:47.376 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 1136
+ (0,0): [12-19-2018 12:29:47.959 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 1136
+ (0,0): [12-19-2018 12:29:47.971 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [12-19-2018 12:29:48.175 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [12-19-2018 12:29:48.189 ] Assembly-CSharp-Editor.dll compilation finished in 218ms  source files re-parsed: 20 metadata reloaded: 139
+ (0,0): [12-19-2018 12:29:48.201 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 1136
+ (0,0): [12-19-2018 12:29:55.508 ] Compiler cache size is now 24,28 MB
+>>>>>>> c0e853e4afc544625e58b1225c04a2ec763115d7
+ (0,0): [12/19/2018 01:38:43.164 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 11964
+ (0,0): [12/19/2018 01:38:43.178 PM] Assembly-CSharp.dll compiling...
+ (0,0): [12/19/2018 01:38:43.811 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [12/19/2018 01:38:43.842 PM] Assembly-CSharp.dll compilation finished in 664ms  source files re-parsed: 111 metadata reloaded: 0
+ (0,0): [12/19/2018 01:38:43.853 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 11964
+ (0,0): [12/19/2018 01:38:44.464 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [12/19/2018 01:38:44.516 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [12/19/2018 01:38:44.538 PM] Assembly-CSharp-Editor.dll compilation finished in 73ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [12/19/2018 01:38:44.550 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 11964
+ (0,0): [12/19/2018 01:38:44.562 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 11964

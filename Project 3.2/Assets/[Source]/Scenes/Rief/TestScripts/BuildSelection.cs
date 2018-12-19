@@ -60,7 +60,6 @@ public class BuildSelection : MonoBehaviour
             CivManager.instance.RemoveIncome(thisLock.moneyCost, CivManager.Type.Money);
             CivManager.instance.RemoveIncome(thisLock.citizenCost, CivManager.Type.People);
 
-            //thisBuilding[0].buildingModel.SetActive(true);
             ObjectPooler.instance.GetFromPool("Hammer", spawnLoc.transform.position, Quaternion.Euler(0, spawnLoc.transform.localEulerAngles.y, 0));
 
             BuildingManager.instance.AddBuilding(thisBuilding);

@@ -77,8 +77,23 @@ public class IslandInteractionManager : MonoBehaviour
     public void IslandInsert(Island island)
     {
         activeIsland = island;
+        IslandUICheck();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
+    }
+
+    void IslandUICheck()
+    {
+        if(activeIsland.canInteract)
+        {
+            tradeButton.interactable = true;
+            pillageButton.interactable = true;
+        }
+        else
+        {
+            tradeButton.interactable = false;
+            pillageButton.interactable = false;
+        }
     }
 
     void SetIslandVariables()
