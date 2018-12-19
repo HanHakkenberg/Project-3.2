@@ -8,7 +8,7 @@ public class InteractableMapObject : MonoBehaviour {
     void Start() {
         if (spottedObject != null) {
             spottedObject.SetActive(false);
-            Collider[] detectedColliders = Physics.OverlapBox(waypointCheckCollider.center + transform.position, waypointCheckCollider.bounds.extents * 2, spottedObject.transform.rotation, myLayerMask);
+            Collider[] detectedColliders = Physics.OverlapBox(waypointCheckCollider.center + transform.position, waypointCheckCollider.bounds.extents * 2 + new Vector3(0,50,0), spottedObject.transform.rotation, myLayerMask);
 
             Debug.Log(detectedColliders.Length);
 

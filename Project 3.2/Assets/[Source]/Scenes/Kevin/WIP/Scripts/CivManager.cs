@@ -143,6 +143,10 @@ public class CivManager : MonoBehaviour
             UIManager.instance.RecourceUIPopup(toAdd,Type.Stability);
             break;     
       }
+      if (IslandInteractionManager.instance)
+      {
+         IslandInteractionManager.instance.UpdateTradeResourceUI();
+      }
    }
 
    /// <summary>
@@ -199,6 +203,11 @@ public class CivManager : MonoBehaviour
             UpdateStability();
             UIManager.instance.RecourceUIPopup(toRemove,Type.Stability);
             break;
+      }
+
+      if (IslandInteractionManager.instance)
+      {
+         IslandInteractionManager.instance.UpdateTradeResourceUI();
       }
    }
 

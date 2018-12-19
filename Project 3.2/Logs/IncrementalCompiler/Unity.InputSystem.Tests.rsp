@@ -2,6 +2,7 @@
 -target:library
 -nowarn:0169
 -langversion:7
+<<<<<<< HEAD
 -out:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Temp/Unity.InputSystem.Tests.dll"
 -nostdlib
 -unsafe
@@ -219,6 +220,225 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll"
+=======
+-out:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Temp/Unity.InputSystem.Tests.dll"
+-nostdlib
+-unsafe
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll
+-r:D:/UnityHub/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll
+-r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll
+>>>>>>> 3dcb65f171121116556bf5a7bf64020d570f428f
 -d:UNITY_5_3_OR_NEWER
 -d:UNITY_5_4_OR_NEWER
 -d:UNITY_5_5_OR_NEWER
@@ -321,6 +541,7 @@
 -d:SCPE
 -d:CSHARP_7_OR_LATER
 -d:CSHARP_7_3_OR_NEWER
+<<<<<<< HEAD
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CorePerformanceTests.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreStressTests.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests.cs"
@@ -349,4 +570,34 @@
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/XInputTests.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/XRTests.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Utilities/ArrayHelperTests.cs"
+=======
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CorePerformanceTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreStressTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Actions.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Analytics.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Controls.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Devices.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Editor.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Events.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Layouts.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_Remoting.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/CoreTests_State.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/InputTestFixture.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/InputTestRuntime.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/DualShockTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/HIDTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/iOSTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/OnScreenTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/PS4Tests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/SteamTestFixture.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/SteamTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/SwitchTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UITests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/XInputTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/XRTests.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Packages/com.unity.inputsystem/Tests/InputSystem/Utilities/ArrayHelperTests.cs"
+>>>>>>> 3dcb65f171121116556bf5a7bf64020d570f428f
 -v:0
