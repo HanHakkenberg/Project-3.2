@@ -36,7 +36,7 @@ public class IslandInteractionManager : MonoBehaviour
     [Header("TradePannels Variables")]    
     [SerializeField]
     GameObject tradePannel;
-    public TMP_Text tradeMessageText,tradeFoodText,tradeMoneyText,tradeMaterialText;
+    public TMP_Text tradeLeftText,tradeMessageText,tradeFoodText,tradeMoneyText,tradeMaterialText;
     public InputField inputRequest;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
@@ -232,6 +232,8 @@ public class IslandInteractionManager : MonoBehaviour
         tradeFoodText.text = CivManager.instance.food.ToString();
         tradeMaterialText.text = CivManager.instance.mats.ToString();
         tradeMoneyText.text = CivManager.instance.money.ToString();
+        int tradeLeftVar = activeIsland.maxTrading - activeIsland.amountTraded;
+        tradeLeftText.text = tradeLeftVar.ToString();
     }
 
         public void Confirm()
