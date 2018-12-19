@@ -81,6 +81,20 @@ public class IslandInteractionManager : MonoBehaviour
         SetIslandVariables();
     }
 
+    void IslandUICheck()
+    {
+        if(activeIsland.canInteract)
+        {
+            tradeButton.interactable = true;
+            pillageButton.interactable = true;
+        }
+        else
+        {
+            tradeButton.interactable = false;
+            pillageButton.interactable = false;
+        }
+    }
+
     void SetIslandVariables()
     {       
         switch (activeIsland.rDemand)
