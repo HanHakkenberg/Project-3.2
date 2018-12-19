@@ -179,27 +179,24 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
-        
-            //Change
-            if(activeIsland.looted != true)
+        //Change
+        if(activeIsland.looted != true)
+        {
+            activeIsland.looted = true;
+            SwitchInteractionPanels(InteractionPannels.Pillage);
+            if(activeIsland.settled == true)
             {
-                activeIsland.looted = true;
-                SwitchInteractionPanels(InteractionPannels.Pillage);
-                if(activeIsland.settled == true)
-                {
-                    activeIsland.UpdateAttitude(-4);
-                }
-            }
-            else
-            {
-                messageText.text = "You already Looted this island";
-                if(activePannel != pillagePannel)
-                {
-                    SwitchInteractionPanels(InteractionPannels.Pillage);
-                }
+                activeIsland.UpdateAttitude(-4);
             }
         }
-        
+        else
+        {
+            messageText.text = "You already Looted this island";
+            if(activePannel != pillagePannel)
+            {
+                SwitchInteractionPanels(InteractionPannels.Pillage);
+            }
+        }
     }
         #region Trade
 
