@@ -179,7 +179,6 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
-        
             //Change
             if(activeIsland.looted != true)
             {
@@ -198,10 +197,8 @@ public class IslandInteractionManager : MonoBehaviour
                     SwitchInteractionPanels(InteractionPannels.Pillage);
                 }
             }
-        }
-        
     }
-        #region Trade
+    #region Trade
 
     void WipeTrade()
     {
