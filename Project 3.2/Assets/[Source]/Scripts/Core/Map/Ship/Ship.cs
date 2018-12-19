@@ -9,7 +9,6 @@ public class Ship : MonoBehaviour {
 
     [SerializeField] int shipIndex;
     [SerializeField] IntReference shipInteractIndex;
-    [SerializeField] IntReference shipSpotIndex;
 
     [Header("Path")]
     bool stopIt = false;
@@ -19,6 +18,7 @@ public class Ship : MonoBehaviour {
     [Header("Spotting")]
     [SerializeField] int SpottingRefreshTimer;
     [SerializeField] int spottingSphereSize;
+    [SerializeField] int interactSphereSize;
     [SerializeField] LayerMask spottingMask;
     [SerializeField] LayerMask interactionMask;
     bool isUpdating;
@@ -35,6 +35,7 @@ public class Ship : MonoBehaviour {
         waypointLines.startWidth = lineWith;
         waypointLines.endWidth = lineWith;
         StartCoroutine(IslandCheck());
+        StartCoroutine(IslandInteractionCheck());
     }
 
     void Update() {
@@ -54,10 +55,6 @@ public class Ship : MonoBehaviour {
             currentSelected.Value = transform;
             StartCoroutine(PathUpdate());
             Island.ship = this;
-            StartCoroutine("IslandInteractionCheck");
-        }
-        else {
-            StopCoroutine("IslandInteractionCheck");
         }
     }
 
@@ -132,8 +129,6 @@ public class Ship : MonoBehaviour {
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
                 }
-
-                shipSpotIndex.Value = shipIndex;
             }
 
             Collider[] canInteract = Physics.OverlapSphere(transform.position, spottingSphereSize, interactionMask);
@@ -151,22 +146,30 @@ public class Ship : MonoBehaviour {
         }
     }
 
-    IEnumerable IslandInteractionCheck() {
-        while (true) {
+    List<Island> interactObjects = new List<Island>();
 
-            Collider[] spottedObjects = Physics.OverlapSphere(transform.position, spottingSphereSize, spottingMask);
+    IEnumerator IslandInteractionCheck() {
+        while (true) {
+            for (int i = 0; i < interactObjects.Count; i++) {
+                if (interactObjects[i] != null) {
+                    interactObjects[i].canInteract = false;
+                }
+            }
+
+            Collider[] spottedObjects = Physics.OverlapSphere(transform.position, interactSphereSize, interactionMask);
+            interactObjects.Clear();
 
             if (spottedObjects.Length > 0) {
 
                 for (int i = 0; i < spottedObjects.Length; i++) {
-                    spottedObjects[i].transform.parent.GetChild(0).gameObject.SetActive(true);
+                    Island l = spottedObjects[i].GetComponent<Island>();
+                    l.canInteract = true;
+                    interactObjects.Add(l);
+                    Island.ship = this;
                 }
-
-                shipSpotIndex.Value = shipIndex;
             }
 
             yield return null;
-
         }
     }
 

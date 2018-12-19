@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 4925428538711884718}
   - component: {fileID: 4925428538711884716}
   - component: {fileID: 5762794357566881127}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Map Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,9 +360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canInteract: 0
   looted: 0
   settled: 0
-  maxTrading: 0
   amountTraded: 0
   rDemand: 0
   rExcess: 0
