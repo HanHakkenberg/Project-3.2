@@ -43,8 +43,11 @@ public class Island : MonoBehaviour {
 
     void OnMouseDown() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
 =======
+=======
+>>>>>>> 4bef1019a2a77155921db1f47f095fc46dea53a4
         if (!Input.GetButton("Waypoint Interact")) {
 >>>>>>> 4bef1019a2a77155921db1f47f095fc46dea53a4
             currentSelected.Value = transform;
