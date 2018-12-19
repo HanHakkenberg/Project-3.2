@@ -56,9 +56,9 @@ public class BuildSelection : MonoBehaviour
     {
         if(unlockable)
         {
-            /*CivManager.instance.RemoveIncome(thisLock.materialCost, CivManager.Type.Mats);
+            CivManager.instance.RemoveIncome(thisLock.materialCost, CivManager.Type.Mats);
             CivManager.instance.RemoveIncome(thisLock.moneyCost, CivManager.Type.Money);
-            CivManager.instance.RemoveIncome(thisLock.citizenCost, CivManager.Type.People);*/
+            CivManager.instance.RemoveIncome(thisLock.citizenCost, CivManager.Type.People);
 
             ObjectPooler.instance.GetFromPool("Hammer", spawnLoc.transform.position, Quaternion.Euler(0, spawnLoc.transform.localEulerAngles.y, 0));
 
