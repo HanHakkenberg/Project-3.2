@@ -74,9 +74,14 @@ public class IslandInteractionManager : MonoBehaviour
         DemandTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
-    public void IslandInsert(Island island)
+    public void IslandInsert(InteractableObjects island)
     {
-        activeIsland = island;
+
+        InteractableObjects test = island;
+        if(island.GetType() == typeof(Island)){
+            Debug.Log("Rughaar");
+            activeIsland = island as Island;
+        }
         IslandUICheck();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
@@ -195,16 +200,18 @@ public class IslandInteractionManager : MonoBehaviour
     public void Pillage()
     {
         //Change
-        if(activeIsland.looted != true)
+        if(activeIsland.islandState != Island.IslandState.looted)
         {
-            activeIsland.looted = true;
-            SwitchInteractionPanels(InteractionPannels.Pillage);
-            if(activeIsland.settled == true)
-            //Change
-            if(activeIsland.looted != true)
+            if (activeIsland.islandState == Island.IslandState.Settled)
             {
-                activeIsland.UpdateAttitude(-4);
+                activeIsland.UpdateAttitude(-200);
             }
+            else
+            {
+                
+            }
+            activeIsland.islandState = Island.IslandState.looted;
+            SwitchInteractionPanels(InteractionPannels.Pillage);
         }
         else
         {
