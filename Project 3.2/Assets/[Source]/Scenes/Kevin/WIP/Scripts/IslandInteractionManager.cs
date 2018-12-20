@@ -17,6 +17,13 @@ public class IslandInteractionManager : MonoBehaviour
         Pillage
     }
 
+    enum IslandPannelsTypes
+    {
+        Unexplored,
+        Unsettled,
+        Settled,
+    }
+
     public static IslandInteractionManager instance;
     Island activeIsland;
     GameObject activePannel;
@@ -82,13 +89,36 @@ public class IslandInteractionManager : MonoBehaviour
             Debug.Log("Rughaar");
             activeIsland = island as Island;
         }
-        IslandUICheck();
+        //ToggleInteractionPannels();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
+
+        switch (activeIsland.islandState)
+        {
+            case Island.IslandState.Unexplored:
+
+            break;
+            case Island.IslandState.Unsettled:
+            break;
+            case Island.IslandState.Settled:
+            break;
+            case Island.IslandState.looted:
+            break;
+        }
     }
 
-    void IslandUICheck()
+    void ToggleInteractionPannels(IslandPannelsTypes islandPannelsTypes)
     {
+        switch (islandPannelsTypes)
+        {
+            case IslandPannelsTypes.Unexplored:
+            break;
+            case IslandPannelsTypes.Unsettled:
+            break;
+            case IslandPannelsTypes.Settled:
+            break;
+        }
+
         if(activeIsland.canInteract)
         {
             tradeButton.interactable = true;
