@@ -17,19 +17,17 @@ public class IslandInteractionManager : MonoBehaviour
         Pillage
     }
 
-    enum IslandPannelsTypes
-    {
-        Unexplored,
-        Unsettled,
-        Settled,
-    }
-
     public static IslandInteractionManager instance;
     Island activeIsland;
     GameObject activePannel;
     TradeTypes tradeTypes;
+    [Header("InteractionButtons")]
+    [SerializeField]
     Button tradeButton;
+    [SerializeField]
     Button pillageButton;
+    [SerializeField]
+    Button explore;
 
     
     #region TradeRelated
@@ -83,37 +81,27 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void IslandInsert(InteractableObjects island)
     {
-        if(island.GetType() == typeof(Island)){
+        if(island.GetType() == typeof(Island))
+        {
             activeIsland = island as Island;
-            print(activeIsland);
         }
-        // ToggleInteractionPannels();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
-
-        switch (activeIsland.islandState)
-        {
-            case Island.IslandState.Unexplored:
-
-            break;
-            case Island.IslandState.Unsettled:
-            break;
-            case Island.IslandState.Settled:
-            break;
-            case Island.IslandState.looted:
-            break;
-        }
     }
 
-    void ToggleInteractionPannels(IslandPannelsTypes islandPannelsTypes)
+    void ToggleInteractionPannels(InteractableObjects.InteractionState interactionState)
     {
-        switch (islandPannelsTypes)
+        switch (interactionState)
         {
-            case IslandPannelsTypes.Unexplored:
+            case InteractableObjects.InteractionState.Unexplored:
             break;
-            case IslandPannelsTypes.Unsettled:
+            case InteractableObjects.InteractionState.Unsettled:
             break;
-            case IslandPannelsTypes.Settled:
+            case InteractableObjects.InteractionState.Settled:
+            break;
+            case InteractableObjects.InteractionState.Looted:
+            break;
+            case InteractableObjects.InteractionState.LootSite:
             break;
         }
 
@@ -228,9 +216,9 @@ public class IslandInteractionManager : MonoBehaviour
     public void Pillage()
     {
         //Change
-        if(activeIsland.islandState != Island.IslandState.looted)
+        if(activeIsland.interactionState != Island.InteractionState.Looted)
         {
-            if (activeIsland.islandState == Island.IslandState.Settled)
+            if (activeIsland.interactionState == Island.InteractionState.Settled)
             {
                 activeIsland.UpdateAttitude(-200);
             }
@@ -238,7 +226,7 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 
             }
-            activeIsland.islandState = Island.IslandState.looted;
+            activeIsland.interactionState = Island.InteractionState.Looted;
             SwitchInteractionPanels(InteractionPannels.Pillage);
         }
         else
@@ -253,7 +241,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Explore()
     {
-        
+
     }
     #region Trade
 

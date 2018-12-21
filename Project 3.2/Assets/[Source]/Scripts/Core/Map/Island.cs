@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class Island : InteractableObjects {
 
-    public enum IslandState
-    {
-        Unexplored,
-        Unsettled,
-        Settled,
-        looted
-    }
-    public IslandState islandState;
+    
     public static Ship ship;
-
     public int maxTrading { get; private set; }
     public int amountTraded;
     public CivManager.Type rDemand;

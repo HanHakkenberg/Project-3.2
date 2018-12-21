@@ -4,6 +4,16 @@ using UnityEngine;
 
 public abstract class InteractableObjects : MonoBehaviour
 {
+    public enum InteractionState
+    {
+        Unexplored,
+        Unsettled,
+        Settled,
+        Looted,
+        LootSite
+    }
+    public InteractionState interactionState;
+
     public bool canInteract = false;
     [SerializeField] TransformReference currentSelected;
     void OnMouseDown() 
