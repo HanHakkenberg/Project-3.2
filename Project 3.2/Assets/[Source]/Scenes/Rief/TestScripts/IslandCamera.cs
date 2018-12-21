@@ -8,12 +8,11 @@ using UnityEngine.Playables;
 public class IslandCamera : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera buildingCam;
-    public CinemachineVirtualCamera mainCam;
+    CinemachineVirtualCamera mainCam;
     [SerializeField] private GameObject infoCanvas;
-    [SerializeField] private Building thisBuilding;
     Animator myAnimator;
-    public PlayableDirector buildingAnim;
     public bool isPlaced;
+    public int buildingNum;
 
     private void Start ()
     {
@@ -29,31 +28,14 @@ public class IslandCamera : MonoBehaviour
             buildingCam.enabled = false;
             myAnimator.SetBool ("Fading", false);
         }
-        if(Input.GetButtonDown("Jump"))
-        {
-            FirstPlaced();
-        }
     }
 
     void OnMouseDown ()
     {
-        if(isPlaced)
-        {
         mainCam.enabled = false;
         buildingCam.enabled = true;
-        BuildingDisplay.building = thisBuilding;
+        BuildingDisplay.building = BuildingManager.instance.allBuildings[buildingNum].myBuilding;
         myAnimator.SetBool ("Fading", true);
         infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
-        }
-    }
-    public void FirstPlaced()
-    {
-       /*if(BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] == true)
-        {
-            buildingAnim.Play();
-
-            BuildingManager.instance.firstBuildings[thisBuilding.buildingNumb] = false;
-            isPlaced = true;
-        }*/
     }
 }

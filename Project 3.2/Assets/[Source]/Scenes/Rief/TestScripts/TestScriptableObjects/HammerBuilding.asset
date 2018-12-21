@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hammer
   description: Builds weapons
-  buildingNumb: 0
-  buildingModel: {fileID: 0}
+  buildingModel: {fileID: 4911874013055436727, guid: 5e6acfa9410bdd84f8b8e815004b8bb3,
+    type: 3}
   foodStat: 2
   materialStat: 5
   moneyStat: 3
   citizenStat: 8
+  costDescription: 
+  materialCost: 0
+  moneyCost: 0
+  citizenCost: 0

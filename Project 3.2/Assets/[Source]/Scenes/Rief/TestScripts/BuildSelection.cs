@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BuildSelection : MonoBehaviour
 {
-    public IslandLock thisLock;
     public GameObject infoPanel;
     public GameObject spawnLoc;
     public List<BuildingInfo> thisBuilding;
@@ -27,7 +26,7 @@ public class BuildSelection : MonoBehaviour
 
     void UnlockCheck()
     {
-        if (thisLock.materialCost <= CivManager.instance.mats && thisLock.moneyCost <= CivManager.instance.money && thisLock.citizenCost <= CivManager.instance.people)
+        if (thisBuilding[0].myBuilding.materialCost <= CivManager.instance.mats && thisBuilding[0].myBuilding.moneyCost <= CivManager.instance.money && thisBuilding[0].myBuilding.citizenCost <= CivManager.instance.people)
         {
             LockInteractions.canUnlock = true;
             unlockable = true;
@@ -42,7 +41,7 @@ public class BuildSelection : MonoBehaviour
     void OnMouseEnter()
     {
         infoPanel.SetActive(true);
-        _selectionInfo.currLock = thisLock;
+        _selectionInfo.currBuilding = thisBuilding[0].myBuilding;
         _selectionInfo.Information();
         UnlockCheck();
     }
@@ -56,15 +55,14 @@ public class BuildSelection : MonoBehaviour
     {
         if(unlockable)
         {
-            CivManager.instance.RemoveIncome(thisLock.materialCost, CivManager.Type.Mats);
-            CivManager.instance.RemoveIncome(thisLock.moneyCost, CivManager.Type.Money);
-            CivManager.instance.RemoveIncome(thisLock.citizenCost, CivManager.Type.People);
+            CivManager.instance.RemoveIncome(thisBuilding[0].myBuilding.materialCost, CivManager.Type.Mats);
+            CivManager.instance.RemoveIncome(thisBuilding[0].myBuilding.moneyCost, CivManager.Type.Money);
+            CivManager.instance.RemoveIncome(thisBuilding[0].myBuilding.citizenCost, CivManager.Type.People);
 
             ObjectPooler.instance.GetFromPool("Hammer", spawnLoc.transform.position, Quaternion.Euler(0, spawnLoc.transform.localEulerAngles.y, 0));
 
             BuildingManager.instance.AddBuilding(thisBuilding);
             Destroy(transform.root.gameObject);
         }
-        
     }
 }

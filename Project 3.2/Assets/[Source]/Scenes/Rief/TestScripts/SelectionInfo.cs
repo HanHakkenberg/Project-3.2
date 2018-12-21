@@ -5,7 +5,7 @@ using TMPro;
 
 public class SelectionInfo : MonoBehaviour
 {
-    public IslandLock currLock;
+    public Building currBuilding;
     public new TextMeshProUGUI name;
     public TextMeshProUGUI description;
 
@@ -27,11 +27,11 @@ public class SelectionInfo : MonoBehaviour
 
     public void Information()
     {
-        name.text = currLock.name;
-        description.text = currLock.description;
-        statOne.text = "Materials: " + currLock.materialCost;
-        statTwo.text = "Money: " + currLock.moneyCost;
-        statThree.text = "Citizens: " + currLock.citizenCost;
+        name.text = currBuilding.name;
+        description.text = currBuilding.costDescription;
+        statOne.text = "Materials: " + currBuilding.materialCost;
+        statTwo.text = "Money: " + currBuilding.moneyCost;
+        statThree.text = "Citizens: " + currBuilding.citizenCost;
     }
 
     void Unlockable()
