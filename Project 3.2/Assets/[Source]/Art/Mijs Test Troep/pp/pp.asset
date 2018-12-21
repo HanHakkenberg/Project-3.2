@@ -13,10 +13,65 @@ MonoBehaviour:
   m_Name: pp
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 114729024149164868}
   - {fileID: 114137379482705578}
   - {fileID: 114266199402887692}
   - {fileID: 114765463999143906}
+  - {fileID: 114002942752588798}
+--- !u!114 &114002942752588798
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cf0493be372ef4d91d2ba45ed0ba64, type: 3}
+  m_Name: LensFlares
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  debug: 0
+  intensity:
+    overrideState: 0
+    value: 0.5
+  luminanceThreshold:
+    overrideState: 0
+    value: 1
+  maskTex:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  chromaticAbberation:
+    overrideState: 0
+    value: 10
+  colorTex:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  iterations:
+    overrideState: 0
+    value: 2
+  distance:
+    overrideState: 0
+    value: 1.5
+  falloff:
+    overrideState: 0
+    value: 10
+  haloSize:
+    overrideState: 0
+    value: 0
+  haloWidth:
+    overrideState: 0
+    value: 70
+  blur:
+    overrideState: 0
+    value: 2
+  passes:
+    overrideState: 0
+    value: 3
 --- !u!114 &114137379482705578
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -34,15 +89,15 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -69,37 +124,37 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 10
   tint:
-    overrideState: 0
+    overrideState: 1
     value: 0
   colorFilter:
-    overrideState: 0
+    overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    overrideState: 0
+    overrideState: 1
     value: 0
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 30
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
+    overrideState: 1
     value: 0
   contrast:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerRedOutRedIn:
-    overrideState: 0
+    overrideState: 1
     value: 100
   mixerRedOutGreenIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerRedOutBlueIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerGreenOutRedIn:
     overrideState: 0
@@ -121,7 +176,7 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 0.8353965, y: 1, z: 0.9831895, w: 0.01540844}
   gamma:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
@@ -1345,8 +1400,8 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   intensity:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 0.5
   threshold:
     overrideState: 0
     value: 1
@@ -1375,94 +1430,6 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
---- !u!114 &114729024149164868
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74483714bbf784b45b0c9c7c76035dd8, type: 3}
-  m_Name: Fog
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  skyboxTex:
-    overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
-  useSceneSettings:
-    overrideState: 0
-    value: 0
-  fogMode:
-    overrideState: 0
-    value: 2
-  globalDensity:
-    overrideState: 0
-    value: 0.2
-  fogStartDistance:
-    overrideState: 0
-    value: 170
-  fogEndDistance:
-    overrideState: 0
-    value: 600
-  colorSource:
-    overrideState: 0
-    value: 0
-  fogColor:
-    overrideState: 0
-    value: {r: 0.76, g: 0.94, b: 1, a: 1}
-  fogColorGradient:
-    overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
-  gradientDistance:
-    overrideState: 0
-    value: 1000
-  gradientUseFarClipPlane:
-    overrideState: 0
-    value: 1
-  distanceFog:
-    overrideState: 0
-    value: 1
-  distanceDensity:
-    overrideState: 0
-    value: 1
-  useRadialDistance:
-    overrideState: 0
-    value: 1
-  excludeSkybox:
-    overrideState: 0
-    value: 0
-  heightFog:
-    overrideState: 0
-    value: 1
-  height:
-    overrideState: 0
-    value: 10
-  heightDensity:
-    overrideState: 0
-    value: 0.75
-  heightFogNoise:
-    overrideState: 0
-    value: 0
-  heightNoiseTex:
-    overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
-  heightNoiseSize:
-    overrideState: 0
-    value: 0.25
-  heightNoiseStrength:
-    overrideState: 0
-    value: 1
-  heightNoiseSpeed:
-    overrideState: 0
-    value: 2
 --- !u!114 &114765463999143906
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1480,14 +1447,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   focusDistance:
-    overrideState: 0
-    value: 10
+    overrideState: 1
+    value: 22
   aperture:
     overrideState: 0
-    value: 5.6
+    value: 2.1
   focalLength:
-    overrideState: 0
-    value: 50
+    overrideState: 1
+    value: 100
   kernelSize:
     overrideState: 0
-    value: 1
+    value: 0
