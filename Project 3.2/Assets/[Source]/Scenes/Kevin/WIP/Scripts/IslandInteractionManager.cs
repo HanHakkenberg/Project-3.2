@@ -83,13 +83,11 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void IslandInsert(InteractableObjects island)
     {
-
-        InteractableObjects test = island;
         if(island.GetType() == typeof(Island)){
-            Debug.Log("Rughaar");
             activeIsland = island as Island;
+            print(activeIsland);
         }
-        //ToggleInteractionPannels();
+        // ToggleInteractionPannels();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         SetIslandVariables();
 
@@ -251,6 +249,11 @@ public class IslandInteractionManager : MonoBehaviour
                 SwitchInteractionPanels(InteractionPannels.Pillage);
             }
         }
+    }
+
+    public void Explore()
+    {
+        
     }
     #region Trade
 

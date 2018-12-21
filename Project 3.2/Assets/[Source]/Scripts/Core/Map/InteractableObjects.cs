@@ -11,6 +11,7 @@ public abstract class InteractableObjects : MonoBehaviour
         print("mouseDown");
         if (!Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
             currentSelected.Value = transform;
+            InsertInteractionManager();
         }
     }
     public abstract void InsertInteractionManager();
