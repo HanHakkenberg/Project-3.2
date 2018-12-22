@@ -3277,6 +3277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4ccdd7a3f25ed4c81a5874fa7be27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ships: []
+  shipAmount: 0
+  shipSwitchButton: {fileID: 0}
 --- !u!114 &1667701551
 MonoBehaviour:
   m_ObjectHideFlags: 0
