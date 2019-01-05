@@ -6,12 +6,12 @@ public abstract class InteractableObjects : MonoBehaviour
 {
     public enum InteractionState
     {
-        Unexplored,
         Unsettled,
         Settled,
         Looted,
         LootSite
     }
+    public bool explored;
     public InteractionState interactionState;
 
     public bool canInteract = false;

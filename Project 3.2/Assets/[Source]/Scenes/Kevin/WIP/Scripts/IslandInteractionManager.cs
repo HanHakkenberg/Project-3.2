@@ -23,11 +23,11 @@ public class IslandInteractionManager : MonoBehaviour
     TradeTypes tradeTypes;
     [Header("InteractionButtons")]
     [SerializeField]
-    Button tradeButton;
+    GameObject tradeButton;
     [SerializeField]
-    Button pillageButton;
+    GameObject pillageButton;
     [SerializeField]
-    Button explore;
+    GameObject exploreButton;
 
     
     #region TradeRelated
@@ -84,37 +84,62 @@ public class IslandInteractionManager : MonoBehaviour
         if(island.GetType() == typeof(Island))
         {
             activeIsland = island as Island;
+            SetIslandVariables();
+            ToggleInteractionPannels(activeIsland);
         }
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
-        SetIslandVariables();
     }
 
-    void ToggleInteractionPannels(InteractableObjects.InteractionState interactionState)
+    void ToggleInteractionPannels(InteractableObjects interactableObjects)
     {
-        switch (interactionState)
+        InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
+        DisableAllButtons();
+        if (interactableObjects.explored)
         {
-            case InteractableObjects.InteractionState.Unexplored:
-            break;
-            case InteractableObjects.InteractionState.Unsettled:
-            break;
-            case InteractableObjects.InteractionState.Settled:
-            break;
-            case InteractableObjects.InteractionState.Looted:
-            break;
-            case InteractableObjects.InteractionState.LootSite:
-            break;
-        }
+            switch (interactionState)
+            {
+                case InteractableObjects.InteractionState.Unsettled:
+                pillageButton.SetActive(true);
+                break;
 
-        if(activeIsland.canInteract)
-        {
-            tradeButton.interactable = true;
-            pillageButton.interactable = true;
+                case InteractableObjects.InteractionState.Settled:
+                tradeButton.SetActive(true);
+                pillageButton.SetActive(true);
+                pillageButton.GetComponent<Button>().interactable = true;
+                    if(activeIsland.canInteract)
+                    {
+                        tradeButton.GetComponent<Button>().interactable = true;
+                        pillageButton.GetComponent<Button>().interactable = true;
+                    }
+                    else
+                    {
+                        tradeButton.GetComponent<Button>().interactable = false;
+                        pillageButton.GetComponent<Button>().interactable = false;
+                    }
+                break;
+
+                case InteractableObjects.InteractionState.Looted:
+                pillageButton.SetActive(true);
+                pillageButton.GetComponent<Button>().interactable = false;
+                break;
+
+                case InteractableObjects.InteractionState.LootSite:
+                pillageButton.SetActive(true);
+                break;
+            }
         }
         else
         {
-            tradeButton.interactable = false;
-            pillageButton.interactable = false;
+            exploreButton.SetActive(true);
         }
+    }
+
+    void DisableAllButtons()
+    {
+        pillageButton.SetActive(false);
+        tradeButton.SetActive(false);
+        pillageButton.SetActive(false);
+        exploreButton.SetActive(false);
     }
 
     void SetIslandVariables()
@@ -205,6 +230,7 @@ public class IslandInteractionManager : MonoBehaviour
             SwitchInteractionPanels(InteractionPannels.Pillage);
         }
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
+        activeIsland = null;
     }
 
     public void Trade()
@@ -215,33 +241,71 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
-        //Change
-        if(activeIsland.interactionState != Island.InteractionState.Looted)
+        if(activeIsland != null)
         {
             if (activeIsland.interactionState == Island.InteractionState.Settled)
             {
                 activeIsland.UpdateAttitude(-200);
+
+                int foodVar = Random.Range(10,21);
+                int matsVar = Random.Range(10,21);
+                int moneyVar = Random.Range(10,21);
+
+                switch (activeIsland.rDemand)
+                {
+                    case CivManager.Type.Food:
+                    foodVar -= 10;
+                    foodVar = Mathf.Clamp(foodVar,0,int.MaxValue);
+                    break;
+
+                    case CivManager.Type.Mats:
+                    matsVar -= 10;
+                    matsVar = Mathf.Clamp(matsVar,0,int.MaxValue);
+                    break;
+
+                    case CivManager.Type.Money:
+                    moneyVar -= 10;
+                    moneyVar = Mathf.Clamp(moneyVar,0,int.MaxValue);
+                    break;
+                }
+
+                switch (activeIsland.rExcess)
+                {
+                    case CivManager.Type.Food:
+                    foodVar += 10;
+                    break;
+
+                    case CivManager.Type.Mats:
+                    matsVar += 10;
+                    break;
+
+                    case CivManager.Type.Money:
+                    moneyVar += 10;
+                    break;
+                }
+                CivManager.instance.AddIncome(foodVar,CivManager.Type.Food);
+                CivManager.instance.AddIncome(matsVar,CivManager.Type.Mats);
+                CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
             }
             else
             {
-                
+                int foodVar = Random.Range(10,21);
+                int matsVar = Random.Range(10,21);
+                int goldVar = Random.Range(10,21);
+
+                CivManager.instance.AddIncome(foodVar,CivManager.Type.Food);
+                CivManager.instance.AddIncome(matsVar,CivManager.Type.Mats);
+                CivManager.instance.AddIncome(goldVar,CivManager.Type.Money);
             }
             activeIsland.interactionState = Island.InteractionState.Looted;
             SwitchInteractionPanels(InteractionPannels.Pillage);
-        }
-        else
-        {
-            messageText.text = "You already Looted this island";
-            if(activePannel != pillagePannel)
-            {
-                SwitchInteractionPanels(InteractionPannels.Pillage);
-            }
         }
     }
 
     public void Explore()
     {
-
+        activeIsland.explored = true;
+        ToggleInteractionPannels(activeIsland);
     }
     #region Trade
 

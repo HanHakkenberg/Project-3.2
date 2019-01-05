@@ -25,10 +25,12 @@ public class Island : InteractableObjects {
     public void RandomizeIsland() {
         int demand = Random.Range(0, 3);
         int excess = Random.Range(0, 3);
+        int interactionTypeVar = Random.Range(0,2);
         while (demand == excess) {
             excess = Random.Range(0, 3);
         }
 
+        interactionState = (InteractionState)interactionTypeVar;
         rDemand = (CivManager.Type)demand;
         rExcess = (CivManager.Type)excess;
     }
