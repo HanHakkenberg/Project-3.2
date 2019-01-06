@@ -252,7 +252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec1689cf2aec1e468aad373d294d1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstBuildings: 01
+  allBuildingFood: 0
+  allBuildingMats: 0
+  allBuildingMoney: 0
+  allBuildingCitizens: 0
+  allBuildings: []
 --- !u!4 &1265438722457505905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 876876634209937581, guid: 0817f122b3bc57d459016c9846329c2c,
@@ -306,6 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926767151723429940}
   - component: {fileID: 8758200417032881162}
+  - component: {fileID: 962203927}
   m_Layer: 11
   m_Name: '[Island Interaction Manager]'
   m_TagString: Untagged
@@ -339,10 +344,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19520ecf8ed67b14e9af0cc57c5e707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minInput: 0
-  maxInput: 1000
+  tradeTypes: 0
+  tradeButton: {fileID: 0}
+  pillageButton: {fileID: 0}
+  exploreButton: {fileID: 0}
+  colonizeButton: {fileID: 0}
+  resourceImages:
+  - {fileID: 21300000, guid: 9054c5dbba10edc4a9329b5ec6160fce, type: 3}
+  - {fileID: 21300000, guid: 1b2ccbc10c930aa4ebea3d597db1bed0, type: 3}
+  - {fileID: 21300000, guid: 0bf715ee7c04882449d258c165fc3a21, type: 3}
+  excessType: {fileID: 0}
+  demandType: {fileID: 0}
+  demandPic: {fileID: 0}
+  excessPic: {fileID: 0}
+  attitudeText: {fileID: 0}
+  islandStatusText: {fileID: 0}
   tradePannel: {fileID: 0}
+  tradeLeftText: {fileID: 0}
   tradeMessageText: {fileID: 0}
+  tradeFoodText: {fileID: 0}
+  tradeMoneyText: {fileID: 0}
+  tradeMaterialText: {fileID: 0}
   inputRequest: {fileID: 0}
   inputDemand: {fileID: 0}
   tradeTypeDropdown: {fileID: 0}
@@ -353,6 +375,40 @@ MonoBehaviour:
   moneyText: {fileID: 0}
   messageText: {fileID: 0}
   pillagePannel: {fileID: 0}
+--- !u!114 &962203927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579285812752928038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb37139d0f22f34db0f4557ac708bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: Closes IslandInteractionPanel
+  listenOnEnable: 1
+  listenOnDisable: 1
+  delay: 0
+  myGameEvent:
+  - {fileID: 11400000, guid: dc57886ed8a31734bbef3ad97b21b12b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8758200417032881162}
+        m_MethodName: Leave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &2136104215447533788
 PrefabInstance:
   m_ObjectHideFlags: 0

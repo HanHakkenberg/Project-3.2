@@ -8,10 +8,10 @@ public abstract class InteractableObjects : MonoBehaviour
     {
         Unsettled,
         Settled,
-        Looted,
         LootSite
     }
     public bool explored;
+    public bool looted;
     public InteractionState interactionState;
 
     public bool canInteract = false;

@@ -6,6 +6,7 @@ public class Island : InteractableObjects {
 
     
     public static Ship ship;
+    int baseTrading = 100;
     public int maxTrading { get; private set; }
     public int amountTraded;
     public CivManager.Type rDemand;
@@ -14,7 +15,6 @@ public class Island : InteractableObjects {
 
     void Start() {
         RandomizeIsland();
-        maxTrading = 100;
     }
 
     public override void InsertInteractionManager()
@@ -25,14 +25,24 @@ public class Island : InteractableObjects {
     public void RandomizeIsland() {
         int demand = Random.Range(0, 3);
         int excess = Random.Range(0, 3);
-        int interactionTypeVar = Random.Range(0,2);
         while (demand == excess) {
             excess = Random.Range(0, 3);
         }
 
-        interactionState = (InteractionState)interactionTypeVar;
         rDemand = (CivManager.Type)demand;
         rExcess = (CivManager.Type)excess;
+
+        UpdateAttitude(Random.Range(-25,51));
+
+        int interactionTypeVar = Random.Range(0,11);
+        if(interactionTypeVar > 6)
+        {
+            interactionState = InteractionState.Unsettled;
+        }
+        else
+        {
+            interactionState = InteractionState.Settled;            
+        }
     }
 
     /// <summary>
@@ -42,6 +52,8 @@ public class Island : InteractableObjects {
     public void UpdateAttitude(float value) {
         attitude += value;
         Mathf.Clamp(attitude, -100, 100);
+        int trading = Mathf.FloorToInt(baseTrading + attitude / 2);
+        maxTrading = trading;
     }
 }
 
