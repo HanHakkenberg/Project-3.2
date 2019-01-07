@@ -51,7 +51,7 @@ public class Island : InteractableObjects {
     /// <param name="value">The value added to the current attitude</param>
     public void UpdateAttitude(float value) {
         attitude += value;
-        Mathf.Clamp(attitude, -100, 100);
+        attitude = Mathf.Clamp(attitude, -100, 100);
         int trading = Mathf.FloorToInt(baseTrading + attitude / 2);
         maxTrading = trading;
     }

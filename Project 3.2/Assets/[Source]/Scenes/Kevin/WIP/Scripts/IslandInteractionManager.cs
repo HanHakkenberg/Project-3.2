@@ -32,6 +32,8 @@ public class IslandInteractionManager : MonoBehaviour
     GameObject exploreButton;
     [SerializeField]
     GameObject colonizeButton;
+    [SerializeField]
+    GameObject backButton;
     
     #region TradeRelated
     [Header("Excess & Demand")]
@@ -96,6 +98,9 @@ public class IslandInteractionManager : MonoBehaviour
             activeIsland = island as Island;
             SetIslandVariables();
             ToggleInteractionPannels(activeIsland);
+        }
+        if(infoPannel.activeSelf != true)
+        {
             SwitchInteractionPanels(InteractionPannels.Info);
         }
         UpdateTradeResourceUI();
@@ -128,7 +133,7 @@ public class IslandInteractionManager : MonoBehaviour
                 }
                 else
                 {
-                    islandStatusText.text = "This uninhabited Island has bin looted";
+                    islandStatusText.text = "This uninhabited Island has recently bin looted";
                 }
                 break;
 
@@ -151,7 +156,7 @@ public class IslandInteractionManager : MonoBehaviour
                             tradeButton.GetComponent<Button>().interactable = false;
                             pillageButton.GetComponent<Button>().interactable = false;
                         }
-                        islandStatusText.text = "This island is inhabited and its poeple will talk to you and trade goods depending on youre standing whit them";
+                        islandStatusText.text = "This island is inhabited and its poeple will talk to you and trade goods depending on your standing whit them";
                     }
                     else
                     {
@@ -164,12 +169,12 @@ public class IslandInteractionManager : MonoBehaviour
                         {
                             pillageButton.GetComponent<Button>().interactable = false;                  
                         }
-                        islandStatusText.text = "The people of this island wont talk to you";
+                        islandStatusText.text = "Becouse of youre actions the people of this island wont talk to you";
                     }
                 }
                 else
                 {
-                    islandStatusText.text = "This inhabited Island has bin looted";
+                    islandStatusText.text = "This inhabited Island has recently been looted";
                 }
                 break;
 
@@ -304,6 +309,12 @@ public class IslandInteractionManager : MonoBehaviour
         activeIsland = null;
     }
 
+    public void Back()
+    {
+        UpdateTradeResourceUI();
+        SwitchInteractionPanels(InteractionPannels.Info);
+    }
+    
     public void Trade()
     {
         UpdateTradeResourceUI();
@@ -395,10 +406,10 @@ public class IslandInteractionManager : MonoBehaviour
         tradeFoodText.text = CivManager.instance.food.ToString();
         tradeMaterialText.text = CivManager.instance.mats.ToString();
         tradeMoneyText.text = CivManager.instance.money.ToString();
-        attitudeText.text = activeIsland.attitude.ToString();
         int tradeLeftVar = 0;
         if(activeIsland != null)
         {
+            attitudeText.text = activeIsland.attitude.ToString();
             tradeLeftVar = activeIsland.maxTrading - activeIsland.amountTraded;
         }
         tradeLeftText.text = tradeLeftVar.ToString();
