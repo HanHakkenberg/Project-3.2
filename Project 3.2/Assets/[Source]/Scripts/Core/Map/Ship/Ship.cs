@@ -169,10 +169,6 @@ public class Ship : MonoBehaviour {
                 for (int i = 0; i < spottedObjects.Length; i++) {
                     Island l = spottedObjects[i].GetComponent<Island>();
                     l.canInteract = true;
-                    if (IslandInteractionManager.instance.activeIsland == l)
-                    {
-                        IslandInteractionManager.instance.ToggleInteractionPannels(IslandInteractionManager.instance.activeIsland);
-                    }
                     interactObjects.Add(l);
                     Island.ship = this;
                 }

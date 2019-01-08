@@ -18,7 +18,6 @@ public abstract class InteractableObjects : MonoBehaviour
     [SerializeField] TransformReference currentSelected;
     void OnMouseDown() 
     {
-        print("mouseDown");
         if (!Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
             currentSelected.Value = transform;
             InsertInteractionManager();
