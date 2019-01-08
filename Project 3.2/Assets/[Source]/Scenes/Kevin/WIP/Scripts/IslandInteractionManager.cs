@@ -19,7 +19,7 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     public static IslandInteractionManager instance;
-    Island activeIsland;
+    public Island activeIsland{ get; private set; }
     GameObject activePannel;
     [SerializeField]
     TradeTypes tradeTypes;
@@ -107,7 +107,11 @@ public class IslandInteractionManager : MonoBehaviour
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
     }
 
-    void ToggleInteractionPannels(InteractableObjects interactableObjects)
+    /// <summary>
+    /// This function toggles buttons in interaction pannels acording to the state of the current active object
+    /// </summary>
+    /// <param name="interactableObjects"> the interactable object being refrenced</param>
+    public void ToggleInteractionPannels(InteractableObjects interactableObjects)
     {
         InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
         DisableAllButtons();
@@ -187,6 +191,15 @@ public class IslandInteractionManager : MonoBehaviour
         else
         {
             exploreButton.SetActive(true);
+            if(activeIsland.canInteract)
+            {  
+                exploreButton.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                exploreButton.GetComponent<Button>().interactable = false;
+            }
+            islandStatusText.text = "This island has yet to be explored";
         }
     }
 
@@ -197,6 +210,7 @@ public class IslandInteractionManager : MonoBehaviour
         pillageButton.SetActive(false);
         exploreButton.SetActive(false);
         attitudeParent.SetActive(false);
+        backButton.SetActive(false);
     }
 
     void SetIslandVariables()
@@ -251,6 +265,7 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 pillagePannel.SetActive(true);
                 activePannel = pillagePannel;
+                backButton.SetActive(true);
             }
             else
             {
@@ -313,6 +328,8 @@ public class IslandInteractionManager : MonoBehaviour
     {
         UpdateTradeResourceUI();
         SwitchInteractionPanels(InteractionPannels.Info);
+        backButton.SetActive(false);
+        ToggleInteractionPannels(activeIsland);
     }
     
     public void Trade()
@@ -366,8 +383,6 @@ public class IslandInteractionManager : MonoBehaviour
                 CivManager.instance.AddIncome(foodVar,CivManager.Type.Food);
                 CivManager.instance.AddIncome(matsVar,CivManager.Type.Mats);
                 CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
-
-                DisableAllButtons();
             }
             else
             {
@@ -376,6 +391,7 @@ public class IslandInteractionManager : MonoBehaviour
                 CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
             }
             activeIsland.looted = true;
+            DisableAllButtons();
             SwitchInteractionPanels(InteractionPannels.Pillage);
             foodText.text = foodVar.ToString();
             materialsText.text = matsVar.ToString();
