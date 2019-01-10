@@ -2,217 +2,217 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Temp/Assembly-CSharp.dll"
+-out:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Temp/Assembly-CSharp.dll"
 -nostdlib
 -unsafe
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll"
 -d:UNITY_5_3_OR_NEWER
 -d:UNITY_5_4_OR_NEWER
 -d:UNITY_5_5_OR_NEWER
@@ -315,119 +315,119 @@
 -d:SCPE
 -d:CSHARP_7_OR_LATER
 -d:CSHARP_7_3_OR_NEWER
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/CivManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/IslandInteractionManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/TestScript.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/Building.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildingDisplay.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildingManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildSelection.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/CloseSelection.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/IslandCamera.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/IslandLock.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/LockedLookAt.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/LockInteractions.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/MainCamAssign.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/SelectionInfo.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/CellObject.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Construction.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/FootprintPlacement.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/GridBaker.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Placement.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/ResourceList.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Game Event Scriptable/CursorEvents/CursorManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/GameManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/UIManager.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/InteractableObjects.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Island.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Map/InteractableMapObject.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Map/MapInteractable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/NewBehaviourScript.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Ship/Ship.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Ship/Waypoint.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/ShipSwitch.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/ShipSwitchButton.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/CameraMovement.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/SetCamera.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/HeightTest.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/TimeTurner.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/DebugExtension.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationBoolEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationFloatEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationIntEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Camera/SetCameraEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/CameraEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/DelayedEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/EventTrigger.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/GameEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/GameEventListener.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/InitiationEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputDownEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputUpEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionEnterEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionExitEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionStayEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/InteractionEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerEnterEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerExitEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerStayEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseDownEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseDragEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseEnterEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseExitEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseOverEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/ObjectPoolEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/DropdownEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/ImageEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/InputFieldEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/SliderEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/SystemEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/TextMeshEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/ToggleEvent.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/ObjectPooler/ObjectPooler.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Bool/BoolReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Bool/BoolVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Camera/CameraReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Camera/CameraVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumState.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Float/FloatReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Float/FloatVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/GameObject/GameObjectReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/GameObject/GameObjectVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Int/IntReverence.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Int/IntVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/LayerMask/LayerMaskReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/LayerMask/LayerMaskVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Gameobject List/GameObjectListReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Gameobject List/GameObjectListVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Int List/IntListReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Int List/IntListVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/ListReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/ListVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/String List/StringListReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/String List/StringListVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Sprite/SpriteReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Sprite/SpriteVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/String/StringReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/String/StringVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Transform/TransformReference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Transform/TransformVariable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector2/Vector2Reverence.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector2/Vector2Variable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector3/Vector3Reference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector3/Vector3Variable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector4/Vector4Reference.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector4/Vector4Variable.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/SerializableInterfaces/SerializableInterface.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Singletons/PersistentSingleton.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Singletons/Singleton.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Temporary/BuildDebugger.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Temporary/Console.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Settings/PrototypeControlmap.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Induvidual/Han Scene/SetTransform.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/CivManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/IslandInteractionManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Kevin/WIP/Scripts/TestScript.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/Building.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildingDisplay.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildingManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/BuildSelection.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/CloseSelection.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/IslandCamera.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/IslandLock.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/LockedLookAt.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/LockInteractions.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/MainCamAssign.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scenes/Rief/TestScripts/SelectionInfo.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/CellObject.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Construction.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/FootprintPlacement.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/GridBaker.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Placement.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/ResourceList.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Game Event Scriptable/CursorEvents/CursorManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/GameManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/UIManager.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/InteractableObjects.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Island.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Map/InteractableMapObject.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Map/MapInteractable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/NewBehaviourScript.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Ship/Ship.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Ship/Waypoint.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/ShipSwitch.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/ShipSwitchButton.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/CameraMovement.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/SetCamera.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/HeightTest.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/TimeTurner.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/DebugExtension.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationBoolEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationFloatEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationIntEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Camera/SetCameraEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/CameraEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/DelayedEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/EventTrigger.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/GameEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/GameEventListener.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/InitiationEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputDownEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Input Events/InputUpEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionEnterEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionExitEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/CollisionStayEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/InteractionEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerEnterEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerExitEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Interaction Events/TriggerStayEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseDownEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseDragEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseEnterEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseExitEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Mouse Event/MouseOverEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/ObjectPoolEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/DropdownEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/ImageEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/InputFieldEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/SliderEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/SystemEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/TextMeshEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/UI Events/ToggleEvent.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/ObjectPooler/ObjectPooler.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Bool/BoolReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Bool/BoolVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Camera/CameraReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Camera/CameraVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumState.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Enum(Wip)/EnumVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Float/FloatReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Float/FloatVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/GameObject/GameObjectReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/GameObject/GameObjectVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Int/IntReverence.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Int/IntVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/LayerMask/LayerMaskReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/LayerMask/LayerMaskVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Gameobject List/GameObjectListReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Gameobject List/GameObjectListVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Int List/IntListReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/Int List/IntListVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/ListReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/ListVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/String List/StringListReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/List(Wip)/String List/StringListVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Sprite/SpriteReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Sprite/SpriteVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/String/StringReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/String/StringVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Transform/TransformReference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Transform/TransformVariable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector2/Vector2Reverence.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector2/Vector2Variable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector3/Vector3Reference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector3/Vector3Variable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector4/Vector4Reference.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Vector4/Vector4Variable.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/SerializableInterfaces/SerializableInterface.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Singletons/PersistentSingleton.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Singletons/Singleton.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Temporary/BuildDebugger.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Temporary/Console.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Settings/PrototypeControlmap.cs"
+-i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Induvidual/Han Scene/SetTransform.cs"
 -v:0
