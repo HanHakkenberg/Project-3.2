@@ -10,5 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
-  m_Name: TestEvent
+  m_Name: testevent
   m_EditorClassIdentifier: 
+  affectedResources:
+  - ResoureType: 0
+    Value: 10
+  - ResoureType: 1
+    Value: -10
+  - ResoureType: 2
+    Value: -5
+  Title: The test of the events
+  Message: 'One day there was a event.
+
+    It was a test'

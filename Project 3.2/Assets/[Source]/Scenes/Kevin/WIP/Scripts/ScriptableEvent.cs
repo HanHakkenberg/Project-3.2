@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-[CreateAssetMenu(fileName = "Event", menuName = "ScriptableEvent", order = 1)]
+[CreateAssetMenu(fileName = "Event", menuName = "Event/ScriptableEvent", order = 1)]
 public class ScriptableEvent : ScriptableObject
 {
     
-    public List<ResourceDropdown> affedctedResources = new List<ResourceDropdown>();
-    public TMP_Text Title;
-    public TMP_Text Message;
+    public List<ResourceDropdown> affectedResources = new List<ResourceDropdown>();
+    public string Title;
+    [Multiline]
+    public string Message;
 }
 
+[System.Serializable]
 public class ResourceDropdown
 {
-    CivManager.Type ResoureType;
-    int Value;
+    [Tooltip("Type of resource changed by event")]
+    public CivManager.Type ResoureType;
+    [Tooltip("Value changed by event")]
+    public int Value;
 }
