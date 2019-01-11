@@ -20,6 +20,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public static IslandInteractionManager instance;
     public Island activeIsland{ get; private set; }
+    public Island lastActiveIsland;
     GameObject activePannel;
     [SerializeField]
     TradeTypes tradeTypes;
@@ -80,6 +81,19 @@ public class IslandInteractionManager : MonoBehaviour
         else if (instance != this)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    void Update() {
+        if(activeIsland != null && activeIsland.canInteract == true){
+            if(activeIsland != lastActiveIsland){
+            lastActiveIsland = activeIsland;
+            ToggleInteractionPannels(activeIsland);
+            }
+        }
+        else if (activeIsland != null)
+        {
+            ToggleInteractionPannels(activeIsland);            
         }
     }
 
