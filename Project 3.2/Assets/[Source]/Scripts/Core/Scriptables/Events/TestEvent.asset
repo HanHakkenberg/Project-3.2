@@ -12,14 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
   m_Name: testevent
   m_EditorClassIdentifier: 
-  affectedResources:
-  - ResoureType: 0
-    Value: 10
-  - ResoureType: 1
-    Value: -10
-  - ResoureType: 2
-    Value: -5
+  eventOptions:
+  - eventOptionsEffects:
+    - ResoureType: 1
+      Value: -100
+    - ResoureType: 0
+      Value: 100
+    - ResoureType: 2
+      Value: -20
+    buttonText: Gotta Save them building supplys
+  - eventOptionsEffects:
+    - ResoureType: 0
+      Value: -100
+    - ResoureType: 2
+      Value: 100
+    buttonText: Gotta build dat farm
+  - eventOptionsEffects:
+    - ResoureType: 4
+      Value: -1
+    buttonText: Gotta ignore the situation
   Title: The test of the events
-  Message: 'One day there was a event.
+  Message: 'Poeple want a farm.
 
-    It was a test'
+    others want ypu to invest in and save resources.'
