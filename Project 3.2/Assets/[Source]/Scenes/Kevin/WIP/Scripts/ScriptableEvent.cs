@@ -7,7 +7,9 @@ using TMPro;
 public class ScriptableEvent : ScriptableObject
 {
     public List<EventOptions> eventOptions = new List<EventOptions>();
+    [Tooltip("Event titel text")]
     public string Title;
+    [Tooltip("Event message text")]
     [Multiline]
     public string Message;
 }
@@ -15,8 +17,9 @@ public class ScriptableEvent : ScriptableObject
 [System.Serializable]
 public class EventOptions
 {
-    public List<EventOptionsEffects> eventOptionsEffects = new List<EventOptionsEffects>();
+    [Tooltip("Text which will be shown on the button")]
     public string buttonText;
+    public List<EventOptionsEffects> eventOptionsEffects = new List<EventOptionsEffects>();
 }
 
 [System.Serializable]

@@ -145,6 +145,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lengthOfDay: 5
   shortTick: 1
+--- !u!1 &582269676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582269677}
+  - component: {fileID: 582269678}
+  m_Layer: 11
+  m_Name: '[EventManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &582269677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582269676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7798316207001215514}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582269678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582269676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15ceaeca134544a962c08eeaf7396e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomEventsList:
+  - {fileID: 11400000, guid: 1f6c1b849ae08504eb4b52fcca6205bf, type: 2}
+  EventsList: []
+  button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
+  buttonLocation: {fileID: 0}
+  eventText: {fileID: 0}
+  eventTitle: {fileID: 0}
 --- !u!1 &911011220
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +347,7 @@ Transform:
   - {fileID: 303420972}
   - {fileID: 564718645}
   - {fileID: 1289029808}
+  - {fileID: 582269677}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -344,11 +395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19520ecf8ed67b14e9af0cc57c5e707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastActiveIsland: {fileID: 0}
   tradeTypes: 0
   tradeButton: {fileID: 0}
   pillageButton: {fileID: 0}
   exploreButton: {fileID: 0}
   colonizeButton: {fileID: 0}
+  backButton: {fileID: 0}
   resourceImages:
   - {fileID: 21300000, guid: 9054c5dbba10edc4a9329b5ec6160fce, type: 3}
   - {fileID: 21300000, guid: 1b2ccbc10c930aa4ebea3d597db1bed0, type: 3}
@@ -357,6 +410,8 @@ MonoBehaviour:
   demandType: {fileID: 0}
   demandPic: {fileID: 0}
   excessPic: {fileID: 0}
+  infoPannel: {fileID: 0}
+  attitudeParent: {fileID: 0}
   attitudeText: {fileID: 0}
   islandStatusText: {fileID: 0}
   tradePannel: {fileID: 0}

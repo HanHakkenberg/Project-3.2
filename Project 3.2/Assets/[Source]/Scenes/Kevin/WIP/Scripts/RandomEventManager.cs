@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class RandomEventManager : MonoBehaviour
@@ -14,6 +15,10 @@ public class RandomEventManager : MonoBehaviour
     public TMP_Text eventTitle;
 
 
+    private void Start() {
+        TriggerRandomEvent();
+    }
+
     /// <summary>
     /// Call this function to have a chance of triggering a random event
     /// </summary>
@@ -21,11 +26,11 @@ public class RandomEventManager : MonoBehaviour
     {
         // Using the Chance int combined with the if statement gives the random event a chance to trigger instead of a guarantee
         int Chance = Random.Range(1,11);
-        if (Chance > 8)
+        if (Chance > 0)
         {
             int eventIndex = Random.Range(0,randomEventsList.Count);
             activeEvent = randomEventsList[eventIndex];
-            PlayEvent(activeEvent);
+            SetEvent(activeEvent);
         }
     }
 
@@ -33,13 +38,36 @@ public class RandomEventManager : MonoBehaviour
     /// Call this function whit the event you want to activate
     /// </summary>
     /// <param name="curentEvent">The event you want to activate</param>
-    public void PlayEvent(ScriptableEvent curentEvent)
+    public void SetEvent(ScriptableEvent curentEvent)
     {
         eventText.text = curentEvent.Message;
         eventTitle.text = curentEvent.Title;
         for (int i = 0; i < curentEvent.eventOptions.Count; i++)
         {
-            Instantiate(button,buttonLocation.position,Quaternion.identity);
+            int t;
+            GameObject newButton = Instantiate(button,buttonLocation.position,Quaternion.identity);
+            newButton.transform.SetParent(buttonLocation);
+            newButton.GetComponentInChildren<TMP_Text>().text = curentEvent.eventOptions[i].buttonText;
+            t = i;
+            newButton.GetComponent<Button>().onClick.AddListener(() => {ResolveEvent(t,curentEvent);});
+        }
+    }
+
+    public void ResolveEvent(int optionInt, ScriptableEvent curentEvent) 
+    {
+        EventOptions option = curentEvent.eventOptions[optionInt];
+        
+        for (int i = 0; i < option.eventOptionsEffects.Count; i++)
+        {
+            EventOptionsEffects effects = option.eventOptionsEffects[i];
+            if (effects.Value > 0)
+            {
+                CivManager.instance.AddIncome(effects.Value,effects.ResoureType);    
+            }
+            else
+            {
+                CivManager.instance.RemoveIncome(effects.Value,effects.ResoureType);
+            }
         }
     }
 }
