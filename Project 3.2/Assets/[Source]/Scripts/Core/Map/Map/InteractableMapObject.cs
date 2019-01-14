@@ -14,7 +14,7 @@ public class InteractableMapObject : MonoBehaviour {
 
             for (int i = 0; i < detectedColliders.Length; i++) {
                 detectedColliders[i].gameObject.SetActive(false);
-            }
+            } 
         }
     }
 

@@ -32,6 +32,9 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField] GameEvent switchEvent;
     [SerializeField] GameEvent stopSwitch;
 
+    [SerializeField] Vector3Reference camPos;
+    [SerializeField] BoolReference shipFollow;
+
     void Awake() {
         cameraPivot.eulerAngles = new Vector3(-camAngle, 0, 0);
         cameraTarget.localPosition = new Vector3(0, startZoom, 0);
@@ -44,7 +47,12 @@ public class CameraMovement : MonoBehaviour {
     }
 
     public void UpdatePlayerControler() {
-        transform.SetPositionAndRotation(UpdateCameraPosition(), Quaternion.Euler(UpdateCameraRotation()));
+        if (shipFollow.Value) {
+            transform.SetPositionAndRotation(camPos.Value, Quaternion.Euler(UpdateCameraRotation()));
+        }
+        else {
+            transform.SetPositionAndRotation(UpdateCameraPosition(), Quaternion.Euler(UpdateCameraRotation()));
+        }
         UpdateCamZoom();
     }
 
@@ -56,10 +64,10 @@ public class CameraMovement : MonoBehaviour {
         newPosition = (VerMovement() + HorMovement());
 
         if (newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
-            newPosition = newPosition * (movementSpeed * Time.deltaTime / 2) + transform.position;
+            newPosition = newPosition * (movementSpeed * Time.unscaledDeltaTime / 2) + transform.position;
         }
         else {
-            newPosition = newPosition * movementSpeed * Time.deltaTime + transform.position;
+            newPosition = newPosition * movementSpeed * Time.unscaledDeltaTime + transform.position;
         }
 
         return (new Vector3(Mathf.Clamp(newPosition.x, borderXMin, borderXMax), newPosition.y, Mathf.Clamp(newPosition.z, borderYMin, borderYMax)));
@@ -121,18 +129,18 @@ public class CameraMovement : MonoBehaviour {
             }
 
             if (Input.mousePosition.x - oldMousePos.x >= 0.1f) {
-                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.unscaledDeltaTime * rotationSpeed, transform.eulerAngles.z));
             }
             else if (Input.mousePosition.x - oldMousePos.x <= -0.1f) {
-                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.unscaledDeltaTime * rotationSpeed, transform.eulerAngles.z));
             }
         }
         else {
             if (Input.GetAxis("Camera Rotation") >= 0.1f) {
-                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y - Time.unscaledDeltaTime * rotationSpeed, transform.eulerAngles.z));
             }
             else if (Input.GetAxis("Camera Rotation") <= -0.1f) {
-                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * rotationSpeed, transform.eulerAngles.z));
+                return (new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.unscaledDeltaTime * rotationSpeed, transform.eulerAngles.z));
             }
 
             rotating = false;
@@ -144,10 +152,10 @@ public class CameraMovement : MonoBehaviour {
     //Calculates The Zoom For The Camera
     void UpdateCamZoom() {
         if (Input.GetAxis("Mouse ScrollWheel") != 0) {
-            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
         }
         else {
-            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel Keys") * Time.deltaTime * zoomSpeed, minZoom, maxZoom), 0);
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel Keys") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
         }
     }
     #endregion
@@ -158,15 +166,19 @@ public class CameraMovement : MonoBehaviour {
     /// <param name="zoomIn"></param>
     /// <returns>Desides if it zoom in or out</returns>
     public void StartSwitch(bool zoomIn) {
-        StartCoroutine(SwitchZoom(zoomIn));
+        StartCoroutine(SwitchZoom(zoomIn, false));
     }
 
-    IEnumerator SwitchZoom(bool zoomIn) {
+    public void StartShipSwitch(bool zoomIn) {
+        StartCoroutine(SwitchZoom(zoomIn, true));
+    }
+
+    IEnumerator SwitchZoom(bool zoomIn, bool followShip) {
         if (zoomIn == true) {
             cameraTarget.localPosition = new Vector3(0, switchMax, 0);
 
             while (cameraTarget.localPosition.y >= switchMin) {
-                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y - Time.deltaTime * switchSpeed, 0);
+                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y - Time.unscaledDeltaTime * switchSpeed, 0);
                 yield return null;
             }
             canControl.Value = true;
@@ -176,10 +188,15 @@ public class CameraMovement : MonoBehaviour {
             canControl.Value = false;
 
             while (cameraTarget.localPosition.y <= switchMax) {
-                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y + Time.deltaTime * switchSpeed, 0);
+                cameraTarget.localPosition = new Vector3(0, cameraTarget.localPosition.y + Time.unscaledDeltaTime * switchSpeed, 0);
                 yield return null;
             }
             switchEvent.Raise();
+
+            if (followShip) {
+                shipFollow.Value = false;
+            }
         }
+
     }
 }

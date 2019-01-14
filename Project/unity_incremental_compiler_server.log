@@ -1,3 +1,13 @@
  (0,0): [01-14-2019 12:03:52.633 ] Unity incremental compiler server
  (0,0): [01-14-2019 12:03:52.781 ] watchdog active on pid: 2120
  (0,0): [01-14-2019 03:46:01.878 ] watchdog triggered an exit
+ (0,0): [01/14/2019 03:48:23.497 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 4032
+ (0,0): [01/14/2019 03:48:23.510 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/14/2019 03:48:24.998 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/14/2019 03:48:25.025 PM] Assembly-CSharp.dll compilation finished in 1515ms  source files re-parsed: 117 metadata reloaded: 0
+ (0,0): [01/14/2019 03:48:25.037 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4032
+ (0,0): [01/14/2019 03:48:25.569 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/14/2019 03:48:25.621 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/14/2019 03:48:25.643 PM] Assembly-CSharp-Editor.dll compilation finished in 74ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/14/2019 03:48:25.654 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 4032
+ (0,0): [01/14/2019 03:48:25.665 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4032
