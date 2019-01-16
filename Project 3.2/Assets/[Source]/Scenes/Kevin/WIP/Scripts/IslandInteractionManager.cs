@@ -22,7 +22,6 @@ public class IslandInteractionManager : MonoBehaviour
     public Island activeIsland{ get; private set; }
     public Island lastActiveIsland;
     GameObject activePannel;
-    [SerializeField]
     TradeTypes tradeTypes;
     [Header("InteractionButtons")]
     [SerializeField]
@@ -58,8 +57,8 @@ public class IslandInteractionManager : MonoBehaviour
     public InputField inputRequest;
     public InputField inputDemand;
     public Dropdown tradeTypeDropdown;
-    public Dropdown RequestTypeDropdown;
-    public Dropdown DemandTypeDropdown;
+    public Dropdown requestTypeDropdown;
+    public Dropdown paymentTypeDropdown;
     int demandedValue;
     int requestedValue;
     CivManager.Type paymentType;
@@ -68,7 +67,7 @@ public class IslandInteractionManager : MonoBehaviour
     //Change
     #region PillageRelated
     [SerializeField]
-    TMP_Text foodText,materialsText,moneyText,messageText;
+    TMP_Text foodText,materialsText,moneyText;
     [SerializeField]
     GameObject pillagePannel;
     #endregion
@@ -101,8 +100,8 @@ public class IslandInteractionManager : MonoBehaviour
     {
         inputRequest.onValueChanged.AddListener(delegate{InputCheckOffer();});
         tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
-        RequestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
-        DemandTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
+        requestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
+        paymentTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
     public void IslandInsert(InteractableObjects island)
@@ -570,7 +569,7 @@ public class IslandInteractionManager : MonoBehaviour
         }
         void DropdownCheckRequest()
         {
-            switch (RequestTypeDropdown.value)
+            switch (requestTypeDropdown.value)
             {
                 case 0:
                 //mats
@@ -591,7 +590,7 @@ public class IslandInteractionManager : MonoBehaviour
         }
         void DropdownCheckDemand()
         {
-            switch (DemandTypeDropdown.value)
+            switch (paymentTypeDropdown.value)
             {
                 case 0:
                 //mats

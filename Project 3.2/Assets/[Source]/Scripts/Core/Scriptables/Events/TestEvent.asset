@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: TestEvent
   m_EditorClassIdentifier: 
   eventOptions:
-  - eventOptionsEffects:
+  - buttonText: Gotta Save them building supplys
+    eventOptionsEffects:
     - ResoureType: 1
       Value: -100
     - ResoureType: 0
       Value: 100
     - ResoureType: 2
       Value: -20
-    buttonText: Gotta Save them building supplys
-  - eventOptionsEffects:
+  - buttonText: Gotta build dat farm
+    eventOptionsEffects:
     - ResoureType: 0
       Value: -100
     - ResoureType: 2
       Value: 100
-    buttonText: Gotta build dat farm
-  - eventOptionsEffects:
+  - buttonText: Gotta ignore the situation
+    eventOptionsEffects:
     - ResoureType: 4
       Value: -1
-    buttonText: Gotta ignore the situation
   Title: The test of the events
   Message: 'Poeple want a farm.
 
-    others want ypu to invest in and save resources.'
+    Others want you to invest in, and save resources.'

@@ -1,13 +1,190 @@
- (0,0): [01-14-2019 12:03:52.633 ] Unity incremental compiler server
- (0,0): [01-14-2019 12:03:52.781 ] watchdog active on pid: 2120
- (0,0): [01-14-2019 03:46:01.878 ] watchdog triggered an exit
- (0,0): [01/14/2019 03:48:23.497 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 4032
- (0,0): [01/14/2019 03:48:23.510 PM] Assembly-CSharp.dll compiling...
- (0,0): [01/14/2019 03:48:24.998 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
- (0,0): [01/14/2019 03:48:25.025 PM] Assembly-CSharp.dll compilation finished in 1515ms  source files re-parsed: 117 metadata reloaded: 0
- (0,0): [01/14/2019 03:48:25.037 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4032
- (0,0): [01/14/2019 03:48:25.569 PM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [01/14/2019 03:48:25.621 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
- (0,0): [01/14/2019 03:48:25.643 PM] Assembly-CSharp-Editor.dll compilation finished in 74ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [01/14/2019 03:48:25.654 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 4032
- (0,0): [01/14/2019 03:48:25.665 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4032
+<<<<<<< HEAD
+ (0,0): [01/16/2019 03:25:06.033 PM] Unity incremental compiler server
+ (0,0): [01/16/2019 03:25:06.123 PM] watchdog active on pid: 15824
+ (0,0): [01/16/2019 03:25:09.181 PM] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.195 PM] Unity.Postprocessing.Runtime.dll compiling...
+ (0,0): [01/16/2019 03:25:09.219 PM] Unity.InputSystem.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.230 PM] Unity.InputSystem.dll compiling...
+ (0,0): [01/16/2019 03:25:09.237 PM] Cinemachine.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.249 PM] Cinemachine.dll compiling...
+ (0,0): [01/16/2019 03:25:09.640 PM] Unity.ProGrids.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.651 PM] Unity.ProGrids.dll compiling...
+ (0,0): [01/16/2019 03:25:09.725 PM] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.755 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [01/16/2019 03:25:09.830 PM] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.841 PM] Unity.ProBuilder.AddOns.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:09.830 PM] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:09.853 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:12.084 PM] Unity.ProGrids.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProGrids.dll
+ (0,0): [01/16/2019 03:25:12.085 PM] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProBuilder.AddOns.Editor.dll
+ (0,0): [01/16/2019 03:25:12.205 PM] Unity.ProGrids.dll compilation finished in 2553ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [01/16/2019 03:25:12.205 PM] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 2363ms  source files re-parsed: 1 metadata reloaded: 118
+ (0,0): [01/16/2019 03:25:12.235 PM] Unity.ProGrids.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.235 PM] Unity.ProBuilder.AddOns.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.300 PM] Unity.Postprocessing.Runtime.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Runtime.dll
+ (0,0): [01/16/2019 03:25:12.300 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [01/16/2019 03:25:12.339 PM] Unity.Postprocessing.Runtime.dll compilation finished in 3143ms  source files re-parsed: 56 metadata reloaded: 204
+ (0,0): [01/16/2019 03:25:12.350 PM] Unity.Postprocessing.Runtime.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.352 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 2499ms  source files re-parsed: 52 metadata reloaded: 65
+ (0,0): [01/16/2019 03:25:12.363 PM] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.564 PM] Cinemachine.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Cinemachine.dll
+ (0,0): [01/16/2019 03:25:12.580 PM] Cinemachine.dll compilation finished in 3331ms  source files re-parsed: 65 metadata reloaded: 160
+ (0,0): [01/16/2019 03:25:12.591 PM] Cinemachine.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.761 PM] Unity.ProGrids.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.773 PM] Unity.ProGrids.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:12.901 PM] Unity.Postprocessing.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:12.915 PM] Unity.Postprocessing.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:13.062 PM] Unity.TextMeshPro.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.dll
+ (0,0): [01/16/2019 03:25:13.066 PM] Unity.ProGrids.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProGrids.Editor.dll
+ (0,0): [01/16/2019 03:25:13.086 PM] Unity.TextMeshPro.dll compilation finished in 3331ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [01/16/2019 03:25:13.087 PM] Unity.ProGrids.Editor.dll compilation finished in 314ms  source files re-parsed: 20 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:13.098 PM] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.098 PM] Unity.ProGrids.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.285 PM] com.unity.cinemachine.editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.296 PM] com.unity.cinemachine.editor.dll compiling...
+ (0,0): [01/16/2019 03:25:13.378 PM] Unity.InputSystem.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.dll
+ (0,0): [01/16/2019 03:25:13.390 PM] Unity.Postprocessing.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Editor.dll
+ (0,0): [01/16/2019 03:25:13.416 PM] Unity.InputSystem.dll compilation finished in 4185ms  source files re-parsed: 266 metadata reloaded: 206
+ (0,0): [01/16/2019 03:25:13.417 PM] Unity.Postprocessing.Editor.dll compilation finished in 501ms  source files re-parsed: 35 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:13.427 PM] Unity.Postprocessing.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.427 PM] Unity.InputSystem.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.905 PM] com.unity.cinemachine.editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\com.unity.cinemachine.editor.dll
+ (0,0): [01/16/2019 03:25:13.920 PM] com.unity.cinemachine.editor.dll compilation finished in 624ms  source files re-parsed: 61 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:13.931 PM] com.unity.cinemachine.editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:13.992 PM] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:14.003 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:14.143 PM] Unity.InputSystem.Tests.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:14.154 PM] Unity.InputSystem.Tests.dll compiling...
+ (0,0): [01/16/2019 03:25:14.215 PM] Unity.InputSystem.Tests.Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:14.237 PM] Unity.InputSystem.Tests.Editor.dll compiling...
+ (0,0): [01/16/2019 03:25:14.302 PM] Unity.InputSystem.Tests.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.Editor.dll
+ (0,0): [01/16/2019 03:25:14.344 PM] Unity.InputSystem.Tests.Editor.dll compilation finished in 107ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:25:14.356 PM] Unity.InputSystem.Tests.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:14.556 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [01/16/2019 03:25:14.595 PM] Unity.TextMeshPro.Editor.dll compilation finished in 591ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:14.606 PM] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:15.042 PM] Unity.InputSystem.Tests.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.dll
+ (0,0): [01/16/2019 03:25:15.058 PM] Unity.InputSystem.Tests.dll compilation finished in 904ms  source files re-parsed: 28 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:15.069 PM] Unity.InputSystem.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:19.569 PM] Assembly-CSharp-firstpass.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:19.580 PM] Assembly-CSharp-firstpass.dll compiling...
+ (0,0): [01/16/2019 03:25:19.972 PM] Assembly-CSharp-firstpass.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-firstpass.dll
+ (0,0): [01/16/2019 03:25:19.997 PM] Assembly-CSharp-firstpass.dll compilation finished in 417ms  source files re-parsed: 178 metadata reloaded: 6
+ (0,0): [01/16/2019 03:25:20.008 PM] Assembly-CSharp-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:20.470 PM] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:20.481 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:25:20.624 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:25:20.632 PM] Assembly-CSharp-Editor-firstpass.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:25:20.638 PM] Assembly-CSharp.dll compilation finished in 157ms  source files re-parsed: 117 metadata reloaded: 1
+ (0,0): [01/16/2019 03:25:20.643 PM] Assembly-CSharp-Editor-firstpass.dll compiling...
+ (0,0): [01/16/2019 03:25:20.649 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:25:21.103 PM] Assembly-CSharp-Editor-firstpass.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor-firstpass.dll
+ (0,0): [01/16/2019 03:25:21.120 PM] Assembly-CSharp-Editor-firstpass.dll compilation finished in 477ms  source files re-parsed: 123 metadata reloaded: 0
+ (0,0): [01/16/2019 03:25:21.131 PM] Assembly-CSharp-Editor-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:26:26.472 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:26:26.853 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:26:26.874 PM] Assembly-CSharp.dll compilation finished in 402ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:26:26.886 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:26:26.897 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:26:27.541 PM] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 15824
+ (0,0): [01/16/2019 03:26:27.552 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:26:27.657 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:26:27.691 PM] Assembly-CSharp-Editor.dll compilation finished in 139ms  source files re-parsed: 20 metadata reloaded: 2
+ (0,0): [01/16/2019 03:26:27.708 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:30:01.767 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:30:01.896 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:30:01.913 PM] Assembly-CSharp.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:30:01.925 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:30:01.935 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:30:03.212 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:30:03.263 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:30:03.277 PM] Assembly-CSharp-Editor.dll compilation finished in 64ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:30:03.288 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:30:03.299 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:30:08.658 PM] Compiler cache size is now 24.12 MB
+ (0,0): [01/16/2019 03:30:54.495 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:30:54.660 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:30:54.679 PM] Assembly-CSharp.dll compilation finished in 184ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:30:54.690 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:30:54.701 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:30:55.352 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:30:55.441 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:30:55.457 PM] Assembly-CSharp-Editor.dll compilation finished in 104ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:30:55.468 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:30:55.479 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:40:09.312 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:40:09.451 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:40:09.467 PM] Assembly-CSharp.dll compilation finished in 155ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:40:09.479 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:40:09.489 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:40:10.511 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:40:10.567 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:40:10.584 PM] Assembly-CSharp-Editor.dll compilation finished in 72ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:40:10.595 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:40:10.607 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:41:46.493 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:41:46.624 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:41:46.699 PM] Assembly-CSharp.dll compilation finished in 205ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:41:46.709 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:41:46.720 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:41:47.831 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:41:47.886 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:41:47.902 PM] Assembly-CSharp-Editor.dll compilation finished in 71ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:41:47.913 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:41:47.924 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:43:05.549 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:43:05.675 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:43:05.698 PM] Assembly-CSharp.dll compilation finished in 149ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:43:05.709 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:43:05.720 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:43:07.001 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:43:07.061 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:43:07.077 PM] Assembly-CSharp-Editor.dll compilation finished in 76ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:43:07.089 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:43:07.099 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:44:52.621 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:44:52.795 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:44:52.812 PM] Assembly-CSharp.dll compilation finished in 191ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:44:52.823 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:44:52.834 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:44:53.453 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:44:53.497 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:44:53.512 PM] Assembly-CSharp-Editor.dll compilation finished in 58ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:44:53.524 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:44:53.535 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:45:18.315 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:45:18.430 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:45:18.446 PM] Assembly-CSharp.dll compilation finished in 131ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:45:18.457 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:45:18.468 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:45:19.573 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:45:19.632 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:45:19.647 PM] Assembly-CSharp-Editor.dll compilation finished in 74ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:45:19.658 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:45:19.670 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:46:41.474 PM] Assembly-CSharp.dll compiling...
+ (0,0): [01/16/2019 03:46:41.602 PM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01/16/2019 03:46:41.618 PM] Assembly-CSharp.dll compilation finished in 143ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [01/16/2019 03:46:41.629 PM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:46:41.639 PM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:46:43.072 PM] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01/16/2019 03:46:43.136 PM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01/16/2019 03:46:43.152 PM] Assembly-CSharp-Editor.dll compilation finished in 79ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [01/16/2019 03:46:43.162 PM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 15824
+ (0,0): [01/16/2019 03:46:43.173 PM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 15824
+ (0,0): [01/16/2019 03:47:19.172 PM] watchdog triggered an exit
+=======
+ (0,0): [01-16-2019 02:00:46.165 ] Unity incremental compiler server
+ (0,0): [01-16-2019 02:00:46.309 ] watchdog active on pid: 1880
+ (0,0): [01-16-2019 02:00:50.600 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 1880
+ (0,0): [01-16-2019 02:00:50.615 ] Assembly-CSharp.dll compiling...
+ (0,0): [01-16-2019 02:00:52.956 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01-16-2019 02:00:53.018 ] Assembly-CSharp.dll compilation finished in 2403ms  source files re-parsed: 117 metadata reloaded: 208
+ (0,0): [01-16-2019 02:00:53.031 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 1880
+ (0,0): [01-16-2019 02:00:53.582 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 1880
+ (0,0): [01-16-2019 02:00:53.593 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01-16-2019 02:00:53.819 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01-16-2019 02:00:53.834 ] Assembly-CSharp-Editor.dll compilation finished in 240ms  source files re-parsed: 20 metadata reloaded: 139
+ (0,0): [01-16-2019 02:00:53.845 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 1880
+ (0,0): [01-16-2019 02:05:47.832 ] Compiler cache size is now 24,29 MB
+>>>>>>> 3addfa596c6b153de97cad3c38af5d7513bb91ce

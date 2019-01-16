@@ -11,6 +11,7 @@ public class Ship : MonoBehaviour {
     bool stopIt = false;
     [SerializeField] int lineWith;
     List<Transform> myPath = new List<Transform>();
+    [SerializeField] float pathSide = 5;
 
     [Header("Spotting")]
     [SerializeField] int SpottingRefreshTimer;
@@ -38,12 +39,11 @@ public class Ship : MonoBehaviour {
 
     void Update() {
         if (myPath.Count > 0) {
-            if (Vector3.Distance(transform.position, myPath[0].position) < 2) {
+            if (Vector3.Distance(transform.position, myPath[0].position) < 4) {
                 myPath[0].gameObject.SetActive(false);
-                UpdateWaypointPath(false);
             }
             else {
-                UpdateWaypointPath(true);
+                UpdateWaypointPath();
             }
         }
     }
@@ -65,7 +65,6 @@ public class Ship : MonoBehaviour {
 
         myPath.RemoveAt(toRemoveIndex);
         waypointLines.positionCount = myPath.Count + 1;
-        UpdateWaypointPath(false);
 
         SetDestination();
     }
@@ -77,7 +76,6 @@ public class Ship : MonoBehaviour {
     public void AddWaypoint(Transform toAdd) {
         myPath.Add(toAdd);
         waypointLines.positionCount = myPath.Count + 1;
-        UpdateWaypointPath(false);
     }
 
     /// <summary>
@@ -93,9 +91,7 @@ public class Ship : MonoBehaviour {
     /// Updates the waypoints when removed or moved.
     /// </summary>
     /// <param name="toUpdate"> Waypoint to update</param>
-    public void UpdateWaypoint() {
-        UpdateWaypointPath(false);
-    }
+    public void UpdateWaypoint() {}
 
     //Updates the path by adding, moving or removing a waypoint
     IEnumerator PathUpdate() {
@@ -182,17 +178,38 @@ public class Ship : MonoBehaviour {
     }
 
     //updates the waypoint path
-    void UpdateWaypointPath(bool boatUpdate) {
+    void UpdateWaypointPath() {
+        int distance = Mathf.RoundToInt(Vector3.Distance(transform.position, myPath[0].position) / pathSide);
+        waypointLines.positionCount = distance + 1;
+        waypointLines.SetPosition(0, transform.position + new Vector3(0, 1.5f, 0));
 
-        if (boatUpdate == true) {
-            waypointLines.SetPosition(0, transform.position + new Vector3(0, 1.5f, 0));
+        for (int i = 0; i < distance; i++) {
+            waypointLines.SetPosition(i + 1, Vector3.Lerp(transform.position, myPath[0].position, 1f / distance * i) + new Vector3(0, 3, 0));
+        }
+
+        if (distance == 0) {
+            waypointLines.positionCount += 1;
+            waypointLines.SetPosition(1, myPath[0].position + new Vector3(0, 1.5f, 0));
         }
         else {
-            waypointLines.SetPosition(0, transform.position + new Vector3(0, 1.5f, 0));
-            for (int i = 0; i < myPath.Count; i++) {
+            waypointLines.SetPosition(distance, myPath[0].position + new Vector3(0, 1.5f, 0));
+        }
 
-                waypointLines.SetPosition(i + 1, myPath[i].position);
+        if (myPath.Count > 1) {
+            for (int i = 0; i < myPath.Count; i++) {
+                if (myPath.Count > i + 1) {
+                    distance = Mathf.RoundToInt(Vector3.Distance(myPath[i].position, myPath[i + 1].position) / pathSide);
+
+                    for (int k = 0; k < distance; k++) {
+                        waypointLines.positionCount++;
+
+                        waypointLines.SetPosition(waypointLines.positionCount - 1, Vector3.Lerp(myPath[i].position, myPath[i + 1].position, 1f / distance * k) + new Vector3(0, 1.5f, 0));
+                    }
+
+                }
             }
+
+            waypointLines.SetPosition(waypointLines.positionCount - 1, myPath[myPath.Count - 1].position);
         }
     }
 }
