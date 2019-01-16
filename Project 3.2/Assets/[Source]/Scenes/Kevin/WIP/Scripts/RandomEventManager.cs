@@ -16,9 +16,9 @@ public class RandomEventManager : MonoBehaviour
     public TMP_Text eventTitle;
 
 
-    // private void Start() {
-    //     TriggerRandomEvent();
-    // }
+    private void Start() {
+        TriggerRandomEvent();
+    }
 
     /// <summary>
     /// Call this function to have a chance of triggering a random event
