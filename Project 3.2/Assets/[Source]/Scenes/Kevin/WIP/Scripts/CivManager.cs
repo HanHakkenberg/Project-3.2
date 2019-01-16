@@ -97,7 +97,6 @@ public class CivManager : MonoBehaviour
    {
       //makes sure all input is positive
       toAdd = Mathf.Abs(toAdd);
-      
       switch (type)
       {
          case Type.Mats:
@@ -158,7 +157,6 @@ public class CivManager : MonoBehaviour
    {
       //makes sure all input is negative
       toRemove = -Mathf.Abs(toRemove);
-      
       switch (type)
       {
          case Type.Mats:

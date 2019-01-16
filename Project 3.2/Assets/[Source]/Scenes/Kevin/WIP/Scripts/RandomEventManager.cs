@@ -8,6 +8,7 @@ public class RandomEventManager : MonoBehaviour
 {
     public List<ScriptableEvent> randomEventsList = new List<ScriptableEvent>();
     public List<ScriptableEvent> EventsList = new List<ScriptableEvent>();
+    public GameObject eventPannel;
     ScriptableEvent activeEvent;
     public GameObject button;
     public Transform buttonLocation;
@@ -15,9 +16,9 @@ public class RandomEventManager : MonoBehaviour
     public TMP_Text eventTitle;
 
 
-    private void Start() {
-        TriggerRandomEvent();
-    }
+    // private void Start() {
+    //     TriggerRandomEvent();
+    // }
 
     /// <summary>
     /// Call this function to have a chance of triggering a random event
@@ -40,6 +41,7 @@ public class RandomEventManager : MonoBehaviour
     /// <param name="curentEvent">The event you want to activate</param>
     public void SetEvent(ScriptableEvent curentEvent)
     {
+        eventPannel.SetActive(true);
         eventText.text = curentEvent.Message;
         eventTitle.text = curentEvent.Title;
         for (int i = 0; i < curentEvent.eventOptions.Count; i++)
