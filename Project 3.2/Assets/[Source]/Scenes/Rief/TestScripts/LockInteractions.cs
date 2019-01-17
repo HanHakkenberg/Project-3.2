@@ -11,7 +11,7 @@ public class LockInteractions : MonoBehaviour
     public GameObject selectionPanel;
     public bool isActive = false;
 
-    public static bool canUnlock = false;
+    public bool canUnlock = false;
     public Sprite lockStatus;
     public Sprite locked;
     public Sprite unlocked;

@@ -9,7 +9,7 @@ public class CloseSelection : MonoBehaviour
     public GameObject theLock;
     void OnMouseDown()
     {
-        //theLock.GetComponent<LockInteractions>().isActive = false;
+        theLock.GetComponent<LockInteractions>().isActive = false;
         panel.SetActive(false);
         
     }
