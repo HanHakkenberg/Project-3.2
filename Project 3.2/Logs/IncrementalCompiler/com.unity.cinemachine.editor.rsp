@@ -2,449 +2,227 @@
 -target:library
 -nowarn:0169
 -langversion:7
-<<<<<<< HEAD
--out:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Temp/com.unity.cinemachine.editor.dll"
+-out:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Temp/com.unity.cinemachine.editor.dll"
 -nostdlib
 -unsafe
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
--r:"D:/adobe 1/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
--r:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.Lang.dll"
--r:"D:\adobe 1\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll"
-=======
--out:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Temp/com.unity.cinemachine.editor.dll"
--nostdlib
--unsafe
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll
--r:D:/UnityHub/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.Lang.dll
--r:D:\UnityHub\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll
->>>>>>> 3addfa596c6b153de97cad3c38af5d7513bb91ce
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll"
 -d:UNITY_5_3_OR_NEWER
 -d:UNITY_5_4_OR_NEWER
 -d:UNITY_5_5_OR_NEWER
@@ -547,129 +325,65 @@
 -d:SCPE
 -d:CSHARP_7_OR_LATER
 -d:CSHARP_7_3_OR_NEWER
-<<<<<<< HEAD
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBasicMultiChannelPerlinEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlenderSettingsEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlendListCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBrainEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineClearShotEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineColliderEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineComposerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineConfinerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineExternalCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFramingTransposerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFreeLookEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineGroupComposerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLockToTargetEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLookAtEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineMixingCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineNoiseSettingsEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineOrbitalTransposerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePathEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePOVEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSameAsFollowTargetEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineScreenComposerGuides.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSmoothPathEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStateDrivenCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStoryboardEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTargetGroupEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTrackedDollyEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTransposerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/EventHelpers/CinemachineTriggerActionEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewFreeLookEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewVirtualCameraEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/VcamStageEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineCollisionImpulseSourceEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannelPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannels.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseDefinitionPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseEnvelopePropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseListenerEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseSourceEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Menus/CinemachineMenu.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/AxisStatePropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineBlendDefinitionPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineTagFieldPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/EmbeddedAssetPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/LensSettingsPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/NoiseSettingsPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/OrbitalTransposerHeadingPropertyDrawer.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Timeline/CinemachineShotEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/BaseEditor.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/CinemachineLensPresets.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/EmbeddedAssetHelpers.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/InspectorUtility.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ReflectionHelpers.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SaveDuringPlay.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ScriptableObjectUtility.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SerializedPropertyHelper.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/AboutWindow.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineColliderPrefs.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineSettings.cs"
--i:"D:/DesTopp/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/WaveformWindow.cs"
-=======
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBasicMultiChannelPerlinEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlenderSettingsEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlendListCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBrainEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineClearShotEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineColliderEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineComposerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineConfinerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineExternalCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFramingTransposerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFreeLookEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineGroupComposerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLockToTargetEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLookAtEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineMixingCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineNoiseSettingsEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineOrbitalTransposerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePathEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePOVEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSameAsFollowTargetEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineScreenComposerGuides.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSmoothPathEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStateDrivenCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStoryboardEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTargetGroupEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTrackedDollyEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTransposerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/EventHelpers/CinemachineTriggerActionEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewFreeLookEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewVirtualCameraEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/VcamStageEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineCollisionImpulseSourceEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannelPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannels.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseDefinitionPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseEnvelopePropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseListenerEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseSourceEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Menus/CinemachineMenu.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/AxisStatePropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineBlendDefinitionPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineTagFieldPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/EmbeddedAssetPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/LensSettingsPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/NoiseSettingsPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/OrbitalTransposerHeadingPropertyDrawer.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Timeline/CinemachineShotEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/BaseEditor.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/CinemachineLensPresets.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/EmbeddedAssetHelpers.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/InspectorUtility.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ReflectionHelpers.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SaveDuringPlay.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ScriptableObjectUtility.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SerializedPropertyHelper.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/AboutWindow.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineColliderPrefs.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineSettings.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/WaveformWindow.cs"
->>>>>>> 3addfa596c6b153de97cad3c38af5d7513bb91ce
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBasicMultiChannelPerlinEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlenderSettingsEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBlendListCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineBrainEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineClearShotEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineColliderEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineComposerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineConfinerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineExternalCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFramingTransposerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineFreeLookEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineGroupComposerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLockToTargetEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineHardLookAtEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineMixingCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineNoiseSettingsEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineOrbitalTransposerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePathEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachinePOVEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSameAsFollowTargetEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineScreenComposerGuides.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineSmoothPathEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStateDrivenCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineStoryboardEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTargetGroupEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTrackedDollyEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineTransposerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Editors/CinemachineVirtualCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/EventHelpers/CinemachineTriggerActionEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewFreeLookEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/CinemachineNewVirtualCameraEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Experimental/VcamStageEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineCollisionImpulseSourceEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannelPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseChannels.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseDefinitionPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseEnvelopePropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseListenerEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Impulse/CinemachineImpulseSourceEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Menus/CinemachineMenu.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/AxisStatePropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineBlendDefinitionPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/CinemachineTagFieldPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/EmbeddedAssetPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/LensSettingsPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/NoiseSettingsPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/PropertyDrawers/OrbitalTransposerHeadingPropertyDrawer.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Timeline/CinemachineShotEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/BaseEditor.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/CinemachineLensPresets.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/EmbeddedAssetHelpers.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/InspectorUtility.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ReflectionHelpers.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SaveDuringPlay.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/ScriptableObjectUtility.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Utility/SerializedPropertyHelper.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/AboutWindow.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineColliderPrefs.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/CinemachineSettings.cs"
+-i:"C:/Users/super/Desktop/Jaar 3 Gamelab 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.cinemachine@2.2.8/Editor/Windows/WaveformWindow.cs"
 -v:0

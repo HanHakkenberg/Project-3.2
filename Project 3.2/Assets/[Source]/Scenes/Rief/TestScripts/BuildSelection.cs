@@ -6,10 +6,10 @@ public class BuildSelection : MonoBehaviour
 {
     public GameObject infoPanel;
     public GameObject spawnLoc;
+    public LockInteractions _lockInteractions;
     public List<BuildingInfo> thisBuilding;
 
     SelectionInfo _selectionInfo;
-    LockInteractions _lockInteractions;
     bool unlockable;
 
     void Start()
@@ -28,12 +28,12 @@ public class BuildSelection : MonoBehaviour
     {
         if (thisBuilding[0].myBuilding.materialCost <= CivManager.instance.mats && thisBuilding[0].myBuilding.moneyCost <= CivManager.instance.money && thisBuilding[0].myBuilding.citizenCost <= CivManager.instance.people)
         {
-            LockInteractions.canUnlock = true;
+            _lockInteractions.canUnlock = true;
             unlockable = true;
         }
         else
         {
-            LockInteractions.canUnlock = false;
+            _lockInteractions.canUnlock = false;
             unlockable = false;
         }
     }
@@ -49,6 +49,7 @@ public class BuildSelection : MonoBehaviour
     void OnMouseExit()
     {
         infoPanel.SetActive(false);
+        _lockInteractions.canUnlock = false;
     }
 
     void OnMouseDown()
