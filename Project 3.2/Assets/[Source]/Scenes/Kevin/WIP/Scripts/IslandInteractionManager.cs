@@ -38,8 +38,6 @@ public class IslandInteractionManager : MonoBehaviour
     #region TradeRelated
     [Header("Excess & Demand")]
     public List<Sprite> resourceImages = new List<Sprite>();
-    public TMP_Text excessType;
-    public TMP_Text demandType;
     public Image demandPic;
     public Image excessPic;
 
@@ -106,20 +104,23 @@ public class IslandInteractionManager : MonoBehaviour
         paymentTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
-    public void IslandInsert(InteractableObjects island)
+    public void IslandInsert(InteractableObjects interactable)
     {
-        if(island.GetType() == typeof(Island))
+        if(activeIsland == null)
         {
-            activeIsland = island as Island;
-            SetIslandVariables();
-            ToggleInteractionPannels(activeIsland);
+            if(interactable.GetType() == typeof(Island))
+            {
+                activeIsland = interactable as Island;
+                SetIslandVariables();
+                ToggleInteractionPannels(activeIsland);
+            }
+            // if(infoPannel.activeSelf != true)
+            // {
+            //     SwitchInteractionPanels(InteractionPannels.Info);
+            // }
+            UpdateTradeResourceUI();
+            UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         }
-        // if(infoPannel.activeSelf != true)
-        // {
-        //     SwitchInteractionPanels(InteractionPannels.Info);
-        // }
-        UpdateTradeResourceUI();
-        UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
     }
 
     /// <summary>
@@ -234,17 +235,14 @@ public class IslandInteractionManager : MonoBehaviour
         {
             case CivManager.Type.Food:
             demandPic.sprite = resourceImages[0];
-            demandType.text = "Food";
             break;
 
             case CivManager.Type.Mats:
             demandPic.sprite = resourceImages[1];
-            demandType.text = "Materials";
             break;
 
             case CivManager.Type.Money:
             demandPic.sprite = resourceImages[2];
-            demandType.text = "Money";
             break;
         }
 
@@ -252,17 +250,14 @@ public class IslandInteractionManager : MonoBehaviour
         {
             case CivManager.Type.Food:
             excessPic.sprite = resourceImages[0];
-            excessType.text = "Food";
             break;
 
             case CivManager.Type.Mats:
             excessPic.sprite = resourceImages[1];
-            excessType.text = "Materials";
             break;
 
             case CivManager.Type.Money:
             excessPic.sprite = resourceImages[2];
-            excessType.text = "Money";
             break;
         }
     }
@@ -292,6 +287,7 @@ public class IslandInteractionManager : MonoBehaviour
             if(activePannel != tradePannel)
             {
                 tradePannel.SetActive(true);
+                islandStatusText.text = "";
                 activePannel = tradePannel;
             }
             else
@@ -411,6 +407,7 @@ public class IslandInteractionManager : MonoBehaviour
             foodText.text = foodVar.ToString();
             materialsText.text = matsVar.ToString();
             moneyText.text = moneyVar.ToString();
+            islandStatusText.text = "You pillaged the island";
         }
     }
 

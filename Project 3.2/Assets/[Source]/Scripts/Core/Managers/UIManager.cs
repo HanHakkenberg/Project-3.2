@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     TMP_Text money,materials,stability,food,people;
     //Used for feedback when value changes
     [SerializeField]
-    TMP_Text moneyUpdate,materialsUpdate,foodUpdate,poepleUpdate,stabilityUpdate;
+    TextMeshProUGUI moneyUpdate,materialsUpdate,foodUpdate,poepleUpdate,stabilityUpdate;
     #endregion
 
     void Awake() 
@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     void Start() 
     {
         UpdateResourceUI();
-        SwitchPanel(Panels.Main);
+        mainPannel.SetActive(true);
     }
 
     public void SwitchPanel (Panels panels)
@@ -53,11 +53,6 @@ public class UIManager : MonoBehaviour
         }
         switch (panels)
         {
-            case Panels.Main:
-            mainPannel.SetActive(true);
-            activePannel = mainPannel;
-            break;
-
             case Panels.IslandInteraction:
             islandInteractionPannel.SetActive(true);
             activePannel = islandInteractionPannel;
@@ -92,8 +87,56 @@ public class UIManager : MonoBehaviour
     /// <param name="type">The type of recourse it effects</param>
     public void RecourceUIPopup(int value , CivManager.Type type)
     {
+        if (value > 0)
+        {
+            switch (type)
+            {
+                case CivManager.Type.Food:
+                    foodUpdate.faceColor = new Color32(0,255,0,255);
+                break;
+
+                case CivManager.Type.Mats:
+                    materialsUpdate.faceColor = new Color32(0,255,0,255);
+                break;
+
+                case CivManager.Type.Money:
+                    moneyUpdate.faceColor = new Color32(0,255,0,255);
+                break;
+
+                case CivManager.Type.People:
+                    poepleUpdate.faceColor = new Color32(0,255,0,255);
+                break;
+
+                case CivManager.Type.Stability:
+                    stabilityUpdate.faceColor = new Color32(0,255,0,255);
+                break;
+            }
+        }
+        else
+        {
+            switch (type)
+            {
+                case CivManager.Type.Food:
+                    foodUpdate.faceColor = new Color32(255,0,0,255);
+                break;
+
+                case CivManager.Type.Mats:
+                    materialsUpdate.faceColor = new Color32(255,0,0,255);
+                break;
+
+                case CivManager.Type.Money:
+                    moneyUpdate.faceColor = new Color32(255,0,0,255);
+                break;
+                case CivManager.Type.People:
+                    poepleUpdate.faceColor = new Color32(255,0,0,255);
+                break;
+                case CivManager.Type.Stability:
+                    stabilityUpdate.faceColor = new Color32(255,0,0,255);
+                break;
+            }
+        }
         switch (type)
-      {
+        {
             case CivManager.Type.Mats:
                 materials.text = CivManager.instance.mats.ToString();
                 if (value > 0)
