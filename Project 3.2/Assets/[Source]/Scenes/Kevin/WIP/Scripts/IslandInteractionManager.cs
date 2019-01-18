@@ -43,9 +43,9 @@ public class IslandInteractionManager : MonoBehaviour
     public Image demandPic;
     public Image excessPic;
 
-    [Header("InfoPannels Variables")]
-    [SerializeField]
-    GameObject infoPannel;
+    [Header("General Variables")]
+    // [SerializeField]
+    // GameObject infoPannel;
     public GameObject attitudeParent;
     public TMP_Text attitudeText;
     public TMP_Text islandStatusText;
@@ -53,12 +53,12 @@ public class IslandInteractionManager : MonoBehaviour
     [Header("TradePannels Variables")]
     [SerializeField]
     GameObject tradePannel;
-    public TMP_Text tradeLeftText,tradeMessageText,tradeFoodText,tradeMoneyText,tradeMaterialText;
-    public InputField inputRequest;
-    public InputField inputDemand;
-    public Dropdown tradeTypeDropdown;
-    public Dropdown requestTypeDropdown;
-    public Dropdown paymentTypeDropdown;
+    public TMP_Text tradeLeftText;
+    public TMP_InputField inputRequest;
+    public TMP_InputField inputDemand;
+    // public TMP_Dropdown tradeTypeDropdown;
+    public TMP_Dropdown requestTypeDropdown;
+    public TMP_Dropdown paymentTypeDropdown;
     int demandedValue;
     int requestedValue;
     CivManager.Type paymentType;
@@ -66,8 +66,10 @@ public class IslandInteractionManager : MonoBehaviour
     #endregion
     //Change
     #region PillageRelated
-    [SerializeField]
-    TMP_Text foodText,materialsText,moneyText;
+    [Header("PillagePannels Variables")]
+    public TMP_Text foodText;
+    public TMP_Text materialsText;
+    public TMP_Text moneyText;
     [SerializeField]
     GameObject pillagePannel;
     #endregion
@@ -99,7 +101,7 @@ public class IslandInteractionManager : MonoBehaviour
     void Start() 
     {
         inputRequest.onValueChanged.AddListener(delegate{InputCheckOffer();});
-        tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
+        // tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
         requestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
         paymentTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
@@ -112,10 +114,10 @@ public class IslandInteractionManager : MonoBehaviour
             SetIslandVariables();
             ToggleInteractionPannels(activeIsland);
         }
-        if(infoPannel.activeSelf != true)
-        {
-            SwitchInteractionPanels(InteractionPannels.Info);
-        }
+        // if(infoPannel.activeSelf != true)
+        // {
+        //     SwitchInteractionPanels(InteractionPannels.Info);
+        // }
         UpdateTradeResourceUI();
         UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
     }
@@ -300,18 +302,18 @@ public class IslandInteractionManager : MonoBehaviour
             }
             break;
 
-            case InteractionPannels.Info:
-            if(activePannel != infoPannel)
-            {
-                infoPannel.SetActive(true);
-                activePannel = infoPannel;
-            }
-            else
-            {
-                infoPannel.SetActive(false);
-                activePannel = null;
-            }
-            break;
+            // case InteractionPannels.Info:
+            // if(activePannel != infoPannel)
+            // {
+            //     infoPannel.SetActive(true);
+            //     activePannel = infoPannel;
+            // }
+            // else
+            // {
+            //     infoPannel.SetActive(false);
+            //     activePannel = null;
+            // }
+            // break;
         }
     }
 
@@ -328,10 +330,10 @@ public class IslandInteractionManager : MonoBehaviour
         {
             SwitchInteractionPanels(InteractionPannels.Pillage);
         }
-        else if (activePannel == infoPannel)
-        {
-            SwitchInteractionPanels(InteractionPannels.Info);
-        }
+        // else if (activePannel == infoPannel)
+        // {
+        //     SwitchInteractionPanels(InteractionPannels.Info);
+        // }
         
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
         activeIsland = null;
@@ -424,7 +426,7 @@ public class IslandInteractionManager : MonoBehaviour
     {
         inputDemand.text = "0";
         inputRequest.text = "0";
-        tradeMessageText.text = "";
+        islandStatusText.text = "";
     }
 
     /// <summary>
@@ -432,9 +434,6 @@ public class IslandInteractionManager : MonoBehaviour
     /// </summary>
     public void UpdateTradeResourceUI()
     {
-        tradeFoodText.text = CivManager.instance.food.ToString();
-        tradeMaterialText.text = CivManager.instance.mats.ToString();
-        tradeMoneyText.text = CivManager.instance.money.ToString();
         int tradeLeftVar = 0;
         if(activeIsland != null)
         {
@@ -458,7 +457,7 @@ public class IslandInteractionManager : MonoBehaviour
                         if(CivManager.instance.food < demandedValue)
                         {
                             canTrade = false;
-                            tradeMessageText.text = "You don't have the required resources";
+                            islandStatusText.text = "You don't have the required resources";
                         }
                         break;
 
@@ -466,7 +465,7 @@ public class IslandInteractionManager : MonoBehaviour
                         if(CivManager.instance.mats < demandedValue)
                         {
                             canTrade = false;
-                            tradeMessageText.text = "You don't have the required resources";
+                            islandStatusText.text = "You don't have the required resources";
                         }
                         break;
 
@@ -474,7 +473,7 @@ public class IslandInteractionManager : MonoBehaviour
                         if(CivManager.instance.money < demandedValue)
                         {
                             canTrade = false;
-                            tradeMessageText.text = "You don't have the required resources";
+                            islandStatusText.text = "You don't have the required resources";
                         }
                         break;
                     }
@@ -482,13 +481,13 @@ public class IslandInteractionManager : MonoBehaviour
                 else
                 {
                     canTrade = false;
-                    tradeMessageText.text = "Cant trade the same resource";
+                    islandStatusText.text = "Cant trade the same resource";
                 }
             }
             else
             {
                 canTrade = false;
-                tradeMessageText.text = "This island wont trade anymore";
+                islandStatusText.text = "This island wont trade anymore";
             }
 
             if(canTrade == true)
@@ -496,7 +495,7 @@ public class IslandInteractionManager : MonoBehaviour
                 activeIsland.amountTraded += requestedValue;
                 CivManager.instance.AddIncome(requestedValue,requestedType);
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
-                tradeMessageText.text = "Transaction successful";
+                islandStatusText.text = "Transaction successful";
             }
             UpdateTradeResourceUI();
             InputCheckOffer();
@@ -554,19 +553,19 @@ public class IslandInteractionManager : MonoBehaviour
             demandedValue = Mathf.RoundToInt(input);
             inputDemand.text = demandedValue.ToString();
         }
-        void DropdownCheckTradeType()
-        {
-            switch (tradeTypeDropdown.value)
-            {
-                case 0:
-                tradeTypes = TradeTypes.Instant;
-                break;
+        // void DropdownCheckTradeType()
+        // {
+        //     switch (tradeTypeDropdown.value)
+        //     {
+        //         case 0:
+        //         tradeTypes = TradeTypes.Instant;
+        //         break;
 
-                case 1:
-                tradeTypes = TradeTypes.Daily;        
-                break;
-            }
-        }
+        //         case 1:
+        //         tradeTypes = TradeTypes.Daily;        
+        //         break;
+        //     }
+        // }
         void DropdownCheckRequest()
         {
             switch (requestTypeDropdown.value)
