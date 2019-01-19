@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
         GameTicks();
     }
 
+    public void UpdateGameSpeed(float value)
+    {
+        Time.timeScale = value;
+    }
+
     public void GameTicks()
     {
         shortTime += Time.deltaTime;
