@@ -8,10 +8,11 @@ public class TimeManager : MonoBehaviour
     public static TimeManager instance;
 
     #region Clock
-    public TMP_Text timerHour;
-    public TMP_Text timerMinute;
-    float hour = 12;
-    float minute;
+    public TMP_Text TimerText;
+    float timerValue = 43200;
+    int hours = 12;
+    int days;
+    float speedModifier;
     #endregion
 
     #region GameSpeed
@@ -31,12 +32,26 @@ public class TimeManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        //speed mosifier = minutes in a real day / minutes in the games day
+        speedModifier = 1440 / GameManager.instance.lengthOfDay;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timerValue += Time.deltaTime * speedModifier;
+
+        int minutes = (int)(timerValue / 60) % 60;
+        hours = (int)(timerValue / 3600) % 24;
+
+        string time = string.Format("{0:0}:{1:00}",hours,minutes);
+        TimerText.text = time;
+
+        if (timerValue >= 86400)
+        {
+            days += 1;
+            timerValue = 0;
+        }
     }
 
     public void UpdateSpeed(int value)
