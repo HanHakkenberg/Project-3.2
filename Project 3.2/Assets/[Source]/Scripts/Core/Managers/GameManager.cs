@@ -6,6 +6,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    #region GameSpeed
+    float gameSpeed = 1;
+    public static bool paused = false;
+    #endregion
+
     [Header("Tick/Time System")]
     #region TickVars
     [Tooltip("The time in minutes it takes to pass a entire day")]
@@ -46,7 +51,23 @@ public class GameManager : MonoBehaviour
 
     public void UpdateGameSpeed(float value)
     {
-        Time.timeScale = value;
+        gameSpeed = value;
+        Time.timeScale = gameSpeed;
+        print("GameSpeed" + gameSpeed);
+    }
+    public void TogglePauseGame()
+    {
+        if(paused)
+        {
+            paused = false;
+            Time.timeScale = gameSpeed;
+        }
+        else
+        {
+            print("pasue game");
+            paused = true;
+            Time.timeScale = 0;
+        }
     }
 
     public void GameTicks()

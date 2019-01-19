@@ -15,6 +15,8 @@ public class RandomEventManager : MonoBehaviour
     public TMP_Text eventText;
     public TMP_Text eventTitle;
 
+    string previouseSpeedString;
+
 
     private void Start() {
         TriggerRandomEvent();
@@ -53,6 +55,7 @@ public class RandomEventManager : MonoBehaviour
             t = i;
             newButton.GetComponent<Button>().onClick.AddListener(() => {ResolveEvent(t,curentEvent);});
         }
+        TimeManager.instance.PauseGameSpeed();
     }
 
     public void ResolveEvent(int optionInt, ScriptableEvent curentEvent) 
@@ -71,5 +74,6 @@ public class RandomEventManager : MonoBehaviour
                 CivManager.instance.RemoveIncome(effects.Value,effects.ResoureType);
             }
         }
+        TimeManager.instance.PauseGameSpeed();      
     }
 }

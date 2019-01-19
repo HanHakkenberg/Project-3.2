@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce63c6187d6f2149bd227316f97bc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatTime: 0
+  repeatTime: 60
 --- !u!1 &410427321
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &582269677
 Transform:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
   randomEventsList:
   - {fileID: 11400000, guid: 1f6c1b849ae08504eb4b52fcca6205bf, type: 2}
   EventsList: []
+  eventPannel: {fileID: 0}
   button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
   buttonLocation: {fileID: 0}
   eventText: {fileID: 0}
@@ -348,9 +349,57 @@ Transform:
   - {fileID: 564718645}
   - {fileID: 1289029808}
   - {fileID: 582269677}
+  - {fileID: 7694785163208429028}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3949933354723128825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7694785163208429028}
+  - component: {fileID: 7117481530039188705}
+  m_Layer: 11
+  m_Name: '[TimeManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7694785163208429028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3949933354723128825}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7798316207001215514}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7117481530039188705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3949933354723128825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95409916ce0a26449d7b901627ed589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerHour: {fileID: 0}
+  timerMinute: {fileID: 0}
+  speed: {fileID: 0}
+  maxSpeed: 5
 --- !u!1 &8579285812752928038
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastActiveIsland: {fileID: 0}
-  tradeTypes: 0
   tradeButton: {fileID: 0}
   pillageButton: {fileID: 0}
   exploreButton: {fileID: 0}
@@ -406,29 +454,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9054c5dbba10edc4a9329b5ec6160fce, type: 3}
   - {fileID: 21300000, guid: 1b2ccbc10c930aa4ebea3d597db1bed0, type: 3}
   - {fileID: 21300000, guid: 0bf715ee7c04882449d258c165fc3a21, type: 3}
-  excessType: {fileID: 0}
-  demandType: {fileID: 0}
   demandPic: {fileID: 0}
   excessPic: {fileID: 0}
-  infoPannel: {fileID: 0}
   attitudeParent: {fileID: 0}
   attitudeText: {fileID: 0}
   islandStatusText: {fileID: 0}
   tradePannel: {fileID: 0}
   tradeLeftText: {fileID: 0}
-  tradeMessageText: {fileID: 0}
-  tradeFoodText: {fileID: 0}
-  tradeMoneyText: {fileID: 0}
-  tradeMaterialText: {fileID: 0}
   inputRequest: {fileID: 0}
   inputDemand: {fileID: 0}
-  tradeTypeDropdown: {fileID: 0}
-  RequestTypeDropdown: {fileID: 0}
-  DemandTypeDropdown: {fileID: 0}
+  requestTypeDropdown: {fileID: 0}
+  paymentTypeDropdown: {fileID: 0}
   foodText: {fileID: 0}
   materialsText: {fileID: 0}
   moneyText: {fileID: 0}
-  messageText: {fileID: 0}
   pillagePannel: {fileID: 0}
 --- !u!114 &962203927
 MonoBehaviour:
