@@ -15,21 +15,21 @@ MonoBehaviour:
   eventOptions:
   - buttonText: Gotta Save them building supplys
     eventOptionsEffects:
-    - ResoureType: 1
+    - resoureType: 1
       Value: -100
-    - ResoureType: 0
+    - resoureType: 0
       Value: 100
-    - ResoureType: 2
+    - resoureType: 2
       Value: -20
   - buttonText: Gotta build dat farm
     eventOptionsEffects:
-    - ResoureType: 0
+    - resoureType: 0
       Value: -100
-    - ResoureType: 2
+    - resoureType: 2
       Value: 100
   - buttonText: Gotta ignore the situation
     eventOptionsEffects:
-    - ResoureType: 4
+    - resoureType: 4
       Value: -1
   Title: The test of the events
   Message: 'Poeple want a farm.

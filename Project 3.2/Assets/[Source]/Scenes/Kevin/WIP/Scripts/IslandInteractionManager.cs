@@ -109,16 +109,20 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void InteractableObjectInsert(InteractableObjects interactable)
     {
-        if(activeIsland == null)
+        print("1");
+        if(activeIsland == null && RandomEventManager.instance.activeEvent == null)
         {
+            print("2");
             if(interactable.GetType() == typeof(Island))
             {
+                print("3");
                 activeIsland = interactable as Island;
                 SetIslandVariables();
                 ToggleInteractionPannels(activeIsland);
             }
             if(interactable.GetType() == typeof(LootSite))
             {
+                print("4");
                 activeLootSite = interactable as LootSite;
                 ToggleInteractionPannels(activeLootSite);
             }
@@ -133,10 +137,10 @@ public class IslandInteractionManager : MonoBehaviour
     /// <param name="interactableObjects"> the interactable object being refrenced</param>
     public void ToggleInteractionPannels(InteractableObjects interactableObjects)
     {
+        InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
+        DisableAllButtons();
         if(interactableObjects.interactionState != InteractableObjects.InteractionState.LootSite)
         {
-            InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
-            DisableAllButtons();
             if (interactableObjects.explored)
             {
                 switch (interactionState)
@@ -341,11 +345,14 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void Pillage()
     {
+        int foodVar = 0;
+        int matsVar = 0;
+        int moneyVar = 0;
         if(activeIsland != null)
         {
-            int foodVar = Random.Range(10,21);
-            int matsVar = Random.Range(10,21);
-            int moneyVar = Random.Range(10,21);
+            foodVar = Random.Range(10,21);
+            matsVar = Random.Range(10,21);
+            moneyVar = Random.Range(10,21);
             if (activeIsland.interactionState == Island.InteractionState.Settled)
             {
                 activeIsland.UpdateAttitude(-200);
@@ -392,33 +399,34 @@ public class IslandInteractionManager : MonoBehaviour
                 CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
             }
             activeIsland.looted = true;
-            DisableAllButtons();
-            SwitchInteractionPanels(InteractionPannels.Pillage);
-            foodText.text = foodVar.ToString();
-            materialsText.text = matsVar.ToString();
-            moneyText.text = moneyVar.ToString();
-            islandStatusText.text = "You pillaged the island";
         }
         else if (activeLootSite != null)
         {
             switch (activeLootSite.lootType)
             {
                 case CivManager.Type.Food:
-                    int foodVar = Random.Range(10,21);
+                    foodVar = Random.Range(10,21);
                     CivManager.instance.AddIncome(foodVar,CivManager.Type.Food);
                 break;
 
                 case CivManager.Type.Mats:
-                    int matsVar = Random.Range(10,21);
+                    matsVar = Random.Range(10,21);
                     CivManager.instance.AddIncome(matsVar,CivManager.Type.Mats);
                 break;
 
                 case CivManager.Type.Money:
-                    int moneyVar = Random.Range(10,21);
+                    moneyVar = Random.Range(10,21);
                     CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
                 break;
             }
+            activeLootSite.looted = true;
         }
+        DisableAllButtons();
+        SwitchInteractionPanels(InteractionPannels.Pillage);
+        foodText.text = foodVar.ToString();
+        materialsText.text = matsVar.ToString();
+        moneyText.text = moneyVar.ToString();
+        islandStatusText.text = "You pillaged the island";
     }
 
     public void Explore()

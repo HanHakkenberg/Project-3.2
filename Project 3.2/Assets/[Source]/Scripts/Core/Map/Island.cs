@@ -20,6 +20,7 @@ public class Island : InteractableObjects {
 
     public override void InsertInteractionManager()
     {
+        print("Klicked On island");
         IslandInteractionManager.instance.InteractableObjectInsert(this);
     }
 

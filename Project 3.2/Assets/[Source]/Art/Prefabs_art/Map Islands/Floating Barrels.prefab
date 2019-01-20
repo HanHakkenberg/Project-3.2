@@ -385,6 +385,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6122800995289414316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8088075968759292869, guid: 9712c7682061d4e4db630269096b2d42,
+    type: 3}
+  m_PrefabInstance: {fileID: 2649824315874695529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6122800995289414315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8088075968759292866, guid: 9712c7682061d4e4db630269096b2d42,
+    type: 3}
+  m_PrefabInstance: {fileID: 2649824315874695529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011508424467270012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122800995289414316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cc21318a08c6f4fa49703b9a16ed3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explored: 0
+  looted: 0
+  interactionState: 0
+  canInteract: 0
+  currentSelected:
+    value: {fileID: 0}
+    variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
+    useConstant: 0
+    myEvent: {fileID: 0}
+  lootType: 0
 --- !u!1 &3619354936059971186
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,12 +806,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &6122800995289414315 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8088075968759292866, guid: 9712c7682061d4e4db630269096b2d42,
-    type: 3}
-  m_PrefabInstance: {fileID: 2649824315874695529}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8000660075849274738
 GameObject:
   m_ObjectHideFlags: 0

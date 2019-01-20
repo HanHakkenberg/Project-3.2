@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ToolTipPopup : MonoBehaviour
@@ -13,13 +14,7 @@ public class ToolTipPopup : MonoBehaviour
 
     void Start() 
     {
-        if(toolTipPannel == null)
-        {
-            toolTipPannel = GameObject.FindGameObjectWithTag("ToolTip");
-            toolTip = toolTipPannel.transform;  
-            toolTipPannel.SetActive(false);
-            toolTipText = toolTip.GetComponentInChildren<TMP_Text>();
-        }
+        GetComponent<Button>().onClick.AddListener(() => {PointerExit();});
     }
 
     void Update() 
@@ -32,7 +27,6 @@ public class ToolTipPopup : MonoBehaviour
     
     public void PointerEnter()
     {
-        print("proent");
         toolTipPannel.SetActive(true);
         overUI = true;
         toolTipText.text = toolTipString;
@@ -40,14 +34,12 @@ public class ToolTipPopup : MonoBehaviour
 
     public void PointerExit()
     {
-        print("proent2");
         toolTipPannel.SetActive(false);
         overUI = false;
     }
 
     public void PointerOver()
     {
-        print("proent3");
-    	toolTip.position = Input.mousePosition + new Vector3(83,-40,0);
+    	toolTip.position = Input.mousePosition;
     }
 }

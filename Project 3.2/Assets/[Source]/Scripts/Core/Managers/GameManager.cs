@@ -64,7 +64,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            print("pasue game");
             paused = true;
             Time.timeScale = 0;
         }

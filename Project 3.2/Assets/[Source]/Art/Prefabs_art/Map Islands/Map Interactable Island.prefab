@@ -189,7 +189,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8088075968759292866}
   - component: {fileID: 8088075968759292864}
-  - component: {fileID: 8907473527794113803}
   m_Layer: 11
   m_Name: Map Interactable
   m_TagString: Untagged
@@ -224,31 +223,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 50, z: 20}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8907473527794113803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8088075968759292869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c9bb8d5442d5643a0069a7f38a961c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explored: 0
-  looted: 0
-  interactionState: 0
-  canInteract: 0
-  currentSelected:
-    value: {fileID: 0}
-    variable: {fileID: 11400000, guid: 2f38adf56735fea478020ed9ac2ac99b, type: 2}
-    useConstant: 0
-    myEvent: {fileID: 0}
-  amountTraded: 0
-  rDemand: 0
-  rExcess: 0
-  attitude: 0
 --- !u!1 &8088075969134448868
 GameObject:
   m_ObjectHideFlags: 0

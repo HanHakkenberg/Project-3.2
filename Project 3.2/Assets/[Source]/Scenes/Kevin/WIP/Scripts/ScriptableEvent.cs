@@ -28,7 +28,7 @@ public class EventOptionsEffects
     //This class contains all the effects a Events options performs
 
     [Tooltip("Type of resource changed by event")]
-    public CivManager.Type ResoureType;
+    public CivManager.Type resoureType;
     [Tooltip("Value changed by event")]
     public int Value;
 }
