@@ -21,6 +21,7 @@ public class IslandInteractionManager : MonoBehaviour
     public static IslandInteractionManager instance;
     public Island activeIsland{ get; private set; }
     public Island lastActiveIsland;
+    public LootSite activeLootSite;
     GameObject activePannel;
     TradeTypes tradeTypes;
     [Header("InteractionButtons")]
@@ -84,10 +85,12 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     void Update() {
-        if(activeIsland != null && activeIsland.canInteract == true){
-            if(activeIsland != lastActiveIsland){
-            lastActiveIsland = activeIsland;
-            ToggleInteractionPannels(activeIsland);
+        if(activeIsland != null && activeIsland.canInteract == true)
+        {
+            if(activeIsland != lastActiveIsland)
+            {
+                lastActiveIsland = activeIsland;
+                ToggleInteractionPannels(activeIsland);
             }
         }
         else if (activeIsland != null)
@@ -104,7 +107,7 @@ public class IslandInteractionManager : MonoBehaviour
         paymentTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
-    public void IslandInsert(InteractableObjects interactable)
+    public void InteractableObjectInsert(InteractableObjects interactable)
     {
         if(activeIsland == null)
         {
@@ -114,10 +117,11 @@ public class IslandInteractionManager : MonoBehaviour
                 SetIslandVariables();
                 ToggleInteractionPannels(activeIsland);
             }
-            // if(infoPannel.activeSelf != true)
-            // {
-            //     SwitchInteractionPanels(InteractionPannels.Info);
-            // }
+            if(interactable.GetType() == typeof(LootSite))
+            {
+                activeLootSite = interactable as LootSite;
+                ToggleInteractionPannels(activeLootSite);
+            }
             UpdateTradeResourceUI();
             UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         }
@@ -129,43 +133,19 @@ public class IslandInteractionManager : MonoBehaviour
     /// <param name="interactableObjects"> the interactable object being refrenced</param>
     public void ToggleInteractionPannels(InteractableObjects interactableObjects)
     {
-        InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
-        DisableAllButtons();
-        if (interactableObjects.explored)
+        if(interactableObjects.interactionState != InteractableObjects.InteractionState.LootSite)
         {
-            switch (interactionState)
+            InteractableObjects.InteractionState interactionState = interactableObjects.interactionState;
+            DisableAllButtons();
+            if (interactableObjects.explored)
             {
-                case InteractableObjects.InteractionState.Unsettled:
-                if(activeIsland.looted != true)
+                switch (interactionState)
                 {
-                    pillageButton.SetActive(true);
-                    islandStatusText.text = "This island seems uninhabited you might have some use for its recoures though";
-                    if(activeIsland.canInteract)
+                    case InteractableObjects.InteractionState.Unsettled:
+                    if(activeIsland.looted != true)
                     {
-                        tradeButton.GetComponent<Button>().interactable = true;
-                        pillageButton.GetComponent<Button>().interactable = true;
-                    }
-                    else
-                    {
-                        tradeButton.GetComponent<Button>().interactable = false;
-                        pillageButton.GetComponent<Button>().interactable = false;
-                    }
-                }
-                else
-                {
-                    islandStatusText.text = "This uninhabited Island has recently bin looted";
-                }
-                break;
-
-                case InteractableObjects.InteractionState.Settled:
-                attitudeParent.SetActive(true);
-                if(activeIsland.looted != true)
-                {
-                    if(activeIsland.attitude >= -50)
-                    {
-                        tradeButton.SetActive(true);
                         pillageButton.SetActive(true);
-                        pillageButton.GetComponent<Button>().interactable = true;
+                        islandStatusText.text = "This island seems uninhabited you might have some use for its recoures though";
                         if(activeIsland.canInteract)
                         {
                             tradeButton.GetComponent<Button>().interactable = true;
@@ -176,46 +156,73 @@ public class IslandInteractionManager : MonoBehaviour
                             tradeButton.GetComponent<Button>().interactable = false;
                             pillageButton.GetComponent<Button>().interactable = false;
                         }
-                        islandStatusText.text = "This island is inhabited and its poeple will talk to you and trade goods depending on your standing whit them";
                     }
                     else
                     {
-                        tradeButton.GetComponent<Button>().interactable = false;
-                        if(activeIsland.canInteract)
+                        islandStatusText.text = "This uninhabited Island has recently bin looted";
+                    }
+                    break;
+
+                    case InteractableObjects.InteractionState.Settled:
+                    attitudeParent.SetActive(true);
+                    if(activeIsland.looted != true)
+                    {
+                        if(activeIsland.attitude >= -50)
                         {
+                            tradeButton.SetActive(true);
+                            pillageButton.SetActive(true);
                             pillageButton.GetComponent<Button>().interactable = true;
+                            if(activeIsland.canInteract)
+                            {
+                                tradeButton.GetComponent<Button>().interactable = true;
+                                pillageButton.GetComponent<Button>().interactable = true;
+                            }
+                            else
+                            {
+                                tradeButton.GetComponent<Button>().interactable = false;
+                                pillageButton.GetComponent<Button>().interactable = false;
+                            }
+                            islandStatusText.text = "This island is inhabited and its poeple will talk to you and trade goods depending on your standing whit them";
                         }
                         else
                         {
-                            pillageButton.GetComponent<Button>().interactable = false;                  
+                            tradeButton.GetComponent<Button>().interactable = false;
+                            if(activeIsland.canInteract)
+                            {
+                                pillageButton.GetComponent<Button>().interactable = true;
+                            }
+                            else
+                            {
+                                pillageButton.GetComponent<Button>().interactable = false;                  
+                            }
+                            islandStatusText.text = "Becouse of youre actions the people of this island wont talk to you";
                         }
-                        islandStatusText.text = "Becouse of youre actions the people of this island wont talk to you";
                     }
+                    else
+                    {
+                        islandStatusText.text = "This inhabited Island has recently been looted";
+                    }
+                    break;
+                }
+            }
+            else
+            {
+                exploreButton.SetActive(true);
+                if(activeIsland.canInteract)
+                {  
+                    exploreButton.GetComponent<Button>().interactable = true;
                 }
                 else
                 {
-                    islandStatusText.text = "This inhabited Island has recently been looted";
+                    exploreButton.GetComponent<Button>().interactable = false;
                 }
-                break;
-
-                case InteractableObjects.InteractionState.LootSite:
-                pillageButton.SetActive(true);
-                islandStatusText.text = "It looks like there might be valuables here";
-                break;
+                islandStatusText.text = "This island has yet to be explored";
             }
         }
         else
         {
-            exploreButton.SetActive(true);
-            if(activeIsland.canInteract)
-            {  
-                exploreButton.GetComponent<Button>().interactable = true;
-            }
-            else
-            {
-                exploreButton.GetComponent<Button>().interactable = false;
-            }
-            islandStatusText.text = "This island has yet to be explored";
+            pillageButton.SetActive(true);
+            islandStatusText.text = "It looks like there might be valuables here";
         }
     }
 
@@ -297,19 +304,6 @@ public class IslandInteractionManager : MonoBehaviour
                 WipeTrade();
             }
             break;
-
-            // case InteractionPannels.Info:
-            // if(activePannel != infoPannel)
-            // {
-            //     infoPannel.SetActive(true);
-            //     activePannel = infoPannel;
-            // }
-            // else
-            // {
-            //     infoPannel.SetActive(false);
-            //     activePannel = null;
-            // }
-            // break;
         }
     }
 
@@ -326,10 +320,6 @@ public class IslandInteractionManager : MonoBehaviour
         {
             SwitchInteractionPanels(InteractionPannels.Pillage);
         }
-        // else if (activePannel == infoPannel)
-        // {
-        //     SwitchInteractionPanels(InteractionPannels.Info);
-        // }
         
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
         activeIsland = null;
@@ -408,6 +398,26 @@ public class IslandInteractionManager : MonoBehaviour
             materialsText.text = matsVar.ToString();
             moneyText.text = moneyVar.ToString();
             islandStatusText.text = "You pillaged the island";
+        }
+        else if (activeLootSite != null)
+        {
+            switch (activeLootSite.lootType)
+            {
+                case CivManager.Type.Food:
+                    int foodVar = Random.Range(10,21);
+                    CivManager.instance.AddIncome(foodVar,CivManager.Type.Food);
+                break;
+
+                case CivManager.Type.Mats:
+                    int matsVar = Random.Range(10,21);
+                    CivManager.instance.AddIncome(matsVar,CivManager.Type.Mats);
+                break;
+
+                case CivManager.Type.Money:
+                    int moneyVar = Random.Range(10,21);
+                    CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
+                break;
+            }
         }
     }
 
@@ -550,19 +560,7 @@ public class IslandInteractionManager : MonoBehaviour
             demandedValue = Mathf.RoundToInt(input);
             inputDemand.text = demandedValue.ToString();
         }
-        // void DropdownCheckTradeType()
-        // {
-        //     switch (tradeTypeDropdown.value)
-        //     {
-        //         case 0:
-        //         tradeTypes = TradeTypes.Instant;
-        //         break;
-
-        //         case 1:
-        //         tradeTypes = TradeTypes.Daily;        
-        //         break;
-        //     }
-        // }
+        
         void DropdownCheckRequest()
         {
             switch (requestTypeDropdown.value)
