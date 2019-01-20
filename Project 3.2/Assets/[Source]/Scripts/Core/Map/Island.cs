@@ -13,16 +13,18 @@ public class Island : InteractableObjects {
     public CivManager.Type rExcess;
     public float attitude = 0;
 
-    void Start() {
+    void Start() 
+    {
         RandomizeIsland();
     }
 
     public override void InsertInteractionManager()
     {
-        IslandInteractionManager.instance.IslandInsert(this);
+        IslandInteractionManager.instance.InteractableObjectInsert(this);
     }
 
-    public void RandomizeIsland() {
+    void RandomizeIsland() 
+    {
         int demand = Random.Range(0, 3);
         int excess = Random.Range(0, 3);
         while (demand == excess) {
