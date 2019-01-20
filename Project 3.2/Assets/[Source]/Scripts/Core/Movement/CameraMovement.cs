@@ -66,7 +66,7 @@ public class CameraMovement : MonoBehaviour {
         if (newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
             newPosition = newPosition * (movementSpeed * Time.unscaledDeltaTime / 2) + transform.position;
         }
-        else {
+        else{
             newPosition = newPosition * movementSpeed * Time.unscaledDeltaTime + transform.position;
         }
 
@@ -79,7 +79,7 @@ public class CameraMovement : MonoBehaviour {
             if (Input.GetAxis("Horizontal") > 0) {
                 return (transform.right);
             }
-            else {
+            else if (Input.GetAxis("Horizontal") < 0) {
                 return (-transform.right);
             }
         }
@@ -92,7 +92,8 @@ public class CameraMovement : MonoBehaviour {
             }
         }
 
-        return (new Vector3());
+        Debug.Log("X" + Input.GetAxis("Horizontal"));
+        return (Vector3.zero);
     }
 
     //Checks If The Player Wants To Move Verticaly
@@ -101,7 +102,7 @@ public class CameraMovement : MonoBehaviour {
             if (Input.GetAxis("Vertical") > 0) {
                 return (transform.forward);
             }
-            else {
+            else if (Input.GetAxis("Vertical") < 0){
                 return (-transform.forward);
             }
         }
@@ -114,7 +115,8 @@ public class CameraMovement : MonoBehaviour {
             }
         }
 
-        return (new Vector3());
+        Debug.Log("Y" + Input.GetAxis("Vertical"));
+        return (Vector3.zero);
     }
 
     //Claculates The New Rotation Of The Camera Parent
