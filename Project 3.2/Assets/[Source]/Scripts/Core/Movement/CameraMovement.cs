@@ -62,9 +62,6 @@ public class CameraMovement : MonoBehaviour {
     Vector3 UpdateCameraPosition() {
 
         newPosition = (VerMovement() + HorMovement());
-        Debug.Log("Y" + Input.GetAxis("Vertical"));
-        Debug.Log("X" + Input.GetAxis("Horizontal"));
-
 
         if (Input.GetButtonDown("Vertical") && Input.GetButtonDown("Horizontal")) {
             newPosition = newPosition * (movementSpeed * Time.unscaledDeltaTime / 2) + transform.position;
