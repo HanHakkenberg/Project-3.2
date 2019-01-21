@@ -62,8 +62,11 @@ public class CameraMovement : MonoBehaviour {
     Vector3 UpdateCameraPosition() {
 
         newPosition = (VerMovement() + HorMovement());
+        Debug.Log("Y" + Input.GetAxis("Vertical"));
+        Debug.Log("X" + Input.GetAxis("Horizontal"));
 
-        if (newPosition.x > 0.01 && newPosition.x < -0.01 && newPosition.y > 0.01 && newPosition.y < -0.01) {
+
+        if (Input.GetButtonDown("Vertical") && Input.GetButtonDown("Horizontal")) {
             newPosition = newPosition * (movementSpeed * Time.unscaledDeltaTime / 2) + transform.position;
         }
         else{
@@ -76,10 +79,10 @@ public class CameraMovement : MonoBehaviour {
     //Checks If The Player Wants To Move Horizontaly
     Vector3 HorMovement() {
         if (Input.GetButton("Horizontal")) {
-            if (Input.GetAxis("Horizontal") > 0) {
+            if (Input.GetAxisRaw("Horizontal") > 0.1f) {
                 return (transform.right);
             }
-            else if (Input.GetAxis("Horizontal") < 0) {
+            else if (Input.GetAxisRaw("Horizontal") < 0.1f) {
                 return (-transform.right);
             }
         }
@@ -92,17 +95,16 @@ public class CameraMovement : MonoBehaviour {
             }
         }
 
-        Debug.Log("X" + Input.GetAxis("Horizontal"));
         return (Vector3.zero);
     }
 
     //Checks If The Player Wants To Move Verticaly
     Vector3 VerMovement() {
         if (Input.GetButton("Vertical")) {
-            if (Input.GetAxis("Vertical") > 0) {
+            if (Input.GetAxisRaw("Vertical") > 0.1f) {
                 return (transform.forward);
             }
-            else if (Input.GetAxis("Vertical") < 0){
+            else if (Input.GetAxisRaw("Vertical") < 0.1f){
                 return (-transform.forward);
             }
         }
@@ -115,7 +117,6 @@ public class CameraMovement : MonoBehaviour {
             }
         }
 
-        Debug.Log("Y" + Input.GetAxis("Vertical"));
         return (Vector3.zero);
     }
 

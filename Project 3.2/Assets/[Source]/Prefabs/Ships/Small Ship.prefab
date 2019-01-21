@@ -85,7 +85,7 @@ MonoBehaviour:
     useConstant: 0
     myEvent: {fileID: 0}
   lineWith: 10
-  pathSide: 5
+  pathSide: 25
   SpottingRefreshTimer: 2
   spottingSphereSize: 35
   interactSphereSize: 35
@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.36
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
@@ -380,7 +380,7 @@ PrefabInstance:
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.86
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
         type: 3}

@@ -339,6 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9d10178e2bf8964d8c465def3e3d6db, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1919677890
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +563,8 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   - assemblyQualifiedName: SCPE.Scanlines, Assembly-CSharp-firstpass, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+=======
+>>>>>>> 5df02335152177ac8cec026ed5c029264d060793
 --- !u!1001 &294273349480100515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6066,6 +6069,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b421f4a256449084f9ec2f904a47b74b, type: 3}
+--- !u!1001 &8189711668782740256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.003100923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9741902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.22548367
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.010049666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 26.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -178.84001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971813, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189711669555971810, guid: 1758a458dbe2fde49bd1c8c548233744,
+        type: 3}
+      propertyPath: m_Name
+      value: Camera mijs troep
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1758a458dbe2fde49bd1c8c548233744, type: 3}
 --- !u!1001 &8383715738297437238
 PrefabInstance:
   m_ObjectHideFlags: 0

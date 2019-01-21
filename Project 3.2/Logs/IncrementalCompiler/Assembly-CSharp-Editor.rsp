@@ -2,10 +2,17 @@
 -target:library
 -nowarn:0169
 -langversion:7
+<<<<<<< HEAD
 -out:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Temp/Assembly-CSharp-Editor.dll"
 -nostdlib
 -unsafe
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp.dll"
+=======
+-out:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Temp/Assembly-CSharp-Editor.dll"
+-nostdlib
+-unsafe
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp.dll"
+>>>>>>> 5df02335152177ac8cec026ed5c029264d060793
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -69,6 +76,7 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll"
+<<<<<<< HEAD
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
@@ -82,6 +90,21 @@
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+=======
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+>>>>>>> 5df02335152177ac8cec026ed5c029264d060793
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
@@ -98,6 +121,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.3.0b10/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+<<<<<<< HEAD
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
@@ -118,6 +142,29 @@
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
 -r:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+=======
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
+-r:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll"
+>>>>>>> 5df02335152177ac8cec026ed5c029264d060793
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.3.0b10\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -338,6 +385,7 @@
 -d:SCPE
 -d:CSHARP_7_OR_LATER
 -d:CSHARP_7_3_OR_NEWER
+<<<<<<< HEAD
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Editor/BuildingEditor.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/Editor/LayoutHelpers.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/Editor/GameEventEditor.cs"
@@ -358,4 +406,26 @@
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/Vector3ReferencePD.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/Vector4ReferencePD.cs"
 -i:"D:/Aart/School/Jaar 3/DevLab/Project 2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/SerializableInterfaces/Editor/SerializableInterfaceDrawer.cs"
+=======
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/Editor/BuildingEditor.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/Editor/LayoutHelpers.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/GameEvent Base/Editor/GameEventEditor.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/ObjectPooler/Editor/ObjectPoolerEditor.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/BoolReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/CameraReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/FloatListReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/FloatReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/GameObjectListReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/GameObjectReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/IntListReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/IntReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/LayerMaskReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/SpriteReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/StringReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/TransformReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/Vector2ReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/Vector3ReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/Scriptable Variables/Editor/Variable/Vector4ReferencePD.cs"
+-i:"C:/Users/mijs/Documents/GitHub/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/SerializableInterfaces/Editor/SerializableInterfaceDrawer.cs"
+>>>>>>> 5df02335152177ac8cec026ed5c029264d060793
 -v:0
