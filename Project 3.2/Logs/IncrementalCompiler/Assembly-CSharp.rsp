@@ -5,18 +5,6 @@
 -out:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Temp/Assembly-CSharp.dll"
 -nostdlib
 -unsafe
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
--r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.dll
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
@@ -79,6 +67,18 @@
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/UnityEditor.dll
 -r:D:\UnityHub\2018.3.0b10\Editor\Data\Managed/Unity.Locator.dll
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Cinemachine.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.InputSystem.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll"
+-r:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 -r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 -r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
 -r:D:/UnityHub/2018.3.0b10/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
@@ -340,6 +340,7 @@
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Building/ResourceList.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Game Event Scriptable/CursorEvents/CursorManager.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/GameManager.cs"
+-i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/TimeManager.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Managers/UIManager.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/InteractableObjects.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Map/Island.cs"
@@ -355,7 +356,6 @@
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/GlobalVariables.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/HeightTest.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Movement/TestCamera/TestCamera.cs"
--i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/TimeManager.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/TimeTurner.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/DebugExtension.cs"
 -i:"D:/- DevLabGit/y3p2/Project-3.2/Project 3.2/Assets/[Source]/Scripts/Core/Utilities/GameEvents/Animation Events/AnimationBoolEvent.cs"

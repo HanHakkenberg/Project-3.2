@@ -9,7 +9,7 @@ public class TimeManager : MonoBehaviour
 
     #region Clock
     public TMP_Text TimerText;
-    float timerValue = 43200;
+    float timerValue;
     int hours = 12;
     int days;
     float speedModifier;
@@ -51,6 +51,11 @@ public class TimeManager : MonoBehaviour
         {
             days += 1;
             timerValue = 0;
+        }
+        
+        if (Input.GetButtonDown("Space"))
+        {
+            PauseGameSpeed();
         }
     }
 
