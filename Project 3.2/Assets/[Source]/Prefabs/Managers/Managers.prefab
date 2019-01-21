@@ -161,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &582269677
 Transform:
   m_ObjectHideFlags: 0
@@ -190,7 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomEventsList:
   - {fileID: 11400000, guid: 1f6c1b849ae08504eb4b52fcca6205bf, type: 2}
-  EventsList: []
   eventPannel: {fileID: 0}
   button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
   buttonLocation: {fileID: 0}
@@ -396,8 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95409916ce0a26449d7b901627ed589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerHour: {fileID: 0}
-  timerMinute: {fileID: 0}
+  TimerText: {fileID: 0}
   speed: {fileID: 0}
   maxSpeed: 5
 --- !u!1 &8579285812752928038
@@ -445,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastActiveIsland: {fileID: 0}
+  activeLootSite: {fileID: 0}
   tradeButton: {fileID: 0}
   pillageButton: {fileID: 0}
   exploreButton: {fileID: 0}
