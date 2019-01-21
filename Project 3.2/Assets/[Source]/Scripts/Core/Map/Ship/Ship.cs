@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Ship : MonoBehaviour {
+    [SerializeField] GameObject arrow;
     [SerializeField] TransformReference currentSelected;
     [SerializeField] TransformReference currentCamera;
 
@@ -30,6 +31,7 @@ public class Ship : MonoBehaviour {
     }
 
     void Start() {
+        arrow.SetActive(false);
         waypointLines.startWidth = lineWith;
         waypointLines.endWidth = lineWith;
         StartCoroutine(IslandCheck());
@@ -50,6 +52,7 @@ public class Ship : MonoBehaviour {
 
     void OnMouseDown() {
         if (!Input.GetButton("Waypoint Interact")) {
+            arrow.SetActive(true);
             currentSelected.Value = transform;
             StartCoroutine(PathUpdate());
             Island.ship = this;
@@ -111,6 +114,8 @@ public class Ship : MonoBehaviour {
 
             isUpdating = false;
         }
+
+        arrow.SetActive(false);
     }
 
     //Checks if there is a undiscovert object and discovers it
