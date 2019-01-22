@@ -35,6 +35,8 @@ public class IslandInteractionManager : MonoBehaviour
     GameObject colonizeButton;
     [SerializeField]
     GameObject backButton;
+    [SerializeField]
+    GameObject confirmButton;
     
     #region TradeRelated
     [Header("Excess & Demand")]
@@ -108,20 +110,16 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void InteractableObjectInsert(InteractableObjects interactable)
     {
-        print("1");
-        if(activeIsland == null && RandomEventManager.instance.activeEvent == null)
+        if(activeIsland == null && EventManager.instance.activeEvent == null)
         {
-            print("2");
             if(interactable.GetType() == typeof(Island))
             {
-                print("3");
                 activeIsland = interactable as Island;
                 SetIslandVariables();
                 ToggleInteractionPannels(activeIsland);
             }
             if(interactable.GetType() == typeof(LootSite))
             {
-                print("4");
                 activeLootSite = interactable as LootSite;
                 ToggleInteractionPannels(activeLootSite);
             }
@@ -153,11 +151,13 @@ public class IslandInteractionManager : MonoBehaviour
                         {
                             tradeButton.GetComponent<Button>().interactable = true;
                             pillageButton.GetComponent<Button>().interactable = true;
+                            confirmButton.GetComponent<Button>().interactable = true;
                         }
                         else
                         {
                             tradeButton.GetComponent<Button>().interactable = false;
                             pillageButton.GetComponent<Button>().interactable = false;
+                            confirmButton.GetComponent<Button>().interactable = false;
                         }
                     }
                     else
@@ -568,7 +568,7 @@ public class IslandInteractionManager : MonoBehaviour
             inputDemand.text = demandedValue.ToString();
         }
         
-        void DropdownCheckRequest(int value)
+        public void CheckRequest(int value)
         {
             requestTypeValue += value;
             if(requestTypeValue < 0)
@@ -602,7 +602,7 @@ public class IslandInteractionManager : MonoBehaviour
             }
             InputCheckOffer();
         }
-        void DropdownCheckDemand(int value)
+        public void CheckDemand(int value)
         {
             demandTypeValue += value;
             if(demandTypeValue < 0)
@@ -618,17 +618,20 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 case 0:
                 //mats
-                paymentType = CivManager.Type.Mats;                    
+                paymentType = CivManager.Type.Mats;    
+                demandText.text = "Materials";
                 break;
 
                 case 1:
                 //food
                 paymentType = CivManager.Type.Food;
+                demandText.text = "Food";
                 break;
 
                 case 2:
                 //money
-                paymentType = CivManager.Type.Money;                    
+                paymentType = CivManager.Type.Money;        
+                demandText.text = "Money";
                 break;
             }
             InputCheckOffer();

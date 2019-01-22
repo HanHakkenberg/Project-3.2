@@ -4,19 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class RandomEventManager : MonoBehaviour
+public class EventManager : MonoBehaviour
 {
-    public static RandomEventManager instance;
+    public static EventManager instance;
 
+    public List<EventChain> eventChains = new List<EventChain>();
     public List<ScriptableEvent> randomEventsList = new List<ScriptableEvent>();
-
-    public GameObject eventPannel;
     public ScriptableEvent activeEvent{ get; private set; }
+    public EventChain activeChain{ get; private set; }
+    int ticksTillEventChain;
+    int chainEvent;
+
 
     /// <summary>
     /// Option button prefab
     /// </summary>
     public GameObject button;
+    public GameObject eventPannel;
+
     public Transform buttonLocation;
 
     public TMP_Text eventText;
@@ -35,7 +40,7 @@ public class RandomEventManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        GameManager.longGameplayTick += TriggerRandomEvent;
+        GameManager.longGameplayTick += TriggerEventRelatedFunctions;
     }
 
     void Start() 
@@ -46,10 +51,40 @@ public class RandomEventManager : MonoBehaviour
         ToolTipPopup.toolTipPannel.SetActive(false);
     }
 
+    public void TriggerEventRelatedFunctions()
+    {
+        ProgressEventChain();
+        TriggerRandomEvent();
+    }
+
+    void ProgressEventChain()
+    {
+        if (activeChain != null)
+        {
+            if (ticksTillEventChain != 0)
+            {
+                ticksTillEventChain -= 1;
+            }
+            else
+            {
+               SetEvent(activeChain.chainParts[chainEvent].eventPart);
+               if (chainEvent != activeChain.chainParts.Count - 1)
+               {
+                   chainEvent += 1;
+                   ticksTillEventChain = activeChain.chainParts[chainEvent].ticksTillTrigger;
+               }
+               else
+               {
+                   activeChain = null;
+               }
+            }
+        }
+    }
+
     /// <summary>
     /// Call this function to have a chance of triggering a random event
     /// </summary>
-    public void TriggerRandomEvent()
+    void TriggerRandomEvent()
     {
         // Using the Chance int combined with the if statement gives the random event a chance to trigger instead of a guarantee
         int Chance = Random.Range(1,11);
