@@ -25,6 +25,7 @@ public class BuildingManager : MonoBehaviour
     public int allBuildingMats;
     public int allBuildingMoney;
     public int allBuildingCitizens;
+    public int buildingNum;
 
     public List<BuildingInfo> allBuildings = new List<BuildingInfo>();
 
@@ -39,7 +40,7 @@ public class BuildingManager : MonoBehaviour
     }
     void Start()
     {
-        
+        GameManager.shortGameplayTick += RemoveStats;
     }
 
     void Update()
@@ -49,9 +50,28 @@ public class BuildingManager : MonoBehaviour
     public void AddBuilding(List<BuildingInfo> _building)
     {
         BuildingManager.instance.allBuildings.Add(_building[0]);
-        BuildingManager.instance.allBuildingFood += _building[0].myFood;
-        BuildingManager.instance.allBuildingMats += _building[0].myMats;
-        BuildingManager.instance.allBuildingMoney += _building[0].myMoney;
-        BuildingManager.instance.allBuildingCitizens += _building[0].myCitizens;
+        AddStats();
+        buildingNum++;
+    }
+    public void AddStats()
+    {
+        allBuildingFood = 0;
+        allBuildingMats = 0;
+        allBuildingMoney = 0;
+        allBuildingCitizens = 0;
+        for (int i = 0; i < allBuildings.Count; i++)
+        { 
+            allBuildingFood += allBuildings[i].myFood;
+            allBuildingMats += allBuildings[i].myMats;
+            allBuildingMoney += allBuildings[i].myMoney;
+            allBuildingCitizens += allBuildings[i].myCitizens;
+        }
+    }
+
+    public void RemoveStats()
+    {
+        CivManager.instance.RemoveIncome(allBuildingFood, CivManager.Type.Food);
+        CivManager.instance.RemoveIncome(allBuildingMats, CivManager.Type.Mats);
+        CivManager.instance.RemoveIncome(allBuildingMoney, CivManager.Type.Money);
     }
 }

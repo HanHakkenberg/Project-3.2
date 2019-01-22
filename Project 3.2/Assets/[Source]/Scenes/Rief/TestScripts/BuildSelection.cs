@@ -21,7 +21,6 @@ public class BuildSelection : MonoBehaviour
         thisBuilding[0].myMats = thisBuilding[0].myBuilding.materialStat;
         thisBuilding[0].myMoney = thisBuilding[0].myBuilding.moneyStat;
         thisBuilding[0].myCitizens = thisBuilding[0].myBuilding.citizenStat;
-        thisBuilding[0].buildingModel = thisBuilding[0].myBuilding.buildingModel;
     }
 
     void UnlockCheck()
@@ -60,7 +59,7 @@ public class BuildSelection : MonoBehaviour
             CivManager.instance.RemoveIncome(thisBuilding[0].myBuilding.moneyCost, CivManager.Type.Money);
             CivManager.instance.RemoveIncome(thisBuilding[0].myBuilding.citizenCost, CivManager.Type.People);
 
-            ObjectPooler.instance.GetFromPool("Hammer", spawnLoc.transform.position, Quaternion.Euler(0, spawnLoc.transform.localEulerAngles.y, 0));
+            thisBuilding[0].buildingModel.SetActive(true);
 
             BuildingManager.instance.AddBuilding(thisBuilding);
             Destroy(transform.root.gameObject);

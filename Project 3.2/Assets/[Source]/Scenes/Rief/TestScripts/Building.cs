@@ -8,7 +8,6 @@ public class Building : ScriptableObject
     [Header("Building General")]
     public new string name;
     public string description;
-    public GameObject buildingModel;
 
     [Header ("Building Stats")]
     public int foodStat; 

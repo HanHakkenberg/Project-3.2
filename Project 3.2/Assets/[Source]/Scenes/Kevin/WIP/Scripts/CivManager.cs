@@ -22,10 +22,11 @@ public class CivManager : MonoBehaviour
    public int money{ get; private set; }
    public int food{ get; private set; }
    public int people{ get; private set; }
-   #endregion
+    public int usedPeople;
+    #endregion
 
-   #region ResoursCaps
-   public int matsCap{ get; private set; }
+    #region ResoursCaps
+    public int matsCap{ get; private set; }
    public int moneyCap{ get; private set; }
    public int foodCap{ get; private set; }
    public int peopleCap{ get; private set; }

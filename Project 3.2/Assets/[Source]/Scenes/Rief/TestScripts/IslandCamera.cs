@@ -12,13 +12,14 @@ public class IslandCamera : MonoBehaviour
     [SerializeField] private GameObject infoCanvas;
     Animator myAnimator;
     public bool isPlaced;
-    public int buildingNum;
+    public int numb;
 
     private void Start ()
     {
         mainCam = MainCamAssign.instance.mainCamera;
         infoCanvas = MainCamAssign.instance.infoCanvas;
         myAnimator = infoCanvas.GetComponent<Animator> ();
+        numb = BuildingManager.instance.buildingNum;
     }
     void Update ()
     {
@@ -34,7 +35,8 @@ public class IslandCamera : MonoBehaviour
     {
         mainCam.enabled = false;
         buildingCam.enabled = true;
-        BuildingDisplay.building = BuildingManager.instance.allBuildings[buildingNum].myBuilding;
+        BuildingDisplay.building = BuildingManager.instance.allBuildings[numb].myBuilding;
+        BuildingDisplay.currNumb = numb;
         myAnimator.SetBool ("Fading", true);
         infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
     }
