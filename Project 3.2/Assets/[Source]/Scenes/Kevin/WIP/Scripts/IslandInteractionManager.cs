@@ -55,9 +55,11 @@ public class IslandInteractionManager : MonoBehaviour
     public TMP_Text tradeLeftText;
     public TMP_InputField inputRequest;
     public TMP_InputField inputDemand;
-    // public TMP_Dropdown tradeTypeDropdown;
-    public TMP_Dropdown requestTypeDropdown;
-    public TMP_Dropdown paymentTypeDropdown;
+    public TMP_Text demandText;
+    public TMP_Text requestText;
+    int demandTypeValue;
+    int requestTypeValue;
+
     int demandedValue;
     int requestedValue;
     CivManager.Type paymentType;
@@ -102,9 +104,6 @@ public class IslandInteractionManager : MonoBehaviour
     void Start() 
     {
         inputRequest.onValueChanged.AddListener(delegate{InputCheckOffer();});
-        // tradeTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckTradeType();});
-        requestTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckRequest();});
-        paymentTypeDropdown.onValueChanged.AddListener(delegate{DropdownCheckDemand();});
     }
 
     public void InteractableObjectInsert(InteractableObjects interactable)
@@ -569,30 +568,53 @@ public class IslandInteractionManager : MonoBehaviour
             inputDemand.text = demandedValue.ToString();
         }
         
-        void DropdownCheckRequest()
+        void DropdownCheckRequest(int value)
         {
-            switch (requestTypeDropdown.value)
+            requestTypeValue += value;
+            if(requestTypeValue < 0)
+            {
+                requestTypeValue = 2;
+            }
+            else if(requestTypeValue > 2)
+            {
+                requestTypeValue = 0;
+            }
+
+            switch (requestTypeValue)
             {
                 case 0:
                 //mats
                 requestedType = CivManager.Type.Mats;
+                requestText.text = "Materials";
                 break;
 
                 case 1:
                 //food
                 requestedType = CivManager.Type.Food;
+                requestText.text = "Food";
                 break;
 
                 case 2:
                 //money
                 requestedType = CivManager.Type.Money;
+                requestText.text = "Money";
                 break;
             }
             InputCheckOffer();
         }
-        void DropdownCheckDemand()
+        void DropdownCheckDemand(int value)
         {
-            switch (paymentTypeDropdown.value)
+            demandTypeValue += value;
+            if(demandTypeValue < 0)
+            {
+                demandTypeValue = 2;
+            }
+            else if(demandTypeValue > 2)
+            {
+                demandTypeValue = 0;
+            }
+
+            switch (demandTypeValue)
             {
                 case 0:
                 //mats
