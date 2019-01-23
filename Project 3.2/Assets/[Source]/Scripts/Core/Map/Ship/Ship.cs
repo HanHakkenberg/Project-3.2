@@ -5,13 +5,14 @@ using UnityEngine.AI;
 
 public class Ship : MonoBehaviour {
     [SerializeField] GameObject arrow;
+    [SerializeField] GameEvent disableArrows;
     [SerializeField] TransformReference currentSelected;
     [SerializeField] TransformReference currentCamera;
 
     [Header("Path")]
     bool stopIt = false;
     [SerializeField] int lineWith;
-    List<Transform> myPath = new List<Transform>();
+    [HideInInspector] public List<Transform> myPath = new List<Transform>();
     [SerializeField] float pathSide = 5;
 
     [Header("Spotting")]
@@ -52,6 +53,7 @@ public class Ship : MonoBehaviour {
 
     void OnMouseDown() {
         if (!Input.GetButton("Waypoint Interact")) {
+            disableArrows.Raise();
             arrow.SetActive(true);
             currentSelected.Value = transform;
             StartCoroutine(PathUpdate());
@@ -216,5 +218,9 @@ public class Ship : MonoBehaviour {
 
             waypointLines.SetPosition(waypointLines.positionCount - 1, myPath[myPath.Count - 1].position);
         }
+    }
+
+    public void SetDestinationn(Transform myTrans) {
+        myAgent.SetDestination(myTrans.position);
     }
 }

@@ -26,6 +26,9 @@ public class Waypoint : MonoBehaviour {
         if (myShip.transform == currentlySelected.Value && Input.GetButton("Waypoint Interact") && Input.GetButton("Fire1") && Physics.Raycast(currentCamera.Value.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition), out rayhit, Waypointlayermask.Value) && rayhit.collider.CompareTag("Map")) {
             myCollider.enabled = false;
             transform.position = rayhit.point + new Vector3(0, 0.1f);
+            if (myShip.myPath[0] == transform) {
+                myShip.SetDestinationn(transform);
+            }
         }
 
         myCollider.enabled = true;
