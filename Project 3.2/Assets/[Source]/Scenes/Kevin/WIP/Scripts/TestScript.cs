@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    void Start()
+    public float attitude;
+
+    void Start() 
     {
-        Invoke("AddValue", 2);
-        Invoke("RemoveValue", 5);
+        UpdateIsland();
     }
 
-    void Update()
+    void UpdateIsland()
     {
-        
-    }
-
-    void AddValue()
-    {
-        print("Adding value");
-        CivManager.instance.AddIncome(100,CivManager.Type.Food);
-        CivManager.instance.AddIncome(1,CivManager.Type.Stability);
-    }
-
-    void RemoveValue()
-    {
-        print("Removing value");
-        CivManager.instance.RemoveIncome(100,CivManager.Type.Food);
+        if (attitude > 0)
+        {
+            float value = Mathf.Log(attitude, 2);
+            print(value);
+            attitude -= value;
+            if (attitude < 0)
+            {
+                attitude = 0;
+            }
+        }
+        else if(attitude < 0)
+        {
+            attitude = Mathf.Abs(attitude);
+            float value = Mathf.Log(attitude, 2);
+            print(value);
+            attitude *= -1;
+            attitude += value;
+            if (attitude > 0)
+            {
+                attitude = 0;
+            }
+        }
     }
 }

@@ -14,14 +14,73 @@ public class Island : InteractableObjects {
 
     void Start() {
         RandomizeIsland();
+        GameManager.longGameplayTick += UpdateIsland;
     }
 
-    void UpdateIsland() {
-        if (attitude > 0) {
-            float value = Mathf.Log(attitude, 10);
-            attitude -= value;
-            if (attitude < 0) {
-                attitude = 0;
+    void UpdateIsland() 
+    {
+        if (interactionState == InteractionState.Settled)
+        {
+            if (!looted)
+            {
+                //attitude code
+                if (attitude > 0)
+                {
+                    if (attitude <= 5)
+                    {
+                        attitude = 0;
+                    }
+                    else
+                    {
+                        float value = Mathf.Log(attitude, 2);
+                        print(value);
+                        value *= -1;
+                        UpdateAttitude(value);
+                        if (attitude < 0)
+                        {
+                            attitude = 0;
+                        }
+                    }
+                }
+                else if(attitude < 0)
+                {
+                    if (attitude >= -5)
+                    {
+                        attitude = 0;
+                    }
+                    else
+                    {
+                        attitude = Mathf.Abs(attitude);
+                        float value = Mathf.Log(attitude, 2);
+                        print(value);
+                        attitude *= -1;
+                        UpdateAttitude(value);
+                        if (attitude > 0)
+                        {
+                            attitude = 0;
+                        }   
+                    }
+                }
+                //tradeleft code
+                if (amountTraded != 0)
+                {
+                    amountTraded -= 10;
+                }
+            }
+            else
+            {
+                if (recoveryTimer != 0)
+                {
+                    recoveryTimer -= 1;
+                }
+                else
+                {
+                    looted = false;
+                    if (IslandInteractionManager.instance.activeIsland == this)
+                    {
+                        IslandInteractionManager.instance.ToggleInteractionPannels(this);
+                    }
+                }
             }
         }
     }
@@ -58,6 +117,7 @@ public class Island : InteractableObjects {
     /// <param name="value">The value added to the current attitude</param>
     public void UpdateAttitude(float value) {
         attitude += value;
+        attitude = Mathf.Floor(attitude);
         attitude = Mathf.Clamp(attitude, -100, 100);
         int trading = Mathf.FloorToInt(baseTrading + attitude / 2);
         maxTrading = trading;

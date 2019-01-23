@@ -15,8 +15,8 @@ public class LockInteractions : MonoBehaviour
     public Sprite lockStatus;
     public Sprite locked;
     public Sprite unlocked;
-    
-    
+    public AudioSource soundClick;
+
 
     void Start()
     {
@@ -42,8 +42,13 @@ public class LockInteractions : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (!isActive)
+        {
+            soundClick.Play();
+        }
         isActive = true;
         selectionPanel.SetActive(true);
+        
     }
 
     public void TurnOffActive()

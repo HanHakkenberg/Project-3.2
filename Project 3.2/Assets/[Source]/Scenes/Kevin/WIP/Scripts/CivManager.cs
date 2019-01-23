@@ -58,6 +58,7 @@ public class CivManager : MonoBehaviour
    [SerializeField]
    private float repeatTime;
    private int foodStep;
+   int gameOverTick;
    #endregion
 
    void Awake() 
@@ -73,6 +74,7 @@ public class CivManager : MonoBehaviour
         }
         GameManager.shortGameplayTick += ResourceUseOverTime;
         GameManager.longGameplayTick += ResourceUseOverTimeVariableUpdate;
+        GameManager.longGameplayTick += CheckGameover;
    }
    void Start() 
    {
@@ -235,6 +237,28 @@ public class CivManager : MonoBehaviour
          default:
             stabilityModifier = 1;
          break;
+      }
+   }
+
+   public void CheckGameover()
+   {
+      if (stability <= -2 || food <= 0)
+      {
+         if (gameOverTick == 3)
+         {
+             GameManager.instance.GameOver();
+         }
+         else
+         {
+            gameOverTick += 1;
+         }
+      }
+      else
+      {
+         if (gameOverTick != 0)
+         {
+            gameOverTick = 0;
+         }
       }
    }
 

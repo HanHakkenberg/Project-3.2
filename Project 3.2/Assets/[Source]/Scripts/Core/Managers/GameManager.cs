@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -86,5 +87,29 @@ public class GameManager : MonoBehaviour
             longTime = 0;
             longGameplayTick();
         }
+    }
+
+    public void ChangeScene(int i)
+	{
+        SceneManager.LoadScene(i);
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+    }
+
+    public void GameOver()
+    {
+
+    }
+
+    public void GameWon()
+    {
+
     }
 }
