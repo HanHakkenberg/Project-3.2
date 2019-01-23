@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class InteractableObjects : MonoBehaviour
-{
-    public enum InteractionState
-    {
+public abstract class InteractableObjects : MonoBehaviour {
+    public enum InteractionState {
         Unsettled,
         Settled,
         LootSite
@@ -13,14 +11,15 @@ public abstract class InteractableObjects : MonoBehaviour
     public bool explored;
     public bool looted;
     public InteractionState interactionState;
+    [SerializeField] GameObject arrow;
 
     public bool canInteract = false;
     [SerializeField] TransformReference currentSelected;
-    void OnMouseDown() 
-    {
+    void OnMouseDown() {
         if (!Input.GetButton("Waypoint Interact") && Input.GetButtonDown("Fire1")) {
             currentSelected.Value = transform;
             InsertInteractionManager();
+            arrow.SetActive(true);
         }
     }
     public abstract void InsertInteractionManager();

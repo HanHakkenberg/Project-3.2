@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Island : InteractableObjects {
 
-    
     public static Ship ship;
     int baseTrading = 100;
     public int maxTrading { get; private set; }
@@ -13,32 +12,26 @@ public class Island : InteractableObjects {
     public CivManager.Type rExcess;
     public float attitude = 0;
 
-    void Start() 
-    {
+    void Start() {
         RandomizeIsland();
     }
 
-    void UpdateIsland()
-    {
-        if (attitude > 0)
-        {
-            float value = Mathf.Log(attitude,10);
+    void UpdateIsland() {
+        if (attitude > 0) {
+            float value = Mathf.Log(attitude, 10);
             attitude -= value;
-            if (attitude < 0)
-            {
+            if (attitude < 0) {
                 attitude = 0;
             }
         }
     }
 
-    public override void InsertInteractionManager()
-    {
+    public override void InsertInteractionManager() {
         print("Klicked On island");
         IslandInteractionManager.instance.InteractableObjectInsert(this);
     }
 
-    void RandomizeIsland() 
-    {
+    void RandomizeIsland() {
         int demand = Random.Range(0, 3);
         int excess = Random.Range(0, 3);
         while (demand == excess) {
@@ -48,15 +41,13 @@ public class Island : InteractableObjects {
         rDemand = (CivManager.Type)demand;
         rExcess = (CivManager.Type)excess;
 
-        UpdateAttitude(Random.Range(-25,51));
+        UpdateAttitude(Random.Range(-25, 51));
 
-        int interactionTypeVar = Random.Range(0,11);
-        if(interactionTypeVar > 6)
-        {
+        int interactionTypeVar = Random.Range(0, 11);
+        if (interactionTypeVar > 6) {
             interactionState = InteractionState.Unsettled;
         }
-        else
-        {
+        else {
             interactionState = InteractionState.Settled;
         }
     }
@@ -72,4 +63,3 @@ public class Island : InteractableObjects {
         maxTrading = trading;
     }
 }
-
