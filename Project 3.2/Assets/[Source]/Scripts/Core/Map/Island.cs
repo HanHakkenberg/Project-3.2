@@ -18,6 +18,19 @@ public class Island : InteractableObjects {
         RandomizeIsland();
     }
 
+    void UpdateIsland()
+    {
+        if (attitude > 0)
+        {
+            float value = Mathf.Log(attitude,10);
+            attitude -= value;
+            if (attitude < 0)
+            {
+                attitude = 0;
+            }
+        }
+    }
+
     public override void InsertInteractionManager()
     {
         print("Klicked On island");
@@ -44,7 +57,7 @@ public class Island : InteractableObjects {
         }
         else
         {
-            interactionState = InteractionState.Settled;            
+            interactionState = InteractionState.Settled;
         }
     }
 

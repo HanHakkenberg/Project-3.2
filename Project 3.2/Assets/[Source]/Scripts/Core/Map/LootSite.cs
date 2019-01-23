@@ -14,7 +14,7 @@ public class LootSite : InteractableObjects
 
     void RandomizeLootSite()
     {
-        int type = Random.Range(0, 3);
+        int type = Random.Range(0, 4);
         lootType = (CivManager.Type)type;
         interactionState = InteractionState.LootSite;
     }
