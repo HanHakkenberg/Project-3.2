@@ -152,10 +152,10 @@ public class CameraMovement : MonoBehaviour {
     //Calculates The Zoom For The Camera
     void UpdateCamZoom() {
         if (Input.GetAxis("Mouse ScrollWheel") != 0) {
-            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxisRaw("Mouse ScrollWheel") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
         }
         else {
-            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxis("Mouse ScrollWheel Keys") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
+            cameraTarget.localPosition = new Vector3(0, Mathf.Clamp(cameraTarget.localPosition.y - Input.GetAxisRaw("Mouse ScrollWheel Keys") * Time.unscaledDeltaTime * zoomSpeed, minZoom, maxZoom), 0);
         }
     }
     #endregion
