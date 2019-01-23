@@ -210,15 +210,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1289029809, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
-      propertyPath: allBuildings.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: resourceImages.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7798316207001215514, guid: 1740b60f51c6b8141adec07a8d1afb58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -349,6 +340,11 @@ PrefabInstance:
       objectReference: {fileID: 2086892765}
     - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
         type: 3}
+      propertyPath: confirmButton
+      value: 
+      objectReference: {fileID: 508103084}
+    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
+        type: 3}
       propertyPath: demandPic
       value: 
       objectReference: {fileID: 1938441510}
@@ -394,6 +390,16 @@ PrefabInstance:
       objectReference: {fileID: 1642042400}
     - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
         type: 3}
+      propertyPath: demandText
+      value: 
+      objectReference: {fileID: 9137371}
+    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
+        type: 3}
+      propertyPath: requestText
+      value: 
+      objectReference: {fileID: 1938284595}
+    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
+        type: 3}
       propertyPath: foodText
       value: 
       objectReference: {fileID: 408148404}
@@ -409,9 +415,22 @@ PrefabInstance:
       objectReference: {fileID: 1354516198}
     - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
         type: 3}
+      propertyPath: peopleText
+      value: 
+      objectReference: {fileID: 276551847}
+    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
+        type: 3}
       propertyPath: pillagePannel
       value: 
       objectReference: {fileID: 217174713}
+    - target: {fileID: 564718646, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
+      propertyPath: WonLosPannel
+      value: 
+      objectReference: {fileID: 7847125256788818247}
+    - target: {fileID: 564718646, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
+      propertyPath: GameOverWonText
+      value: 
+      objectReference: {fileID: 391756867841382048}
     - target: {fileID: 1289029810, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
       propertyPath: mainCamera
       value: 
@@ -446,56 +465,6 @@ PrefabInstance:
       propertyPath: speed
       value: 
       objectReference: {fileID: 1561862150}
-    - target: {fileID: 1289029809, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
-      propertyPath: buildingNum
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: requestText
-      value: 
-      objectReference: {fileID: 1938284595}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: demandText
-      value: 
-      objectReference: {fileID: 9137371}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: confirmButton
-      value: 
-      objectReference: {fileID: 508103084}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: resourceImages.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300006, guid: 0640e648b4991464cb3ac376eea5ab19,
-        type: 3}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: resourceImages.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300004, guid: 0640e648b4991464cb3ac376eea5ab19,
-        type: 3}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: resourceImages.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300008, guid: 0640e648b4991464cb3ac376eea5ab19,
-        type: 3}
-    - target: {fileID: 8758200417032881162, guid: 1740b60f51c6b8141adec07a8d1afb58,
-        type: 3}
-      propertyPath: peopleText
-      value: 
-      objectReference: {fileID: 276551847}
-    - target: {fileID: 564718646, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
-      propertyPath: WonLosPannel
-      value: 
-      objectReference: {fileID: 7847125256788818247}
-    - target: {fileID: 564718646, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
-      propertyPath: GameOverWonText
-      value: 
-      objectReference: {fileID: 391756867841382048}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
 --- !u!1 &53632061
@@ -37679,6 +37648,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425272295181162179, guid: 1ef45ca96aae27b42bb7454310e7222d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -99.99951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ef45ca96aae27b42bb7454310e7222d, type: 3}
