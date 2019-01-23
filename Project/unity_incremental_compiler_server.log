@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  (0,0): [01-21-2019 01:11:32.317 ] Unity incremental compiler server
  (0,0): [01-21-2019 01:11:32.485 ] watchdog active on pid: 8816
  (0,0): [01/21/2019 03:32:58.982 PM] Assembly-CSharp.dll compiling...
@@ -110,3 +111,19 @@
  (0,0): [01/23/2019 10:44:51.017 AM] Assembly-CSharp-Editor.dll compilation finished in 97ms  source files re-parsed: 0 metadata reloaded: 1
  (0,0): [01/23/2019 10:44:51.028 AM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 10144
  (0,0): [01/23/2019 10:44:51.039 AM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 10144
+=======
+ (0,0): [01-23-2019 10:08:11.349 ] Unity incremental compiler server
+ (0,0): [01-23-2019 10:08:11.494 ] watchdog active on pid: 16172
+ (0,0): [01-23-2019 10:08:15.391 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 16172
+ (0,0): [01-23-2019 10:08:15.405 ] Assembly-CSharp.dll compiling...
+ (0,0): [01-23-2019 10:08:17.559 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [01-23-2019 10:08:17.614 ] Assembly-CSharp.dll compilation finished in 2208ms  source files re-parsed: 122 metadata reloaded: 208
+ (0,0): [01-23-2019 10:08:17.626 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 16172
+ (0,0): [01-23-2019 10:08:18.131 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 16172
+ (0,0): [01-23-2019 10:08:18.143 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [01-23-2019 10:08:18.310 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [01-23-2019 10:08:18.324 ] Assembly-CSharp-Editor.dll compilation finished in 181ms  source files re-parsed: 20 metadata reloaded: 139
+ (0,0): [01-23-2019 10:08:18.336 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 16172
+ (0,0): [01-23-2019 10:13:13.581 ] Compiler cache size is now 24,29 MB
+ (0,0): [01-23-2019 10:14:19.845 ] watchdog triggered an exit
+>>>>>>> 033c0a8a8da3046a8e0357a94ba72e01f7b70e6c
