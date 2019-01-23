@@ -19,6 +19,8 @@ public class EventOptions
 {
     [Tooltip("Text which will be shown on the button")]
     public string buttonText;
+    [Tooltip("Keep it on 0 if you dont want to trigger a SpecialEventFunction")]
+    public int specialEvent;
     public List<EventOptionsEffects> eventOptionsEffects = new List<EventOptionsEffects>();
 }
 

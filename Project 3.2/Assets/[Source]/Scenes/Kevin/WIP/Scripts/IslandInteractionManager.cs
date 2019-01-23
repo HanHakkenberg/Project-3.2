@@ -73,6 +73,8 @@ public class IslandInteractionManager : MonoBehaviour
     public TMP_Text foodText;
     public TMP_Text materialsText;
     public TMP_Text moneyText;
+    public TMP_Text peopleText;
+
     [SerializeField]
     GameObject pillagePannel;
     #endregion
@@ -398,6 +400,7 @@ public class IslandInteractionManager : MonoBehaviour
                 CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
             }
             activeIsland.looted = true;
+            activeIsland.recoveryTimer = 3;
         }
         else if (activeLootSite != null)
         {
@@ -419,6 +422,7 @@ public class IslandInteractionManager : MonoBehaviour
                 break;
             }
             activeLootSite.looted = true;
+            activeLootSite.recoveryTimer = 3;
         }
         DisableAllButtons();
         SwitchInteractionPanels(InteractionPannels.Pillage);

@@ -7,6 +7,7 @@ public class BuildSelection : MonoBehaviour
     public GameObject infoPanel;
     public GameObject spawnLoc;
     public LockInteractions _lockInteractions;
+    public AudioSource placementSound;
     public List<BuildingInfo> thisBuilding;
 
     SelectionInfo _selectionInfo;
@@ -62,6 +63,7 @@ public class BuildSelection : MonoBehaviour
             thisBuilding[0].buildingModel.SetActive(true);
 
             BuildingManager.instance.AddBuilding(thisBuilding);
+            placementSound.Play();
             Destroy(transform.root.gameObject);
         }
     }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +22,9 @@ public class GameManager : MonoBehaviour
     float dayTick;
     float shortTime;
     float longTime;
+
+    public GameObject WonLosPannel;
+    public TMP_Text GameOverWonText;
 
     public delegate void Tick();
     public static Tick shortGameplayTick;
@@ -86,5 +91,29 @@ public class GameManager : MonoBehaviour
             longTime = 0;
             longGameplayTick();
         }
+    }
+
+    public void ChangeScene(int i)
+	{
+        SceneManager.LoadScene(i);
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+    }
+
+    public void GameOver()
+    {
+        GameOverWonText.text = "You lost the game";
+    }
+
+    public void GameWon()
+    {
+        GameOverWonText.text = "You won the game";
     }
 }

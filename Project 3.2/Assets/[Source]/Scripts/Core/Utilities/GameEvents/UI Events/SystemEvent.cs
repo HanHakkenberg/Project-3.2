@@ -14,4 +14,8 @@ public class SystemEvent : MonoBehaviour {
     public void ChangeScene(int newScene) {
         SceneManager.LoadScene(newScene);
     }
+
+    public void LoadMain(){
+        SceneManager.LoadScene("Main");
+    }
 }

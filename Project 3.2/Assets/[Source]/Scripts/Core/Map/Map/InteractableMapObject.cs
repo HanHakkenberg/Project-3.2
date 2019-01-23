@@ -10,11 +10,9 @@ public class InteractableMapObject : MonoBehaviour {
             spottedObject.SetActive(false);
             Collider[] detectedColliders = Physics.OverlapBox(waypointCheckCollider.center + transform.position, waypointCheckCollider.bounds.extents * 2 + new Vector3(0,50,0), spottedObject.transform.rotation, myLayerMask);
 
-            Debug.Log(detectedColliders.Length);
-
             for (int i = 0; i < detectedColliders.Length; i++) {
                 detectedColliders[i].gameObject.SetActive(false);
-            } 
+            }
         }
     }
 

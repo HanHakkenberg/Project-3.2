@@ -10,6 +10,8 @@ public abstract class InteractableObjects : MonoBehaviour {
     }
     public bool explored;
     public bool looted;
+    public int recoveryTimer;
+
     public InteractionState interactionState;
     [SerializeField] GameObject arrow;
 
