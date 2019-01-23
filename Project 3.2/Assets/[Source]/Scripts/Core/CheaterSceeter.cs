@@ -24,6 +24,10 @@ public class CheaterSceeter : MonoBehaviour
         {
             TriggerEventCheat();
         }
+        // if(Input.GetKeyDown(KeyCode.Keypad0))
+        // {
+        //     IncreaseTime();
+        // }
     }
 
     void AddResourcesCheat()
@@ -44,4 +48,9 @@ public class CheaterSceeter : MonoBehaviour
     {
         EventManager.instance.TriggerRandomEvent();
     }
+
+    // void IncreaseTime()
+    // {
+    //     TimeManager.instance.timerValue += 60;
+    // }
 }

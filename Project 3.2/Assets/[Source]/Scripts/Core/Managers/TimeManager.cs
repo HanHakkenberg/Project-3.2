@@ -9,7 +9,7 @@ public class TimeManager : MonoBehaviour
 
     #region Clock
     public TMP_Text TimerText;
-    float timerValue;
+    public float timerValue;
     int hours = 12;
     int days;
     float speedModifier;
