@@ -167,6 +167,15 @@ public class EventManager : MonoBehaviour
         eventText.text = "EventText";
         eventTitle.text = "Titel";
         TimeManager.instance.PauseGameSpeed();
-        activeEvent = null; 
+        activeEvent = null;
+        WipeButtons();
+    }
+
+    void WipeButtons()
+    {
+        foreach (Transform child in buttonLocation)
+        {
+            Destroy(child.gameObject);
+        }
     }
 }
