@@ -116,17 +116,24 @@ public class EventManager : MonoBehaviour
             newButton.transform.SetParent(buttonLocation);
             newButton.GetComponentInChildren<TMP_Text>().text = curentEvent.eventOptions[i].buttonText;
 
-            List<string> effectText = new List<string>();
-            foreach (EventOptionsEffects effect in curentEvent.eventOptions[i].eventOptionsEffects)
+            if(curentEvent.eventOptions.Count != 0)
             {
-                effectText.Add(effect.resoureType.ToString() + " " + effect.Value.ToString() + ". \n");
+                List<string> effectText = new List<string>();
+                foreach (EventOptionsEffects effect in curentEvent.eventOptions[i].eventOptionsEffects)
+                {
+                    effectText.Add(effect.resoureType.ToString() + " " + effect.Value.ToString() + ". \n");
+                }
+                string formatedText = "";
+                foreach (string text in effectText)
+                {
+                    formatedText += text;
+                }
+                newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = formatedText;
             }
-            string formatedText = "";
-            foreach (string text in effectText)
+            if(curentEvent.eventOptions[i].specialEvent != 0)
             {
-                formatedText += text;
+                newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = "This will activate a special event";
             }
-            newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = formatedText;
             t = i;
 
 
@@ -150,6 +157,11 @@ public class EventManager : MonoBehaviour
             {
                 CivManager.instance.RemoveIncome(effects.Value,effects.resoureType);
             }
+        }
+
+        if (option.specialEvent != 0)
+        {
+            SpecialEvents.SpecialEventsEffects(option.specialEvent);
         }
         eventPannel.SetActive(false);
         eventText.text = "EventText";
