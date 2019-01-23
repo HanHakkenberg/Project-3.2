@@ -84,7 +84,7 @@ public class EventManager : MonoBehaviour
     /// <summary>
     /// Call this function to have a chance of triggering a random event
     /// </summary>
-    void TriggerRandomEvent()
+    public void TriggerRandomEvent()
     {
         // Using the Chance int combined with the if statement gives the random event a chance to trigger instead of a guarantee
         int Chance = Random.Range(1,11);

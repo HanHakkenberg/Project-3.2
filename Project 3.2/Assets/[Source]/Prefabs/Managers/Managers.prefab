@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce63c6187d6f2149bd227316f97bc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedPeople: 0
   repeatTime: 60
 --- !u!1 &410427321
 GameObject:
@@ -145,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lengthOfDay: 5
   shortTick: 1
+  WonLosPannel: {fileID: 0}
+  GameOverWonText: {fileID: 0}
 --- !u!1 &582269676
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,10 +191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da15ceaeca134544a962c08eeaf7396e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventChains: []
   randomEventsList:
   - {fileID: 11400000, guid: 1f6c1b849ae08504eb4b52fcca6205bf, type: 2}
-  eventPannel: {fileID: 0}
   button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
+  eventPannel: {fileID: 0}
   buttonLocation: {fileID: 0}
   eventText: {fileID: 0}
   eventTitle: {fileID: 0}
@@ -306,6 +310,7 @@ MonoBehaviour:
   allBuildingMats: 0
   allBuildingMoney: 0
   allBuildingCitizens: 0
+  buildingNum: -1
   allBuildings: []
 --- !u!4 &1265438722457505905 stripped
 Transform:
@@ -322,6 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7798316207001215514}
+  - component: {fileID: 1602439106}
   m_Layer: 11
   m_Name: Managers
   m_TagString: Untagged
@@ -352,6 +358,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602439106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062647404569285273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e0161b9c3807c43bd04afba8b5cc74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3949933354723128825
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,10 +467,11 @@ MonoBehaviour:
   exploreButton: {fileID: 0}
   colonizeButton: {fileID: 0}
   backButton: {fileID: 0}
+  confirmButton: {fileID: 0}
   resourceImages:
-  - {fileID: 21300000, guid: 9054c5dbba10edc4a9329b5ec6160fce, type: 3}
-  - {fileID: 21300000, guid: 1b2ccbc10c930aa4ebea3d597db1bed0, type: 3}
-  - {fileID: 21300000, guid: 0bf715ee7c04882449d258c165fc3a21, type: 3}
+  - {fileID: 21300006, guid: 0640e648b4991464cb3ac376eea5ab19, type: 3}
+  - {fileID: 21300004, guid: 0640e648b4991464cb3ac376eea5ab19, type: 3}
+  - {fileID: 21300008, guid: 0640e648b4991464cb3ac376eea5ab19, type: 3}
   demandPic: {fileID: 0}
   excessPic: {fileID: 0}
   attitudeParent: {fileID: 0}
@@ -462,11 +481,12 @@ MonoBehaviour:
   tradeLeftText: {fileID: 0}
   inputRequest: {fileID: 0}
   inputDemand: {fileID: 0}
-  requestTypeDropdown: {fileID: 0}
-  paymentTypeDropdown: {fileID: 0}
+  demandText: {fileID: 0}
+  requestText: {fileID: 0}
   foodText: {fileID: 0}
   materialsText: {fileID: 0}
   moneyText: {fileID: 0}
+  peopleText: {fileID: 0}
   pillagePannel: {fileID: 0}
 --- !u!114 &962203927
 MonoBehaviour:
