@@ -12,8 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
   m_Name: Large crop yields
   m_EditorClassIdentifier: 
-  eventOptions: []
-  Title: 
+  eventOptions:
+  - buttonText: Store it!
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 2
+      Value: 100
+  - buttonText: Give it to the poeple
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 4
+      Value: 1
+  - buttonText: Sell it !
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 1
+      Value: 50
+  Title: Large crop yields
   Message: 'God be praised!
 
-    The farmers just '
+    The head farmer just reported in whit the news that oure farms have masive income'

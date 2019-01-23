@@ -210,6 +210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 582269678, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
+      propertyPath: randomEventsList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7798316207001215514, guid: 1740b60f51c6b8141adec07a8d1afb58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -465,6 +469,16 @@ PrefabInstance:
       propertyPath: speed
       value: 
       objectReference: {fileID: 1561862150}
+    - target: {fileID: 582269678, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
+      propertyPath: randomEventsList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 54654ba1897c57c4d8c52d69270672ad,
+        type: 2}
+    - target: {fileID: 582269678, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
+      propertyPath: randomEventsList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: fca6a84bbbf239940835758390050d68,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1740b60f51c6b8141adec07a8d1afb58, type: 3}
 --- !u!1 &53632061
