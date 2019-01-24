@@ -12,6 +12,11 @@ public class LootSite : InteractableObjects
         RandomizeLootSite();
     }
 
+    void Update() 
+    {
+        KillSelf();
+    }
+
     void RandomizeLootSite()
     {
         int type = Random.Range(0, 4);
@@ -31,6 +36,10 @@ public class LootSite : InteractableObjects
 
     public void KillSelf()
     {
-        Destroy(this.gameObject);
+        if (transform.parent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("End"))
+        {
+            Destroy(transform.root.gameObject);
+            print("ded");
+        }
     }
 }

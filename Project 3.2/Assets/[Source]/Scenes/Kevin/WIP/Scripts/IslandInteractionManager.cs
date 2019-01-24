@@ -121,14 +121,18 @@ public class IslandInteractionManager : MonoBehaviour
                 activeIsland = interactable as Island;
                 SetIslandVariables();
                 ToggleInteractionPannels(activeIsland);
+                UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
             }
             if(interactable.GetType() == typeof(LootSite))
             {
                 activeLootSite = interactable as LootSite;
-                ToggleInteractionPannels(activeLootSite);
+                if(!activeLootSite.looted)
+                {
+                    ToggleInteractionPannels(activeLootSite);
+                    UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+                }
             }
             UpdateTradeResourceUI();
-            UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         }
     }
 
@@ -297,7 +301,10 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 pillagePannel.SetActive(true);
                 activePannel = pillagePannel;
-                backButton.SetActive(true);
+                if(activeLootSite == null)
+                {
+                    backButton.SetActive(true);
+                }
             }
             else
             {
@@ -334,6 +341,13 @@ public class IslandInteractionManager : MonoBehaviour
         else if(activePannel == pillagePannel)
         {
             SwitchInteractionPanels(InteractionPannels.Pillage);
+        }
+        if(activeLootSite != null)
+        {
+            if(activeLootSite.looted)
+            {
+                activeLootSite.Sink();
+            }
         }
         
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
@@ -449,10 +463,6 @@ public class IslandInteractionManager : MonoBehaviour
         moneyText.text = moneyVar.ToString();
         peopleText.text = peopleVar.ToString();
         islandStatusText.text = "You pillaged the island";
-        if(activeLootSite != null)
-        {
-            activeLootSite.Sink();
-        }
     }
 
     public void Explore()
