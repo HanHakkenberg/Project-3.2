@@ -449,6 +449,10 @@ public class IslandInteractionManager : MonoBehaviour
         moneyText.text = moneyVar.ToString();
         peopleText.text = peopleVar.ToString();
         islandStatusText.text = "You pillaged the island";
+        if(activeLootSite != null)
+        {
+            activeLootSite.Sink();
+        }
     }
 
     public void Explore()

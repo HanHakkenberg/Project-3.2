@@ -23,4 +23,14 @@ public class LootSite : InteractableObjects
     {
         IslandInteractionManager.instance.InteractableObjectInsert(this);
     }
+
+    public void Sink()
+    {
+        transform.parent.GetComponent<Animator>().SetTrigger("Sink");
+    }
+
+    public void KillSelf()
+    {
+        Destroy(this.gameObject);
+    }
 }
