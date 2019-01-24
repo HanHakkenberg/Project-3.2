@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lengthOfDay: 5
   shortTick: 1
+  longTime: 0
   WonLosPannel: {fileID: 0}
   GameOverWonText: {fileID: 0}
 --- !u!1 &582269676
@@ -191,9 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da15ceaeca134544a962c08eeaf7396e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventChains: []
+  eventChains:
+  - {fileID: 11400000, guid: 0a7c6b5f91a37d949b15b49acd36e386, type: 2}
   randomEventsList:
-  - {fileID: 11400000, guid: 1f6c1b849ae08504eb4b52fcca6205bf, type: 2}
+  - {fileID: 11400000, guid: 54654ba1897c57c4d8c52d69270672ad, type: 2}
+  - {fileID: 11400000, guid: fca6a84bbbf239940835758390050d68, type: 2}
   button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
   eventPannel: {fileID: 0}
   buttonLocation: {fileID: 0}
@@ -414,6 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 0}
+  timerValue: 0
   speed: {fileID: 0}
   maxSpeed: 5
 --- !u!1 &8579285812752928038
@@ -460,7 +464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19520ecf8ed67b14e9af0cc57c5e707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastActiveIsland: {fileID: 0}
+  activeIsland: {fileID: 0}
+  lastInteractableObjects: {fileID: 0}
   activeLootSite: {fileID: 0}
   tradeButton: {fileID: 0}
   pillageButton: {fileID: 0}

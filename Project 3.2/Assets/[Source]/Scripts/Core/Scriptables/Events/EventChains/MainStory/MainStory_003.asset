@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
+  m_Name: MainStory_003
+  m_EditorClassIdentifier: 
+  eventOptions:
+  - buttonText: Save anyone we can
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 3
+      Value: 50
+  - buttonText: We cant save them all take help part of them and send the rest of
+      whit some gold
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 3
+      Value: 30
+    - resoureType: 4
+      Value: -1
+  Title: Message across the ocean
+  Message: We have already accepted this island as our new home but without help from
+    the empire we might get in trouble. We will send a message through the merchant
+    that visit our island. In the meantime we need to deal with the incoming refugees.
