@@ -1416,9 +1416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1180247109}
-  speed: 1
+  speed: 5
   fadeIn: 0
-  audio: {fileID: 0}
+  audio: {fileID: 1180247111}
 --- !u!1 &1198770702
 GameObject:
   m_ObjectHideFlags: 0
