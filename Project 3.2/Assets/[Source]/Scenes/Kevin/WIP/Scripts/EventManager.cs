@@ -48,8 +48,18 @@ public class EventManager : MonoBehaviour
         ToolTipPopup.toolTip = ToolTipPopup.toolTipPannel.transform;  
         ToolTipPopup.toolTipText = ToolTipPopup.toolTip.GetComponentInChildren<TMP_Text>();
         ToolTipPopup.toolTipPannel.SetActive(false);
+        StartEventchain(0);
     }
 
+    void StartEventchain(int index)
+    {
+        if(activeChain == null)
+        {
+            activeChain = eventChains[index];
+            ProgressEventChain();
+        }
+    }
+    
     public void TriggerEventRelatedFunctions()
     {
         ProgressEventChain();
@@ -85,14 +95,17 @@ public class EventManager : MonoBehaviour
     /// </summary>
     public void TriggerRandomEvent()
     {
-        // Using the Chance int combined with the if statement gives the random event a chance to trigger instead of a guarantee
-        int Chance = Random.Range(1,11);
-        
-        if (Chance > 5)
+        if (activeEvent == null)
         {
-            int eventIndex = Random.Range(0,randomEventsList.Count);
-            activeEvent = randomEventsList[eventIndex];
-            SetEvent(activeEvent);
+            // Using the Chance int combined with the if statement gives the random event a chance to trigger instead of a guarantee
+            int Chance = Random.Range(1,11);
+            
+            if (Chance > 5)
+            {
+                int eventIndex = Random.Range(0,randomEventsList.Count);
+                activeEvent = randomEventsList[eventIndex];
+                SetEvent(activeEvent);
+            }
         }
     }
 
@@ -102,43 +115,46 @@ public class EventManager : MonoBehaviour
     /// <param name="curentEvent">The event you want to activate</param>
     public void SetEvent(ScriptableEvent curentEvent)
     {
-        //Setup pannel
-        eventPannel.SetActive(true);
-        eventText.text = curentEvent.Message;
-        eventTitle.text = curentEvent.Title;
-
-        //Create buttons
-        for (int i = 0; i < curentEvent.eventOptions.Count; i++)
+        if (activeEvent == null)
         {
-            int t;
-            GameObject newButton = Instantiate(button,buttonLocation.position,Quaternion.identity);
-            newButton.transform.SetParent(buttonLocation);
-            newButton.GetComponentInChildren<TMP_Text>().text = curentEvent.eventOptions[i].buttonText;
+            //Setup pannel
+            eventPannel.SetActive(true);
+            eventText.text = curentEvent.Message;
+            eventTitle.text = curentEvent.Title;
 
-            if(curentEvent.eventOptions.Count != 0)
+            //Create buttons
+            for (int i = 0; i < curentEvent.eventOptions.Count; i++)
             {
-                List<string> effectText = new List<string>();
-                foreach (EventOptionsEffects effect in curentEvent.eventOptions[i].eventOptionsEffects)
+                int t;
+                GameObject newButton = Instantiate(button,buttonLocation.position,Quaternion.identity);
+                newButton.transform.SetParent(buttonLocation);
+                newButton.GetComponentInChildren<TMP_Text>().text = curentEvent.eventOptions[i].buttonText;
+
+                if(curentEvent.eventOptions.Count != 0)
                 {
-                    effectText.Add(effect.resoureType.ToString() + " " + effect.Value.ToString() + ". \n");
+                    List<string> effectText = new List<string>();
+                    foreach (EventOptionsEffects effect in curentEvent.eventOptions[i].eventOptionsEffects)
+                    {
+                        effectText.Add(effect.resoureType.ToString() + " " + effect.Value.ToString() + ". \n");
+                    }
+                    string formatedText = "";
+                    foreach (string text in effectText)
+                    {
+                        formatedText += text;
+                    }
+                    newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = formatedText;
                 }
-                string formatedText = "";
-                foreach (string text in effectText)
+                if(curentEvent.eventOptions[i].specialEvent != 0)
                 {
-                    formatedText += text;
+                    newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = "This will activate a special event";
                 }
-                newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = formatedText;
-            }
-            if(curentEvent.eventOptions[i].specialEvent != 0)
-            {
-                newButton.GetComponentInChildren<ToolTipPopup>().toolTipString = "This will activate a special event";
-            }
-            t = i;
+                t = i;
 
 
-            newButton.GetComponent<Button>().onClick.AddListener(() => {ResolveEvent(t,curentEvent);});
+                newButton.GetComponent<Button>().onClick.AddListener(() => {ResolveEvent(t,curentEvent);});
+            }
+            TimeManager.instance.PauseGameSpeed();
         }
-        TimeManager.instance.PauseGameSpeed();
     }
 
     public void ResolveEvent(int optionInt, ScriptableEvent curentEvent) 
