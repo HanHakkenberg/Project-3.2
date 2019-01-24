@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public float shortTick;
     float dayTick;
     float shortTime;
-    float longTime;
+    public float longTime;
 
     public GameObject WonLosPannel;
     public TMP_Text GameOverWonText;
@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else if(instance != this)
         {
@@ -95,6 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(int i)
 	{
+        Time.timeScale = 1;
         SceneManager.LoadScene(i);
     }
 
@@ -109,11 +109,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        WonLosPannel.SetActive(true);
         GameOverWonText.text = "You lost the game";
     }
 
     public void GameWon()
     {
+        WonLosPannel.SetActive(true);
         GameOverWonText.text = "You won the game";
     }
 }

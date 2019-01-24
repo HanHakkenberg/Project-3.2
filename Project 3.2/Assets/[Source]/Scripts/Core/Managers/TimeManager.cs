@@ -26,13 +26,15 @@ public class TimeManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else if(instance != this)
         {
             Destroy(this.gameObject);
         }
         //speed mosifier = minutes in a real day / minutes in the games day
+    }
+    void Start() 
+    {
         speedModifier = 1440 / GameManager.instance.lengthOfDay;
     }
 

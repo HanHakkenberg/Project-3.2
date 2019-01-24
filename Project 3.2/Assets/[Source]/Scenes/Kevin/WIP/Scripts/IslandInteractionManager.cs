@@ -19,8 +19,9 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     public static IslandInteractionManager instance;
-    public Island activeIsland{ get; private set; }
-    public Island lastActiveIsland;
+    public Island activeIsland;
+    public InteractableObjects activeInteractableObjects{ get; private set; }
+    public InteractableObjects lastInteractableObjects;
     public LootSite activeLootSite;
     GameObject activePannel;
     TradeTypes tradeTypes;
@@ -91,17 +92,17 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     void Update() {
-        if(activeIsland != null && activeIsland.canInteract == true)
+        if(activeInteractableObjects != null && activeInteractableObjects.canInteract == true)
         {
-            if(activeIsland != lastActiveIsland)
+            if(activeInteractableObjects != lastInteractableObjects)
             {
-                lastActiveIsland = activeIsland;
-                ToggleInteractionPannels(activeIsland);
+                lastInteractableObjects = activeInteractableObjects;
+                ToggleInteractionPannels(activeInteractableObjects);
             }
         }
-        else if (activeIsland != null)
+        else if (activeInteractableObjects != null)
         {
-            ToggleInteractionPannels(activeIsland);            
+            ToggleInteractionPannels(activeInteractableObjects);            
         }
     }
 
@@ -112,6 +113,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void InteractableObjectInsert(InteractableObjects interactable)
     {
+        activeInteractableObjects = interactable;
         if(activeIsland == null && EventManager.instance.activeEvent == null)
         {
             if(interactable.GetType() == typeof(Island))
@@ -227,6 +229,14 @@ public class IslandInteractionManager : MonoBehaviour
         else
         {
             pillageButton.SetActive(true);
+            if(activeLootSite.canInteract)
+            {
+                pillageButton.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                pillageButton.GetComponent<Button>().interactable = false;
+            }
             islandStatusText.text = "It looks like there might be valuables here";
         }
     }
@@ -328,6 +338,8 @@ public class IslandInteractionManager : MonoBehaviour
         
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
         activeIsland = null;
+        activeLootSite = null;
+        activeInteractableObjects = null;
     }
 
     public void Back()

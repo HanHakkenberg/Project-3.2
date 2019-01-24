@@ -51,5 +51,6 @@ public class CheaterSceeter : MonoBehaviour
     void IncreaseTime()
     {
         TimeManager.instance.timerValue += 3600;
+        GameManager.instance.longTime += 12.5f;
     }
 }

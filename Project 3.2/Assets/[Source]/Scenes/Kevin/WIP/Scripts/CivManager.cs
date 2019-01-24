@@ -66,7 +66,6 @@ public class CivManager : MonoBehaviour
       if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else if(instance != this)
         {
@@ -203,6 +202,7 @@ public class CivManager : MonoBehaviour
                }
                if (people == 0)
                {
+                  print("ded");
                   GameManager.instance.GameOver();
                }
                UIManager.instance.RecourceUIPopup(toRemove,Type.People);
@@ -248,13 +248,11 @@ public class CivManager : MonoBehaviour
    {
       if (stability <= -2 || food <= 0)
       {
+         gameOverTick += 1;
          if (gameOverTick == 3)
          {
-             GameManager.instance.GameOver();
-         }
-         else
-         {
-            gameOverTick += 1;
+            print("OmegaDed");
+            GameManager.instance.GameOver();
          }
       }
       else
