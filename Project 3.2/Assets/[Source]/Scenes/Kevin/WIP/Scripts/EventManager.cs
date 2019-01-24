@@ -75,17 +75,17 @@ public class EventManager : MonoBehaviour
                 ticksTillEventChain -= 1;
             }
             else
-            {
-               SetEvent(activeChain.chainParts[chainEvent].eventPart);
-               if (chainEvent != activeChain.chainParts.Count - 1)
-               {
-                   chainEvent += 1;
-                   ticksTillEventChain = activeChain.chainParts[chainEvent].ticksTillTrigger;
-               }
-               else
-               {
-                   activeChain = null;
-               }
+            {            
+                SetEvent(activeChain.chainParts[chainEvent].eventPart);
+                if (chainEvent != activeChain.chainParts.Count - 1)
+                {
+                    chainEvent += 1;
+                    ticksTillEventChain = activeChain.chainParts[chainEvent].ticksTillTrigger;
+                }
+                else
+                {
+                    activeChain = null;
+                }
             }
         }
     }
@@ -103,8 +103,7 @@ public class EventManager : MonoBehaviour
             if (Chance > 5)
             {
                 int eventIndex = Random.Range(0,randomEventsList.Count);
-                activeEvent = randomEventsList[eventIndex];
-                SetEvent(activeEvent);
+                SetEvent(randomEventsList[eventIndex]);
             }
         }
     }
@@ -117,6 +116,8 @@ public class EventManager : MonoBehaviour
     {
         if (activeEvent == null)
         {
+            TimeManager.instance.PauseGameSpeed();
+            activeEvent = curentEvent;
             //Setup pannel
             eventPannel.SetActive(true);
             eventText.text = curentEvent.Message;
@@ -150,10 +151,8 @@ public class EventManager : MonoBehaviour
                 }
                 t = i;
 
-
                 newButton.GetComponent<Button>().onClick.AddListener(() => {ResolveEvent(t,curentEvent);});
             }
-            TimeManager.instance.PauseGameSpeed();
         }
     }
 
@@ -181,8 +180,8 @@ public class EventManager : MonoBehaviour
         eventPannel.SetActive(false);
         eventText.text = "EventText";
         eventTitle.text = "Titel";
-        TimeManager.instance.PauseGameSpeed();
         activeEvent = null;
+        TimeManager.instance.PauseGameSpeed();
         WipeButtons();
     }
 

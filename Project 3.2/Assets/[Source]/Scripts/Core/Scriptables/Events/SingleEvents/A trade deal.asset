@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
+  m_Name: A trade deal
+  m_EditorClassIdentifier: 
+  eventOptions:
+  - buttonText: Money for food sounds good
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 1
+      Value: -50
+    - resoureType: 2
+      Value: 50
+  - buttonText: Sell some of our materials
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 0
+      Value: -100
+    - resoureType: 1
+      Value: 50
+  - buttonText: Sell some of our people. Even if they don't like it
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 3
+      Value: -10
+    - resoureType: 1
+      Value: 150
+    - resoureType: 4
+      Value: -1
+  Title: A trade deal
+  Message: Some merchants just enterd port. They have some interesting offers. Including
+    slave trade.

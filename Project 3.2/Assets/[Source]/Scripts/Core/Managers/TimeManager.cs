@@ -113,14 +113,17 @@ public class TimeManager : MonoBehaviour
 
     public void PauseGameSpeed()
     {
-        GameManager.instance.TogglePauseGame();
-        if (GameManager.paused)
+        if (EventManager.instance.activeEvent == null)
         {
-            speed.text = "Paused";
-        }
-        else
-        {
-            UpdateSpeed(-1);
+            GameManager.instance.TogglePauseGame();
+            if (GameManager.paused)
+            {
+                speed.text = "Paused";
+            }
+            else
+            {
+                UpdateSpeed(-1);
+            }
         }
     }
 }
