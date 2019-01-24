@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 8088075968759292866}
   - component: {fileID: 8088075968759292864}
   - component: {fileID: 930300329618019663}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Map Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explored: 0
   looted: 0
+  recoveryTimer: 0
   interactionState: 0
+  arrow: {fileID: 0}
   canInteract: 0
   currentSelected:
     value: {fileID: 0}
@@ -404,6 +406,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arrow Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134456628410994010, guid: 28d7818e1f725ee4fb923489b6ec614a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010960249958106643, guid: 28d7818e1f725ee4fb923489b6ec614a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630669147277097034, guid: 28d7818e1f725ee4fb923489b6ec614a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d7818e1f725ee4fb923489b6ec614a, type: 3}

@@ -201,6 +201,10 @@ public class CivManager : MonoBehaviour
                {
                   people = 0;
                }
+               if (people == 0)
+               {
+                  GameManager.instance.GameOver();
+               }
                UIManager.instance.RecourceUIPopup(toRemove,Type.People);
                break;
             case Type.Stability:

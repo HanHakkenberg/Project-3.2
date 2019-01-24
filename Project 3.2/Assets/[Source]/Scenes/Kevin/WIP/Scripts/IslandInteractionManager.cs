@@ -349,6 +349,7 @@ public class IslandInteractionManager : MonoBehaviour
         int foodVar = 0;
         int matsVar = 0;
         int moneyVar = 0;
+        int peopleVar = 0;
         if(activeIsland != null)
         {
             foodVar = Random.Range(10,21);
@@ -420,6 +421,11 @@ public class IslandInteractionManager : MonoBehaviour
                     moneyVar = Random.Range(10,21);
                     CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
                 break;
+
+                case CivManager.Type.People:
+                    peopleVar = Random.Range(10,21);
+                    CivManager.instance.AddIncome(peopleVar,CivManager.Type.People);
+                break;
             }
             activeLootSite.looted = true;
             activeLootSite.recoveryTimer = 3;
@@ -429,6 +435,7 @@ public class IslandInteractionManager : MonoBehaviour
         foodText.text = foodVar.ToString();
         materialsText.text = matsVar.ToString();
         moneyText.text = moneyVar.ToString();
+        peopleText.text = peopleVar.ToString();
         islandStatusText.text = "You pillaged the island";
     }
 
@@ -513,6 +520,7 @@ public class IslandInteractionManager : MonoBehaviour
                 activeIsland.amountTraded += requestedValue;
                 CivManager.instance.AddIncome(requestedValue,requestedType);
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
+                activeIsland.UpdateAttitude(requestedValue / 2);
                 islandStatusText.text = "Transaction successful";
             }
             UpdateTradeResourceUI();
