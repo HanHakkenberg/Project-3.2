@@ -15589,6 +15589,16 @@ PrefabInstance:
       propertyPath: m_fontColor.a
       value: 0.45490196
       objectReference: {fileID: 0}
+    - target: {fileID: 8528423584012407221, guid: 810fe36d52aa52949904de8cb2513082,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543348248567406674, guid: 810fe36d52aa52949904de8cb2513082,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810fe36d52aa52949904de8cb2513082, type: 3}
 --- !u!114 &585957988 stripped
@@ -28849,20 +28859,20 @@ PrefabInstance:
     - target: {fileID: 2179707697471147489, guid: 3182854b55e02ec468b427f8388c3ca2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000071525574
+      value: -0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 2179707697471147489, guid: 3182854b55e02ec468b427f8388c3ca2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 1447170738, guid: 3182854b55e02ec468b427f8388c3ca2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000071525574
+      value: -0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 1447170738, guid: 3182854b55e02ec468b427f8388c3ca2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4109357438149025435, guid: 3182854b55e02ec468b427f8388c3ca2,
         type: 3}
@@ -39584,6 +39594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6609f464d22b4a84a8cb881ccc503591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  l: {fileID: 0}
+  boatMask:
+    serializedVersion: 2
+    m_Bits: 0
+  sloopValue: 0
 --- !u!1001 &1889109193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44023,6 +44038,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250707287818576386, guid: 1ef45ca96aae27b42bb7454310e7222d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381471031720654527, guid: 1ef45ca96aae27b42bb7454310e7222d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381471031720654527, guid: 1ef45ca96aae27b42bb7454310e7222d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ef45ca96aae27b42bb7454310e7222d, type: 3}

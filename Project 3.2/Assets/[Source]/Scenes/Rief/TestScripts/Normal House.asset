@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Normal House
   m_EditorClassIdentifier: 
   name: House
-  description: Provides shelter for up to 4 people
-  foodStat: -4
+  description: Provides shelter
+  foodStat: 0
   materialStat: 0
-  moneyStat: 4
+  moneyStat: 3
   citizenStat: 0
-  costDescription: 
-  materialCost: 0
+  costDescription: Provides shelter
+  materialCost: 100
   moneyCost: 0
   citizenCost: 0
