@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShipShop : MonoBehaviour {
-    [SerializableField] BoxCollider l;
-    [SerializableField] LayerMask boatMask;
+    [SerializeField] BoxCollider l;
+    [SerializeField] LayerMask boatMask;
+    [SerializeField] int sloopValue;
 
-    public void Check(){
-        if(!Physics.CheckBox(transform.position,l.half,transform.rotation, boatMask) && Civmanager.)
+    public void CheckSloop(){
+        if(!Physics.CheckBox(transform.position,l.size/2,transform.rotation, boatMask) && CivManager.instance.mats >= sloopValue)
         {
 
         }
