@@ -197,7 +197,7 @@ MonoBehaviour:
   randomEventsList:
   - {fileID: 11400000, guid: 54654ba1897c57c4d8c52d69270672ad, type: 2}
   - {fileID: 11400000, guid: fca6a84bbbf239940835758390050d68, type: 2}
-  button: {fileID: 8600754471938429949, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
+  button: {fileID: 6890067713062398736, guid: d9c22ca9cdb8dc04cb65dd05c007476e, type: 3}
   eventPannel: {fileID: 0}
   buttonLocation: {fileID: 0}
   eventText: {fileID: 0}
@@ -251,6 +251,16 @@ MonoBehaviour:
       type: 3}
     autoExpand: 1
     startSize: 10
+  - poolTag: Schooner
+    prefab: {fileID: 2470106420376101318, guid: 7a92dc239aff7924993fe7abf2949e7f,
+      type: 3}
+    autoExpand: 1
+    startSize: 3
+  - poolTag: Sloop
+    prefab: {fileID: 7133448127112040460, guid: cb85cdadd8c57a64da8dd0bd9b8f7929,
+      type: 3}
+    autoExpand: 1
+    startSize: 3
 --- !u!1 &1289029807
 GameObject:
   m_ObjectHideFlags: 0
