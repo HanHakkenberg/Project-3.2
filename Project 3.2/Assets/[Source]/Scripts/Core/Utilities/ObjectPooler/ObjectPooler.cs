@@ -78,8 +78,8 @@ public class ObjectPooler : MonoBehaviour {
             objectToGet = currentPool.myQueue.Dequeue();
         }
 
-        objectToGet.SetActive(true);
         objectToGet.transform.SetPositionAndRotation(position, rotation);
+        objectToGet.SetActive(true);
 
         return (objectToGet);
     }

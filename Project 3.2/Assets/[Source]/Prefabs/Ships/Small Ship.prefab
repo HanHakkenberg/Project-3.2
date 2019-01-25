@@ -1,16 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &2081601720746105613 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
-    type: 3}
-  m_PrefabInstance: {fileID: 3282232582536979018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4838335501701703342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
     type: 3}
   m_PrefabInstance: {fileID: 8235597289262604265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2081601720746105613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3562207223427742023, guid: 59902a9c6504492498f9f2b7a4077bf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3282232582536979018}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5134456628524676618 stripped
 GameObject:
@@ -43,7 +43,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7133448127112040456
 Transform:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
     useConstant: 0
     myEvent: {fileID: 0}
   lineWith: 10
+  myPath: []
   pathSide: 25
   SpottingRefreshTimer: 2
   spottingSphereSize: 35
