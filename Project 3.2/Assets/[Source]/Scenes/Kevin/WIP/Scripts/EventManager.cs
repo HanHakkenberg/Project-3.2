@@ -127,9 +127,9 @@ public class EventManager : MonoBehaviour
             for (int i = 0; i < curentEvent.eventOptions.Count; i++)
             {
                 int t;
-                GameObject newButton = Instantiate(button,buttonLocation.position,Quaternion.identity);
-                newButton.transform.SetParent(buttonLocation);
-                newButton.transform.localScale = Vector3.one;
+                GameObject newButton = Instantiate(button, buttonLocation.localPosition, Quaternion.identity, parent: buttonLocation);
+                //newButton.transform.SetParent(buttonLocation);
+                // newButton.transform.localScale = Vector3.one;
                 newButton.GetComponentInChildren<TMP_Text>().text = curentEvent.eventOptions[i].buttonText;
 
                 if(curentEvent.eventOptions.Count != 0)
