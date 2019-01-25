@@ -28,6 +28,10 @@ public class BuildingDisplay : MonoBehaviour
             descriptionText.text = building.description;
 
             citizenDisplay.text = myCitizens.ToString ();
+            if(myCitizens >= 10)
+            {
+                myCitizens = 10;
+            }
             displayUsedCitizens.text = "Citizens: " + myCitizens + " working, " + (CivManager.instance.people - CivManager.instance.usedPeople) + " left.";
             displayFood.text = "Food: " + (building.foodStat * CivManager.instance.stabilityModifier) * myCitizens;
             displayMaterials.text = "Materials: " + (building.materialStat * CivManager.instance.stabilityModifier) * myCitizens;

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Water Tank
   description: Provides food and water
-  foodStat: 5
+  foodStat: 3
   materialStat: -2
-  moneyStat: -5
+  moneyStat: 0
   citizenStat: 0
-  costDescription: 
-  materialCost: 0
+  costDescription: Provides food and water
+  materialCost: 150
   moneyCost: 0
   citizenCost: 0
