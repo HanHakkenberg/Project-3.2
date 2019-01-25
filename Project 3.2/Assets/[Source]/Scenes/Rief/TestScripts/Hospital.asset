@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Hospital
   m_EditorClassIdentifier: 
   name: Hospital
-  description: Provides food
-  foodStat: 5
-  materialStat: -3
-  moneyStat: -2
+  description: Provides food, costs money to maintain
+  foodStat: 6
+  materialStat: 0
+  moneyStat: -3
   citizenStat: 0
-  costDescription: 
-  materialCost: 0
+  costDescription: Provides food, costs money to maintain
+  materialCost: 150
   moneyCost: 0
   citizenCost: 0
