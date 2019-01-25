@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1468d6dce285d1f4581518ac14f25064, type: 3}
+  m_Name: MainStory_001
+  m_EditorClassIdentifier: 
+  eventOptions:
+  - buttonText: Unpack the supplies and let's get out there
+    specialEvent: 0
+    eventOptionsEffects:
+    - resoureType: 2
+      Value: 100
+    - resoureType: 0
+      Value: 200
+    - resoureType: 1
+      Value: 50
+    - resoureType: 3
+      Value: 20
+  Title: Calm after and before the storm
+  Message: We have bin stranded on this island for several days now. Most of the fleet
+    got destroyed . We got out to safety but there might still be people out there.
+    We need to use our last ship to scavenge for resources building up a stable economy
+    in case more refugees arrive.

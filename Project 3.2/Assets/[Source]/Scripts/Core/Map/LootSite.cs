@@ -12,6 +12,11 @@ public class LootSite : InteractableObjects
         RandomizeLootSite();
     }
 
+    void Update() 
+    {
+        KillSelf();
+    }
+
     void RandomizeLootSite()
     {
         int type = Random.Range(0, 4);
@@ -22,5 +27,19 @@ public class LootSite : InteractableObjects
     public override void InsertInteractionManager()
     {
         IslandInteractionManager.instance.InteractableObjectInsert(this);
+    }
+
+    public void Sink()
+    {
+        transform.parent.GetComponent<Animator>().SetTrigger("Sink");
+    }
+
+    public void KillSelf()
+    {
+        if (transform.parent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("End"))
+        {
+            Destroy(transform.root.gameObject);
+            print("ded");
+        }
     }
 }

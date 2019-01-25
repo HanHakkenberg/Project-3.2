@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442f8e6b6d763234fa0ca3dcc5734449, type: 3}
+  m_Name: MainStory
+  m_EditorClassIdentifier: 
+  chainParts:
+  - eventPart: {fileID: 11400000, guid: 0aefa4f611510c2469efe815ccb84d1f, type: 2}
+    ticksTillTrigger: 0
+  - eventPart: {fileID: 11400000, guid: 5469d32d2824d844bae87b41ae8c63d3, type: 2}
+    ticksTillTrigger: 1
+  - eventPart: {fileID: 11400000, guid: 7f2e2e88c812d014c88488cfdf7db467, type: 2}
+    ticksTillTrigger: 1
+  - eventPart: {fileID: 11400000, guid: 73263206730a15643a6041692e9b1888, type: 2}
+    ticksTillTrigger: 1
+  - eventPart: {fileID: 11400000, guid: 4ff20d155935efb44bbc3cee997030b4, type: 2}
+    ticksTillTrigger: 1
+  - eventPart: {fileID: 11400000, guid: 65625e703913c6c438f98233ad813b8f, type: 2}
+    ticksTillTrigger: 1

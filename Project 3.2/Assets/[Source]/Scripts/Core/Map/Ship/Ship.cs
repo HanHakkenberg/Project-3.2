@@ -136,7 +136,7 @@ public class Ship : MonoBehaviour {
         }
     }
 
-    List<Island> interactObjects = new List<Island>();
+    List<InteractableObjects> interactObjects = new List<InteractableObjects>();
 
     IEnumerator IslandInteractionCheck() {
         while (true) {
@@ -152,7 +152,7 @@ public class Ship : MonoBehaviour {
             if (spottedObjects.Length > 0) {
 
                 for (int i = 0; i < spottedObjects.Length; i++) {
-                    Island l = spottedObjects[i].GetComponent<Island>();
+                    InteractableObjects l = spottedObjects[i].GetComponent<InteractableObjects>();
                     ShipSwitch.instance.Interactable(transform, true);
 
                     l.canInteract = true;

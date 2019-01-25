@@ -70,8 +70,32 @@ public class BuildingManager : MonoBehaviour
 
     public void RemoveStats()
     {
-        CivManager.instance.RemoveIncome(allBuildingFood, CivManager.Type.Food);
-        CivManager.instance.RemoveIncome(allBuildingMats, CivManager.Type.Mats);
-        CivManager.instance.RemoveIncome(allBuildingMoney, CivManager.Type.Money);
+        if(allBuildingFood > 0)
+        {
+            CivManager.instance.AddIncome(allBuildingFood, CivManager.Type.Food);
+        }
+        else
+        {
+            CivManager.instance.RemoveIncome(allBuildingFood, CivManager.Type.Food);
+        }
+        
+        if(allBuildingMats > 0)
+        {
+            CivManager.instance.AddIncome(allBuildingMats, CivManager.Type.Mats);
+        }
+        else
+        {
+            CivManager.instance.RemoveIncome(allBuildingMats, CivManager.Type.Mats);
+        }
+        
+        if(allBuildingMoney > 0)
+        {
+            CivManager.instance.AddIncome(allBuildingMoney, CivManager.Type.Money);
+        }
+        else
+        {
+            CivManager.instance.RemoveIncome(allBuildingMoney, CivManager.Type.Money);
+        }
+        
     }
 }

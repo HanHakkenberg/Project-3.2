@@ -9,7 +9,7 @@ public class TimeManager : MonoBehaviour
 
     #region Clock
     public TMP_Text TimerText;
-    float timerValue;
+    public float timerValue;
     int hours = 12;
     int days;
     float speedModifier;
@@ -26,13 +26,15 @@ public class TimeManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else if(instance != this)
         {
             Destroy(this.gameObject);
         }
         //speed mosifier = minutes in a real day / minutes in the games day
+    }
+    void Start() 
+    {
         speedModifier = 1440 / GameManager.instance.lengthOfDay;
     }
 
@@ -111,14 +113,17 @@ public class TimeManager : MonoBehaviour
 
     public void PauseGameSpeed()
     {
-        GameManager.instance.TogglePauseGame();
-        if (GameManager.paused)
+        if (EventManager.instance.activeEvent == null)
         {
-            speed.text = "Paused";
-        }
-        else
-        {
-            UpdateSpeed(-1);
+            GameManager.instance.TogglePauseGame();
+            if (GameManager.paused)
+            {
+                speed.text = "Paused";
+            }
+            else
+            {
+                UpdateSpeed(-1);
+            }
         }
     }
 }

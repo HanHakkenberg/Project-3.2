@@ -10,18 +10,20 @@ public class StartFade : MonoBehaviour {
 
     void Update() {
         if(fadeIn) {
+            target.color = new Vector4(0, 0, 0, Mathf.Lerp(target.color.a, 1, speed * Time.deltaTime));
+
             if(target.color.a > 0.95f) {
+                target.color = new Vector4(0, 0, 0, 1);
                 Application.Quit();
             }
-
-            target.color = new Vector4(0, 0, 0, Mathf.Lerp(target.color.a, 1, speed * Time.deltaTime));
         }
         else {
+            target.color = new Vector4(0, 0, 0, Mathf.Lerp(target.color.a, 1, speed * Time.deltaTime));
+
             if(target.color.a > 0.95f) {
+                target.color = new Vector4(0, 0, 0, 1);
                 SceneManager.LoadScene("Main");
             }
-
-            target.color = new Vector4(0, 0, 0, Mathf.Lerp(target.color.a, 1, speed * Time.deltaTime));
         }
 
         audio.volume = Mathf.Lerp(audio.volume, 0, speed * Time.deltaTime);

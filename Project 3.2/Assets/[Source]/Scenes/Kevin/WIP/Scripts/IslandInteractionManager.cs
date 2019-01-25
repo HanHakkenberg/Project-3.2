@@ -19,8 +19,9 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     public static IslandInteractionManager instance;
-    public Island activeIsland{ get; private set; }
-    public Island lastActiveIsland;
+    public Island activeIsland;
+    public InteractableObjects activeInteractableObjects{ get; private set; }
+    public InteractableObjects lastInteractableObjects;
     public LootSite activeLootSite;
     GameObject activePannel;
     TradeTypes tradeTypes;
@@ -91,17 +92,17 @@ public class IslandInteractionManager : MonoBehaviour
     }
 
     void Update() {
-        if(activeIsland != null && activeIsland.canInteract == true)
+        if(activeInteractableObjects != null && activeInteractableObjects.canInteract == true)
         {
-            if(activeIsland != lastActiveIsland)
+            if(activeInteractableObjects != lastInteractableObjects)
             {
-                lastActiveIsland = activeIsland;
-                ToggleInteractionPannels(activeIsland);
+                lastInteractableObjects = activeInteractableObjects;
+                ToggleInteractionPannels(activeInteractableObjects);
             }
         }
-        else if (activeIsland != null)
+        else if (activeInteractableObjects != null)
         {
-            ToggleInteractionPannels(activeIsland);            
+            ToggleInteractionPannels(activeInteractableObjects);            
         }
     }
 
@@ -112,6 +113,7 @@ public class IslandInteractionManager : MonoBehaviour
 
     public void InteractableObjectInsert(InteractableObjects interactable)
     {
+        activeInteractableObjects = interactable;
         if(activeIsland == null && EventManager.instance.activeEvent == null)
         {
             if(interactable.GetType() == typeof(Island))
@@ -119,14 +121,18 @@ public class IslandInteractionManager : MonoBehaviour
                 activeIsland = interactable as Island;
                 SetIslandVariables();
                 ToggleInteractionPannels(activeIsland);
+                UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
             }
             if(interactable.GetType() == typeof(LootSite))
             {
                 activeLootSite = interactable as LootSite;
-                ToggleInteractionPannels(activeLootSite);
+                if(!activeLootSite.looted)
+                {
+                    ToggleInteractionPannels(activeLootSite);
+                    UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
+                }
             }
             UpdateTradeResourceUI();
-            UIManager.instance.SwitchPanel(UIManager.Panels.IslandInteraction);
         }
     }
 
@@ -227,6 +233,14 @@ public class IslandInteractionManager : MonoBehaviour
         else
         {
             pillageButton.SetActive(true);
+            if(activeLootSite.canInteract)
+            {
+                pillageButton.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                pillageButton.GetComponent<Button>().interactable = false;
+            }
             islandStatusText.text = "It looks like there might be valuables here";
         }
     }
@@ -287,7 +301,10 @@ public class IslandInteractionManager : MonoBehaviour
             {
                 pillagePannel.SetActive(true);
                 activePannel = pillagePannel;
-                backButton.SetActive(true);
+                if(activeLootSite == null)
+                {
+                    backButton.SetActive(true);
+                }
             }
             else
             {
@@ -325,9 +342,18 @@ public class IslandInteractionManager : MonoBehaviour
         {
             SwitchInteractionPanels(InteractionPannels.Pillage);
         }
+        if(activeLootSite != null)
+        {
+            if(activeLootSite.looted)
+            {
+                activeLootSite.Sink();
+            }
+        }
         
         UIManager.instance.SwitchPanel(UIManager.Panels.Main);
         activeIsland = null;
+        activeLootSite = null;
+        activeInteractableObjects = null;
     }
 
     public void Back()
@@ -349,6 +375,7 @@ public class IslandInteractionManager : MonoBehaviour
         int foodVar = 0;
         int matsVar = 0;
         int moneyVar = 0;
+        int peopleVar = 0;
         if(activeIsland != null)
         {
             foodVar = Random.Range(10,21);
@@ -420,6 +447,11 @@ public class IslandInteractionManager : MonoBehaviour
                     moneyVar = Random.Range(10,21);
                     CivManager.instance.AddIncome(moneyVar,CivManager.Type.Money);
                 break;
+
+                case CivManager.Type.People:
+                    peopleVar = Random.Range(10,21);
+                    CivManager.instance.AddIncome(peopleVar,CivManager.Type.People);
+                break;
             }
             activeLootSite.looted = true;
             activeLootSite.recoveryTimer = 3;
@@ -429,6 +461,7 @@ public class IslandInteractionManager : MonoBehaviour
         foodText.text = foodVar.ToString();
         materialsText.text = matsVar.ToString();
         moneyText.text = moneyVar.ToString();
+        peopleText.text = peopleVar.ToString();
         islandStatusText.text = "You pillaged the island";
     }
 
@@ -513,6 +546,7 @@ public class IslandInteractionManager : MonoBehaviour
                 activeIsland.amountTraded += requestedValue;
                 CivManager.instance.AddIncome(requestedValue,requestedType);
                 CivManager.instance.RemoveIncome(demandedValue,paymentType);
+                activeIsland.UpdateAttitude(requestedValue / 2);
                 islandStatusText.text = "Transaction successful";
             }
             UpdateTradeResourceUI();

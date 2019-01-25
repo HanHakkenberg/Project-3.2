@@ -66,20 +66,23 @@ public class Island : InteractableObjects {
                 {
                     amountTraded -= 10;
                 }
-            }
-            else
+            }   
+        }
+
+        if (looted)
+        {
+            if (recoveryTimer != 0)
             {
-                if (recoveryTimer != 0)
+                print("Test 2");
+                recoveryTimer -= 1;
+            }
+            if (recoveryTimer == 0)
+            {
+                print("Test 3");
+                looted = false;
+                if (IslandInteractionManager.instance.activeIsland == this)
                 {
-                    recoveryTimer -= 1;
-                }
-                else
-                {
-                    looted = false;
-                    if (IslandInteractionManager.instance.activeIsland == this)
-                    {
-                        IslandInteractionManager.instance.ToggleInteractionPannels(this);
-                    }
+                    IslandInteractionManager.instance.ToggleInteractionPannels(this);
                 }
             }
         }

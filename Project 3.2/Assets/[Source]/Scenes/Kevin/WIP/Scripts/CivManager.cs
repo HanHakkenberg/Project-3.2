@@ -66,7 +66,6 @@ public class CivManager : MonoBehaviour
       if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
         }
         else if(instance != this)
         {
@@ -82,10 +81,6 @@ public class CivManager : MonoBehaviour
       matsCap = 1000;
       moneyCap = 1000;
       peopleCap = 1000;
-      people = 10;
-      food = 100;
-      mats = 100;
-      money = 100;
       UIManager.instance.UpdateResourceUI(); //misschien removen idk?
       UpdateStability();
       ResourceUseOverTimeVariableUpdate();
@@ -201,6 +196,11 @@ public class CivManager : MonoBehaviour
                {
                   people = 0;
                }
+               if (people == 0)
+               {
+                  print("ded");
+                  GameManager.instance.GameOver();
+               }
                UIManager.instance.RecourceUIPopup(toRemove,Type.People);
                break;
             case Type.Stability:
@@ -244,13 +244,11 @@ public class CivManager : MonoBehaviour
    {
       if (stability <= -2 || food <= 0)
       {
+         gameOverTick += 1;
          if (gameOverTick == 3)
          {
-             GameManager.instance.GameOver();
-         }
-         else
-         {
-            gameOverTick += 1;
+            print("OmegaDed");
+            GameManager.instance.GameOver();
          }
       }
       else
