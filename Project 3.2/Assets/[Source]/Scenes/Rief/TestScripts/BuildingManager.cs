@@ -14,6 +14,9 @@ public class BuildingInfo
     public int myMats;
     public int myMoney;
     public int myCitizens;
+
+    public int upgradeMatsCost;
+    public int upgradeMoneyCost;
 }
 
 public class BuildingManager : MonoBehaviour

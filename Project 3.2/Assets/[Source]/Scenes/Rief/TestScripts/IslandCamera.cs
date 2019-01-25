@@ -33,11 +33,16 @@ public class IslandCamera : MonoBehaviour
 
     void OnMouseDown ()
     {
-        mainCam.enabled = false;
-        buildingCam.enabled = true;
-        BuildingDisplay.building = BuildingManager.instance.allBuildings[numb].myBuilding;
-        BuildingDisplay.currNumb = numb;
-        myAnimator.SetBool ("Fading", true);
-        infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
+        infoCanvas.SetActive(true);
+        if(infoCanvas.active == true)
+        {
+            mainCam.enabled = false;
+            buildingCam.enabled = true;
+            BuildingDisplay.building = BuildingManager.instance.allBuildings[numb].myBuilding;
+            BuildingDisplay.currNumb = numb;
+            myAnimator.SetBool ("Fading", true);
+            infoCanvas.GetComponentInParent<BuildingDisplay> ().DisplayInfo ();
+        }
+
     }
 }
