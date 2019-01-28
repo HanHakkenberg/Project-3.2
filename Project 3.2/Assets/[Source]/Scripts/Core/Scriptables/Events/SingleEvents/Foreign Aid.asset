@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: Foreign Aid
   m_EditorClassIdentifier: 
   eventOptions:
-  - buttonText: Take some food
+  - buttonText: Take some food.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 2
       Value: 50
-  - buttonText: Take some building materials
+  - buttonText: Take some building materials.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 0
       Value: 50
-  - buttonText: Take some funds
+  - buttonText: Take some funds.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 1
       Value: 50
-  Title: Foreign aid
+  Title: Foreign aid.
   Message: A transport ship with goods just came into port. They are offering some
     hard needed resources.

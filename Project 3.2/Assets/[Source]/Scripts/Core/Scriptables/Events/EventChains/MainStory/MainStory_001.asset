@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainStory_001
   m_EditorClassIdentifier: 
   eventOptions:
-  - buttonText: Unpack the supplies and let's get out there
+  - buttonText: Unpack the supplies and let's get out there!
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 2
@@ -25,7 +25,7 @@ MonoBehaviour:
     - resoureType: 3
       Value: 20
   Title: Calm after and before the storm
-  Message: We have bin stranded on this island for several days now. Most of the fleet
-    got destroyed . We got out to safety but there might still be people out there.
-    We need to use our last ship to scavenge for resources building up a stable economy
+  Message: We have been stranded on this island for several days now. Most of the
+    fleet got destroyed. We got out safe, but there might still be people out there.
+    We need to use our last ship to scavenge for resources, building up a stable economy
     in case more refugees arrive.

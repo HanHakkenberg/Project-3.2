@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: Crops are dying
   m_EditorClassIdentifier: 
   eventOptions:
-  - buttonText: Give out stored food
+  - buttonText: Give out stored food.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 2
       Value: -50
-  - buttonText: Expand the crop fields
+  - buttonText: Expand the crop fields.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 0
       Value: -100
     - resoureType: 2
       Value: 50
-  - buttonText: Ignore the situation
+  - buttonText: Ignore the situation.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 3
       Value: -5
     - resoureType: 4
       Value: -1
-  Title: Crops are dying
-  Message: A wide spread famine is starting to occur. If we dont help, many poeple
-    may die
+  Title: Crops are dying.
+  Message: A wide spread famine is starting to occur. If we dont do anything, our
+    people will die.

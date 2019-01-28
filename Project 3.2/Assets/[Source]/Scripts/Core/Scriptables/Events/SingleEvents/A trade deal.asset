@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: A trade deal
   m_EditorClassIdentifier: 
   eventOptions:
-  - buttonText: Money for food sounds good
+  - buttonText: Money for food sounds good.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 1
       Value: -50
     - resoureType: 2
       Value: 50
-  - buttonText: Sell some of our materials
+  - buttonText: Sell some of our materials.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 0
       Value: -100
     - resoureType: 1
       Value: 50
-  - buttonText: Sell some of our people. Even if they don't like it
+  - buttonText: Sell some of our people. Even if they don't like it.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 3
@@ -36,6 +36,6 @@ MonoBehaviour:
       Value: 150
     - resoureType: 4
       Value: -1
-  Title: A trade deal
+  Title: A trade deal.
   Message: Some merchants just enterd port. They have some interesting offers. Including
     slave trade.

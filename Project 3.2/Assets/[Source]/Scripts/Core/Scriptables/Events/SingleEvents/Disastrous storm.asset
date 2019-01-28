@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: Disastrous storm
   m_EditorClassIdentifier: 
   eventOptions:
-  - buttonText: Repair the damage
+  - buttonText: Repair the damage.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 0
       Value: -50
-  - buttonText: Build temporary homes and give out some food
+  - buttonText: Build temporary homes and give out some food.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 0
       Value: -50
     - resoureType: 2
       Value: -50
-  - buttonText: Igonore the situation
+  - buttonText: Igonore the situation.
     specialEvent: 0
     eventOptionsEffects:
     - resoureType: 3
       Value: -10
     - resoureType: 4
       Value: -1
-  Title: Disastrous storm
+  Title: Disastrous storm.
   Message: A large storm hit the island overnight. With it came a lot of damage and
     the people look towards you to fix it.
