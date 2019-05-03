@@ -5,7 +5,7 @@ using UnityEngine;
 public class LootSite : InteractableObjects
 {
     public CivManager.Type lootType;
-
+    public GameObject parent;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class LootSite : InteractableObjects
     {
         if (transform.parent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("End"))
         {
-            Destroy(transform.root.gameObject);
+            Destroy(parent);
             print("ded");
         }
     }

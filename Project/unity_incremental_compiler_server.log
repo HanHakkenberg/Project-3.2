@@ -1,119 +1,260 @@
- (0,0): [01-25-2019 07:55:58.976 ] Unity incremental compiler server
- (0,0): [01-25-2019 07:55:59.124 ] watchdog active on pid: 9592
- (0,0): [01-25-2019 07:56:03.231 ] Unity.InputSystem.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:03.247 ] Unity.InputSystem.dll compiling...
- (0,0): [01-25-2019 07:56:03.319 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:03.334 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:03.995 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:04.012 ] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [01-25-2019 07:56:04.023 ] Cinemachine.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:04.025 ] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:04.029 ] Unity.ProGrids.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:04.030 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:04.034 ] Cinemachine.dll compiling...
- (0,0): [01-25-2019 07:56:04.038 ] Unity.TextMeshPro.dll compiling...
- (0,0): [01-25-2019 07:56:04.040 ] Unity.ProGrids.dll compiling...
- (0,0): [01-25-2019 07:56:04.041 ] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:06.776 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProBuilder.AddOns.Editor.dll
- (0,0): [01-25-2019 07:56:06.780 ] Unity.ProGrids.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProGrids.dll
- (0,0): [01-25-2019 07:56:06.887 ] Unity.ProGrids.dll compilation finished in 2846ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:06.889 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 3553ms  source files re-parsed: 1 metadata reloaded: 158
- (0,0): [01-25-2019 07:56:06.902 ] Unity.ProGrids.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:06.906 ] Unity.ProBuilder.AddOns.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:06.966 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.PackageManagerUI.Editor.dll
- (0,0): [01-25-2019 07:56:07.013 ] Unity.PackageManagerUI.Editor.dll compilation finished in 2973ms  source files re-parsed: 52 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:07.054 ] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.194 ] Cinemachine.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Cinemachine.dll
- (0,0): [01-25-2019 07:56:07.264 ] Cinemachine.dll compilation finished in 3230ms  source files re-parsed: 65 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:07.534 ] Cinemachine.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.558 ] Unity.Postprocessing.Runtime.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Runtime.dll
- (0,0): [01-25-2019 07:56:07.587 ] Unity.Postprocessing.Runtime.dll compilation finished in 3575ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:07.591 ] Unity.ProGrids.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.599 ] Unity.Postprocessing.Runtime.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.601 ] Unity.ProGrids.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:07.776 ] Unity.TextMeshPro.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.dll
- (0,0): [01-25-2019 07:56:07.813 ] Unity.TextMeshPro.dll compilation finished in 3775ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:07.825 ] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.848 ] Unity.ProGrids.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.ProGrids.Editor.dll
- (0,0): [01-25-2019 07:56:07.872 ] Unity.ProGrids.Editor.dll compilation finished in 271ms  source files re-parsed: 20 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:07.884 ] Unity.ProGrids.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:07.966 ] Unity.InputSystem.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.dll
- (0,0): [01-25-2019 07:56:07.984 ] Unity.InputSystem.dll compilation finished in 4737ms  source files re-parsed: 266 metadata reloaded: 207
- (0,0): [01-25-2019 07:56:07.996 ] Unity.InputSystem.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:08.094 ] com.unity.cinemachine.editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:08.106 ] com.unity.cinemachine.editor.dll compiling...
- (0,0): [01-25-2019 07:56:08.418 ] com.unity.cinemachine.editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\com.unity.cinemachine.editor.dll
- (0,0): [01-25-2019 07:56:08.434 ] com.unity.cinemachine.editor.dll compilation finished in 328ms  source files re-parsed: 61 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:08.445 ] com.unity.cinemachine.editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:08.621 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:08.633 ] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:08.796 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:08.809 ] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:08.861 ] Unity.Postprocessing.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Editor.dll
- (0,0): [01-25-2019 07:56:08.877 ] Unity.Postprocessing.Editor.dll compilation finished in 244ms  source files re-parsed: 35 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:08.906 ] Unity.Postprocessing.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:09.127 ] Unity.InputSystem.Tests.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:09.139 ] Unity.InputSystem.Tests.dll compiling...
- (0,0): [01-25-2019 07:56:09.150 ] Unity.TextMeshPro.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.Editor.dll
- (0,0): [01-25-2019 07:56:09.167 ] Unity.TextMeshPro.Editor.dll compilation finished in 358ms  source files re-parsed: 40 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:09.181 ] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:09.232 ] Unity.InputSystem.Tests.Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:09.242 ] Unity.InputSystem.Tests.Editor.dll compiling...
- (0,0): [01-25-2019 07:56:09.342 ] Unity.InputSystem.Tests.Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.Editor.dll
- (0,0): [01-25-2019 07:56:09.356 ] Unity.InputSystem.Tests.Editor.dll compilation finished in 114ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:09.368 ] Unity.InputSystem.Tests.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:09.944 ] Unity.InputSystem.Tests.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.dll
- (0,0): [01-25-2019 07:56:09.959 ] Unity.InputSystem.Tests.dll compilation finished in 821ms  source files re-parsed: 28 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:09.971 ] Unity.InputSystem.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:14.988 ] Assembly-CSharp-firstpass.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:14.999 ] Assembly-CSharp-firstpass.dll compiling...
- (0,0): [01-25-2019 07:56:15.393 ] Assembly-CSharp-firstpass.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-firstpass.dll
- (0,0): [01-25-2019 07:56:15.421 ] Assembly-CSharp-firstpass.dll compilation finished in 422ms  source files re-parsed: 178 metadata reloaded: 6
- (0,0): [01-25-2019 07:56:15.433 ] Assembly-CSharp-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:16.002 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:16.014 ] Assembly-CSharp.dll compiling...
- (0,0): [01-25-2019 07:56:16.192 ] Assembly-CSharp-Editor-firstpass.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:16.204 ] Assembly-CSharp-Editor-firstpass.dll compiling...
- (0,0): [01-25-2019 07:56:16.376 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
- (0,0): [01-25-2019 07:56:16.561 ] Assembly-CSharp.dll compilation finished in 547ms  source files re-parsed: 126 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:16.632 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:16.857 ] Assembly-CSharp-Editor-firstpass.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor-firstpass.dll
- (0,0): [01-25-2019 07:56:16.875 ] Assembly-CSharp-Editor-firstpass.dll compilation finished in 671ms  source files re-parsed: 123 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:16.887 ] Assembly-CSharp-Editor-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:17.071 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 9592
- (0,0): [01-25-2019 07:56:17.083 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [01-25-2019 07:56:17.140 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
- (0,0): [01-25-2019 07:56:17.154 ] Assembly-CSharp-Editor.dll compilation finished in 71ms  source files re-parsed: 20 metadata reloaded: 2
- (0,0): [01-25-2019 07:56:17.166 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:25.043 ] Assembly-CSharp.dll compiling...
- (0,0): [01-25-2019 07:56:25.166 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
- (0,0): [01-25-2019 07:56:25.183 ] Assembly-CSharp.dll compilation finished in 140ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [01-25-2019 07:56:25.195 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 9592
- (0,0): [01-25-2019 07:56:25.206 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 07:56:25.726 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [01-25-2019 07:56:25.775 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
- (0,0): [01-25-2019 07:56:25.789 ] Assembly-CSharp-Editor.dll compilation finished in 63ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [01-25-2019 07:56:25.801 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 9592
- (0,0): [01-25-2019 07:56:25.812 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 08:01:02.316 ] Compiler cache size is now 24,30 MB
- (0,0): [01-25-2019 08:52:42.932 ] Assembly-CSharp.dll compiling...
- (0,0): [01-25-2019 08:52:43.158 ] Assembly-CSharp.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
- (0,0): [01-25-2019 08:52:43.176 ] Assembly-CSharp.dll compilation finished in 243ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [01-25-2019 08:52:43.187 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 9592
- (0,0): [01-25-2019 08:52:43.198 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 08:52:43.772 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [01-25-2019 08:52:43.844 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\mijs\Documents\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
- (0,0): [01-25-2019 08:52:43.859 ] Assembly-CSharp-Editor.dll compilation finished in 87ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [01-25-2019 08:52:43.871 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 9592
- (0,0): [01-25-2019 08:52:43.882 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 9592
- (0,0): [01-25-2019 09:22:40.308 ] watchdog triggered an exit
- (0,0): [01/25/2019 09:55:21.299 AM] Assembly-CSharp.dll compiling...
- (0,0): [01/25/2019 09:55:21.559 AM] Assembly-CSharp.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
- (0,0): [01/25/2019 09:55:21.730 AM] Assembly-CSharp.dll compilation finished in 427ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [01/25/2019 09:55:21.750 AM] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 4832
- (0,0): [01/25/2019 09:55:21.770 AM] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4832
- (0,0): [01/25/2019 09:55:22.639 AM] Assembly-CSharp-Editor.dll compiling...
- (0,0): [01/25/2019 09:55:22.770 AM] Assembly-CSharp-Editor.dll: emitting IL to : D:\DesTopp\GitHub\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
- (0,0): [01/25/2019 09:55:22.810 AM] Assembly-CSharp-Editor.dll compilation finished in 164ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [01/25/2019 09:55:22.840 AM] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 4832
- (0,0): [01/25/2019 09:55:22.860 AM] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 4832
+ (0,0): [05-03-2019 11:09:16.277 ] Unity incremental compiler server
+ (0,0): [05-03-2019 11:09:16.401 ] watchdog active on pid: 8468
+ (0,0): [05-03-2019 11:11:39.553 ] Unity.InputSystem.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.568 ] Unity.InputSystem.dll compiling...
+ (0,0): [05-03-2019 11:11:39.599 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.610 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:39.624 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.636 ] Unity.Postprocessing.Runtime.dll compiling...
+ (0,0): [05-03-2019 11:11:39.645 ] Unity.ProGrids.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.657 ] Unity.ProGrids.dll compiling...
+ (0,0): [05-03-2019 11:11:39.672 ] Cinemachine.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.684 ] Cinemachine.dll compiling...
+ (0,0): [05-03-2019 11:11:39.865 ] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:39.877 ] Unity.TextMeshPro.dll compiling...
+ (0,0): [05-03-2019 11:11:40.009 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:40.034 ] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:42.843 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProBuilder.AddOns.Editor.dll
+ (0,0): [05-03-2019 11:11:42.844 ] Unity.ProGrids.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProGrids.dll
+ (0,0): [05-03-2019 11:11:42.889 ] Cinemachine.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Cinemachine.dll
+ (0,0): [05-03-2019 11:11:42.889 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [05-03-2019 11:11:42.889 ] Unity.Postprocessing.Runtime.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Runtime.dll
+ (0,0): [05-03-2019 11:11:42.939 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 3329ms  source files re-parsed: 1 metadata reloaded: 217
+ (0,0): [05-03-2019 11:11:42.939 ] Unity.ProGrids.dll compilation finished in 3282ms  source files re-parsed: 2 metadata reloaded: 209
+ (0,0): [05-03-2019 11:11:42.963 ] Unity.ProGrids.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:42.952 ] Unity.ProBuilder.AddOns.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.009 ] Cinemachine.dll compilation finished in 3324ms  source files re-parsed: 65 metadata reloaded: 203
+ (0,0): [05-03-2019 11:11:43.031 ] Cinemachine.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.064 ] Unity.PackageManagerUI.Editor.dll compilation finished in 3029ms  source files re-parsed: 52 metadata reloaded: 83
+ (0,0): [05-03-2019 11:11:43.087 ] Unity.Postprocessing.Runtime.dll compilation finished in 3450ms  source files re-parsed: 56 metadata reloaded: 211
+ (0,0): [05-03-2019 11:11:43.120 ] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.188 ] Unity.Postprocessing.Runtime.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.470 ] Unity.TextMeshPro.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.dll
+ (0,0): [05-03-2019 11:11:43.551 ] Unity.TextMeshPro.dll compilation finished in 3674ms  source files re-parsed: 45 metadata reloaded: 107
+ (0,0): [05-03-2019 11:11:43.563 ] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.575 ] Unity.InputSystem.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.dll
+ (0,0): [05-03-2019 11:11:43.635 ] Unity.ProGrids.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.647 ] Unity.ProGrids.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:43.667 ] Unity.InputSystem.dll compilation finished in 4099ms  source files re-parsed: 266 metadata reloaded: 212
+ (0,0): [05-03-2019 11:11:43.685 ] Unity.InputSystem.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.746 ] Unity.ProGrids.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProGrids.Editor.dll
+ (0,0): [05-03-2019 11:11:43.832 ] Unity.ProGrids.Editor.dll compilation finished in 186ms  source files re-parsed: 20 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:43.844 ] Unity.ProGrids.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.939 ] com.unity.cinemachine.editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:43.951 ] com.unity.cinemachine.editor.dll compiling...
+ (0,0): [05-03-2019 11:11:44.151 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.163 ] Unity.Postprocessing.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:44.203 ] com.unity.cinemachine.editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\com.unity.cinemachine.editor.dll
+ (0,0): [05-03-2019 11:11:44.267 ] Unity.InputSystem.Tests.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.279 ] Unity.InputSystem.Tests.dll compiling...
+ (0,0): [05-03-2019 11:11:44.358 ] com.unity.cinemachine.editor.dll compilation finished in 407ms  source files re-parsed: 61 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:44.364 ] Unity.Postprocessing.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Editor.dll
+ (0,0): [05-03-2019 11:11:44.370 ] com.unity.cinemachine.editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.370 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.402 ] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:44.479 ] Unity.InputSystem.Tests.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.495 ] Unity.InputSystem.Tests.Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:44.581 ] Unity.Postprocessing.Editor.dll compilation finished in 419ms  source files re-parsed: 35 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:44.639 ] Unity.Postprocessing.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.640 ] Unity.InputSystem.Tests.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.Editor.dll
+ (0,0): [05-03-2019 11:11:44.738 ] Unity.InputSystem.Tests.Editor.dll compilation finished in 243ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [05-03-2019 11:11:44.749 ] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [05-03-2019 11:11:44.750 ] Unity.InputSystem.Tests.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:44.869 ] Unity.TextMeshPro.Editor.dll compilation finished in 467ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:44.881 ] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:45.095 ] Unity.InputSystem.Tests.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.dll
+ (0,0): [05-03-2019 11:11:45.251 ] Unity.InputSystem.Tests.dll compilation finished in 971ms  source files re-parsed: 28 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:45.262 ] Unity.InputSystem.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:49.319 ] Assembly-CSharp-firstpass.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:49.331 ] Assembly-CSharp-firstpass.dll compiling...
+ (0,0): [05-03-2019 11:11:49.746 ] Assembly-CSharp-firstpass.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-firstpass.dll
+ (0,0): [05-03-2019 11:11:49.845 ] Assembly-CSharp-firstpass.dll compilation finished in 514ms  source files re-parsed: 178 metadata reloaded: 6
+ (0,0): [05-03-2019 11:11:49.859 ] Assembly-CSharp-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:50.299 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:50.311 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 11:11:50.457 ] Assembly-CSharp-Editor-firstpass.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:50.468 ] Assembly-CSharp-Editor-firstpass.dll compiling...
+ (0,0): [05-03-2019 11:11:50.534 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 11:11:50.620 ] Assembly-CSharp.dll compilation finished in 309ms  source files re-parsed: 127 metadata reloaded: 1
+ (0,0): [05-03-2019 11:11:50.638 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:50.857 ] Assembly-CSharp-Editor-firstpass.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor-firstpass.dll
+ (0,0): [05-03-2019 11:11:50.995 ] Assembly-CSharp-Editor-firstpass.dll compilation finished in 528ms  source files re-parsed: 123 metadata reloaded: 0
+ (0,0): [05-03-2019 11:11:51.007 ] Assembly-CSharp-Editor-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:11:51.142 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:11:51.154 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 11:11:51.212 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 11:11:51.272 ] Assembly-CSharp-Editor.dll compilation finished in 118ms  source files re-parsed: 20 metadata reloaded: 2
+ (0,0): [05-03-2019 11:11:51.284 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:14:21.462 ] Compiler cache size is now 25.42 MB
+ (0,0): [05-03-2019 11:14:53.602 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 11:14:53.719 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 11:14:53.788 ] Assembly-CSharp.dll compilation finished in 186ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [05-03-2019 11:14:53.800 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 11:14:53.811 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:14:54.133 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 11:14:54.179 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 11:14:54.229 ] Assembly-CSharp-Editor.dll compilation finished in 95ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 11:14:54.241 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 11:14:54.252 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:43:21.521 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:43:21.533 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 11:43:21.681 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 11:43:21.757 ] Assembly-CSharp.dll compilation finished in 223ms  source files re-parsed: 127 metadata reloaded: 0
+ (0,0): [05-03-2019 11:43:21.769 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:43:22.378 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 11:43:22.421 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 11:43:22.476 ] Assembly-CSharp-Editor.dll compilation finished in 97ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 11:43:22.487 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 11:43:22.498 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:45:22.906 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:45:22.918 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 11:45:23.088 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 11:45:23.159 ] Assembly-CSharp.dll compilation finished in 241ms  source files re-parsed: 127 metadata reloaded: 0
+ (0,0): [05-03-2019 11:45:23.171 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:45:23.778 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 11:45:23.823 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 11:45:23.891 ] Assembly-CSharp-Editor.dll compilation finished in 113ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 11:45:23.903 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 11:45:23.915 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:46:11.854 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 11:46:11.866 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 11:46:12.006 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 11:46:12.074 ] Assembly-CSharp.dll compilation finished in 208ms  source files re-parsed: 126 metadata reloaded: 0
+ (0,0): [05-03-2019 11:46:12.086 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 11:46:12.518 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 11:46:12.571 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 11:46:12.629 ] Assembly-CSharp-Editor.dll compilation finished in 110ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 11:46:12.641 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 11:46:12.652 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:19.668 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:19.680 ] Unity.Postprocessing.Runtime.dll compiling...
+ (0,0): [05-03-2019 01:06:19.710 ] Unity.InputSystem.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:19.722 ] Unity.InputSystem.dll compiling...
+ (0,0): [05-03-2019 01:06:19.822 ] Cinemachine.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:19.843 ] Cinemachine.dll compiling...
+ (0,0): [05-03-2019 01:06:19.918 ] Unity.ProGrids.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:19.930 ] Unity.ProGrids.dll compiling...
+ (0,0): [05-03-2019 01:06:20.007 ] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:20.019 ] Unity.TextMeshPro.dll compiling...
+ (0,0): [05-03-2019 01:06:20.704 ] Unity.ProGrids.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProGrids.dll
+ (0,0): [05-03-2019 01:06:20.947 ] Unity.Postprocessing.Runtime.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Runtime.dll
+ (0,0): [05-03-2019 01:06:21.033 ] Unity.ProGrids.dll compilation finished in 1102ms  source files re-parsed: 2 metadata reloaded: 49
+ (0,0): [05-03-2019 01:06:21.062 ] Unity.ProGrids.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.190 ] Unity.Postprocessing.Runtime.dll compilation finished in 1509ms  source files re-parsed: 56 metadata reloaded: 65
+ (0,0): [05-03-2019 01:06:21.202 ] Unity.Postprocessing.Runtime.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.275 ] Cinemachine.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Cinemachine.dll
+ (0,0): [05-03-2019 01:06:21.332 ] Unity.TextMeshPro.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.dll
+ (0,0): [05-03-2019 01:06:21.361 ] Unity.InputSystem.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.dll
+ (0,0): [05-03-2019 01:06:21.367 ] Cinemachine.dll compilation finished in 1524ms  source files re-parsed: 65 metadata reloaded: 55
+ (0,0): [05-03-2019 01:06:21.379 ] Cinemachine.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.414 ] Unity.TextMeshPro.dll compilation finished in 1395ms  source files re-parsed: 45 metadata reloaded: 41
+ (0,0): [05-03-2019 01:06:21.426 ] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.440 ] Unity.InputSystem.dll compilation finished in 1718ms  source files re-parsed: 266 metadata reloaded: 62
+ (0,0): [05-03-2019 01:06:21.452 ] Unity.InputSystem.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.937 ] Assembly-CSharp-firstpass.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:21.949 ] Assembly-CSharp-firstpass.dll compiling...
+ (0,0): [05-03-2019 01:06:22.191 ] Assembly-CSharp-firstpass.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-firstpass.dll
+ (0,0): [05-03-2019 01:06:22.283 ] Assembly-CSharp-firstpass.dll compilation finished in 334ms  source files re-parsed: 178 metadata reloaded: 5
+ (0,0): [05-03-2019 01:06:22.294 ] Assembly-CSharp-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:06:22.628 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:06:22.640 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 01:06:22.781 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 01:06:22.847 ] Assembly-CSharp.dll compilation finished in 207ms  source files re-parsed: 126 metadata reloaded: 1
+ (0,0): [05-03-2019 01:06:22.858 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:15.598 ] Compiler cache size is now 28.77 MB
+ (0,0): [05-03-2019 01:10:48.627 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:48.639 ] Unity.Postprocessing.Runtime.dll compiling...
+ (0,0): [05-03-2019 01:10:48.789 ] Unity.InputSystem.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:48.801 ] Unity.InputSystem.dll compiling...
+ (0,0): [05-03-2019 01:10:48.845 ] Unity.Postprocessing.Runtime.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Runtime.dll
+ (0,0): [05-03-2019 01:10:48.899 ] Unity.TextMeshPro.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:48.912 ] Unity.TextMeshPro.dll compiling...
+ (0,0): [05-03-2019 01:10:48.977 ] Unity.ProGrids.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.060 ] Unity.ProGrids.dll compiling...
+ (0,0): [05-03-2019 01:10:49.073 ] Unity.Postprocessing.Runtime.dll compilation finished in 433ms  source files re-parsed: 56 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:49.101 ] Unity.Postprocessing.Runtime.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.128 ] Cinemachine.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.130 ] Unity.ProGrids.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProGrids.dll
+ (0,0): [05-03-2019 01:10:49.142 ] Cinemachine.dll compiling...
+ (0,0): [05-03-2019 01:10:49.206 ] Unity.ProGrids.dll compilation finished in 146ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:49.243 ] Unity.ProGrids.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.269 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.298 ] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:49.499 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.594 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.618 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:49.648 ] Unity.Postprocessing.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:49.691 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProBuilder.AddOns.Editor.dll
+ (0,0): [05-03-2019 01:10:49.759 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:49.794 ] Unity.ProBuilder.AddOns.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:49.867 ] Unity.ProGrids.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.159 ] Unity.ProGrids.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:50.212 ] Unity.Postprocessing.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.Postprocessing.Editor.dll
+ (0,0): [05-03-2019 01:10:50.280 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [05-03-2019 01:10:50.290 ] Cinemachine.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Cinemachine.dll
+ (0,0): [05-03-2019 01:10:50.299 ] Unity.TextMeshPro.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.dll
+ (0,0): [05-03-2019 01:10:50.358 ] Unity.ProGrids.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.ProGrids.Editor.dll
+ (0,0): [05-03-2019 01:10:50.358 ] Unity.Postprocessing.Editor.dll compilation finished in 709ms  source files re-parsed: 35 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:50.380 ] Unity.Postprocessing.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.383 ] Unity.PackageManagerUI.Editor.dll compilation finished in 1084ms  source files re-parsed: 52 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:50.394 ] Unity.PackageManagerUI.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.409 ] Cinemachine.dll compilation finished in 1267ms  source files re-parsed: 65 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:50.423 ] Cinemachine.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.429 ] Unity.InputSystem.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.dll
+ (0,0): [05-03-2019 01:10:50.431 ] Unity.TextMeshPro.dll compilation finished in 1519ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:50.443 ] Unity.TextMeshPro.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.455 ] Unity.ProGrids.Editor.dll compilation finished in 295ms  source files re-parsed: 20 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:50.467 ] Unity.ProGrids.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.570 ] Unity.InputSystem.dll compilation finished in 1770ms  source files re-parsed: 266 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:50.582 ] Unity.InputSystem.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.660 ] com.unity.cinemachine.editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.672 ] com.unity.cinemachine.editor.dll compiling...
+ (0,0): [05-03-2019 01:10:50.865 ] com.unity.cinemachine.editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\com.unity.cinemachine.editor.dll
+ (0,0): [05-03-2019 01:10:50.975 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:50.979 ] com.unity.cinemachine.editor.dll compilation finished in 307ms  source files re-parsed: 61 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:50.987 ] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:50.991 ] com.unity.cinemachine.editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:51.118 ] Unity.InputSystem.Tests.dll compiling...
+ (0,0): [05-03-2019 01:10:51.163 ] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [05-03-2019 01:10:51.187 ] Unity.InputSystem.Tests.Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:51.267 ] Unity.InputSystem.Tests.Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.Editor.dll
+ (0,0): [05-03-2019 01:10:51.305 ] Unity.InputSystem.Tests.Editor.dll compilation finished in 119ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:51.317 ] Unity.InputSystem.Tests.Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:51.321 ] Unity.TextMeshPro.Editor.dll compilation finished in 334ms  source files re-parsed: 40 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:51.328 ] Unity.InputSystem.Tests.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:51.333 ] Unity.TextMeshPro.Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:51.529 ] Assembly-CSharp-firstpass.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:51.541 ] Assembly-CSharp-firstpass.dll compiling...
+ (0,0): [05-03-2019 01:10:51.871 ] Unity.InputSystem.Tests.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Unity.InputSystem.Tests.dll
+ (0,0): [05-03-2019 01:10:51.882 ] Assembly-CSharp-firstpass.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-firstpass.dll
+ (0,0): [05-03-2019 01:10:51.997 ] Assembly-CSharp-firstpass.dll compilation finished in 455ms  source files re-parsed: 178 metadata reloaded: 6
+ (0,0): [05-03-2019 01:10:52.008 ] Assembly-CSharp-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.017 ] Unity.InputSystem.Tests.dll compilation finished in 899ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:52.028 ] Unity.InputSystem.Tests.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.040 ] Unity.InputSystem.Tests.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.304 ] Assembly-CSharp.dll: no prior compilation found in cache. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.316 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 01:10:52.445 ] Assembly-CSharp-Editor-firstpass.dll compiling...
+ (0,0): [05-03-2019 01:10:52.537 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 01:10:52.608 ] Assembly-CSharp.dll compilation finished in 293ms  source files re-parsed: 126 metadata reloaded: 1
+ (0,0): [05-03-2019 01:10:52.620 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.762 ] Assembly-CSharp-Editor-firstpass.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor-firstpass.dll
+ (0,0): [05-03-2019 01:10:52.890 ] Assembly-CSharp-Editor-firstpass.dll compilation finished in 444ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [05-03-2019 01:10:52.901 ] Assembly-CSharp-Editor-firstpass.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:52.912 ] Assembly-CSharp-Editor-firstpass.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:10:53.026 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 01:10:53.078 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 01:10:53.127 ] Assembly-CSharp-Editor.dll compilation finished in 101ms  source files re-parsed: 0 metadata reloaded: 2
+ (0,0): [05-03-2019 01:10:53.139 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:10:53.150 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:15:18.626 ] Compiler cache size is now 29.14 MB
+ (0,0): [05-03-2019 01:17:22.968 ] Assembly-CSharp.dll compiling...
+ (0,0): [05-03-2019 01:17:23.090 ] Assembly-CSharp.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp.dll
+ (0,0): [05-03-2019 01:17:23.158 ] Assembly-CSharp.dll compilation finished in 190ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [05-03-2019 01:17:23.170 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:17:23.181 ] Assembly-CSharp.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468
+ (0,0): [05-03-2019 01:17:23.666 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [05-03-2019 01:17:23.716 ] Assembly-CSharp-Editor.dll: emitting IL to : D:\Unity\Projects\GameWithUIProblem\Project-3.2\Project 3.2\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [05-03-2019 01:17:23.774 ] Assembly-CSharp-Editor.dll compilation finished in 108ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [05-03-2019 01:17:23.786 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed. Caller PID: 8468
+ (0,0): [05-03-2019 01:17:23.798 ] Assembly-CSharp-Editor.dll: session status updated to IncrementalCompilationStatus.Finished for Caller PID: 8468

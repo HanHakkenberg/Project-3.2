@@ -272,7 +272,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -277.66}
-  m_SizeDelta: {x: 760, y: 189}
+  m_SizeDelta: {x: 835, y: 189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7674395156437362492
 MonoBehaviour:
@@ -289,13 +289,13 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: -180
     m_Bottom: 0
   m_ChildAlignment: 4
   m_Spacing: 5
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
 --- !u!1 &6537801281478385880
 GameObject:
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36.7
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
